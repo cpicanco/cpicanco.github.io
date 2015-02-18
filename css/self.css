@@ -5,3 +5,8 @@
 .self-active {
   background-color: #0e1f24; /* background color will be black for all browsers */
 }
+
+.self-font {
+  font-family: serif;
+  font-size: 12px;
+}
