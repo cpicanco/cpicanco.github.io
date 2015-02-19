@@ -10,3 +10,12 @@
   font-family: serif;
   font-size: 12px;
 }
+
+.self-margin-top{
+  margin-top: 12em;
+}
+
+.self-margin-end{
+  margin-top: 12em;
+  margin-bottom: 10em;
+}
