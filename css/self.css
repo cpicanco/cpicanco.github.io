@@ -19,3 +19,86 @@
   margin-top: 12em;
   margin-bottom: 10em;
 }
+
+.self-header-project{
+	font-family: "myriad-pro",Arial,"Helvetica Neue",Helvetica,sans-serif;
+}
+
+/*
+	Firefox OS super cool left side-nav bar hack
+*/
+
+.self-nav{
+	margin:0;
+	padding:0;
+	border:0;	
+}
+
+.space #masthead nav li a,
+.space #masthead nav li a:link,
+.space #masthead nav li a:visited{
+	color:#936fbc
+}
+
+#self-scroll{
+	position:fixed;
+	top:50%;
+	left:30px;
+	width:auto;
+	margin-top:-77px;
+	padding:0
+}
+
+#self-scroll ul{
+	list-style-type:none;
+	margin:0;padding:0
+}
+
+#self-scroll ul li{
+	margin:12px 0
+}
+
+
+#self-scroll ul li a{
+	width:12px;
+	opacity:.5;
+}
+
+#self-scroll ul li a:hover,
+#self-scroll ul li a:focus,
+#self-scroll ul li a.self-curr{
+	opacity:1
+}
+
+#self-scroll ul li a{
+	height:12px;
+	padding:0;
+	
+	background-image: url("../media/circle-nav.png");
+	background-origin:0; 
+	background-size: 12px;
+	background-repeat: no-repeat;
+	
+	border-radius:7px
+}
+
+/*
+	Sections
+*/
+.section-fpe {
+    height: 100%;
+    padding-top: 8em;
+    padding-bottom: 10em;
+}
+
+.section-sca {
+    height: 100%;
+    padding-top: 6em;
+    padding-bottom: 10em;
+}
+
+.section-eep {
+    height: 100%;
+    padding-top: 3.5em;
+    padding-bottom: 3em;
+}
