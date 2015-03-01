@@ -1,3 +1,7 @@
+/*
+	Custom colors, font...
+*/
+
 .self-color{
   background-color: #153038; /* background color will be black for all browsers */
 }
@@ -25,64 +29,6 @@
 }
 
 /*
-	Firefox OS super cool left side-nav bar hack
-*/
-
-.self-nav{
-	margin:0;
-	padding:0;
-	border:0;	
-}
-
-.space #masthead nav li a,
-.space #masthead nav li a:link,
-.space #masthead nav li a:visited{
-	color:#936fbc
-}
-
-#self-scroll{
-	position:fixed;
-	top:50%;
-	left:30px;
-	width:auto;
-	margin-top:-77px;
-	padding:0
-}
-
-#self-scroll ul{
-	list-style-type:none;
-	margin:0;padding:0
-}
-
-#self-scroll ul li{
-	margin:12px 0
-}
-
-
-#self-scroll ul li a{
-	width:12px;
-	opacity:.5;
-}
-
-#self-scroll ul li a:hover,
-#self-scroll ul li a:focus,
-#self-scroll ul li a.self-curr{
-	opacity:1
-}
-
-#self-scroll ul li a{
-	height:12px;
-	padding:0;
-	
-	background-image: url("../media/circle-nav.png");
-	background-origin:0; 
-	background-size: 12px;
-	background-repeat: no-repeat;
-	
-	border-radius:7px
-}
-
-/*
 	Sections
 */
 .section-fpe {
@@ -93,12 +39,77 @@
 
 .section-sca {
     height: 100%;
-    padding-top: 6em;
+    padding-top: 3.5em;
     padding-bottom: 10em;
 }
 
 .section-eep {
     height: 100%;
-    padding-top: 3.5em;
+    padding-top: 2.5em;
     padding-bottom: 3em;
 }
+
+/*
+
+	Custom Styles for Scroll spy
+
+*/
+
+ul.nav-pills {
+    width: 10px;
+}
+
+ul.nav-pills li {
+	margin-top: 2em;
+    margin-left: -10px;
+    border: 1px solid #ddd;
+    border-radius: 10px 10px 10px 10px;
+}
+
+ul.nav-pills li:first-child {
+    margin-left: -10px;
+    border: 1px solid #ddd;
+    border-radius: 10px 10px 10px 10px
+}
+
+ul.nav-pills li a {
+	border: 1px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+ul.nav-pills li a:hover,
+ul.nav-pills li.active a,
+ul.nav-pills li.active a:hover,
+ul.nav-pills li:first-child a:hover,
+ul.nav-pills li:last-child a:hover {
+	color: #7fc3e5;
+	background: #7fc3e5;
+	opacity: 1;
+	border: 1px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+ul.nav-pills li:focus,
+ul.nav-pills li a:focus,
+ul.nav-pills li.active a:focus,
+ul.nav-pills li:first-child a:focus,
+ul.nav-pills li:last-child a:focus {
+
+}
+
+ul.nav-pills li:first-child a,
+ul.nav-pills li:last-child a {
+	border-radius: 10px 10px 10px 10px;
+
+}
+
+ul.nav-pills.affix {
+	top: 100px;
+}
+
+
+/*
+
+	Custom right margin for col-xs-9
+
+*/
