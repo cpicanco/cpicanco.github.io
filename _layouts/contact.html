@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+	{% include head.html title="Contato" %}
+
+	<body>
+		{% include nav.html %}
+
+	<div class="container">
+
+		<div class="starter-template">
+		
+		{% if page.language == 'en' then %}
+			<h3>Be Social!</h3>
+		{% elsif page.language == 'pt-BR' %}
+			<h3>Socialize!</h3>
+		{% endif %}
+
+		<br>
+		
+		<hr>
+
+		<p class="lead">
+			<a href="https://geape-ufpa.academia.edu/CarlosRafael">Academia.edu</a>
+			<br>
+			<a href="https://github.com/cpicanco">Github</a>
+			<br>
+			<a href="https://www.researchgate.net/profile/Carlos_Picanco">ResearchGate</a>
+			<br> 
+			<a href="http://codereview.stackexchange.com/users/62263/cpicanco">CodeReview - StackExchange</a>
+			<br>
+			<a href="https://twitter.com/crpicanco">@crpicanco</a>
+			<br>
+			<a href="mailto:cpicanco[]ufpa[]br?subject=Hi">e-mail</a>
+		</p>
+	  
+		<hr>
+
+	  </div>
+	</div><!-- /.container -->
+
+  {% include footer.html %}
+
+  {% include global_scripts.html path-offset="../../" %}
+  
+
+</body></html>

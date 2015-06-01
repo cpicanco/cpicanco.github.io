@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+	{% include head.html title="Projetos" %}
+
+	<body data-spy="scroll" data-target="#Scrollspy">
+
+		{% include nav.html %}
+
+		<div class="container">
+			<div class="row">
+				<!-- Left Pills-->
+				<div class="col-xs-1" id="Scrollspy">
+					<ul class="nav nav-pills" data-spy="affix">
+						<li class=""><a class="page-scroll" href="#id-fpe"></a></li>
+						<li class=""><a class="page-scroll" href="#id-sca"></a></li>			
+						<li class=""><a class="page-scroll" href="#id-eep"></a></li>			
+					</ul>
+				</div> <!-- End Left Pills-->
+
+				<!-- Central Content -->
+				<div class="col-xs-10">
+					<!-- en -->
+					{% if page.language == 'en' then %}
+						<!-- FPE Section -->
+						<section id="id-fpe" class="section-fpe">
+							<div class="page-header self-header-project">
+								<h4>Eye movements correlated with the Feature-Positive Effect, current</h4>
+							</div>
+
+							<img data-holder-rendered="true" src="../../media/fpe/fpe.jpeg" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="200x200">
+
+							<div class='well' >
+								<p>Ongoing Phd project. It aims to replicate the feature-positive effect with human participants and to describe typical eye movements potentially correlated to it. This project is using the <a href="http://pupil-labs.com/">Pupil platform</a> to track eye movements and an open source <a class="page-scroll" href="#current">Stimulus Control</a> software to run behavioral experiments. The lab relies on a single computer and a simple DIY response button. Regardless of that, a more complex apparatus is being evaluated, adding basic ergonomic furniture, an extra computer, a projector and a DIY projection screen to the setup.</p>
+							</div>
+						</section><!--/#id-fpe-->  
+
+						<!-- SCA Section -->
+						<section id="id-sca" class="section-sca">
+							<div class="page-header self-header-project">
+								<h4>Stimulus Control Software, current</h4>
+							</div>
+
+							<img data-holder-rendered="true" src="../../media/scapp/stimulus_control.ico" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="software_icon">
+							<div class='well' >
+								<p>The <a href="https://github.com/cpicanco/validation_project">tool</a> is a work in progress and can be extended to run a wide range of behavioral experiments. Currently, it can be used to design, present, archive and record some complex feature-positive experiments and simple eye orientation experiments. It aims to allow, with a few clicks and basic background, fast experiment design. It supports sounds (using the  <a href="http://www.un4seen.com/">Bass</a> library), videos (using the LCLVLC component and the <a href="https://wiki.videolan.org/LibVLC/">libvlc</a> library) and images (jpg, bmp) as stimuli (antecedents, consequences). It supports a wide range of response requisities, or technically "schedules of reinforcements" (FR, FI, VR, VI, FT, FI, DRH, DRL, DRO, multi components, etc). There are implemented classes to present trials as Text Messages/Instructions, Simple Discriminations and Conditional Dicriminations. Stimuli can be presented either successively or simultaneously. Mouse (or touch) tracking is implemented in these two last classes. "Discrete Trials" or "Free Operant" designs are possible too. It was design to be cross plataform (currently tested under Windows 8, Crunchbang 11, Ubuntu 13.10). It is an open source (GPL3) application writen in Object Free Pascal (Lazarus 1.2.6, FPC 2.6.4).</p> 
+							</div>
+						</section><!--/#id-sca-->       
+
+						<!-- EEP Section -->
+						<section id="id-eep" class="section-eep">
+							<div class="page-header self-header-project">
+								<h4>Experimental School for Primates, 2005 .. 2013</h4>
+							</div>
+
+							<img data-holder-rendered="true" src="../../media/eep/logo.jpg" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="eep_logo">
+							<div id="id-eep" class='well' >
+								<p><a href="http://www.ufpa.br/eep/english/projeto.html">The Experimental School for Primates</a> lab is a branch of the <a href="http://www.inctecce.com.br/en/">National Institute of Science and Technology on Behavior Cognition and Education (INCT-ECCE)</a>. The school is located at <a href="http://www.portal.ufpa.br/">Universidade Federal do Pará</a>, Brazil. It aims to teach, mainly to non-human primates, pre-symbolic or language like skills. The "school" metaphor have been used inside a basic research environment to refer to an individualized school curriculum, built from simple to complex tasks. Research relies on single subject design and different procedural strategies for establishing prerequisites. Students are not forced to study, they receive classes only if they choose to. As a consequence of it, teachers relies on meticulously programmed procedures based on food presentation to give the best learning experience as possible to their students. Hence, no extended food deprivation periods are maintained and all students are well feed twice a day, with free water, fruits, ration, vegetables and supplements. These circunstances gives an approximation to real life challenges, specially when humans with severely delayed development are the students. Automated and individualized teaching procedures are the main products of this basic research environment. To make this happens, a lot of effort was done by the team in order to make software and hardware solutions. It is worth noting that I was able to cooperate with the computer scientists, by testing their software, discussing good practices and strategies, and even implementing the features I needed to my own work. I am very pround that others can use the products of my work and make progress on their work too. Finally, I am very pround to have been a teacher of the Experimental School for Primates.</p> 
+							</div>
+
+							<p>For a more detailed description of the scope of this research topic:</p>
+
+							<blockquote class="self-font">
+								McIlvane, W. J., Dube, W. V., Serna, R. W., Lionello-DeNolf, K. M., Barros, R. S., &amp; Galvão, O. F. (2011). Some Current Dimensions of Translational Behavior Analysis: From Laboratory Research to Intervention for Persons with Autism Spectrum Disorders. In E. A. Mayville &amp; J. A. Mulick (Eds.)
+
+								<i>Behavioral foundations of effective autism treatment</i>, (pp. 155–181). Cornwall-on-Hudson, NY: Sloan Publishing.&#32;
+								<a href="http://www.sloanpublishing.com/mayville">(book)</a> 
+							</blockquote> 
+						</section><!--/#id-eep--> 
+					<!-- End en -->
+					
+					<!-- pt-BR -->	
+					{% elsif page.language == 'pt-BR' %}
+						<!-- FPE Section -->
+						<section id="id-fpe" class="section-fpe">
+							<div class="page-header self-header-project">
+								<h4>Movimentos oculares correlacionados com o Efeito de aspecto positivo (Feature-Positive Effect), em andamento</h4>
+							</div>
+
+							<img data-holder-rendered="true" src="../../media/fpe/fpe.jpeg" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="200x200">
+
+							<div class='well' >
+								<p>Projeto de doutorado em andamento. O objetivo é de replicar o efeito com participantes humanos e descrever movimentos oculares típicos potencialmente correlacionados com o efeito. Este projeto tem usado a <a href="http://pupil-labs.com/">plataforma Pupil</a> para rastrear os movimentos dos olhos a um software livre de <a class="page-scroll" href="#id-sca">controle de estímulos</a> para a execução de experimentos comportamentais. O laboratório depende de um único computador e um botão de respostas DIY. A despeito disso, um aparato mais complexo tem sido avaliado, adicionando mobília ergonômica básica, um computador adicional, um projetor e uma tela de projeção DIY.</p>
+							</div>
+						</section><!--/#id-fpe-->  
+
+						<!-- SCA Section -->
+						<section id="id-sca" class="section-sca">
+							<div class="page-header self-header-project">
+								<h4>Stimulus Control Software, current</h4>
+							</div>
+
+							<img data-holder-rendered="true" src="../../media/scapp/stimulus_control.ico" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="software_icon">
+							<div class='well' >
+								<p>A <a href="https://github.com/cpicanco/validation_project">ferramenta</a> é um trabalho em construção e pode ser extendida para executar um amplo espectro de experimentos comportamentais. Em seu estado atual, ela pode ser usada para o planejamento, apresentação, arquivamento e registro de experimentos complexos sobre o efeito de aspecto positivo e experimentos simples de orientação visual. A ferramenta tem como objetivo permitir a programação rápida de experimentos, exigindo poucos clicks e um conhecimento prévio básico sobre seu funcionamento. Ela suporta a execução de sons (utilizando a biblioteca <a href="http://www.un4seen.com/">Bass</a>), videos (por meio do component LCLVLC e da biblioteca <a href="https://wiki.videolan.org/LibVLC/">libvlc</a> ) e imagens (jpg, bmp) como estímulos (antecedentes, ou consequentes). Ela suporta diversos tipos de requisitos de respostas, ou tecnicamente, esquemas de reforçamento (FR, FI, VR, VI, FT, FI, DRH, DRL, DRO, componentes múltiplos, etc). Há classes já implementadas para a execução de Textos/Mensagens, Discriminações simples e Discriminações condicionais como tentativas. Os estímulos podem ser apresentados tanto sucessivamente quanto simultaneamente. Rastreamento de clicks no mouse (ou toques sobre telas sensíveis) foi implementado nessas duas últimas classes. Planejamentos do tipo "Tentativa discreta" ou "Operante livre" também são possíveis. A ferramenta tem sido desenvolvida para ser multi plataforma, e foi compilada no Windows 8, no Crunchbang 11, e no Ubuntu 13.10). Trata-se de uma ferramenta livre e gratuita (GPL3) escrita em Object Free Pascal (Lazarus 1.2.6, FPC 2.6.4).</p> 
+							</div>
+						</section><!--/#id-sca-->       
+
+						<!-- EEP Section -->
+						<section id="id-eep" class="section-eep">
+							<div class="page-header self-header-project">
+								<h4>Escola Experimental de Primatas, 2005 .. 2013</h4>
+							</div>
+
+							<img data-holder-rendered="true" src="../../media/eep/logo.jpg" style="width: 200px; height: 200px;" data-src="holder.js/200x200" class="img-thumbnail" alt="eep_logo">
+							<div id="id-eep" class='well' >
+								<p>O laboratório da <a href="http://www.ufpa.br/eep/english/projeto.html">Escola Experimental de Primatas</a> é um braço do <a href="http://www.inctecce.com.br/en/">Instituto Nacional de Ciência e Tecnologia sobre Comportamento, Cognição e Ensino  (INCT-ECCE)</a>. A escola está localizada na <a href="http://www.portal.ufpa.br/">Universidade Federal do Pará</a>, Brasil. Seu objetivo é ensinar, pricipalmente para primatas não humanos, habilidades entendidas como pré-simbólicas, ou parecidas com linguagem. A metáfora da "escola" tem sido utilizada em um ambiente de pesquisa básica para referir-se a um currículo de ensino individualizado, construído de tarefas simples para complexas, nesta ordem. O planejamento de pesquisa ocorre por meio de delineamentos com cada sujeito como o seu próprio controle. Ela depende de diferentes estratégias metodológicas para a construção de pré-requisitos. Os estudantes não são forçados a estudar. Eles recebem aulas apenas se assim escolhem fazer. Como consequência disso, os professores dependem de procedimentos meticulosamente programados baseados em apresentação de comida para dar a melhor experiência de aprendizagem aos seus estudantes. Assim, não são mantidos períodos extensos de privação e todos os alunos são bem alimentados duas vezes ao dia, com porções de frutas, ração, vegetais, suplementos e com livre acesso a água. Essas circunstâncias se aproximam de desafios da vida real, especialmente quando pessoas com desenvolvimento severamente atrasado são os estudates. Procedimentos automatizados e individualizados são os principais produtos desse ambiente de pesquisa básica. Para fazer isso acontecer, muito esforço foi realizado pela equipe no sentido de desenvolver soluções de hardware e software. É digno de nota eu ter sido capaz de cooperar com cientistas da computação, seja testando softwares, seja discutindo boas práticas e estratégias, seja inclusive implementando as funcionalidades necessárias para o meu próprio trabalho. Tenho muito orgulho de ter ajudado outros a usufruir dos produtos do meu trabalho. Por fim, tenho muito orgulho de ter sido um professor da Escola Experimental de Primatas.</p> 
+							</div>
+
+							<p>Para uma descrição mais detalhada do escopo desse tópico de pesquisa:</p>
+
+							<blockquote class="self-font">
+
+								McIlvane, W. J., Dube, W. V., Serna, R. W., Lionello-DeNolf, K. M., Barros, R. S., &amp; Galvão, O. F. (2011). Some Current Dimensions of Translational Behavior Analysis: From Laboratory Research to Intervention for Persons with Autism Spectrum Disorders. In E. A. Mayville &amp; J. A. Mulick (Eds.)
+
+								<i>Behavioral foundations of effective autism treatment</i>, (pp. 155–181). Cornwall-on-Hudson, NY: Sloan Publishing.&#32;
+								<a href="http://www.sloanpublishing.com/mayville">(book)</a> 
+							</blockquote> 
+						</section><!--/#id-eep--> 
+						<!-- End pt-BR -->
+					{% endif %} 
+				</div><!-- End Central Content -->
+			</div>
+		</div>
+
+		{% include footer.html %}
+
+		{% include global_scripts.html path-offset="../../" %}
+		
+		<!-- Scrolling Nav JavaScript -->
+		<script src="../../js/jquery.easing.min.js"></script>
+		<script src="../../js/scrolling-nav.js"></script>
+
+	</body>
+</html>

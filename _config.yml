@@ -1,0 +1,15 @@
+defaults:
+  -
+    scope:
+      path: "blog"
+    values:
+      layout: "InitialPage"
+
+  -
+    scope:
+      path: ""
+    values:
+      author: "Rafael Picanço"
+
+kramdown:
+  input: GFM

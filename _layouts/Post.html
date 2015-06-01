@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+    {% assign path_offset = '../../../' %}
+
+    {% include blog_head.html path-offset=path_offset %}
+
+    <body>
+
+        {% include blog_nav.html path-offset=path_offset home-path="../../../blog/index.html" %}
+
+        <!-- Page Header -->
+        <!-- Set your background image for this header on the line below. -->
+        <header class="intro-header" style="background-image: url('{{ path_offset }}media/blog/{{ page.image }}.jpg')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="post-heading">
+                            <h1>{{ page.title }}</h1>
+                            <h2 class="subheading">{{ page.excerpt }}</h2>
+
+                            {% if page.language == 'en' then %}
+                                <span class="meta">Posted by<a>&#32;{{ page.author }}</a>&#32;on&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+                            {% elsif user.name == 'pt-BR' %}
+                                <span class="meta">Postado por<a>&#32;{{ page.author }}</a>&#32;em&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+                            {% endif %}
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <ul class="pager">
+                <li class="pull-left">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                </li>
+            </ul>
+            
+            <hr>
+        </div>
+        <!-- Post Content -->
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="img-responsive center-block col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        {{ page.content | markdownify }}
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <hr>
+
+        {% include blog_footer.html %}
+
+        {% include global_scripts.html path-offset=path_offset %}
+
+        <!-- Twitter JavaScript -->
+        <script src="https://platform.twitter.com/widgets.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="{{ path_offset }}js/clean-blog.min.js"></script> 
+        
+    </body>
+
+</html>
