@@ -7,7 +7,13 @@
 
     <body>
 
-        {% include blog_nav.html path-offset=path_offset home-path="../../../blog/index.html" %}
+        {% if page.language == 'en' then %}
+            {% include blog_nav.html path-offset=path_offset home-path="../../../blog/en/index.html" %}
+        {% elsif page.language == 'pt-BR' %}
+            {% include blog_nav.html path-offset=path_offset home-path="../../../blog/pt-br/index.html" %}
+        {% endif %}
+
+        
 
         <!-- Page Header -->
         <!-- Set your background image for this header on the line below. -->
