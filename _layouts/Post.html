@@ -53,7 +53,7 @@
         <article>
             <div class="container">
                 <div class="row">
-                    <div class="img-responsive center-block col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         {{ page.content | markdownify }}
                     </div>
                 </div>
@@ -71,7 +71,9 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="{{ path_offset }}js/clean-blog.min.js"></script> 
-        
-    </body>
 
+        <!-- Highlight.js -->
+        <script src="{{ path_offset }}js/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
 </html>

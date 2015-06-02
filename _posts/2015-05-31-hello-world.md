@@ -14,8 +14,19 @@ This is an excerpt.
 
 ### This is out of excerpt.
 
+``` python
+# do something
+def some_method(var='example'):
+   if var:
+      pass
+   else:
+      result
+```
 This is a text message. We use Github `markdown` by default. 
 
-This is an image:
+This is an unresponsive image:
 
-![Image](http://rafael.picanco.nom.br/media/eep/apparatus.jpg)
+![Image](http://rafael.picanco.nom.br/media/fpe/fpe.jpeg)
+
+This is a responsive image:
+<p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/eep/apparatus.jpg" alt="Image" /></p>

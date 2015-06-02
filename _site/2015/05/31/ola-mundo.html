@@ -26,6 +26,9 @@
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		
+		<!-- Highlight.js --> 
+		<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/8.6/styles/default.min.css">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -116,17 +119,43 @@
         <article>
             <div class="container">
                 <div class="row">
-                    <div class="img-responsive center-block col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <p>Isto é um resumo.<br />
 <!--excerpt-end--> </p>
 
 <h3 id="isto-est-fora-do-resumo">Isto está fora do resumo.</h3>
 
+<pre><code class="language-python"># faça algo
+def algum_metodo(var='exemplo'):
+   if var:
+      pass
+   else:
+      result
+</code></pre>
+
 <p>Isto é uma mensagem. O <code>markdown</code> do Github é usado por padrão. </p>
 
-<p>Isso é uma imagem:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Tabela</th>
+      <th>Tabela</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>dados</td>
+      <td>dados</td>
+    </tr>
+  </tbody>
+</table>
 
-<p><img src="http://rafael.picanco.nom.br/media/eep/apparatus.jpg" alt="Imagem" /></p>
+<p>Esta imagem não é responsiva:</p>
+
+<p><img src="http://rafael.picanco.nom.br/media/fpe/fpe.jpeg" alt="Image" /></p>
+
+<p>Mas esta imagem <em>é</em> responsiva:</p>
+<p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/eep/apparatus.jpg" alt="Image" /></p>
 
                     </div>
                 </div>
@@ -183,8 +212,8 @@
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<!--  <script src="../js/jquery-1.11.1.js"></script> -->
-		<script src="../../../js/jquery-1.9.1.js"></script>
-		<script src="../../../js/bootstrap.js"></script>
+		<script src="../../../js/jquery.min.js"></script>
+		<script src="../../../js/bootstrap.min.js"></script>
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="../../../js/ie10-viewport-bug-workaround.js"></script>
@@ -205,7 +234,9 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="../../../js/clean-blog.min.js"></script> 
-        
-    </body>
 
+        <!-- Highlight.js -->
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+    </body>
 </html>
