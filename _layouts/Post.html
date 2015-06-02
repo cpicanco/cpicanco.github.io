@@ -7,17 +7,19 @@
 
     <body>
 
-        {% if page.language == 'en' then %}
-            {% include blog_nav.html path-offset=path_offset home-path="../../../blog/en/index.html" %}
-        {% elsif page.language == 'pt-BR' %}
-            {% include blog_nav.html path-offset=path_offset home-path="../../../blog/pt-br/index.html" %}
-        {% endif %}
-
-        
+    {% if page.language == 'en' then %}
+        {% include blog_nav.html path-offset=path_offset home-path="../../../blog/en/index.html" %}
+    {% elsif page.language == 'pt-BR' %}
+        {% include blog_nav.html path-offset=path_offset home-path="../../../blog/pt-br/index.html" %}
+    {% endif %}
 
         <!-- Page Header -->
         <!-- Set your background image for this header on the line below. -->
-        <header class="intro-header" style="background-image: url('{{ path_offset }}media/blog/{{ page.image }}.jpg')">
+    {% if page.image != null then %}
+        <header class="intro-header" style="background-image: url('{{ path_offset }}media/blog/{{ page.image }}')">
+    {% else %}
+        <header class="intro-header" style="background-color:#153038;">
+    {% endif %}
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -26,9 +28,9 @@
                             <h2 class="subheading">{{ page.excerpt }}</h2>
 
                             {% if page.language == 'en' then %}
-                                <span class="meta">Posted by<a>&#32;{{ page.author }}</a>&#32;on&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
-                            {% elsif user.name == 'pt-BR' %}
-                                <span class="meta">Postado por<a>&#32;{{ page.author }}</a>&#32;em&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+                                <span class="meta">Posted by&#32;<a>{{ page.author }}</a>&#32;on&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+                            {% elsif page.language == 'pt-BR' %}
+                                <span class="meta">Postado por&#32;<a>{{ page.author }}</a>&#32;em&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
                             {% endif %}
                                 
                         </div>
@@ -46,6 +48,7 @@
             
             <hr>
         </div>
+
         <!-- Post Content -->
         <article>
             <div class="container">

@@ -1,10 +1,11 @@
 ---
 title: Hello Jekyll Blog Framework.
-image: hello
+image: hello.jpg
 published: true
 tags: update
 layout: Post
 language: en
+pt-br: /2015/05/31/ola-mundo.html
 excerpt_separator: <!--excerpt-end-->
 ---
 
