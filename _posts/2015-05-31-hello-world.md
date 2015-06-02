@@ -24,6 +24,10 @@ def some_method(var='example'):
 ```
 This is a text message. We use Github `markdown` by default. 
 
+| Table | Table |
+| ----- | ----- |
+| cell1 | cell2 |
+
 This is an unresponsive image:
 
 ![Image](http://rafael.picanco.nom.br/media/fpe/fpe.jpeg)
