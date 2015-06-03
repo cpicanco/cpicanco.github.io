@@ -16,12 +16,15 @@
 }
 
 .self-margin-top{
-  margin-top: 12em;
+  height: 100%;
+  padding-top: 15em;
+  padding-bottom: 10em;
 }
 
 .self-margin-end{
-  margin-top: 12em;
-  margin-bottom: 10em;
+  height: 100%;
+  padding-top: 8em;
+  padding-bottom: 3em;
 }
 
 .self-header-project{
@@ -32,21 +35,21 @@
 	Sections
 */
 .section-fpe {
-    height: 100%;
-    padding-top: 8em;
-    padding-bottom: 10em;
+  height: 100%;
+  padding-top: 8em;
+  padding-bottom: 10em;
 }
 
 .section-sca {
-    height: 100%;
-    padding-top: 3.5em;
-    padding-bottom: 10em;
+  height: 100%;
+  padding-top: 3.5em;
+  padding-bottom: 10em;
 }
 
 .section-eep {
-    height: 100%;
-    padding-top: 2.5em;
-    padding-bottom: 3em;
+  height: 100%;
+  padding-top: 2.5em;
+  padding-bottom: 3em;
 }
 
 /*
@@ -61,20 +64,20 @@ ul.nav-pills {
 
 ul.nav-pills li {
 	margin-top: 2em;
-    margin-left: -10px;
-    border: 1px solid #ddd;
-    border-radius: 10px 10px 10px 10px;
+  margin-left: -10px;
+  border: 1px solid #ddd;
+  border-radius: 10px 10px 10px 10px;
 }
 
 ul.nav-pills li:first-child {
-    margin-left: -10px;
-    border: 1px solid #ddd;
-    border-radius: 10px 10px 10px 10px
+  margin-left: -10px;
+  border: 1px solid #ddd;
+  border-radius: 10px 10px 10px 10px
 }
 
 ul.nav-pills li a {
 	border: 1px;
-    border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 ul.nav-pills li a:hover,
@@ -110,6 +113,14 @@ ul.nav-pills.affix {
 
 /*
 
-	Custom right margin for col-xs-9
+	tooltip colors 
 
 */
+
+span.fa-stack {
+  color:#153038;
+}
+
+span.fa-stack:hover {
+  color:#0e1f59;
+}

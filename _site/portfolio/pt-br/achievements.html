@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	    <!-- Head -->
+
+	<!-- Head -->
     <head>
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta charset="utf-8">
@@ -25,6 +26,11 @@
         <!-- Custom styles -->
         <link href="../../css/self.css" rel="stylesheet">
 
+        <!-- Custom fonts -->
+        <link href="../../css/academicons.css" rel="stylesheet">
+
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
         <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
         <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
         <!--<script src="../js/ie-emulation-modes-warning.js"></script>-->
@@ -36,8 +42,8 @@
         <![endif]-->
     </head>
 
-	<body>
-				<!-- Navigation Top -->
+	<body data-spy="scroll" data-target="#Scrollspy">
+		<!-- Navigation Top -->
 		<nav class="navbar navbar-inverse navbar-fixed-top self-color">
 			<div class="container">
 				<div class="navbar-header">
@@ -75,37 +81,69 @@
 			</div>
 		</nav>
 
-		<div class="container">
-		
-			<div class="starter-template self-margin-top">
-				<img class="img-responsive center-block" src="../../media/achievements/pt-br_unlocked.png">
-				<p class="lead">Porque a vida é desafiadora e gratificante.</p>
-			</div>
+		<div class="container starter-template">
 
-			<div class="starter-template self-margin-top">
-				<img class="img-responsive center-block" src="../../media/achievements/pt-br_diy_pupil.png">
-				<p class="lead"><a href="https://github.com/pupil-labs/pupil/wiki/Getting-Pupil-Hardware#diy">Dê uma olhada</a>&#32;é impressionante.</p>
-			</div>
+			<div class="row">
 
-			<div class="starter-template self-margin-top">
-				<img class="img-responsive center-block" src="../../media/achievements/pt-br_MPR_drum.png">
-				<p class="lead">Você pode ouvir<a href="https://soundcloud.com/izamusic/sets/m-sica-popular-roqueira">&#32;o Álbum</a>.</p>
-			</div>
+				<!-- Left Pills-->
+				<div class="col-xs-1" id="Scrollspy">
+					<ul class="nav nav-pills" data-spy="affix">
+						<li class=""><a class="page-scroll" href="#id-1"></a></li>
+						<li class=""><a class="page-scroll" href="#id-2"></a></li>			
+						<li class=""><a class="page-scroll" href="#id-3"></a></li>
+						<li class=""><a class="page-scroll" href="#id-4"></a></li>			
+						<li class=""><a class="page-scroll" href="#id-5"></a></li>				
+					</ul>
+				</div> <!-- End Left Pills-->
 
-			<div class="starter-template self-margin-top">
-				<img class="img-responsive center-block" src="../../media/achievements/pt-br_ODM_drum.png">
-				<p class="lead">Tu deves ouvir<a href="https://soundcloud.com/carlitusbatera/sets/o-despertar-dos-m-gicos">&#32;o Álbum</a>.</p>
-			</div>
+				<!-- Central content -->
+				<div class="col-xs-10">
+				
+					<div id="id-1" class="self-margin-top">
+						<img class="img-responsive center-block" src="../../media/achievements/pt-br_unlocked.png">
+						<p class="lead">Porque a vida é desafiadora e gratificante.</p>
+						<a href="#id-2" type="button" class="btn btn-default btn-lg page-scroll">
+		  					<span class="fa fa-chevron-down fa-3x"></span>
+						</a>
+					</div>
 
-			<div class="starter-template self-margin-end">
-				<img class="img-responsive center-block" src="../../media/achievements/pt-br_newlyweds.png">
-				<p class="lead">Eu te amo menina.</p>
-			</div>
-		
+					<div id="id-2" class="self-margin-top">
+						<img class="img-responsive center-block" src="../../media/achievements/pt-br_diy_pupil.png">
+						<p class="lead"><a href="https://github.com/pupil-labs/pupil/wiki/Getting-Pupil-Hardware#diy">Dê uma olhada</a>&#32;é impressionante.</p>
+						<a href="#id-3" type="button" class="btn btn-default btn-lg page-scroll">
+		  					<span class="fa fa-chevron-down fa-3x"></span>
+						</a>
+					</div>
 
+					<div id="id-3" class="self-margin-top">
+						<img class="img-responsive center-block" src="../../media/achievements/pt-br_MPR_drum.png">
+						<p class="lead">Você pode ouvir<a href="https://soundcloud.com/izamusic/sets/m-sica-popular-roqueira">&#32;o Álbum</a>.</p>
+						<a href="#id-4" type="button" class="btn btn-default btn-lg page-scroll">
+		  					<span class="fa fa-chevron-down fa-3x"></span>
+						</a>
+					</div>
+
+					<div id="id-4" class="self-margin-top">
+						<img class="img-responsive center-block" src="../../media/achievements/pt-br_ODM_drum.png">
+						<p class="lead">Tu deves ouvir<a href="https://soundcloud.com/carlitusbatera/sets/o-despertar-dos-m-gicos">&#32;o Álbum</a>.</p>
+						<a href="#id-5" type="button" class="btn btn-default btn-lg page-scroll">
+		  					<span class="fa fa-chevron-down fa-3x"></span>
+						</a>
+					</div>
+
+					<div id="id-5" class="self-margin-top">
+						<img class="img-responsive center-block" src="../../media/achievements/pt-br_newlyweds.png">
+						<p class="lead">Eu te amo menina.</p>
+						<a href="#id-1" type="button" class="btn btn-default btn-lg page-scroll">
+		  					<span class="fa fa-chevron-up fa-3x"></span>
+						</a>
+					</div> 
+				
+				</div> <!-- End Central content -->
+			</div>	
 		</div><!-- /.container -->
 
-			<!-- Footer -->
+		<!-- Footer -->
 		<footer class="footer">
 			<div class="container">
 				<p class="text-muted text-center">
@@ -121,7 +159,7 @@
 			</div>
 		</footer>
 
-			<!-- Bootstrap core JavaScript
+		<!-- Bootstrap core JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<!--  <script src="../js/jquery-1.11.1.js"></script> -->
@@ -142,5 +180,8 @@
 
 		</script> 
 
+		<!-- Scrolling Nav JavaScript -->
+		<script src="../../js/jquery.easing.min.js"></script>
+		<script src="../../js/scrolling-nav.js"></script>
 	</body>
 </html>
