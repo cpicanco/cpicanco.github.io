@@ -1,6 +1,6 @@
 ---
 title: Sobre o planejamento de uma página institucional.
-excerpt: Manutenção, custos e gestão de conteúdo.
+excerpt: manutenção, custos e gestão de conteúdo on-line
 image: ufpa.jpg
 published: false
 tags: web-design

@@ -4,10 +4,22 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content= "{{ page.author }}'s Post">
+	{% if page.language == 'en' then %}
+		<meta name="description" content= "Thoughts about {{ page.excerpt }}, posted by {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.">
+	{% elsif page.language == 'pt-BR' %}
+		<meta name="description" content= "Pensamentos sobre {{ page.excerpt }}, postando por {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.">
+	{% endif %}
+		
 		<meta name="author" content="{{ page.author }}">
 
 		<link rel="icon" href="{{ include.path-offset }}media/favicon.ico">
+
+	{% if page.language == 'en' then %}
+		<link rel="image_src" href="{{ include.path-offset }}media/in-flagellis-clean-en-logo.png" >
+	{% elsif page.language == 'pt-BR' %}
+		<link rel="image_src" href="{{ include.path-offset }}media/in-flagellis-clean-pt-br-logo.png" >
+	{% endif %}
+		
 
 		<title>{{ page.title }}</title>
 
