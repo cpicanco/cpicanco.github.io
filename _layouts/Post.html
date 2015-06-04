@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 
-    {% assign path_offset = '../../../' %}
+    {% assign PATH_OFFSET = '../../../' %}
 
-    {% include blog_head.html path-offset=path_offset %}
+    {% if page.language == 'en' then %}
+        {% assign PAGE_PATH="../../../blog/en/index.html" %}
+    {% elsif page.language == 'pt-BR' %}
+        {% assign PAGE_PATH="../../../blog/pt-br/index.html" %}
+    {% endif %}
+
+    {% include blog_head.html path-offset=PATH_OFFSET %}
 
     <body>
 
-    {% if page.language == 'en' then %}
-        {% include blog_nav.html path-offset=path_offset home-path="../../../blog/en/index.html" %}
-    {% elsif page.language == 'pt-BR' %}
-        {% include blog_nav.html path-offset=path_offset home-path="../../../blog/pt-br/index.html" %}
-    {% endif %}
+   {% include blog_nav.html path-offset=PATH_OFFSET home-path=PAGE_PATH %}
 
         <!-- Page Header -->
         <!-- Set your background image for this header on the line below. -->
     {% if page.image != null then %}
-        <header class="intro-header" style="background-image: url('{{ path_offset }}media/blog/{{ page.image }}')">
+        <header class="intro-header" style="background-image: url('{{ PATH_OFFSET }}media/blog/{{ page.image }}')">
     {% else %}
         <header class="intro-header" style="background-color:#153038;">
     {% endif %}
@@ -66,33 +68,61 @@
                     {% endif %}
                     </div>
                 </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline">
+                        {% if page.language == 'en' then %}
+                            <li>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                            </li>
+
+                            <li id="fb-root">
+                                <a class="fb-share-button" data-href="http://rafael.picanco.nom.br{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}">Facebook</a>
+                            </li>
+                        {% elsif page.language == 'pt-BR' %}
+                            <li>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, do blog do Rafael Picanço" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                            </li>
+
+                            <li id="fb-root">
+                                <a class="fb-share-button" data-href="http://rafael.picanco.nom.br{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, do blog do Rafael Picanço" data-counturl="http://rafael.picanco.nom.br{{ page.url }}">Facebook</a>
+                            </li>
+                        {% endif %}
+                        </ul>
+                    <ul class="pager pull-left">
+                        <li class="next">
+                            {% if page.language == 'en' then %}
+                                <a href="{{ PAGE_PATH }}">HOME</a>
+                            {% elsif page.language == 'pt-BR' %}
+                                <a href="{{ PAGE_PATH }}">INÍCIO</a>
+                            {% endif %}
+                        </li>
+                    </ul> 
+                    </div>    
+                </div>
             </div>
         </article>
 
-        <div class="container">
-            <hr>
-            <ul class="pager">
-                <li class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
-                </li>
-            </ul>
+        <div= class="container">
+                    <!-- Pager -->
+ 
 
-            
         </div>
+
         <hr>
 
         {% include blog_footer.html %}
 
-        {% include global_scripts.html path-offset=path_offset %}
+        {% include global_scripts.html path-offset=PATH_OFFSET %}
 
-        <!-- Twitter JavaScript -->
-        <script src="https://platform.twitter.com/widgets.js"></script>
+        {% include social_scripts.html %}
 
         <!-- Custom Theme JavaScript -->
-        <script src="{{ path_offset }}js/clean-blog.min.js"></script> 
+        <script src="{{ PATH_OFFSET }}js/clean-blog.min.js"></script> 
 
         <!-- Highlight.js -->
-        <script src="{{ path_offset }}js/highlight.pack.js"></script>
+        <script src="{{ PATH_OFFSET }}js/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

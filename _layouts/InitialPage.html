@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 
-	{% assign path_offset = '../../../' %}
+	{% assign paginator=3 %}
 
-	{% include blog_head.html path-offset=path_offset %}
+	{% assign PATH_OFFSET = '../../../' %}
+
+	{% include blog_head.html path-offset=PATH_OFFSET %}
 	
 	<body>
 		
-		{% include blog_nav.html path-offset=path_offset home-path="" %}
+		{% include blog_nav.html path-offset=PATH_OFFSET home-path="" %}
 
 		<!-- Page Header -->
 		<!-- Set your background image for this header on the line below.
 
-		style="background-image: url('{{ path_offset }}media/blog/home-bg.jpg');"
+		style="background-image: url('{{ PATH_OFFSET }}media/blog/home-bg.jpg');"
 		
 		-->
 		<header class="intro-header" style="background-color:#153038;">
@@ -29,8 +31,35 @@
 			</div>
 		</header>
 
+		<div= class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<ul class="list-inline text-center">
+					{% if page.language == 'en' then %}
+						<li>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+						</li>
+
+						<li id="fb-root">
+							<a class="fb-share-button" data-href="http://rafael.picanco.nom.br{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}">Facebook</a>
+						</li>
+					{% elsif page.language == 'pt-BR' %}
+						<li>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, do blog do Rafael Picanço" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+						</li>
+
+						<li id="fb-root">
+							<a class="fb-share-button" data-href="http://rafael.picanco.nom.br{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, do blog do Rafael Picanço" data-counturl="http://rafael.picanco.nom.br{{ page.url }}">Facebook</a>
+						</li>
+					{% endif %}
+					</ul>
+				</div>		
+			</div>
+		</div>
+
 		<!-- Main Content -->
 		<div class="container">
+			<hr>
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
@@ -74,7 +103,7 @@
 
 							<div class="row">
 								<div class="col-lg-8 col-lg col-md-10">
-									<ul class="list-inline ">
+									<ul class="list-inline">
 						{% for tag in post.tags %}
 										<li>
 											<span class="badge" style="background-color:#255050;">{{ tag }}</span>
@@ -89,10 +118,6 @@
 
 					<!-- Pager -->
 					<ul class="pager">
-						<li class="pull-left">
-							<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
-						</li>
-
 						<li class="next">
 							{% if page.language == 'en' then %}
 								<a href="#">Top</a>
@@ -109,12 +134,11 @@
 
 		{% include blog_footer.html %}
 		
-		{% include global_scripts.html path-offset=path_offset %}
+		{% include global_scripts.html path-offset=PATH_OFFSET %}
 		
-		<!-- Twitter JavaScript -->
-		<script src="https://platform.twitter.com/widgets.js"></script>
+		{% include social_scripts.html %}
 
 		<!-- Custom Theme JavaScript -->
-		<script src="{{ path_offset }}js/clean-blog.min.js"></script> 
+		<script src="{{ PATH_OFFSET }}js/clean-blog.min.js"></script> 
 	</body>
 </html>

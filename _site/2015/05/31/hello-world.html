@@ -3,6 +3,10 @@
 
     
 
+    
+        
+    
+
     <!-- Head -->
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -42,8 +46,7 @@
 
     <body>
 
-    
-        <!-- Navigation -->
+   <!-- Navigation -->
 		<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -82,7 +85,6 @@
 			</div>
 			<!-- /.container -->
 		</nav>
-    
 
         <!-- Page Header -->
         <!-- Set your background image for this header on the line below. -->
@@ -94,10 +96,7 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="post-heading">
                             <h1>Hello Jekyll Blog Framework.</h1>
-                            <h2 class="subheading"><p>This is an excerpt.<br />
-<!--excerpt-end--> </p>
-
-</h2>                                
+                            <h2 class="subheading">markdown demo</h2>                                
                         </div>
                     </div>
                 </div>
@@ -109,19 +108,51 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>This is an excerpt.<br />
-<!--excerpt-end--> </p>
+                        <h1 id="h1">H1</h1>
 
-<h3 id="this-is-out-of-excerpt">This is out of excerpt.</h3>
+<h2 id="h2">H2</h2>
 
-<pre><code class="language-python"># do something
-def some_method(var='example'):
+<h3 id="h3">H3</h3>
+
+<h4 id="h4">H4</h4>
+
+<h5 id="h5">H5</h5>
+
+<h6 id="h6">H6</h6>
+
+<p><strong>Bold</strong></p>
+
+<p><em>Italic</em></p>
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+  <li>Item 4</li>
+</ul>
+
+<blockquote>
+  <p>blockquote</p>
+</blockquote>
+
+<pre><code class="language-python"># python
+def some_method(var='exemple'):
    if var:
       pass
    else:
       result
 </code></pre>
-<p>This is a text message. We use Github <code>markdown</code> by default. </p>
+
+<pre><code class="language-delphi">// pascal
+procedure some_procedure( Value : string = 'text');
+begin
+   ShowMessage(text);
+end;
+</code></pre>
+
+<p><code>inline</code></p>
+
+<p>Github Flavored Markdown is being used. </p>
 
 <table>
   <thead>
@@ -132,18 +163,14 @@ def some_method(var='example'):
   </thead>
   <tbody>
     <tr>
-      <td>cell1</td>
-      <td>cell2</td>
+      <td>cell</td>
+      <td>cell</td>
     </tr>
   </tbody>
 </table>
 
-<p>This is an unresponsive image:</p>
-
-<p><img src="http://rafael.picanco.nom.br/media/fpe/fpe.jpeg" alt="Image" /></p>
-
-<p>This is a responsive image:</p>
-<p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/eep/apparatus.jpg" alt="Image" /></p>
+<p>Responsive image:</p>
+<p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/fpe/fpe.jpeg" alt="Image" /></p>
 
                         <p>_</p>
                     
@@ -151,19 +178,38 @@ def some_method(var='example'):
                     
                     </div>
                 </div>
+                <hr>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline">
+                        
+                            <li>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br/2015/05/31/hello-world.html" data-text="Hello Jekyll Blog Framework., from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br/2015/05/31/hello-world.html" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                            </li>
+
+                            <li id="fb-root">
+                                <a class="fb-share-button" data-href="http://rafael.picanco.nom.br/2015/05/31/hello-world.html" data-layout="button_count" data-text="Hello Jekyll Blog Framework., from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br/2015/05/31/hello-world.html">Facebook</a>
+                            </li>
+                        
+                        </ul>
+                    <ul class="pager pull-left">
+                        <li class="next">
+                            
+                                <a href="../../../blog/en/index.html">HOME</a>
+                            
+                        </li>
+                    </ul> 
+                    </div>    
+                </div>
             </div>
         </article>
 
-        <div class="container">
-            <hr>
-            <ul class="pager">
-                <li class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br/2015/05/31/hello-world.html" data-text="Hello Jekyll Blog Framework., from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br/2015/05/31/hello-world.html" data-count="horizontal" data-via="crpicanco">Tweet</a>
-                </li>
-            </ul>
+        <div= class="container">
+                    <!-- Pager -->
+ 
 
-            
         </div>
+
         <hr>
 
         <!-- Footer -->
@@ -231,8 +277,20 @@ def some_method(var='example'):
 
 		</script> 
 
+        <!-- Social scripts -->
         <!-- Twitter JavaScript -->
         <script src="https://platform.twitter.com/widgets.js"></script>
+
+        <!-- Facebook JavaScript -->
+    
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=179917338701622";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    
 
         <!-- Custom Theme JavaScript -->
         <script src="../../../js/clean-blog.min.js"></script> 

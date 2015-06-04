@@ -132,6 +132,7 @@ hr.small {
     transform: translate3d(0, 100%, 0);
   }
 }
+
 .intro-header {
   background-color: #808080;
   background: no-repeat center center;
@@ -148,6 +149,7 @@ hr.small {
   padding: 100px 0 50px;
   color: white;
 }
+
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
@@ -245,7 +247,7 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .post-preview > a > .post-title {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .section-heading {
