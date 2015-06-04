@@ -2,7 +2,7 @@
 title: Hello Jekyll Blog Framework.
 image: hello.jpg
 published: true
-tags: update
+tags: web-design
 layout: Post
 language: en
 pt-br: /2015/05/31/ola-mundo.html

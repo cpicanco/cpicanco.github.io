@@ -3,12 +3,11 @@ title: Sobre o planejamento de uma página institucional.
 excerpt: Manutenção, custos e gestão de conteúdo.
 image: ufpa.jpg
 published: false
-tags: web design
+tags: web-design
 layout: Post
 language: pt-BR
-en: /2015/05/31/on-designing-an-institucional-site.html
 ---
-
+<!--en: /2015/05/31/on-designing-an-institucional-site.html-->
 #### A instituição
 
 Recentemente, me pus a tarefa de propor um modelo de *site* para o Programa de Pós-Graduação em Teoria e Pesquisa do Comportamento (PPGTPC) da Universidade Federal do Pará, avaliada pela Capes periodicamente. Será sobre esse ambiente institucional, sua comunidade e seu público que estarei me referindo ao longo do presente esboço. Trata-se de uma instituição pública gerida por Docentes, Discentes e Servidores, cujo processo decisório tem se concentrado sobre os docentes (maioria participante). Como atores nessa comunidade elenco;
@@ -41,6 +40,7 @@ Recentemente, me pus a tarefa de propor um modelo de *site* para o Programa de P
    - servidores;
    - docentes;
    - discentes;
+
 
 #### O conteúdo do *site*.
 

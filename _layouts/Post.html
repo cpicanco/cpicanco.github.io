@@ -25,29 +25,12 @@
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         <div class="post-heading">
                             <h1>{{ page.title }}</h1>
-                            <h2 class="subheading">{{ page.excerpt }}</h2>
-
-                            {% if page.language == 'en' then %}
-                                <span class="meta">Posted by&#32;<a>{{ page.author }}</a>&#32;on&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
-                            {% elsif page.language == 'pt-BR' %}
-                                <span class="meta">Postado por&#32;<a>{{ page.author }}</a>&#32;em&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
-                            {% endif %}
-                                
+                            <h2 class="subheading">{{ page.excerpt }}</h2>                                
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-
-        <div class="container">
-            <ul class="pager">
-                <li class="pull-left">
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
-                </li>
-            </ul>
-            
-            <hr>
-        </div>
 
         <!-- Post Content -->
         <article>
@@ -55,11 +38,47 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         {{ page.content | markdownify }}
+                        <p>_</p>
+                    {% if page.language == 'en' then %}
+                        <span class="meta margin-top"><a>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+                    {% elsif page.language == 'pt-BR' %}
+                        <span class="meta margin-top">&#32;<a>{{ page.author }}</a>,&#32;
+                        {{ page.date | date: "%-d" }}
+                        &#32;de&#32;
+                        {% assign m = page.date | date: "%-m" %}
+                        {% case m %}
+                            {% when '1' %}Janeiro
+                            {% when '2' %}Fevereiro
+                            {% when '3' %}Março
+                            {% when '4' %}Abril
+                            {% when '5' %}Maio
+                            {% when '6' %}Junho
+                            {% when '7' %}Julho
+                            {% when '8' %}Agosto
+                            {% when '9' %}Setembro
+                            {% when '10' %}Outubro
+                            {% when '11' %}Novembro
+                            {% when '12' %}Dezembro
+                        {% endcase %}
+                        &#32;de&#32;
+                        {{ page.date | date: "%Y" }}.
+                        </span>
+                    {% endif %}
                     </div>
                 </div>
             </div>
         </article>
 
+        <div class="container">
+            <hr>
+            <ul class="pager">
+                <li class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                </li>
+            </ul>
+
+            
+        </div>
         <hr>
 
         {% include blog_footer.html %}
