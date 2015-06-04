@@ -1,16 +1,26 @@
 <!-- Head -->
 	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	{% if page.language == 'en' then %}
-		<meta name="description" content= "Thoughts about {{ page.excerpt }}, posted by {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.">
+		<meta name="description" content="Thoughts about {{ page.excerpt }}, posted by {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.">
 	{% elsif page.language == 'pt-BR' %}
-		<meta name="description" content= "Pensamentos sobre {{ page.excerpt }}, postando por {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.">
+		<meta name="description" content="Pensamentos sobre {{ page.excerpt }}, postando por {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.">
 	{% endif %}
-		
+        <!-- Open Graph meta tags -->		
 		<meta name="author" content="{{ page.author }}">
+        <meta property="og:title" content="{{ page.title }}">
+	{% if page.language == 'en' then %}
+	    <meta property="og:image" content="{{ include.path-offset }}media/in-flagellis-clean-en-logo.png">
+        <meta property="og:description" content="Thoughts about {{ page.excerpt }}, posted by {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.">
+	{% elsif page.language == 'pt-BR' %}
+		<meta property="og:image" content="{{ include.path-offset }}media/in-flagellis-clean-pt-br-logo.png">
+        <meta property="og:description" content="Pensamentos sobre {{ page.excerpt }}, postando por {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.">
+	{% endif %}
+        <meta property="og:image:width" content="613">
+        <meta property="og:image:height" content="448">
+        
 
 		<link rel="icon" href="{{ include.path-offset }}media/favicon.ico">
 
