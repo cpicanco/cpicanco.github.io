@@ -1,0 +1,34 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/rafael/git/cpicanco.github.io"
+		}
+	],
+
+	"settings":
+	{
+	    "Jekyll":
+	    {
+	        "posts_path": "/home/rafael/git/cpicanco.github.io/_posts",
+	        "drafts_path": "/home/rafael/git/cpicanco.github.io/_drafts",
+	        "automatically_find_paths": false,
+	        "default_post_syntax": "Markdown",
+	        "default_post_layout": "Post",
+	        "default_post_categories": [],
+	        "default_post_tags": ["tag"],
+	        "default_post_published": false,
+			"default_post_extras": {
+				"image": "hello.jpg",
+				"language": "pt-BR",
+				"en": "/2015/05/31/hello-world.html",
+				"excerpt": "excerpt"
+			},
+			// A valid Python strftime string
+			"insert_date_format": "%Y-%m-%d",
+
+			// A valid Python strftime string
+			"insert_datetime_format": "%Y-%m-%d %H:%M:%S"
+	    }
+	}	
+}

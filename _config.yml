@@ -1,3 +1,5 @@
+url: http://www.rafael.picanco.nom.br
+exclude: ['README.md', 'LICENSE.md', 'CNAME', 'Gemfile', 'Gemfile.lock', 'cpicanco.github.io.sublime-project']
 defaults:
   -
     scope:

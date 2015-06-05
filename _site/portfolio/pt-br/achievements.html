@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR" prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb#">
+<html lang="pt-BR">
 
 	<!-- Head -->
-    <head>
-        
+            
 
     
 
-    
+
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/article#">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Portfólio de Rafael Picanço, cientista do comportamento, programador entusiasta e baterista freelance.">
+        <meta name="description" content="Portfólio de {{ page.author }}, cientista do comportamento, programador entusiasta e baterista freelance.">
         <meta name="author" content="Rafael Picanço">
 
         <!-- Open Graph meta tags -->
         <meta property="og:title" content="Conquistas">
-        <meta property="og:type" content="portfolio">
-        <meta property="og:description" content="Portfólio de Rafael Picanço, cientista do comportamento, programador entusiasta e baterista freelance.">
-        <meta property="og:url" content="http://rafael.picanco.nom.br/portfolio/pt-br/achievements.html">
-        <meta property="og:image" content="http://rafael.picanco.nom.br/media/rafael-picanco-portfolio.png">
+        <meta property="og:type" content="profile">
+        <meta property="og:description" content="Portfólio de {{ page.author }}, cientista do comportamento, programador entusiasta e baterista freelance.">
+        <meta property="og:url" content="http://www.rafael.picanco.nom.br/portfolio/pt-br/achievements.html">
+        <meta property="og:image" content="{{ site.url }}/media/rafael-picanco-portfolio.png">
         <meta property="og:image:width" content="850">
         <meta property="og:image:height" content="450">
     
         <meta property="og:locale" content="pt_BR">
     
         <meta property="og:site_name" content="Rafael Picanço's Portfolio">
-        <meta property="fb:admins" content="1651005333">
+        <meta property="fb:profile_id" content="1651005333">
+        <meta property="fb:app_id" content="302184056577324" />
 
         <!-- Twitter Card properties -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Conquistas">
         <meta name="twitter:creator" content="@crpicanco">
-        <meta name="twitter:description" content="Portfólio de Rafael Picanço, cientista do comportamento, programador entusiasta e baterista freelance.">
-        <meta name="twitter:image" content="http://rafael.picanco.nom.br/media/rafael-picanco-portfolio.jpg">
+        <meta name="twitter:description" content="Portfólio de {{ page.author }}, cientista do comportamento, programador entusiasta e baterista freelance.">
+        <meta name="twitter:image" content="{{ site.url }}/media/rafael-picanco-portfolio.png">
         <meta name="twitter:image:width" content="850">
         <meta name="twitter:image:height" content="450">
 
         <title>Rafael Picanço | Conquistas</title>
 
-        <link rel="image_src" href="http://rafael.picanco.nom.br/media/rafael-picanco-portfolio.png" >
+        <link rel="image_src" href="{{ site.url }}/media/rafael-picanco-portfolio.png" >
 
         <link rel="icon" href="../../media/favicon.ico">
 
@@ -88,7 +89,7 @@
 					</button>
 
 					
-						<a class="navbar-brand" href="../../index.html">Portfólio de Rafael Picanço</a>
+						<a class="navbar-brand" href="../../">Portfólio de Rafael Picanço</a>
 					
 				</div>
 				

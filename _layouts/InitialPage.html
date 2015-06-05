@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ page.language }}" prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb#">
+<html lang="{{ page.language }}">
 {% assign PATH_OFFSET = '../../../' %}
 {% if page.language == 'en' then %}
-	{% include blog_head.html path-offset=PATH_OFFSET share-image="http://rafael.picanco.nom.br/media/blog/in-flagellis-clean-en.png"%}
+	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
+	{% include blog_head.html path-offset=PATH_OFFSET share-image=SHARE_IMAGE %}
 {% elsif page.language == 'pt-BR' %}
-	{% include blog_head.html path-offset=PATH_OFFSET share-image="http://rafael.picanco.nom.br/media/blog/in-flagellis-clean-pt-br.png"%}
+	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
+	{% include blog_head.html path-offset=PATH_OFFSET share-image=SHARE_IMAGE %}
 {% endif %}
 	<body>
-		{% include blog_nav.html path-offset=PATH_OFFSET home-path="" %}
+		{% include blog_nav.html path-offset=PATH_OFFSET home-path="#" %}
 		<!-- Page Header -->
 		<!-- Set your background image for this header on the line below.
 		style="background-image: url('{{ PATH_OFFSET }}media/blog/home-bg.jpg');"
@@ -32,19 +34,19 @@
 					<ul class="list-inline text-center">
 					{% if page.language == 'en' then %}
 						<li>
-							<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}, from {{ page.author }}'s blog" data-counturl="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
 						</li>
 
 						<li id="fb-root">
-							<a class="fb-share-button" data-href="http://rafael.picanco.nom.br{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, from Rafael Picanço's blog" data-counturl="http://rafael.picanco.nom.br{{ page.url }}">Facebook</a>
+							<a class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, from {{ page.author }}'s blog" data-counturl="{{ site.url }}{{ page.url }}">Facebook</a>
 						</li>
 					{% elsif page.language == 'pt-BR' %}
 						<li>
-							<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://rafael.picanco.nom.br{{ page.url }}" data-text="{{ page.title }}, do blog do Rafael Picanço" data-counturl="http://rafael.picanco.nom.br{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}, do blog do {{ page.author }}" data-counturl="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
 						</li>
 
 						<li id="fb-root">
-							<a class="fb-share-button" data-href="http://rafael.picanco.nom.br{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, do blog do Rafael Picanço" data-counturl="http://rafael.picanco.nom.br{{ page.url }}">Facebook</a>
+							<a class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, do blog do {{ page.author }}" data-counturl="{{ site.url }}{{ page.url }}">Facebook</a>
 						</li>
 					{% endif %}
 					</ul>
