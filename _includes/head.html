@@ -14,12 +14,30 @@
         <meta name="author" content="{{ page.author }}">
 
         <!-- Open Graph meta tags -->
-        <meta property="og:image" content="{{ share-image }}">
-        <meta property="og:title" content="{{ title }}">
+        <meta property="og:title" content="{{ page.title }}">
+        <meta property="og:type" content="portfolio">
         <meta property="og:description" content="{{ description }}">
-        <meta property="og:image:width" content="613">
-        <meta property="og:image:height" content="448">
-        
+        <meta property="og:url" content="http://rafael.picanco.nom.br{{ page.url }}">
+        <meta property="og:image" content="{{ share-image }}">
+        <meta property="og:image:width" content="850">
+        <meta property="og:image:height" content="450">
+    {% if page.language == 'en' then %}
+        <meta property="og:locale" content="en_US">
+    {% elsif page.language == 'pt-BR' %}
+        <meta property="og:locale" content="pt_BR">
+    {% endif %}
+        <meta property="og:site_name" content="Rafael Picanço's Portfolio">
+        <meta property="fb:admins" content="1651005333">
+
+        <!-- Twitter Card properties -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ page.title }}">
+        <meta name="twitter:creator" content="@crpicanco">
+        <meta name="twitter:description" content="{{ description }}">
+        <meta name="twitter:image" content="http://rafael.picanco.nom.br/media/rafael-picanco-portfolio.jpg">
+        <meta name="twitter:image:width" content="850">
+        <meta name="twitter:image:height" content="450">
+
         <title>{{ page.author }} | {{ include.title }}</title>
 
         <link rel="image_src" href="{{ share-image }}" >
