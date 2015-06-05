@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="{{ page.language }}">
+<html lang="{{ page.language }}" prefix="og: http://ogp.me/ns#">
 
-    {% assign PATH_OFFSET = '../../../' %}
+{% assign PATH_OFFSET = '../../../' %}
+{% if page.language == 'en' then %}
+    {% capture PAGE_PATH %}{{ PATH_OFFSET }}blog/en/index.html{% endcapture %}
+{% elsif page.language == 'pt-BR' %}
+    {% capture PAGE_PATH %}{{ PATH_OFFSET }}blog/pt-br/index.html{% endcapture %}
+{% endif %}
 
-    {% if page.language == 'en' then %}
-        {% assign PAGE_PATH="../../../blog/en/index.html" %}
+{% if page.image != null then %}
+    {% capture IMAGE  %}http://rafael.picanco.nom.br/media/blog/{{ page.image }}{% endcapture %}
+    {% include blog_head.html path-offset=PATH_OFFSET share-image=IMAGE %}
+{% else %}
+    {% if page.language == 'en' then %}     
+        {% include blog_head.html path-offset=PATH_OFFSET share-image="http://rafael.picanco.nom.br/media/blog/in-flagellis-clean-en.png" %}
     {% elsif page.language == 'pt-BR' %}
-        {% assign PAGE_PATH="../../../blog/pt-br/index.html" %}
+        {% include blog_head.html path-offset=PATH_OFFSET share-image="http://rafael.picanco.nom.br/media/blog/in-flagellis-clean-pt-br.png" %}
     {% endif %}
-
-    {% include blog_head.html path-offset=PATH_OFFSET %}
-
+{% endif %}
     <body>
-
    {% include blog_nav.html path-offset=PATH_OFFSET home-path=PAGE_PATH %}
 
         <!-- Page Header -->

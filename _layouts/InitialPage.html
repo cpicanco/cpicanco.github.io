@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ page.language }}">
-
-	{% assign paginator=3 %}
-
-	{% assign PATH_OFFSET = '../../../' %}
-
-	{% include blog_head.html path-offset=PATH_OFFSET %}
-	
+<html lang="{{ page.language }}" prefix="og: http://ogp.me/ns#">
+{% assign PATH_OFFSET = '../../../' %}
+{% if page.language == 'en' then %}
+	{% include blog_head.html path-offset=PATH_OFFSET share-image="http://rafael.picanco.nom.br/media/blog/in-flagellis-clean-en.png"%}
+{% elsif page.language == 'pt-BR' %}
+	{% include blog_head.html path-offset=PATH_OFFSET share-image="http://rafael.picanco.nom.br/media/blog/in-flagellis-clean-pt-br.png"%}
+{% endif %}
 	<body>
-		
 		{% include blog_nav.html path-offset=PATH_OFFSET home-path="" %}
-
 		<!-- Page Header -->
 		<!-- Set your background image for this header on the line below.
-
 		style="background-image: url('{{ PATH_OFFSET }}media/blog/home-bg.jpg');"
-		
 		-->
 		<header class="intro-header" style="background-color:#153038;">
 			<div class="container">
