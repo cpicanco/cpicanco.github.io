@@ -12,8 +12,8 @@
 		<meta name="description" content="{{ description }}">
 	
 		<!-- Open Graph meta tags -->
-		<meta property="og:title" content="Rafael Picanço | Portfolio">
-		<meta property="og:type" content="portfolio">
+		<meta property="og:title" content="{{ page.title }}">
+		<meta property="og:type" content="blog">
 		<meta property="og:description" content="{{ description }}">
 		<meta property="og:url" content="http://rafael.picanco.nom.br{{ page.url }}">
 		<meta property="og:image" content="{{ include.share-image }}">
@@ -24,7 +24,7 @@
 
 		<!-- Twitter Card properties -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="My Portfolio">
+		<meta name="twitter:title" content="{{ page.title }}">
 		<meta name="twitter:creator" content="@crpicanco">
 		<meta name="twitter:description" content="{{ description }}">
 		<meta name="twitter:image" content="{{ include.share-image }}">
