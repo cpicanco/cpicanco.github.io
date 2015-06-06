@@ -16,3 +16,6 @@ defaults:
 kramdown:
   auto_ids: true
   input: GFM
+
+gems:
+  - jemoji

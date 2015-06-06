@@ -2,33 +2,36 @@
 	"folders":
 	[
 		{
+			"follow_symlinks": true,
 			"path": "/home/rafael/git/cpicanco.github.io"
 		}
 	],
 
 	"settings":
 	{
-	    "Jekyll":
-	    {
-	        "posts_path": "/home/rafael/git/cpicanco.github.io/_posts",
-	        "drafts_path": "/home/rafael/git/cpicanco.github.io/_drafts",
-	        "automatically_find_paths": false,
-	        "default_post_syntax": "Markdown",
-	        "default_post_layout": "Post",
-	        "default_post_categories": [],
-	        "default_post_tags": ["tag"],
-	        "default_post_published": false,
+		"Jekyll":
+		{
+			"posts_path": "/home/rafael/git/cpicanco.github.io/_posts",
+			"drafts_path": "/home/rafael/git/cpicanco.github.io/_drafts",
+			"automatically_find_paths": false,
+			"default_post_syntax": "Markdown",
+			"default_post_layout": "Post",
+			"default_post_categories": [],
+			"default_post_tags": "['tag1', 'tag2']",
+			"default_post_published": false,
 			"default_post_extras": {
+				"copyright": "<!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->",
+				"en": "/%Y/%m/%d/english-title.html",
+				"excerpt": "excerpt",
 				"image": "hello.jpg",
-				"language": "pt-BR",
-				"en": "/2015/05/31/hello-world.html",
-				"excerpt": "excerpt"
+				"language": "pt-BR"
+				
 			},
 			// A valid Python strftime string
 			"insert_date_format": "%Y-%m-%d",
 
 			// A valid Python strftime string
 			"insert_datetime_format": "%Y-%m-%d %H:%M:%S"
-	    }
+		}
 	}	
 }
