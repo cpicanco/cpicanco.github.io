@@ -1,11 +1,13 @@
 <!-- Head -->
- 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 	{% if page.language == 'en' then %}
 		{% capture description %}Thoughts on {{ page.excerpt }}, posted by {{ page.author }}, behavioral scientist enthusiastic programmer and freelance drummer.{% endcapture %}
 	{% elsif page.language == 'pt-BR' %}
 		{% capture description %}Pensamentos sobre {{ page.excerpt }}, postando por {{ page.author }}, cientista do comportamento, programador entusiasta e baterista freelance.{% endcapture %}
 	{% endif %}
 
+	{% capture LINK %}{{ site.url }}{{ page.url }}{% endcapture %}
+
+ 	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +17,7 @@
 		<meta property="og:title" content="{{ page.title }}">
 		<meta property="og:type" content="article">
 		<meta property="og:description" content="{{ description }}">
-		<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+		<meta property="og:url" content="{{ LINK | remove:'index.html' }}">
 		<meta property="og:image" content="{{ include.share-image }}">
 		<meta property="og:image:width" content="613">
 		<meta property="og:image:height" content="448">
@@ -38,7 +40,7 @@
 		<meta name="twitter:image:height" content="448">
 
 		<link rel="image_src" href="{{ include.share-image }}" >
-		<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+		<link rel="canonical" href="{{ LINK | remove:'index.html' }}">
 		<link rel="icon" href="{{ include.path-offset }}media/favicon.ico">
 
 		<title>{{ page.title }}</title>

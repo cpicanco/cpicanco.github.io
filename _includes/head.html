@@ -6,6 +6,8 @@
     {% assign description="Portfólio de {{ page.author }}, cientista do comportamento, programador entusiasta e baterista freelance." %}
 {% endif %}
 
+{% capture LINK %}{{ site.url }}{{ page.url }}{% endcapture %}
+
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# profile: http://ogp.me/ns/article#">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +19,7 @@
         <meta property="og:title" content="{{ page.title }}">
         <meta property="og:type" content="profile">
         <meta property="og:description" content="{{ description }}">
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+        <meta property="og:url" content="{{ LINK | remove:'index.html' }}">
         <meta property="og:image" content="{{ an_image }}">
         <meta property="og:image:width" content="850">
         <meta property="og:image:height" content="450">
@@ -42,7 +44,7 @@
         <title>{{ page.author }} | {{ include.title }}</title>
 
         <link rel="image_src" href="{{ an_image }}" >
-        <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+        <link rel="canonical" href="{{ LINK | remove:'index.html' }}">
         <link rel="icon" href="../../media/favicon.ico">
 
         <!-- Bootstrap core CSS -->
