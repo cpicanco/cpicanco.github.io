@@ -1,6 +1,7 @@
 ---
 title: Ela
 excerpt: amor platônico
+image: grand_canyon_sunrise_dark.jpg
 published: True
 tags: amor
 layout: Post
