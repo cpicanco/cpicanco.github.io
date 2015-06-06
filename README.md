@@ -1,4 +1,4 @@
-# cpicanco.github.io | rafael.picanco.nom.br
+# cpicanco.github.io | www.rafael.picanco.nom.br
 
 This site uses [Bootstrap](http://getbootstrap.com/)!
  - it is awesome!
@@ -7,4 +7,19 @@ And [Jekyll](http://jekyllrb.com/) too!
  - blog with Github markdown;
  - posts, layouts and includes examples;
  - simple multilanguange support;
- - Next step is to implement pagination;
+ - Open Graph for image and description preview on Facebook;
+ - Twitter Card from image and description preview on Twitter;
+ - Next step are:
+ 	- to optimize to search engines;
+    - to implement pagination;
+
+
+# License and copyright
+
+Following files, directories and their contents (directories, subdirectories and files) are copyright Carlos Rafael Fernandes Picanço and are not part of the Software. You must not reuse anything therein without my explicit permission:
+
+* _posts/
+* _site/
+* media/
+
+All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
