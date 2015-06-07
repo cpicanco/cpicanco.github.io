@@ -7,12 +7,16 @@ And [Jekyll](http://jekyllrb.com/) too!
  - blog with Github markdown;
  - posts, layouts and includes examples;
  - simple multilanguange support;
+ - Next Step are:
+ 	- to implement pagination;
+ 	- to improve tag system;
+
+Also some work was done with:
  - Open Graph for image and description preview on Facebook;
  - Twitter Card from image and description preview on Twitter;
  - Next steps are:
- 	- OSE;
-    - to implement pagination;
-
+ 	- Google OSE;
+    
 # License and copyright
 
 Following files, directories and their contents (including directories, subdirectories and files) are copyright Carlos Rafael Fernandes Picanço. You must not reuse anything therein without my explicit permission:
