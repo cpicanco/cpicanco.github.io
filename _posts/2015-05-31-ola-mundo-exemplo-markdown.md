@@ -173,7 +173,7 @@ ___
 [www.google.com](www.google.com)
 ```
 
-[www.google.com](www.google.com)
+[www.google.com](http://www.google.com)
 
 
 Html está sendo usado para images responsivas (respondem ao tamanho da tela redimensionando-se automaticamente):

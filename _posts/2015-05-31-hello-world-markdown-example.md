@@ -5,7 +5,7 @@ excerpt: markdown example
 tags: ['markdown']
 published: true
 language: en
-pt: 2015/06/06/ola-mundo-exemplo-markdown.html
+pt: /2015/06/06/ola-mundo-exemplo-markdown.html
 image: hello.jpg
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 ---
@@ -169,10 +169,10 @@ ___
 **Links**
 
 ```
-[www.google.com](www.google.com)
+[www.google.com](http://www.google.com)
 ```
 
-[www.google.com](www.google.com)
+[www.google.com](http://www.google.com)
 
 
 Html is used for responsive images:
@@ -182,7 +182,7 @@ Html is used for responsive images:
 ```
 <p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/fpe/fpe.jpeg" alt="Image" /></p>
 
-You could use `![alt](link)` to link (unresponsive) images as well.
+You could use `![alt](http://link)` to link (unresponsive) images as well.
 
 ___
 ___
