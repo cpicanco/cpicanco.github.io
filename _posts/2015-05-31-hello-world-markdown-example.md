@@ -5,7 +5,7 @@ excerpt: markdown example
 tags: ['markdown']
 published: true
 language: en
-pt: /2015/06/06/ola-mundo-exemplo-markdown.html
+pt: /2015/05/31/ola-mundo-exemplo-markdown.html
 image: hello.jpg
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 ---
