@@ -3,17 +3,21 @@
 This site uses [Bootstrap](http://getbootstrap.com/)!
  - it is awesome!
  - Blog is a modified version of the [Clean Blog Template](http://startbootstrap.com/template-overviews/clean-blog/) 
- - Portfolio is a modified version of the following [examples](http://getbootstrap.com/getting-started/#examples):
+ - Portfolio is a modified version of the [Scrolling Nav Template](http://startbootstrap.com/template-overviews/scrolling-nav/) and the following [examples](http://getbootstrap.com/getting-started/#examples):
  	- Cover;
  	- Starter Template;
+ 	- Sticky footer;
 
 And [Jekyll](http://jekyllrb.com/) too!
- - blog with Github markdown;
+ - Emoji;
  - posts, layouts and includes examples;
- - simple multilanguange support;
- - Next Step are:
+ - post with Github markdown;
+ - boolean multilanguange support (en/pt-br);
+ - Next Steps are:
  	- to implement pagination;
  	- to improve tag system;
+
+Some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
 Also some work was done with:
  - Open Graph for image and description preview on Facebook;
