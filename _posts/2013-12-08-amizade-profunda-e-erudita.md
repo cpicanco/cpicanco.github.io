@@ -1,10 +1,11 @@
 ---
+layout: "Post"
 title: O lado profundo e erudito de uma amizade.
 excerpt: machismo e Lulu app
-published: True
-tags: machismo cotidiano
-layout: Post
+tags: ['machismo', 'cotidiano']
+published: true
 language: pt-BR
+copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 ---
 > "E ai viado?"
 

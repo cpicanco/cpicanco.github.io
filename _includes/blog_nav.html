@@ -17,8 +17,7 @@
 						<a class="navbar-brand" href="{{ include.path-offset }}portfolio/en/projects.html">&middot;&#32;Portfolio</a>
 					{% elsif page.language == 'pt-BR' %}
 						<a class="navbar-brand" href="{{ include.path-offset }}portfolio/pt-br/projects.html">&middot;&#32;Portfólio</a>
-					{% endif %}
-					
+					{% endif %}		
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -26,8 +25,8 @@
 					<ul class="nav navbar-nav navbar-right">
 						{% if page.language == 'en' then %}
 							{% if page.layout == 'Post' then %}
-								{% if page.pt-br != null %}
-									<li><a href="{{ site.url }}{{ page.pt-br }}">Português</a></li> 
+								{% if page.pt != null %}
+									<li><a href="{{ site.url }}{{ page.pt }}">Português</a></li> 
 								{% endif %}
 							{% elsif page.layout == 'InitialPage' then %}
 								<li><a href="../pt-br/">Português</a></li>

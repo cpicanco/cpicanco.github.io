@@ -1,12 +1,12 @@
 ---
+layout: "Post"
 title: In flagellis potum fellis
 excerpt: santa ignorância
-published: True
-tags: tradução musica
-layout: Post
+tags: ['tradução', 'música']
+published: true
 language: pt-BR
+copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 ---
-
 > [Josquin Des Prez](http://en.wikipedia.org/wiki/Josquin_des_Prez), 1440-1521. 
 
 In flagellis potum fellis

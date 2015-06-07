@@ -9,7 +9,7 @@ And [Jekyll](http://jekyllrb.com/) too!
  - simple multilanguange support;
  - Open Graph for image and description preview on Facebook;
  - Twitter Card from image and description preview on Twitter;
- - Next step are:
+ - Next steps are:
  	- OSE;
     - to implement pagination;
 

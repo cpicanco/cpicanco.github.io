@@ -16,6 +16,16 @@ p {
 p a {
   text-decoration: none;
 }
+
+article p {
+  text-indent: 5%;
+  text-align: justify;
+}
+
+article p a {
+  color: #0085a1;
+}
+
 h1,
 h2,
 h3,
