@@ -1,0 +1,20 @@
+<!-- Social Buttons -->
+                        <ul class="list-inline">
+                        {% if page.language == 'en' then %}
+                            <li>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}, from {{ page.author }}'s blog" data-counturl="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                            </li>
+
+                            <li id="fb-root">
+                                <a class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, from {{ page.author }}'s blog" data-counturl="{{ site.url }}{{ page.url }}">Facebook</a>
+                            </li>
+                        {% elsif page.language == 'pt-BR' %}
+                            <li>
+                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}, do blog do {{ page.author }}" data-counturl="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                            </li>
+
+                            <li id="fb-root">
+                                <a class="fb-share-button" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-text="{{ page.title }}, do blog do {{ page.author }}" data-counturl="{{ site.url }}{{ page.url }}">Facebook</a>
+                            </li>
+                        {% endif %}
+                        </ul>
