@@ -17,7 +17,7 @@ Mas por sorte eu mudei :smile:.
 
 ## Porém **hoje** eu não quero mais
 
-Sim, por pura sorte eu começei a pensar seriamente e friamente no assunto ao assitir uma série de três curtos vídeos chamada `Filhos` no canal [Clarion de Laffalot](https://www.youtube.com/watch?v=2Rw7-NK8xVg&list=PLAAC92EC3CC4E253B). Nessa série o assim chamado `Clarion` elenca os motivos que orientaram sua decisão. Talvez eu nunca tivesse parado para pensar sobre os prós e contras de tal decisão sem essa série, e faço questão de deixar meus agradecimentos ao autor da série. Pois bem, o que faço agora é apenas elencar os meus próprios motivos:
+Sim, por pura sorte. Eu começei a pensar seriamente e friamente no assunto ao assitir uma série de três curtos vídeos chamada `Filhos` no canal [Clarion de Laffalot](https://www.youtube.com/watch?v=2Rw7-NK8xVg&list=PLAAC92EC3CC4E253B). Nessa série, o assim chamado `Clarion` elenca os motivos que orientaram sua tomada de decisão. Talvez eu nunca tivesse parado para pensar sobre os prós e contras de tal decisão sem essa série e faço questão de deixar aqui meus agradecimentos ao autor. Muito obrigado Clarion, ou seja lá que você for. Pois bem, o que farei a seguir é apenas elencar os meus próprios motivos e concluir brevemente minha decisão.
 
 ## Prós e Contras
 
@@ -49,6 +49,6 @@ Sim, por pura sorte eu começei a pensar seriamente e friamente no assunto ao as
 
 ## A decisão
 
-Embora eu não tenha dado tantos detalhes sobre o `meu atual padrão de vida`, você pode confiar em mim, eu pensei sobre ele. Aliás, estou em melhor posição do que você para isso. Assim, embora não os tenha apresentado, simplesmente por não me sentir confortável para tanto, eu pesei os prós e contras e tomei a decisão de não ter filhos. Não se preocupe, essa decisão foi minha, e não sua, e caso você esteja pensando, eu não estou sugerindo que você tome a mesma decisão que eu. Somente você pode pesar os prós e contras considerando sua própria vida. Fica a dica.
+Embora eu não tenha dado tantos detalhes sobre o `meu atual padrão de vida`, você pode confiar em mim, eu pensei sobre ele. Aliás, estou em uma posição melhor do que muitos outros para isso. Assim, embora não os tenha apresentado, simplesmente por não me sentir confortável para tanto, eu pesei os prós e contras e tomei a decisão de não ter filhos. Não se preocupe, essa decisão foi minha, e não sua, e caso você esteja pensando, eu não estou sugerindo que você tome a mesma decisão que eu. Somente você pode pesar os prós e contras considerando sua própria vida.
 
-Eu estaria sendo irresponsável e inconsequente se não fizesse dessa maneira.
+Eu estaria sendo irresponsável e inconsequente se não fizesse dessa maneira. Fica a dica.
