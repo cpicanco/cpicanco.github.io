@@ -75,27 +75,26 @@
                         {{ page.date | date: "%Y" }}.
                         </span>
                     {% endif %}
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">         
+                        <hr>
                         {% include social_buttons.html %}
-                        <ul class="pager pull-left">
-                            <li class="next">
-                                {% if page.language == 'en' then %}
-                                    <a href="{{ PAGE_PATH }}">HOME</a>
-                                {% elsif page.language == 'pt-BR' %}
-                                    <a href="{{ PAGE_PATH }}">INÍCIO</a>
-                                {% endif %}
-                            </li>
-                        </ul> 
-                    </div>    
-                </div>
+                        <hr>
+                        <div class="text-center">         
+                        {% if page.language == 'en' then %}
+                            <a class="btn btn-default btn-block" href="{{ PAGE_PATH }}">HOME</a>
+                        {% elsif page.language == 'pt-BR' %}
+                            <a class="btn btn-default btn-block" href="{{ PAGE_PATH }}">LEIA MAIS</a>
+                        {% endif %}
+                        </div>
+                    </div>
+                </div>          
             </div>
         </article>
-
+        
         <hr>
+
+        <div class="container">
+            {% include social_disqus_commentaries.html %}
+        </div>
 
         {% include blog_footer.html %}
 
