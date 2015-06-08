@@ -26,7 +26,7 @@
 						{% if page.language == 'en' then %}
 							{% if page.layout == 'Post' then %}
 								{% if page.pt != null %}
-									<li><a href="{{ site.url }}{{ page.pt }}">Português</a></li> 
+									<li><a href="{{ include.path-offset }}{{ page.pt }}">Português</a></li> 
 								{% endif %}
 							{% elsif page.layout == 'InitialPage' then %}
 								<li><a href="../pt-br/">Português</a></li>
@@ -38,7 +38,7 @@
 						{% elsif page.language == 'pt-BR' %}
 							{% if page.layout == 'Post' then %}
 								{% if page.en != null %}
-									<li><a href="{{ site.url }}{{ page.en }}">English</a></li> 
+									<li><a href="{{ include.path-offset }}{{ page.en }}">English</a></li> 
 								{% endif %}
 							{% elsif page.layout == 'InitialPage' then %}
 								<li><a href="../en/">English</a></li>
