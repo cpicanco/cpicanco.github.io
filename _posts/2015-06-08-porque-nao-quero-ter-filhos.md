@@ -41,7 +41,7 @@ Sim, por pura sorte. Eu começei a pensar seriamente e friamente no assunto ao a
 
 	- **Pró**: Menos uma pessoa, e seus descendentes também, num mundo extremamente populoso.
 
-1. Há a possibilidade de adotar uma criança, futuramente.
+1. **Há a possibilidade de adotar uma criança, futuramente**
 	- `Contra`: Eu não transmitirei minha informação genética adiante.
 
 	- **Pró**: Eu estaria, com sorte, ajudando uma pessoa que realmente precisa.
