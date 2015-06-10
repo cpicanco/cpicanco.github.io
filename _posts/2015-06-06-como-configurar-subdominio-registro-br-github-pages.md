@@ -33,7 +33,7 @@ Na sua página no Github (ou por meio de comandos `git` em um terminal), caso ai
 
 ### Passo 2
 
-Adicione apenas uma linha nessa arquivo com o `sub.dominío.exemplo.br` de sua preferência. O subdomínio que eu escolho, por exemplo, foi `www.rafael.picanco.nom.br`. Caso ainda tenha dúvidas, [siga as instruções](https://help.github.com/articles/adding-a-cname-file-to-your-repository/) do Github Pages.
+Adicione apenas uma linha nesse arquivo com o `sub.dominío.exemplo.br` de sua preferência. O subdomínio que eu escolhi, por exemplo, foi `www.rafael.picanco.nom.br`. Caso ainda tenha dúvidas, [siga as instruções](https://help.github.com/articles/adding-a-cname-file-to-your-repository/) do Github Pages. O blog do [Willian Justen](http://willianjusten.com.br/) também pode ajudar.
 
 ### Passo 3
 
