@@ -14,12 +14,13 @@ And [Jekyll](http://jekyllrb.com/) too!
  - post with Github markdown;
  - boolean multilanguange support (en/pt-br);
  - Next Steps are:
- 	- to implement pagination;
- 	- to improve tag system;
+ 	- to implement pagination or infinite scroll, I am not sure;
+ 	- to improve the tag system;
 
 Some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
 Also some work was done with:
+ - leave comments with [Disqus](https://disqus.com/);
  - Open Graph for image and description preview on Facebook;
  - Twitter Card from image and description preview on Twitter;
  - Next steps are:
