@@ -2,7 +2,7 @@
 layout: "Post"
 title: Olá mundo. 
 excerpt: exemplo da escrita em markdown
-tags: ['markdown']
+tags: ['web design', 'markdown']
 published: True
 language: pt-BR
 en: /2015/05/31/hello-world-markdown-example.html

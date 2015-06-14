@@ -3,7 +3,7 @@ layout: "Post"
 title: 'Configurando o Registro.br para o Github Pages.'
 excerpt: 'como configurar um subdomínio do Registro.br para o Github Pages'
 published: true
-tags: ['web design', 'passo a passo', 'Registro.br', 'Github Pages']
+tags: ['passo a passo', 'web design']
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 ---

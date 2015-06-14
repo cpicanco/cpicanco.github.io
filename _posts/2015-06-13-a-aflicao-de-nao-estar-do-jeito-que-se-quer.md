@@ -2,7 +2,7 @@
 layout: Post
 title: Todo errado
 excerpt: a aflição de não estar do jeito que se quer
-tags: ['escatologia', 'sem noção', 'heptassílabo']
+tags: ['poema', 'escatologia', 'heptassílabo']
 published: True
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->

@@ -2,7 +2,7 @@
 layout: Post 
 title: 'Informatização e Ciência'
 excerpt: habilidades úteis para ganhar tempo na atividade científica
-tags: ['ciência', 'programação', 'tecnologia', 'automação']
+tags: ['ciência', 'programação', 'tecnologia']
 published: True
 image: schedules_of_reinforcement_class_pascal.jpg
 language: pt-BR

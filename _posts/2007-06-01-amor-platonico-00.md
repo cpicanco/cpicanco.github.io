@@ -2,7 +2,7 @@
 layout: "Post"
 title: Ela
 excerpt: amor platônico
-tags: ['amor']
+tags: ['poema', 'amor']
 published: true
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->

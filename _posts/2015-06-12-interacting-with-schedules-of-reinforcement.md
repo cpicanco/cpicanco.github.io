@@ -2,7 +2,7 @@
 layout: Post
 title: Interacting with schedules of reinforcement
 excerpt: a prototype for teaching schedules of reinforcement
-tags: ['software', 'prototype']
+tags: ['science', 'software', 'programming']
 published: True
 language: en
 pt: 2015/06/12/interagindo-com-esquemas-de-reforcamento.html

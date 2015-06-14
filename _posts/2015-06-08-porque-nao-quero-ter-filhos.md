@@ -2,7 +2,7 @@
 layout: Post
 title: Por que não quero ter filhos?
 excerpt: sobre a minha decisão de não querer conceber mais uma vida
-tags: ['familia', 'vida']
+tags: ['pergunta', 'familia', 'vida']
 published: True
 image: visibleearth_nasa_gov_eartg_lights.jpg
 language: pt-BR

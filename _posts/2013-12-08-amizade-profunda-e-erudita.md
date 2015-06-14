@@ -2,7 +2,7 @@
 layout: "Post"
 title: O lado profundo e erudito de uma amizade.
 excerpt: machismo e Lulu app
-tags: ['machismo', 'cotidiano']
+tags: ['diálogo', 'machismo', 'cotidiano']
 published: true
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->

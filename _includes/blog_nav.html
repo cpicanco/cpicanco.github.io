@@ -30,6 +30,11 @@
 								{% endif %}
 							{% elsif page.layout == 'InitialPage' then %}
 								<li><a href="../pt-br/">Português</a></li>
+
+							{% elsif page.layout == 'Tags' then %}
+								<li><a href="#">See All Categories</a></li>
+								<li><a href="../../pt-br/tags/">Português</a></li>
+
 							{% endif %}
 
 							<li><a href="{{ include.home-path }}">Home</a></li>
@@ -42,6 +47,11 @@
 								{% endif %}
 							{% elsif page.layout == 'InitialPage' then %}
 								<li><a href="../en/">English</a></li>
+
+							{% elsif page.layout == 'Tags' then %}
+								<li><a href="#">Ver Todas as Categorias</a></li>
+								<li><a href="../../en/tags/">English</a></li>
+
 							{% endif %}
 							<li><a href="{{ include.home-path }}">Início</a></li>
 							<li><a href="#about">Sobre</a></li>

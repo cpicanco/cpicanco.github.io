@@ -2,7 +2,7 @@
 layout: Post
 title: Interagindo com Esquemas de Reforçamento
 excerpt: um protótipo para o ensino de esquemas de reforçamento
-tags: ['software', 'protótipo']
+tags: ['ciência', 'software', 'programação']
 published: True
 language: pt-BR
 en: 2015/06/12/interacting-with-schedules-of-reinforcement.html
