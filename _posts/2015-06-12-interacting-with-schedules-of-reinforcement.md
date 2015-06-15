@@ -10,7 +10,7 @@ copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
 image: rat-press-bar-skinner-box.jpg
 ---
 
-Some time ago I wrote a simple software called *Schedules of Reinforcement* for testing the implementation of some schedules. This software draws a cummulative record of the user's responses in real time. The *operandum* is a panel that receives clicks. Some people suggested to me this software could be used to teach schedules of reinforcement in an interactive fashion. Then, I am releasing it to you as a prototype. Download it [HERE](https://github.com/cpicanco/validation_project/releases/download/v0.0.2.2/schedules_test.exe) and fell free to leave suggestions in the commentaries. No instalation is required. Further, the [source](https://github.com/cpicanco/validation_project/tree/master/tests/schedules) is available under GPL 3. Until now, the following schedules were implemented:
+Some time ago I wrote a simple software called *Schedules of Reinforcement* for testing the implementation of some schedules. This software draws a cumulative record of the user's responses in real time. The *operandum* is a panel that receives clicks. Some people suggested to me this software could be used to teach schedules of reinforcement in an interactive fashion. Then, I am releasing it to you as a prototype. Download it [HERE](https://github.com/cpicanco/validation_project/releases/download/v0.0.2.2/schedules_test.exe) and fell free to leave suggestions in the commentaries. No instalation is required. Further, the [source](https://github.com/cpicanco/validation_project/tree/master/tests/schedules) is available under GPL 3. Until now, the following schedules were implemented:
 
 - **`EXT`**, extinction
 	- no consequences programmed.
