@@ -8,4 +8,6 @@ http://www.rafael.picanco.nom.br/portfolio/pt-br/contact.html
 http://www.rafael.picanco.nom.br/portfolio/pt-br/projects.html
 http://www.rafael.picanco.nom.br/portfolio/pt-br/publications.html
 http://www.rafael.picanco.nom.br/blog/en/index.html
+http://www.rafael.picanco.nom.br/blog/en/tags/index.html
 http://www.rafael.picanco.nom.br/blog/pt-br/index.html
+http://www.rafael.picanco.nom.br/blog/pt-br/tags/index.html
