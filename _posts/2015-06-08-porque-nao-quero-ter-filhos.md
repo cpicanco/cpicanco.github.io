@@ -17,7 +17,7 @@ Mas por sorte eu mudei :smile:.
 
 ## Porém **hoje** eu não quero mais
 
-Sim, por pura sorte. Eu começei a pensar seriamente e friamente no assunto ao assitir uma série de três curtos vídeos chamada `Filhos` no canal [Clarion de Laffalot](https://www.youtube.com/watch?v=2Rw7-NK8xVg&list=PLAAC92EC3CC4E253B). Nessa série, o assim chamado `Clarion` elenca os motivos que orientaram sua tomada de decisão. Talvez eu nunca tivesse parado para pensar sobre os prós e contras de tal decisão sem essa série e faço questão de deixar aqui meus agradecimentos ao autor. Muito obrigado Clarion, ou seja lá que você for. Pois bem, o que farei a seguir é apenas elencar os meus próprios motivos e concluir brevemente minha decisão.
+Sim, por pura sorte. Eu começei a pensar seriamente e friamente no assunto ao assitir uma série de três curtos vídeos chamada `Filhos` no canal [Clarion de Laffalot](https://www.youtube.com/watch?v=2Rw7-NK8xVg&list=PLAAC92EC3CC4E253B). Nessa série, o assim chamado `Clarion` elenca os motivos que orientaram sua tomada de decisão. Talvez eu nunca tivesse parado para pensar sobre os prós e contras de tal decisão sem essa série e faço questão de deixar aqui meus agradecimentos ao autor. Muito obrigado Clarion, ou seja lá quem você for. Pois bem, o que farei a seguir é apenas elencar os meus próprios motivos e concluir brevemente minha decisão.
 
 ## Prós e Contras
 
