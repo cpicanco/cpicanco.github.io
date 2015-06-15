@@ -1,0 +1,7 @@
+User-agent: *
+
+Allow: /
+
+Sitemap:http://www.rafael.picanco.nom.br/sitemap.txt
+
+Sitemap:http://www.rafael.picanco.nom.br/archive.txt
