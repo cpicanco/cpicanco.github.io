@@ -42,11 +42,11 @@ Com certeza, conhecer *sobre* o sentir não é necessário e nem suficiente para
 
 > “[...] Sobre o amor. Numa crônica maravilhosa sobre o amor, Rubem Alves, cita vários autores, entre eles: Kierkegaard, Santo Agostinho e Drummond. Kierkergaard, segundo Rubem, achava um absurdo se pedir aos amantes explicações para o seu próprio amor. A esta pergunta eles só possuem uma resposta: o silêncio. Agora se fosse pedir para falar sobre, tudo bem. Mas falar sobre não é explicar. Falar é fácil. Explicar é que é fogo! Parece que amor só pode existir enquanto felicidade a partir da ignorância das suas razões. Santo Agostinho questiona: ‘Que é que eu amo quando amo a Deus?’ (etcha perguntinha, hein?). Imaginem se um apaixonado fizesse essa pergunta à sua amada: ‘Que é que eu amo quando te amo?’. Seria talvez, o fim de uma estória de amor. Pois essa pergunta revela um segredo que nenhum amante pode suportar: que ao amar a amada, o amante está amando uma outra coisa que não é ela. Nas palavras de Hermann Hesse: ‘O que amamos é sempre um símbolo’”. (Cyber blue, 2008).
 
-De fato, o conteúdo de obras literárias, como aquelas citadas no excerto anterior, paressem indicar que sim, pode haver uma cultura do segredo fazendo parte do cotidiano de cada um. Mas que tipos de problemas emgergem a partir dessa noção para os professionais que lidam com esse tipo de comportamento? Finaliza-se enumerando algumas possíveis questões:
+De fato, o conteúdo de obras literárias, como aquelas citadas no excerto anterior, paressem indicar que sim, pode haver uma cultura do segredo fazendo parte do cotidiano de cada um. Mas que tipos de problemas emergem a partir dessa noção para os professionais que lidam com esse tipo de comportamento? Finaliza-se enumerando algumas possíveis questões:
 
-1. Visto que analisar comportamento é descrevê-lo em termos funcionais, o quê constitui um conhecimento *sobre* o comportamento, como exercer a ética quando da atuação profissional com o público pautada em análises desse tipo?
+1. Visto que analisar comportamento é descrevê-lo em termos funcionais, e isso constitui um conhecimento *sobre* o comportamento, como exercer a ética quando da atuação profissional com o público pautada em análises desse tipo?
 
-1. Cognições e Emoções podem ser receber a mesma problematização?
+1. Cognições e Emoções podem receber a mesma problematização?
 
 1. A maneira como a ciência era tratada, descrita em termos do método, e as mudanças realizadas pelo modelo de ciência proposto por Skinner (ver Dittrich, 2004), podem ser tomadas como indicativos de uma preocupação com as implicações de uma cultura de segredos na atividade científica?
 
