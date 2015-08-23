@@ -43,11 +43,11 @@ Quais seriam as consequências para a ciência se realmente houver o imutável n
 
 Antes de prosseguir, convém declarar alguns os termos.
 
-Considere, no campo dos números inteiros, um sistema numérico ou pictográfico de [`base-n` sendo `n > 0`](http://mathworld.wolfram.com/Base.html)(mais detalhes [no math.stackexchange](http://math.stackexchange.com/questions/371972/what-would-base-1-be)), cujo(s) elemento(s) chamo de evento(s). Considere um `universo-u`, sendo `u > 1`, como o conjunto de todas as sequências e combinações possíveis do(s) evento(s) do sistema de `base-n`. Considere uma variável `E`, de tal forma que `E` sempre será igual a um evento, sequência ou combinação de eventos possível do `universo-u`. Conta-se uma mudança a cada vez que a variável `E` assume um valor diferente do anterior. 
+Considere, no campo dos números inteiros, um sistema numérico ou pictográfico de `base-n` sendo `n > 0` (mais detalhes no [mathworld]((http://mathworld.wolfram.com/Base.html)) e [no math.stackexchange](http://math.stackexchange.com/questions/371972/what-would-base-1-be)), cujo(s) elemento(s) chamo de evento(s). Considere um `universo-u`, sendo `u > 1`, como o conjunto de todas as sequências e combinações possíveis do(s) evento(s) do sistema de `base-n`. Considere uma variável `E`, de tal forma que `E` sempre será igual a um evento, sequência ou combinação de eventos possível do `universo-u`. Conta-se uma mudança a cada vez que a variável `E` assume um valor diferente do anterior. 
 
 Tal abstração, mesmo amarrada matematicamente, pode ser aplicada nas ciências que lidam com problemas qualitativos, pois elas possuem uma dimensão matemática quando sistemas categóricos com `n > 0` e `u > 1` são utilizados, seja a partir de uma única categoria, com dois eventos variando dentro dessa categoria, ou a partir de duas categorias, com um único evento variando entre elas.
 
-Dessa forma, reservo o termo "o ser", para toda mudança apreendida por meio de tal pensamento abtrato. Adicionalmente, convém reservar `ente` para **todo o mundo**, **todo mundo** ou **tudo no mundo** passível de tal abstração:
+Dessa forma, reservo o termo "o ser", para toda mudança apreendida por meio de tal pensamento abstrato. Adicionalmente, convém reservar `ente` para **todo o mundo**, **todo mundo** ou **tudo no mundo** passível de tal abstração:
 
 - seja no nível da pessoa (ou pessoas), do comportamento público ao privado, do andar à experiência sensível, do pensar lógico à imaginação livre, da base biológica e evolutiva ao processo fenomeńológico e irredutível;
 
