@@ -43,10 +43,10 @@
 		<!-- Main Content -->
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="infinite-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 			{% for post in site.posts %}
 				{% if post.language == page.language then %}
-					<div class="post-preview">
+					<div class="infinite-item post-preview">
 						<a href="{{ post.url }}">
 							<h2 class="post-title">
 								{{ post.title }}
@@ -109,9 +109,9 @@
 						</li>
 					</ul>
 				</div>
+				<a class="infinite-more-link" href="../pt-br/">More</a>
 			</div>
 		</div>
-
 		<hr>
 
 		{% include blog_footer.html %}
@@ -122,5 +122,16 @@
 
 		<!-- Custom Theme JavaScript -->
 		<script src="{{ PATH_OFFSET }}js/clean-blog.min.js"></script> 
+
+		<!-- Infinite Scroll -->
+		<script src="{{ PATH_OFFSET }}js/jquery.waypoints.min.js"></script>
+		<script src="{{ PATH_OFFSET }}js/infinite.min.js"></script>
+
+		<script type="text/javascript">
+		    var infinite = new Waypoint.Infinite({
+		      element: $('.infinite-container')[0]
+		    })
+		</script>
+
 	</body>
 </html>
