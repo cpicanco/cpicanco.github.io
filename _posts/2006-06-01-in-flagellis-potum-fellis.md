@@ -3,7 +3,6 @@ layout: "Post"
 title: In flagellis potum fellis
 excerpt: santa ignorância
 tags: ['poema', 'tradução', 'música']
-published: true
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 ---

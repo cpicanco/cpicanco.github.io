@@ -3,7 +3,6 @@ layout: "Post"
 title: Hello World.
 excerpt: markdown example
 tags: ['web design', 'markdown']
-published: true
 language: en
 pt: /2015/05/31/ola-mundo-exemplo-markdown.html
 image: hello.jpg

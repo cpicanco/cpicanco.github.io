@@ -3,9 +3,8 @@ layout: Post
 title: Interacting with schedules of reinforcement
 excerpt: a prototype for teaching schedules of reinforcement
 tags: ['science', 'software', 'programming']
-published: True
 language: en
-pt: 2015/06/12/interagindo-com-esquemas-de-reforcamento.html
+pt: /2015/06/12/interagindo-com-esquemas-de-reforcamento.html
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
 image: rat-press-bar-skinner-box.jpg
 ---

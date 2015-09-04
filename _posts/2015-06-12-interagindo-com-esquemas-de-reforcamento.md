@@ -3,9 +3,8 @@ layout: Post
 title: Interagindo com Esquemas de Reforçamento
 excerpt: um protótipo para o ensino de esquemas de reforçamento
 tags: ['ciência', 'software', 'programação']
-published: True
 language: pt-BR
-en: 2015/06/12/interacting-with-schedules-of-reinforcement.html
+en: /2015/06/12/interacting-with-schedules-of-reinforcement.html
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
 image: rat-press-bar-skinner-box.jpg
 ---

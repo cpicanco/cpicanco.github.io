@@ -2,7 +2,6 @@
 layout: Post
 title: deus existe e Deus também
 tags: ['fé']
-published: True
 excerpt: filosofia de boteco e o todo poderoso
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->

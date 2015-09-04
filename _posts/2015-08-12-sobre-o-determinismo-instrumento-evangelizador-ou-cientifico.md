@@ -2,7 +2,6 @@
 layout: Post
 title: 'Sobre o determinismo: instrumento evangelizador ou científico?'
 tags: ['ciência', 'determinismo', 'diálogo']
-published: True
 excerpt: filosofia de boteco
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
