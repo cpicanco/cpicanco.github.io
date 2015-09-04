@@ -1,17 +1,48 @@
+mpaginate: 3
+container: []
 url: http://www.rafael.picanco.nom.br
-exclude: ['README.md', 'LICENSE.md', 'CNAME', 'Gemfile', 'Gemfile.lock', 'cpicanco.github.io.sublime-project']
+exclude: ['.gitignore','README.md', 'LICENSE.md', 'CNAME', 'Gemfile', 'Gemfile.lock', 'cpicanco.github.io.sublime-project','cpicanco.github.io.sublime-workspace']
 defaults:
-  -
-    scope:
-      path: "blog"
-    values:
-      layout: "InitialPage"
-
   -
     scope:
       path: ""
     values:
       author: "Rafael Picanço"
+
+  -
+    scope:
+      path: "blog/pt-br"
+    values:
+      language: pt-BR
+
+  -
+    scope:
+      path: "portfolio/pt-br"
+    values:
+      language: pt-BR
+  -
+    scope:
+      path: "blog/en"
+    values:
+      language: en
+
+  -
+    scope:
+      path: "portfolio/en"
+    values:
+      language: en
+
+  -
+    scope:
+      path: "blog/en/page"
+    values:
+      layout: Page
+
+  -
+    scope:
+      path: "blog/pt-br/page"
+    values:
+      layout: Page
 
 kramdown:
   auto_ids: true

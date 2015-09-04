@@ -1,57 +1,39 @@
 <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
-
 {% if page.language == 'en' then %}
 	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
-	{% include blog_head.html share-image=SHARE_IMAGE %}
 {% elsif page.language == 'pt-BR' %}
 	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
-	{% include blog_head.html share-image=SHARE_IMAGE %}
 {% endif %}
+	{% include blog_head.html share-image=SHARE_IMAGE %}
 	<body>
-		{% include blog_nav.html home-path="#" %}
-		<!-- Page Header -->
-		<!-- Set your background image for this header on the line below.
-		style="background-image: url('/media/blog/home-bg.jpg');"
-		-->
-		<header class="intro-header" style="background-color:#153038;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-						<div class="site-heading">
-							<h1>{{ page.title }}</h1>
-							<hr class="small">
-							<span class="subheading">{{ page.content }}</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<!-- Social Media Widgets -->
-		<div class="container">
-			<div class="row">
-				<div class="text-center">
-					{% include social_buttons.html %}
-				</div>
-			</div>
-		</div>
-
-		<hr>
-
 		<!-- Main Content -->
-		{% assign filtered_posts = site.container %}
-		{% for post in site.posts %}
-			{% if post.language == page.language then %}
-				{% assign filtered_posts = filtered_posts | push: post %}
-			{% endif %}
-		{% endfor %}
-
 		<div class="container">
 			<div class="row">
 				<div class="infinite-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			{% for post in filtered_posts limit:site.mpaginate %}
+			{% assign posts_count = site.posts | where: "language",page.language | size  %}
+			{% assign OFFSET = site.mpaginate | times:page.index %}
+			{% assign next_pag = page.index | plus:1 %}
+			{% assign mod_pag = posts_count | modulo:site.mpaginate %}
+			{% assign pages_count = posts_count | divided_by:site.mpaginate | plus:mod_pag %}
+
+			{% if site.mpaginate < pages_count %}{% assign last_pag = pages_count | minus:1 %}
+			{% else %}{% assign last_pag = pages_count %}{% endif%}
+
+			{% if page.index == last_pag then %}{% assign next_pag = 'none' %}{% endif %}	
+
+			Language={{ page.language }}, PostsCount={{ posts_count }}, OFFSET={{ OFFSET }}
+			PagesCount={{ pages_count }}, NextPage={{ next_pag }}, LastPage={{ last_pag }}
+
+			{% assign filtered_posts = site.container %}
+			{% for post in site.posts %}
+				{% if post.language == page.language then %}
+					{% assign filtered_posts = filtered_posts | push: post %}
+				{% endif %}
+			{% endfor %}
+
+			{% for post in filtered_posts limit:site.mpaginate offset:OFFSET %}
 					<div class="infinite-item post-preview">
 						<a href="{{ post.url }}">
 							<h2 class="post-title">
@@ -86,8 +68,7 @@
 	                        {{ post.date | date: "%Y" }}.
 							</p>
 						{% endif %}
-					
-					
+									
 					<div class="row">
 							<div class="col-lg-8 col-lg col-md-10">
 								<ul class="list-inline">
@@ -103,20 +84,16 @@
 					<hr>
 			{% endfor %}
 				</div>
-				<a class="infinite-more-link" href="/blog/{{ page.language | downcase }}/page/1/"></a>
+				<!-- Infinite More Link -->		
+			{% if page.index == last_pag then %}
+			{% else %}
+				<a class="infinite-more-link" href="/blog/{{ page.language | downcase }}/page/{{ next_pag }}/">Next</a>
+			{% endif %}	
 			</div>
 		</div>
 		<hr>
 
-		{% include blog_footer.html %}
-		
 		{% include global_scripts.html %}
-		
-		{% include social_scripts.html %}
-
-		<!-- Custom Theme JavaScript -->
-		<script src="/js/clean-blog.min.js"></script> 
-
 		<!-- Infinite Scroll -->
 		<script src="/js/jquery.waypoints.min.js"></script>
 		<script src="/js/infinite.min.js"></script>
