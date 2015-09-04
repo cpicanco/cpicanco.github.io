@@ -2,10 +2,12 @@
 ---
 <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 {% capture description %}
-Hi, I am a behavioral scientist, an enthusiastic programmer and a freelance drummer. Welcome to my portfolio.
+Hi, I am a behavioral scientist, an enthusiastic programmer and a freelance drummer. Welcome to my Blog.
 
-Olá, eu sou um cientista do comportamento, um programador entusiasta e um baterista freelance. Bem vindo ao meu portfólio.
+Olá, eu sou um cientista do comportamento, um programador entusiasta e um baterista freelance. Bem vindo ao meu Blog.
 {% endcapture %}
+
+{% assign PATH_OFFSET = '../' %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,38 +20,38 @@ Olá, eu sou um cientista do comportamento, um programador entusiasta e um bater
 		<meta name="author" content="{{ page.author }}">
 
 		<!-- Open Graph/Facebook meta tags -->
-		<meta property="og:title" content="{{ page.author }} | Portfolio">
+		<meta property="og:title" content="{{ page.author }} | Blog">
 		<meta property="og:type" content="profile">
 		<meta property="og:description" content="{{ description }}">
-		<meta property="og:url" content="{{ site.url }}/portfolio/">
-		<meta property="og:image" content="{{ site.url }}/media/rafael-picanco-portfolio.jpg">
+		<meta property="og:url" content="{{ site.url }}/blog/">
+		<meta property="og:image" content="{{ site.url }}/media/in-flagellis-clean-en.png">
 		<meta property="og:image:width" content="850">
 		<meta property="og:image:height" content="450">
 		<meta property="og:locale" content="pt_BR">
-		<meta property="og:site_name" content="{{ page.author }}'s Portfolio">
+		<meta property="og:site_name" content="{{ page.author }}'s Blog">
 		<meta property="fb:profile_id" content="1651005333">
 		<meta property="fb:app_id" content="302184056577324" />
 
 		<!-- Twitter Card properties -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:title" content="My Portfolio">
+		<meta name="twitter:title" content="My Blog">
 		<meta name="twitter:creator" content="@crpicanco">
 		<meta name="twitter:description" content="{{ description }}">
-		<meta name="twitter:image" content="{{ site.url }}/media/rafael-picanco-portfolio.jpg">
+		<meta name="twitter:image" content="{{ site.url }}/media/in-flagellis-clean-en.png">
 		<meta name="twitter:image:width" content="850">
 		<meta name="twitter:image:height" content="450">
 
-		<title>{{ page.author }} | Portfolio</title>
+		<title>{{ page.author }} | Blog</title>
 
 		<link rel="icon" href="media/favicon.ico">
-		<link rel="canonical" href="{{ site.url }}/portfolio/">
-		<link rel="image_src" href="{{ site.url }}/media/rafael-picanco-portfolio.jpg" >
+		<link rel="canonical" href="{{ site.url }}/blog/">
+		<link rel="image_src" href="{{ site.url }}/media/in-flagellis-clean-en.png" >
 
 		<!-- Bootstrap core CSS -->
-		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="{{ PATH_OFFSET }}css/bootstrap.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="/css/cover.css" rel="stylesheet">
+		<link href="{{ PATH_OFFSET }}css/cover.css" rel="stylesheet">
 	</head>
 
 	<body>
@@ -59,13 +61,13 @@ Olá, eu sou um cientista do comportamento, um programador entusiasta e um bater
 					<div class="inner cover">
 						<h2 class="cover-heading">Bem vindo | Welcome</h2>
 						<p class="lead">
-							<a href="pt-br/projects.html" alt="Projects" class="btn btn-lg btn-default">Português</a>
-							<a href="en/projects.html" alt="Projects" class="btn btn-lg btn-default">English</a>
+							<a href="pt-br/" alt="Projects" class="btn btn-lg btn-default">Português</a>
+							<a href="en/" alt="Projects" class="btn btn-lg btn-default">English</a>
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		{% include global_scripts.html %}
+		{% include global_scripts.html path-offset=PATH_OFFSET %}
 	</body>
 </html>
