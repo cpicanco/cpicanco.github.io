@@ -31,7 +31,7 @@ Also some work was done with:
  - Twitter Card from image and description preview on Twitter;
  - Google OSE;
 
-Finally, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
+Finally, [AchievementGen](http://achievementgen.com/360/) was used to generate achievements images, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
 Next steps are:
  - lag work for a completelly auto Pagination system :P
