@@ -34,12 +34,12 @@ Also some work was done with:
 Finally, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
 Next steps are:
-	- lag work for a completelly auto Pagination system :P
-	- Load next post by clicking "read more" button; 
-	- auto minification (just to learn, not for need);
-	- organize css and js assets;
-	- improve 'About' blog section;
-	- improve Portfolio templates;
+ - lag work for a completelly auto Pagination system :P
+ - Load next post by clicking "read more" button; 
+ - auto minification (just to learn, not for need);
+ - organize css and js assets;
+ - improve 'About' blog section;
+ - improve Portfolio templates;
     
 # License and copyright
 
