@@ -14,9 +14,9 @@
 
 					</button>
 					{% if page.language == 'en' then %}
-						<a class="navbar-brand" href="{{ include.path-offset }}portfolio/en/projects.html">&middot;&#32;Portfolio</a>
+						<a class="navbar-brand" href="/portfolio/en/projects.html">&middot;&#32;Portfolio</a>
 					{% elsif page.language == 'pt-BR' %}
-						<a class="navbar-brand" href="{{ include.path-offset }}portfolio/pt-br/projects.html">&middot;&#32;Portfólio</a>
+						<a class="navbar-brand" href="/portfolio/pt-br/projects.html">&middot;&#32;Portfólio</a>
 					{% endif %}		
 				</div>
 
@@ -26,14 +26,14 @@
 						{% if page.language == 'en' then %}
 							{% if page.layout == 'Post' then %}
 								{% if page.pt != null %}
-									<li><a href="{{ include.path-offset }}{{ page.pt }}">Português</a></li> 
+									<li><a href="{{ page.pt }}">Português</a></li> 
 								{% endif %}
 							{% elsif page.layout == 'InitialPage' then %}
-								<li><a href="../pt-br/">Português</a></li>
+								<li><a href="/blog/pt-br/">Português</a></li>
 
 							{% elsif page.layout == 'Tags' then %}
 								<li><a href="#">See All Categories</a></li>
-								<li><a href="../../pt-br/tags/">Português</a></li>
+								<li><a href="/blog/pt-br/tags/">Português</a></li>
 
 							{% endif %}
 
@@ -43,14 +43,14 @@
 						{% elsif page.language == 'pt-BR' %}
 							{% if page.layout == 'Post' then %}
 								{% if page.en != null %}
-									<li><a href="{{ include.path-offset }}{{ page.en }}">English</a></li> 
+									<li><a href="{{ page.en }}">English</a></li> 
 								{% endif %}
 							{% elsif page.layout == 'InitialPage' then %}
-								<li><a href="../en/">English</a></li>
+								<li><a href="/blog/en/">English</a></li>
 
 							{% elsif page.layout == 'Tags' then %}
 								<li><a href="#">Ver Todas as Categorias</a></li>
-								<li><a href="../../en/tags/">English</a></li>
+								<li><a href="/blog/en/tags/">English</a></li>
 
 							{% endif %}
 							<li><a href="{{ include.home-path }}">Início</a></li>
