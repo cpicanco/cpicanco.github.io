@@ -1,4 +1,4 @@
-# www.rafael.picanco.nom.br
+## www.rafael.picanco.nom.br
 
 This site uses [Bootstrap](http://getbootstrap.com/)!
  - it is awesome!
@@ -8,23 +8,38 @@ This site uses [Bootstrap](http://getbootstrap.com/)!
  	- Starter Template;
  	- Sticky footer;
 
-And [Jekyll](http://jekyllrb.com/) too!
+... And [Jekyll](http://jekyllrb.com/) too!
  - Emoji;
  - posts, layouts and includes examples;
  - post with Github markdown;
  - boolean multilanguange support (en/pt-br);
- - Next Steps are:
- 	- to implement pagination or infinite scroll, I am not sure;
+ - Templating for Tags. Tag system compatible with Github Pages.
+ - Templating for Pagination. Easy to use static Pagination system with no plugin or gems, compatible with Github Pages. Just push pages on demand and voilà:
 
-Some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
+
+```
+# blog/language/page/1/index.html
+---
+index: 1
+---
+```
 
 Also some work was done with:
- - Tag system compatible with Github Pages;
+ - Infinite scroll with [Waypoints](http://imakewebthings.com/waypoints/shortcuts/infinite-scroll/);
  - leave comments with [Disqus](https://disqus.com/);
  - Open Graph for image and description preview on Facebook;
  - Twitter Card from image and description preview on Twitter;
- - Next steps are:
- 	- Google OSE;
+ - Google OSE;
+
+Finally, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
+
+Next steps are:
+	- lag work for a completelly auto Pagination system :P
+	- Load next post by clicking "read more" button; 
+	- auto minification (just to learn, not for need);
+	- organize css and js assets;
+	- improve 'About' blog section;
+	- improve Portfolio templates;
     
 # License and copyright
 
@@ -34,4 +49,4 @@ Following files, directories and their contents (including directories, subdirec
 * _site/
 * media/
 
-All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
+All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) license unless explicitly stated.
