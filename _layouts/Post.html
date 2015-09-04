@@ -1,33 +1,31 @@
 <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
-
-{% assign PATH_OFFSET = '../../../' %}
-{% if page.language == 'en' then %}
-    {% capture PAGE_PATH %}{{ PATH_OFFSET }}blog/en/{% endcapture %}
-{% elsif page.language == 'pt-BR' %}
-    {% capture PAGE_PATH %}{{ PATH_OFFSET }}blog/pt-br/{% endcapture %}
-{% endif %}
-
 {% if page.image != null then %}
     {% capture IMAGE  %}{{ site.url}}/media/blog/{{ page.image }}{% endcapture %}
-    {% include blog_head.html path-offset=PATH_OFFSET share-image=IMAGE %}
+    {% include blog_head.html share-image=IMAGE %}
 {% else %}
     {% if page.language == 'en' then %} 
         {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}    
-        {% include blog_head.html path-offset=PATH_OFFSET share-image=IMAGE %}
+        {% include blog_head.html share-image=IMAGE %}
     {% elsif page.language == 'pt-BR' %}
         {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
-        {% include blog_head.html path-offset=PATH_OFFSET share-image=IMAGE %}
+        {% include blog_head.html share-image=IMAGE %}
     {% endif %}
 {% endif %}
+
+{% if page.language == 'en' then %}
+    {% assign PAGE_PATH = "/blog/en/" %}
+{% elsif page.language == 'pt-BR' %}
+    {% assign PAGE_PATH = "/blog/pt-br/" %}
+{% endif %}
     <body>
-   {% include blog_nav.html path-offset=PATH_OFFSET home-path=PAGE_PATH %}
+   {% include blog_nav.html home-path=PAGE_PATH %}
 
         <!-- Page Header -->
         <!-- Set your background image for this header on the line below. -->
     {% if page.image != null then %}
-        <header class="intro-header" style="background-image: url('{{ PATH_OFFSET }}media/blog/{{ page.image }}')">
+        <header class="intro-header" style="background-image: url('/media/blog/{{ page.image }}')">
     {% else %}
         <header class="intro-header" style="background-color:#153038;">
     {% endif %}
@@ -98,15 +96,15 @@
 
         {% include blog_footer.html %}
 
-        {% include global_scripts.html path-offset=PATH_OFFSET %}
+        {% include global_scripts.html %}
 
         {% include social_scripts.html %}
 
         <!-- Custom Theme JavaScript -->
-        <script src="{{ PATH_OFFSET }}js/clean-blog.min.js"></script> 
+        <script src="/js/clean-blog.min.js"></script> 
 
         <!-- Highlight.js -->
-        <script src="{{ PATH_OFFSET }}js/highlight.pack.js"></script>
+        <script src="/js/highlight.pack.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
     </body>
 </html>

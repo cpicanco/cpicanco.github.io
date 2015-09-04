@@ -12,22 +12,21 @@ http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetic
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 
-{% assign PATH_OFFSET = '../../../../' %}
 {% if page.language == 'en' then %}
-    {% capture PAGE_PATH %}{{ PATH_OFFSET }}blog/en/{% endcapture %}
+	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
+	{% include blog_head.html share-image=SHARE_IMAGE %}
 {% elsif page.language == 'pt-BR' %}
-    {% capture PAGE_PATH %}{{ PATH_OFFSET }}blog/pt-br/{% endcapture %}
+	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
+	{% include blog_head.html share-image=SHARE_IMAGE %}
 {% endif %}
 
 {% if page.language == 'en' then %}
-	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
-	{% include blog_head.html path-offset=PATH_OFFSET share-image=SHARE_IMAGE %}
+    {% assign PAGE_PATH = "/blog/en/" %}
 {% elsif page.language == 'pt-BR' %}
-	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
-	{% include blog_head.html path-offset=PATH_OFFSET share-image=SHARE_IMAGE %}
+    {% assign PAGE_PATH = "/blog/pt-br/" %}
 {% endif %}
 	<body>
-		{% include blog_nav.html path-offset=PATH_OFFSET home-path=PAGE_PATH %}
+		{% include blog_nav.html home-path=PAGE_PATH %}
 
 		<header class="intro-header" style="background-color:#153038;">
 			<div class="container">
@@ -160,9 +159,9 @@ http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetic
 
 		{% include blog_footer.html %}
 		
-		{% include global_scripts.html path-offset=PATH_OFFSET %}
+		{% include global_scripts.html %}
 		
 		<!-- Custom Theme JavaScript -->
-		<script src="{{ PATH_OFFSET }}js/clean-blog.min.js"></script> 
+		<script src="/js/clean-blog.min.js"></script> 
 	</body>
 </html>
