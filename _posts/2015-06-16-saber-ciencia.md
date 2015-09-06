@@ -6,4 +6,4 @@ tags: ['ciência']
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
 ---
-Quais as características importantes do fazer ciência? Uma tentativa promissora de elencar tais características pode ser encontrada no [*Understanding Science*](http://undsci.berkeley.edu/). Há também uma versão do site para o português europeu [Saber ciência](http://saberciencia.tecnico.ulisboa.pt/index.php). Vale a pena conferir o material se você tem interesse de aprender ou ensinar sobre o quê é ciência.
+Quais as características importantes do fazer ciência? Uma tentativa promissora de elencar tais características pode ser encontrada no [*Understanding Science*](http://undsci.berkeley.edu/). Há também uma versão do site para o português europeu [Saber ciência](http://saberciencia.tecnico.ulisboa.pt/index.php). Vale a pena conferir o material se você tem interesse de aprender ou ensinar sobre o que é ciência.
