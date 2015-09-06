@@ -4,6 +4,7 @@ title: Jekyll pagination on Github Pages without plugins
 tags: ['web design']
 excerpt: with minor manual work
 language: en
+pt: /2015/09/06/paginacao-sem-plugins-usando-jekyll-no-github-pages.html
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
 ---
 
