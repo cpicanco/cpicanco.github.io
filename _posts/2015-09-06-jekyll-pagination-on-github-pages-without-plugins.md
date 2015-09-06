@@ -164,7 +164,7 @@ LastPage={{ "{{ last_pag " }}}}
 {{ "{% if page.index == last_pag then " }}%}
    /* I am the last page */
 {{ "{% else " }}%}
-<a class="next-page" href="{{ page.language | downcase }}/page/{{ next_pag }}/"></a>
+<a class="next-page" href="{{ "{{ page.language | downcase " }}}}/page/{{ "{{ next_pag " }}}}/"></a>
 {{ "{% endif " }}%}
 ```
 
