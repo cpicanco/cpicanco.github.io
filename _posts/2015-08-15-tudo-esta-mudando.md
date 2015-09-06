@@ -7,9 +7,11 @@ language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
 ---
 
+**`Texto em construção.`**
+
 > Tudo se move, exceto o movimento, [Heráclito de Éfeso](https://pt.wikipedia.org/wiki/Her%C3%A1clito).
 
-O presente texto é um "[experimento mental](https://www.youtube.com/watch?v=M14ReHfPFUw)", nada exaustivo, que procurou estar alinhado com as leis da natureza e da lógica de nosso tempo. O objetivo foi:
+O presente texto procurou:
 
 1. definir o que é "mudança" no contexto da ciência.
 1. definir o que é "constância" no contexto da ciência.
@@ -21,17 +23,18 @@ O presente texto é um "[experimento mental](https://www.youtube.com/watch?v=M14
 	- pode haver mudança sem movimento
 
 	- o imutável, como limite, determina as possibilidades do que não pode ser conhecido cientificamente
-1. 
+
+Pode, também, ser entendido como um "[experimento mental](https://www.youtube.com/watch?v=M14ReHfPFUw)", nada exaustivo, que procurou estar alinhado com as leis da natureza e da lógica de nosso tempo.
 
 ### Um observador contemplando o universo.
 
-Quando olho para o céu noto as estrelas piscando. Ao apurar os ouvidos, os sons de meu próprio corpo não me deixam um segundo sequer em silêncio. As pessoas ao redor sempre estão se movendo e, quando param, permanecem respirando, com as veias palpitando, com a pele descamando, com os neurônios morrendo. E todas essas partículas, quase invisíveis, flutuando pelo ar, que ficam nítidas refletidas pelos raios de sol entrando pelas frestas do momento, para aonde vão? Elas vão e voltam ou vão e vão para aonde eu não sei. Neste momento, de acordo com a experiência sensível imediata, tudo o que há parece estar sempre mudando.
+Como saber se as coisas estão mudando ou não? Quando olho para o céu noto as estrelas piscando. Ao apurar os ouvidos, os sons de meu próprio corpo não me deixam um segundo sequer em silêncio. As pessoas ao redor sempre estão se movendo e, quando param, permanecem respirando, com as veias palpitando, com a pele descamando, com os neurônios morrendo. E todas essas partículas, quase invisíveis, flutuando pelo ar, que ficam nítidas refletidas pelos raios de sol entrando pelas frestas do momento, para aonde vão? Elas vão e voltam ou vão e vão para aonde eu não sei. Neste momento, de acordo com a experiência sensível imediata, tudo o que há parece estar sempre mudando.
 
 Em seguida, contrariamente, percebo um escuro fixo no céu. Percebo que logo antes de dormir, impera um profundo silêncio; o sentido auditível momentaneamente inativo. E ao acordar, as pessoas ainda são pessoas, a despeito de estarem andando, respirando, nascendo ou morrendo. E todas as partícular são as mesmas partículas em acordo com o seu comportamento. Neste momento, de acordo com a experiência sensível imediata, tudo parece imutável.
 
-Neste momento, me ocorre que não é seguro ju
+Concluo, então, que a aparência sensível imediata não seria um bom critério de conhecimento.
 
-Mas ao abrir e ler o jornal científico, nem mesmo as leis das pessoas sobre a natureza se fazem e persistem tanto quanto a própria natureza mudando. Pois se a natureza está mudando, e as leis são sobre a natureza, nada mais natural do que as leis sobre ela mudarem também. Me ocorre que a lei tanto pode mudar em um nível humano quanto em um nível natural, ou real, chame como preferir. No nível humano, mudam como as verdades temporárias e circunscritas pela história de um tempo, como palavras jogadas ao vento. No nível natural, mudam como as forças desde a origem do universo que fazem as fórmulas perderem seja o sentido seja o valor das constantes.
+Ao abrir o jornal científico, leio o seguinte "Todo conhecimento é temporário". Os próprios cientistas parecem reconhecer que nem mesmo as leis das pessoas sobre a natureza se fazem e persistem tanto quanto a própria natureza mudando. Pois se a natureza está mudando, e as leis são sobre a natureza, nada mais natural do que as leis sobre ela mudarem também. Me ocorre, então, que a lei tanto pode mudar em um nível humano quanto em um nível natural, ou real, chame como preferir. No nível humano, mudam como as verdades temporárias e circunscritas pela história de um tempo, como palavras jogadas ao vento. No nível natural, mudam como as forças desde a origem do universo que fazem as fórmulas perderem seja o sentido seja o valor das constantes.
 
 E mesmo a imaginação que é capaz de especular sobre um mundo ao avesso e imutável não resiste ao devir da mudança, pois em si mesma está repleta de meditação ou pensamento. A máquina humana, tanto software quanto hardware, não está imune ao efeitos do tempo. Como toda máquina, tem uma vida útil, inclusive no pensamento. Mas por que permanecer no limite de um único observador?
 
