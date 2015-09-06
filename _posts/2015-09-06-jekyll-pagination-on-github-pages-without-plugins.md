@@ -105,7 +105,7 @@ As noted in the file tree, I am using two `_layout/` templates, one for the init
 To walk through the posts in the initial page:
 
 ```
-{{ "{% assign filtered_posts = site.posts | where: "language",page.language " }}%}
+{{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
 
 {{ "{% for post in filtered_posts limit:site.mpaginate " }}%}
    post.dowhatyouwantbutdontdoitaroundme
@@ -116,7 +116,7 @@ To walk through the subsequent pages:
 
 ```
 /* How many post fits the language? */
-{{ "{% assign filtered_posts = site.posts | where: "language",page.language " }}%}
+{{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
 
 /* How many pages we need? */
 {{ "{% assign mod_pag = posts_count | modulo:site.mpaginate " }}%}
@@ -153,7 +153,7 @@ LastPage={{ "{{ last_pag " }}}}
 */
 
 /* Assign the posts to walk through */
-{{ "{% assign filtered_posts = site.posts | where: "language",page.language " }}%}
+{{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
 
 /* The walk through */
 {{ "{% for post in filtered_posts limit:site.mpaginate offset:OFFSET " }}%}
