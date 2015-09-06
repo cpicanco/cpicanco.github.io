@@ -97,15 +97,8 @@
 		<hr>
 
 		{% include global_scripts.html %}
-		<!-- Infinite Scroll -->
-		<script src="/js/jquery.waypoints.min.js"></script>
-		<script src="/js/infinite.min.js"></script>
 
-		<script type="text/javascript">
-		    var infinite = new Waypoint.Infinite({
-		      element: $('.infinite-container')[0]
-		    })
-		</script>
+		{% include infinite_scripts.html %}
 
 	</body>
 </html>

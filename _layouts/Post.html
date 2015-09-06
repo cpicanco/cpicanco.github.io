@@ -46,7 +46,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        {{ page.content | markdownify }}
+                        {{ content | markdownify }}
                         <p>_</p>
                     {% if page.language == 'en' then %}
                         <span class="meta margin-top"><a>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>

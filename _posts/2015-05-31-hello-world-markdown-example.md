@@ -14,7 +14,6 @@ Post Writing is using Github Flavored Markdown and Emoji.
 :smile:
 
 ___
-___
 
 
 **Headers**
@@ -46,7 +45,6 @@ ___
 ###### H6
 
 ___
-___
 
 
 **Bold** *Italic*
@@ -55,7 +53,6 @@ ___
 **Bold** *Italic*
 ```
 
-___
 ___
 
 
@@ -85,9 +82,8 @@ ___
 1. a
 1. b
 1. c
-___
-___
 
+___
 
 
 **Blockquote**
@@ -98,8 +94,6 @@ ___
 
 > blockquote
 
-
-___
 ___
 
 
@@ -141,7 +135,7 @@ begin
 end;
 ```
 ___
-___
+
 
 **Inline highlight**
 
@@ -151,7 +145,6 @@ ___
 
 Yes, `inline` highlight. 
 
-___
 ___
 
 
@@ -167,8 +160,6 @@ ___
 | ----- | ----- |
 | cell  | cell  |
 
-
-___
 ___
 
 
@@ -183,14 +174,14 @@ ___
 
 Html is used for responsive images:
 
+
 ```
-<p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/fpe/fpe.jpeg" alt="Image" /></p>
+<p><img class="img-responsive center-block" src="/media/fpe/fpe.jpeg" alt="Image" /></p>
 ```
-<p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/fpe/fpe.jpeg" alt="Image" /></p>
+<p><img class="img-responsive center-block" src="/media/fpe/fpe.jpeg" alt="Image" /></p>
 
 You could use `![alt](http://link)` to link (unresponsive) images as well.
 
-___
 ___
 
 
@@ -198,7 +189,21 @@ ___
 
 ```
 ___
-
+___
 
 ```
 ___
+___
+
+
+**Liquid and Front Matter specifics**
+
+{% assign b = 5 %}
+
+```
+{{ "{% assign b = 5 " }}%}
+{{ "{{ site.url " }}}}
+{{ "{{ b " }}}}
+```
+{{ site.url }}
+{{ b }}

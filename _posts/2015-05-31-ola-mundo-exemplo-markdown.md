@@ -182,9 +182,9 @@ ___
 Html está sendo usado para images responsivas (respondem ao tamanho da tela redimensionando-se automaticamente):
 
 ```
-<p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/fpe/fpe.jpeg" alt="Image" /></p>
+<p><img class="img-responsive center-block" src="/media/fpe/fpe.jpeg" alt="Image" /></p>
 ```
-<p><img class="img-responsive center-block" src="http://rafael.picanco.nom.br/media/fpe/fpe.jpeg" alt="Image" /></p>
+<p><img class="img-responsive center-block" src="/media/fpe/fpe.jpeg" alt="Image" /></p>
 
 Você pode usar algo como `![alt](link)` para *linkar* imagens (não responsivas) também.
 
@@ -202,3 +202,15 @@ ___
 ___
 ___
 
+
+**Liquid e Front Matter**
+
+{% assign b = 5 %}
+
+```
+{{ "{% assign b = 5 " }}%}
+{{ "{{ site.url " }}}}
+{{ "{{ b " }}}}
+```
+{{ site.url }}
+{{ b }}
