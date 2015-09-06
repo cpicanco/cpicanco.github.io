@@ -25,8 +25,7 @@ The present blog is a live example, source is here: [cpicanco.github.io](https:/
 
 ### Structure/File Tree
 
-```text
-
+``` nohighlight
     - root
     .   /_posts
     .      /2052-01-01-all-posts.md
