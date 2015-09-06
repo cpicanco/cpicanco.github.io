@@ -41,12 +41,7 @@
 		<hr>
 
 		<!-- Main Content -->
-		{% assign filtered_posts = site.container %}
-		{% for post in site.posts %}
-			{% if post.language == page.language then %}
-				{% assign filtered_posts = filtered_posts | push: post %}
-			{% endif %}
-		{% endfor %}
+		{% assign filtered_posts = site.posts | where: "language",page.language %}
 
 		<div class="container">
 			<div class="row">

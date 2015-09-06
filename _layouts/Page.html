@@ -29,12 +29,7 @@
 			Language={{ page.language }}, PostsCount={{ posts_count }}, OFFSET={{ OFFSET }}
 			PagesCount={{ pages_count }}, NextPage={{ next_pag }}, LastPage={{ last_pag }}
 
-			{% assign filtered_posts = site.container %}
-			{% for post in site.posts %}
-				{% if post.language == page.language then %}
-					{% assign filtered_posts = filtered_posts | push: post %}
-				{% endif %}
-			{% endfor %}
+			{% assign filtered_posts = site.posts | where: "language",page.language %}
 
 			{% for post in filtered_posts limit:site.mpaginate offset:OFFSET %}
 					<div class="infinite-item post-preview">

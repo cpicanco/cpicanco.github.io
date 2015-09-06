@@ -1,5 +1,4 @@
 mpaginate: 3
-container: []
 url: http://www.rafael.picanco.nom.br
 exclude: ['.gitignore','README.md', 'LICENSE.md', 'CNAME', 'Gemfile', 'Gemfile.lock', 'cpicanco.github.io.sublime-project','cpicanco.github.io.sublime-workspace']
 defaults:
