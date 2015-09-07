@@ -1,7 +1,0 @@
----
-layout: LanguageChoice
-kind: Blog
-image: /media/in-flagellis-clean-en.png
-lbutton: <a href="pt-br/" alt="Português" class="btn btn-lg btn-default">Português</a>
-rbutton: <a href="en/" alt="English" class="btn btn-lg btn-default">English</a>
----
