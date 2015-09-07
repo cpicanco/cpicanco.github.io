@@ -2,10 +2,12 @@
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 
+{% if page.language == 'en' then %}
 	{% include head.html %}
-
+{% elsif page.language == 'pt-BR' %}
+	{% include head.html %}
+{% endif %}
 	<body>
-
 		{% include nav.html %}
 
 			<div class="container">

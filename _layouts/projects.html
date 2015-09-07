@@ -2,7 +2,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 
-	{% include head.html title="Projetos" %}
+{% if page.language == 'en' then %}
+	{% include head.html %}
+{% elsif page.language == 'pt-BR' %}
+	{% include head.html %}
+{% endif %}
 
 	<body data-spy="scroll" data-target="#Scrollspy">
 

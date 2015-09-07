@@ -2,8 +2,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 
-	{% include head.html title="Contato" %}
-
+{% if page.language == 'en' then %}
+	{% include head.html %}
+{% elsif page.language == 'pt-BR' %}
+	{% include head.html %}
+{% endif %}
 	<body>
 		{% include nav.html %}
 
