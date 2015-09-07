@@ -1,45 +1,58 @@
 mpaginate: 3
 url: http://www.rafael.picanco.nom.br
-exclude: ['package.json','.gitignore','README.md','LICENSE.md','CNAME','Gemfile','Gemfile.lock','cpicanco.github.io.sublime-project','cpicanco.github.io.sublime-workspace']
+exclude: ['.gitignore',
+          'CNAME',
+          'cpicanco.github.io.sublime-project',
+          'cpicanco.github.io.sublime-workspace',
+          'Gemfile',
+          'Gemfile.lock',
+          'Gruntfile.js',
+          'LICENSE.md',
+          'README.md',
+          'package.json',
+          'css/src/',
+          'js/src/',
+          'node_modules/'
+          ]
 defaults:
   -
     scope:
       path: ""
     values:
-      author: "Rafael Picanço"
+      author: 'Rafael Picanço'
 
   -
     scope:
-      path: "blog/pt-br"
+      path: 'blog/pt-br'
     values:
       language: pt-BR
 
   -
     scope:
-      path: "portfolio/pt-br"
+      path: 'portfolio/pt-br'
     values:
       language: pt-BR
   -
     scope:
-      path: "blog/en"
+      path: 'blog/en'
     values:
       language: en
 
   -
     scope:
-      path: "portfolio/en"
+      path: 'portfolio/en'
     values:
       language: en
 
   -
     scope:
-      path: "blog/en/page"
+      path: 'blog/en/page'
     values:
       layout: Page
 
   -
     scope:
-      path: "blog/pt-br/page"
+      path: 'blog/pt-br/page'
     values:
       layout: Page
 
