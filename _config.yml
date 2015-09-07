@@ -1,6 +1,6 @@
 mpaginate: 3
 url: http://www.rafael.picanco.nom.br
-exclude: ['.gitignore','README.md', 'LICENSE.md', 'CNAME', 'Gemfile', 'Gemfile.lock', 'cpicanco.github.io.sublime-project','cpicanco.github.io.sublime-workspace']
+exclude: ['package.json','.gitignore','README.md','LICENSE.md','CNAME','Gemfile','Gemfile.lock','cpicanco.github.io.sublime-project','cpicanco.github.io.sublime-workspace']
 defaults:
   -
     scope:

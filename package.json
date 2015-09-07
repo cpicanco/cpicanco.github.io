@@ -1,0 +1,27 @@
+{
+  "name": "cpicanco.github.io",
+  "version": "1.0.0",
+  "description": "Rafael Picanço's portfolio and blog.",
+  "main": "/js/index.js",
+  "scripts": {
+    "test": "cpicanco_test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cpicanco/cpicanco.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "blog"
+  ],
+  "author": "Carlos Rafael Fernandes Picanço",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cpicanco/cpicanco.github.io/issues"
+  },
+  "homepage": "https://github.com/cpicanco/cpicanco.github.io#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "~0.5.0"
+  }
+}
