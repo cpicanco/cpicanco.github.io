@@ -29,16 +29,16 @@ Also some work was done with:
  - leave comments with [Disqus](https://disqus.com/);
  - Open Graph for image and description preview on Facebook;
  - Twitter Card from image and description preview on Twitter;
- - Google OSE;
+ - [Google OSE](https://www.google.com/webmasters/);
+ - [Grunt Task Runner](http://gruntjs.com/);
 
 Finally, [AchievementGen](http://achievementgen.com/360/) was used to generate achievements images, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
 Next steps are:
  - lag work for a completelly auto Pagination system :P
  - Load next post by clicking "read more" button; 
- - auto minification (just to learn, not for need);
- - organize css and js assets;
- - improve 'About' blog section;
+ - implement 'About' blog section;
+ - explore grunt tasks;
  - improve Portfolio templates;
     
 # License and copyright
