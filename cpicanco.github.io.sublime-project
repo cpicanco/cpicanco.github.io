@@ -16,7 +16,6 @@
 			"automatically_find_paths": false,
 			"default_post_syntax": "Markdown",
 			"default_post_layout": "Post",
-			"default_post_categories": [],
 			"default_post_tags": "['tag1', 'tag2']",
 			"default_post_published": false,
 			"default_post_extras": {
