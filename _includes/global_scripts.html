@@ -19,23 +19,38 @@
 		  ga('send', 'pageview');
 		</script>
 
-		<!-- Google Knowledge Graph -->
-		<script type="application/ld+json">
-		{
-		  "@context" : "http://schema.org",
-		  "@type" : "Person",
-		  "name" : "{{ site.author }}",
-		  "url" : "{{ site.url }}",
-		  "sameAs" : [
-		  	"https://plus.google.com/100568018502354753364"
-		    "https://twitter.com/crpicanco"
-		    "https://www.facebook.com/rafael.picanco",
-		    "https://soundcloud.com/carlitusbatera",
-		    "https://github.com/cpicanco",
-		    "https://geape-ufpa.academia.edu/CarlosRafael", 
-		    "https://www.researchgate.net/profile/Carlos_Picanco",
-		    "https://www.zotero.org/cpicanco/",
-		    "http://codereview.stackexchange.com/users/62263/cpicanco"
-		  ]
-		}
-		</script>
+<!-- Google Knowledge Graph -->
+{% if page.layout == 'Post' then %}
+{% capture post_tags %}{% for tag in page.tags %}{{ tag }}, {% endfor %}{% endcapture %}
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "author": "{{ page.author }}",
+      "name": "{{ page.title }}",
+      "articleSection": "{{ post_tags }}"
+    }
+    </script>
+{% else %}
+	<script type="application/ld+json">
+	{
+	  "@context" : "http://schema.org",
+	  "@type" : "Person",
+	  "name" : "{{ page.author }}",
+	  "jobTitle": "Doctoral student",
+	  "affiliation": "Universidade Federal do Pará",
+	  "url" : "{{ site.url }}{{ page.url | remove:'index.html' }}",
+	  "sameAs" : [
+	  	"https://plus.google.com/100568018502354753364",
+	    "https://twitter.com/crpicanco",
+	    "https://www.facebook.com/rafael.picanco",
+	    "https://soundcloud.com/carlitusbatera",
+	    "https://github.com/cpicanco",
+	    "https://geape-ufpa.academia.edu/CarlosRafael", 
+	    "https://www.researchgate.net/profile/Carlos_Picanco",
+	    "https://www.zotero.org/cpicanco/",
+	    "http://codereview.stackexchange.com/users/62263/cpicanco"
+	  ]
+	}
+	</script>
+{% endif %}
