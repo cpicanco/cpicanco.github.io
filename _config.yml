@@ -49,12 +49,14 @@ defaults:
       path: 'blog/en/page'
     values:
       layout: Page
+      sitemap: false
 
   -
     scope:
       path: 'blog/pt-br/page'
     values:
       layout: Page
+      sitemap: false
 
 kramdown:
   auto_ids: true
