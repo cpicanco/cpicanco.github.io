@@ -20,8 +20,7 @@
     {% assign PAGE_PATH = "/blog/pt-br/" %}
 {% endif %}
     <body>
-   {% include blog_nav.html home-path=PAGE_PATH %}
-
+   {% include blog_nav.html home-path=PAGE_PATH %}   
         <!-- Page Header -->
         <!-- Set your background image for this header on the line below. -->
     {% if page.image != null then %}
@@ -43,7 +42,18 @@
 
         <!-- Post Content -->
         <article>
-            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <ul class="list-inline">
+                    {% for tag in page.tags %}
+                            <li>
+                                <a href="/blog/{{ page.language | downcase }}/tags/#{{ tag }}"><span class="badge">{{ tag }}</span></a>
+                            </li>
+                    {% endfor %}
+                        </ul>   
+                    </div>
+                </div>
+                <hr>
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                         {{ content | markdownify }}
