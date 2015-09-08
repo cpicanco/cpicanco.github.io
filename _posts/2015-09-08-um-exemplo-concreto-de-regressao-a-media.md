@@ -2,7 +2,7 @@
 layout: Post
 title: Um exemplo concreto de regressão a média
 tags: ['ciência']
-excerpt: o aletório interferindo dia-a-dia
+excerpt: o aleatório interferindo dia-a-dia
 language: pt-BR
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
 ---
