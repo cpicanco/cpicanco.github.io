@@ -1,5 +1,4 @@
 ---
-layout: "Post"
 title: 'Configurando o Registro.br para o Github Pages.'
 excerpt: 'como configurar um subdomínio do Registro.br para o Github Pages'
 tags: ['passo a passo', 'web design']

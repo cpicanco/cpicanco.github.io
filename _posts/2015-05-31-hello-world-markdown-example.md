@@ -1,5 +1,4 @@
 ---
-layout: "Post"
 title: Hello World.
 excerpt: markdown example
 tags: ['web design', 'markdown']
@@ -100,22 +99,22 @@ ___
 **Fenced code highlight**
 
 ```
-	``` python
-	# python
-	def some_method(var='exemple'):
-	   if var:
-	      pass
-	   else:
-	      result
-	```
+    ``` python
+    # python
+    def some_method(var='exemple'):
+       if var:
+          pass
+       else:
+          result
+    ```
 
-	``` delphi
-	// pascal
-	procedure some_procedure( Value : string = 'text');
-	begin
-	   ShowMessage(text);
-	end;
-	```
+    ``` delphi
+    // pascal
+    procedure some_procedure( Value : string = 'text');
+    begin
+       ShowMessage(text);
+    end;
+    ```
 ```
 
 ``` python

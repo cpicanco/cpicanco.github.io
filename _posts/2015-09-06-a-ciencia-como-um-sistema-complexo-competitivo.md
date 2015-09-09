@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: A ciência como um sistema competitivo contra o fim da humanidade
 tags: ['ciência']
 excerpt: 'competição destrutiva vs. competição saudável'

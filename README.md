@@ -4,9 +4,9 @@ This site uses [Bootstrap](http://getbootstrap.com/)!
  - it is awesome!
  - Blog is a modified version of the [Clean Blog Template](http://startbootstrap.com/template-overviews/clean-blog/) 
  - Portfolio is a modified version of the [Scrolling Nav Template](http://startbootstrap.com/template-overviews/scrolling-nav/) and the following [examples](http://getbootstrap.com/getting-started/#examples):
- 	- Cover;
- 	- Starter Template;
- 	- Sticky footer;
+     - Cover;
+     - Starter Template;
+     - Sticky footer;
 
 ... And [Jekyll](http://jekyllrb.com/) too!
  - Emoji;

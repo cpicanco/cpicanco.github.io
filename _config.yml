@@ -23,6 +23,12 @@ defaults:
 
   -
     scope:
+      path: ""
+      type: posts
+    values:
+      layout: "Post"
+  -
+    scope:
       path: 'blog/pt-br'
     values:
       language: pt-BR

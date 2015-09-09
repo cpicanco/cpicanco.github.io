@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: Saber ciência
 excerpt: as características da ciência
 tags: ['ciência']

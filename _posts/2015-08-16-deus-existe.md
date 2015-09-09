@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: deus existe e Deus também
 tags: ['fé']
 excerpt: filosofia de boteco e o todo poderoso

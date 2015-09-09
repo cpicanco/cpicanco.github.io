@@ -2,117 +2,114 @@
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 {% if page.image != null then %}
-    {% capture IMAGE  %}{{ site.url}}/media/blog/{{ page.image }}{% endcapture %}
-    {% include blog_head.html share-image=IMAGE %}
+  {% capture IMAGE  %}{{ site.url}}/media/blog/{{ page.image }}{% endcapture %}
+  {% include blog_head.html share-image=IMAGE %}
 {% else %}
-    {% if page.language == 'en' then %} 
-        {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}    
-        {% include blog_head.html share-image=IMAGE %}
-    {% elsif page.language == 'pt-BR' %}
-        {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
-        {% include blog_head.html share-image=IMAGE %}
-    {% endif %}
+  {% if page.language == 'en' then %} 
+    {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}    
+    {% include blog_head.html share-image=IMAGE %}
+  {% elsif page.language == 'pt-BR' %}
+    {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
+    {% include blog_head.html share-image=IMAGE %}
+  {% endif %}
 {% endif %}
 
 {% if page.language == 'en' then %}
-    {% assign PAGE_PATH = "/blog/en/" %}
+  {% assign PAGE_PATH = "/blog/en/" %}
 {% elsif page.language == 'pt-BR' %}
-    {% assign PAGE_PATH = "/blog/pt-br/" %}
+  {% assign PAGE_PATH = "/blog/pt-br/" %}
 {% endif %}
-    <body>
+  <body>
    {% include blog_nav.html home-path=PAGE_PATH %}   
-        <!-- Page Header -->
-        <!-- Set your background image for this header on the line below. -->
-    {% if page.image != null then %}
-        <header class="intro-header" style="background-image: url('/media/blog/{{ page.image }}')">
-    {% else %}
-        <header class="intro-header" style="background-color:#153038;">
-    {% endif %}
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <div class="post-heading">
-                            <h1>{{ page.title }}</h1>
-                            <h2 class="subheading">{{ page.excerpt }}</h2>                                
-                        </div>
-                    </div>
-                </div>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+  {% if page.image != null then %}
+    <header class="intro-header" style="background-image: url('/media/blog/{{ page.image }}')">
+  {% else %}
+    <header class="intro-header" style="background-color:#153038;">
+  {% endif %}
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>{{ page.title }}</h1>
+              <h2 class="subheading">{{ page.excerpt }}</h2>                                
             </div>
-        </header>
-
-        <!-- Post Content -->
-        <article>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <ul class="list-inline">
-                    {% for tag in page.tags %}
-                            <li>
-                                <a href="/blog/{{ page.language | downcase }}/tags/#{{ tag }}"><span class="badge">{{ tag }}</span></a>
-                            </li>
-                    {% endfor %}
-                        </ul>   
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        {{ content | markdownify }}
-                        <p>_</p>
-                    {% if page.language == 'en' then %}
-                        <span class="meta margin-top"><a>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
-                    {% elsif page.language == 'pt-BR' %}
-                        <span class="meta margin-top">&#32;<a>{{ page.author }}</a>,&#32;
-                        {{ page.date | date: "%-d" }}
-                        &#32;de&#32;
-                        {% assign m = page.date | date: "%-m" %}
-                        {% case m %}
-                            {% when '1' %}Janeiro
-                            {% when '2' %}Fevereiro
-                            {% when '3' %}Março
-                            {% when '4' %}Abril
-                            {% when '5' %}Maio
-                            {% when '6' %}Junho
-                            {% when '7' %}Julho
-                            {% when '8' %}Agosto
-                            {% when '9' %}Setembro
-                            {% when '10' %}Outubro
-                            {% when '11' %}Novembro
-                            {% when '12' %}Dezembro
-                        {% endcase %}
-                        &#32;de&#32;
-                        {{ page.date | date: "%Y" }}.
-                        </span>
-                    {% endif %}
-                        <hr>
-                        {% include social_buttons.html %}
-                        <hr>
-                        <div class="text-center">         
-                        {% if page.language == 'en' then %}
-                            <a class="btn btn-default btn-block" href="{{ PAGE_PATH }}">HOME</a>
-                        {% elsif page.language == 'pt-BR' %}
-                            <a class="btn btn-default btn-block" href="{{ PAGE_PATH }}">LEIA MAIS</a>
-                        {% endif %}
-                        </div>
-                    </div>
-                </div>          
-            </div>
-        </article>
-        
-        <hr>
-
-        <div class="container">
-            {% include social_disqus_commentaries.html %}
+          </div>
         </div>
+      </div>
+    </header>
 
-        {% include blog_footer.html %}
+    <!-- Post Content -->
+    <article>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <ul class="list-inline">
+          {% for tag in page.tags %}
+              <li>
+                <a href="/blog/{{ page.language | downcase }}/tags/#{{ tag }}"><span class="badge">{{ tag }}</span></a>
+              </li>
+          {% endfor %}
+            </ul>   
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {{ content | markdownify }}
+            <p>_</p>
+          {% if page.language == 'en' then %}
+            <span class="meta margin-top"><a>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+          {% elsif page.language == 'pt-BR' %}
+            <span class="meta margin-top">&#32;<a>{{ page.author }}</a>,&#32;
+            {{ page.date | date: "%-d" }}
+            &#32;de&#32;
+            {% assign m = page.date | date: "%-m" %}
+            {% case m %}
+              {% when '1' %}Janeiro
+              {% when '2' %}Fevereiro
+              {% when '3' %}Março
+              {% when '4' %}Abril
+              {% when '5' %}Maio
+              {% when '6' %}Junho
+              {% when '7' %}Julho
+              {% when '8' %}Agosto
+              {% when '9' %}Setembro
+              {% when '10' %}Outubro
+              {% when '11' %}Novembro
+              {% when '12' %}Dezembro
+            {% endcase %}
+            &#32;de&#32;
+            {{ page.date | date: "%Y" }}.
+            </span>
+          {% endif %}
+            <hr>
+            {% include social_buttons.html %}
+            <hr>
+            <div class="text-center">         
+            {% if page.language == 'en' then %}
+              <a class="btn btn-default btn-block" href="{{ PAGE_PATH }}">HOME</a>
+            {% elsif page.language == 'pt-BR' %}
+              <a class="btn btn-default btn-block" href="{{ PAGE_PATH }}">LEIA MAIS</a>
+            {% endif %}
+            </div>
+          </div>
+        </div>          
+      </div>
+    </article>
+    
+    <hr>
 
-        {% include global_scripts.html %}
+    <div id="disqus_thread" class="container"></div>
 
-        {% include social_scripts.html %}
+    {% include blog_footer.html %}
 
-        {% include highlight_scripts.html %}
+    {% include global_scripts.html %}
+    {% include social_scripts.html %}
+    {% include highlight_scripts.html %}
+    {% include social_disqus_scripts.html %}
 
-        <!-- Custom Theme JavaScript -->
-        <script src="/js/clean-blog.min.js"></script> 
-    </body>
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script> 
+  </body>
 </html>

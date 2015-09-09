@@ -1,86 +1,86 @@
 <!-- Navigation Top -->
-		<nav class="navbar navbar-inverse navbar-fixed-top self-color">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						
-						{% if page.language == 'en' then %}
-							<span class="sr-only">Alternar navegação</span>
-						{% elsif page.language == 'pt-BR' %}
-							<span class="sr-only">Alternar navegação</span>
-						{% endif %}
-						
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
+    <nav class="navbar navbar-inverse navbar-fixed-top self-color">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            
+            {% if page.language == 'en' then %}
+              <span class="sr-only">Alternar navegação</span>
+            {% elsif page.language == 'pt-BR' %}
+              <span class="sr-only">Alternar navegação</span>
+            {% endif %}
+            
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
-					{% if page.language == 'en' then %}
-						<a class="navbar-brand" href="../../">{{ page.author }}'s Portfolio</a>
-					{% elsif page.language == 'pt-BR' %}
-						<a class="navbar-brand" href="../../">Portfólio de {{ page.author }}</a>
-					{% endif %}
-				</div>
-				
-				<div id="navbar" class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						{% case page.title %}
-							{% when 'Projetos' %}
-								<li class="self-active"><a class="page-scroll" href="#current-fpe">Projetos</a></li>
-								<li><a href="publications.html">Publicações</a></li>
-								<li><a href="achievements.html">Conquistas</a></li>
-								<li><a href="contact.html">Contatos</a></li>
+          {% if page.language == 'en' then %}
+            <a class="navbar-brand" href="../../">{{ page.author }}'s Portfolio</a>
+          {% elsif page.language == 'pt-BR' %}
+            <a class="navbar-brand" href="../../">Portfólio de {{ page.author }}</a>
+          {% endif %}
+        </div>
+        
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            {% case page.title %}
+              {% when 'Projetos' %}
+                <li class="self-active"><a class="page-scroll" href="#current-fpe">Projetos</a></li>
+                <li><a href="publications.html">Publicações</a></li>
+                <li><a href="achievements.html">Conquistas</a></li>
+                <li><a href="contact.html">Contatos</a></li>
 
-							{% when 'Publicações' %}
-								<li><a href="projects.html">Projetos</a></li>
-								<li class="self-active"><a href="#">Publicações</a></li>
-								<li><a href="achievements.html">Conquistas</a></li>
-								<li><a href="contact.html">Contato</a></li>
+              {% when 'Publicações' %}
+                <li><a href="projects.html">Projetos</a></li>
+                <li class="self-active"><a href="#">Publicações</a></li>
+                <li><a href="achievements.html">Conquistas</a></li>
+                <li><a href="contact.html">Contato</a></li>
 
-							{% when 'Conquistas' %}
-								<li><a href="projects.html">Projetos</a></li>
-								<li><a href="publications.html">Publicações</a></li>
-								<li class="self-active"><a href="#">Conquistas</a></li>
-								<li><a href="contact.html">Contato</a></li>
+              {% when 'Conquistas' %}
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="publications.html">Publicações</a></li>
+                <li class="self-active"><a href="#">Conquistas</a></li>
+                <li><a href="contact.html">Contato</a></li>
 
-							{% when 'Contato' %}
-								<li><a href="projects.html">Projetos</a></li>
-								<li><a href="publications.html">Publicações</a></li>
-								<li><a href="achievements.html">Conquistas</a></li>
-								<li class="self-active"><a href="#">Contatos</a></li>
+              {% when 'Contato' %}
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="publications.html">Publicações</a></li>
+                <li><a href="achievements.html">Conquistas</a></li>
+                <li class="self-active"><a href="#">Contatos</a></li>
 
-							{% when 'Projects' %}
-								<li class="self-active"><a class="page-scroll" href="#current-fpe">Projects</a></li>
-								<li><a href="publications.html">Publications</a></li>
-								<li><a href="achievements.html">Achievements</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								
-							{% when 'Publications' %}
-								<li><a href="projects.html">Projects</a></li>
-								<li class="self-active"><a href="#">Publications</a></li>
-								<li><a href="achievements.html">Achievements</a></li>
-								<li><a href="contact.html">Contact</a></li>
-							
-							{% when 'Achievements' %}
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="publications.html">Publications</a></li>
-								<li class="self-active"><a href="#">Achievements</a></li>
-								<li><a href="contact.html">Contact</a></li>
+              {% when 'Projects' %}
+                <li class="self-active"><a class="page-scroll" href="#current-fpe">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+              {% when 'Publications' %}
+                <li><a href="projects.html">Projects</a></li>
+                <li class="self-active"><a href="#">Publications</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              
+              {% when 'Achievements' %}
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li class="self-active"><a href="#">Achievements</a></li>
+                <li><a href="contact.html">Contact</a></li>
 
-							{% when 'Contact' %}
-								<li><a href="projects.html">Projects</a></li>
-								<li><a href="publications.html">Publications</a></li>
-								<li><a href="achievements.html">Achievements</a></li>
-								<li class="self-active"><a href="#">Contact</a></li>
+              {% when 'Contact' %}
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li class="self-active"><a href="#">Contact</a></li>
 
-						{% endcase %}
-						
-						{% if page.language == 'en' then %}
-							<li><a href="/blog/en/">Blog</a></li>
-						{% elsif page.language == 'pt-BR' %}
-							<li><a href="/blog/pt-br/">Blog</a></li>
-						{% endif %}
-					</ul>
-				</div><!--/.nav-collapse -->
-			</div>
-		</nav>
+            {% endcase %}
+            
+            {% if page.language == 'en' then %}
+              <li><a href="/blog/en/">Blog</a></li>
+            {% elsif page.language == 'pt-BR' %}
+              <li><a href="/blog/pt-br/">Blog</a></li>
+            {% endif %}
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>

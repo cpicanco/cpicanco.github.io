@@ -1,5 +1,4 @@
 ---
-layout: "Post"
 title: In flagellis potum fellis
 excerpt: santa ignorância
 tags: ['poema', 'tradução', 'música']

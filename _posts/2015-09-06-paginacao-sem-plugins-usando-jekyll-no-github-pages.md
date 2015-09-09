@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: Paginação sem plugins usando Jekyll no Github Pages
 tags: ['web design']
 excerpt: com o mínimo de esforço manual

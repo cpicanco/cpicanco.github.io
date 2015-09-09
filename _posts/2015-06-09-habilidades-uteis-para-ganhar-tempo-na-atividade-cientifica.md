@@ -1,5 +1,4 @@
----
-layout: Post 
+--- 
 title: 'Informatização e Ciência'
 excerpt: habilidades úteis para ganhar tempo na atividade científica
 tags: ['ciência', 'programação', 'tecnologia']

@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: Um exemplo concreto de regressão a média
 tags: ['ciência']
 excerpt: o aleatório interferindo dia-a-dia

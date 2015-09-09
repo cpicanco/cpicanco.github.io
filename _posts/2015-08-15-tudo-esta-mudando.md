@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: Tudo está mudando
 tags: ['ciência']
 excerpt: filosofia de boteco e o devir nas ciências
@@ -16,10 +15,10 @@ O presente texto procurou:
 1. definir o que é "mudança" no contexto da ciência.
 1. definir o que é "constância" no contexto da ciência.
 1. manifestar uma visão de mundo na qual:
-	- tudo, inclusive o nada, pode gerar mudança em algum nível
-	- apenas o que é "mudança" pode ser conhecido cientificamente
-	- a constância em seu limite, ao determinar o que é imutável, determina as possibilidades do que não pode ser conhecido cientificamente
-	- pode haver mudança sem movimento
+    - tudo, inclusive o nada, pode gerar mudança em algum nível
+    - apenas o que é "mudança" pode ser conhecido cientificamente
+    - a constância em seu limite, ao determinar o que é imutável, determina as possibilidades do que não pode ser conhecido cientificamente
+    - pode haver mudança sem movimento
 
 Pode, também, ser entendido como um "[experimento mental](https://www.youtube.com/watch?v=M14ReHfPFUw)", nada exaustivo, que procurou estar alinhado com as leis da natureza e da lógica de nosso tempo.
 

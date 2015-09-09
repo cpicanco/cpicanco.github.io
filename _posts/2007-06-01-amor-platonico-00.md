@@ -1,5 +1,4 @@
 ---
-layout: "Post"
 title: Ela
 excerpt: amor platônico
 tags: ['poema', 'amor']

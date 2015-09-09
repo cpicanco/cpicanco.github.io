@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: 'Sobre o determinismo: instrumento evangelizador ou científico?'
 tags: ['ciência', 'determinismo', 'diálogo']
 excerpt: filosofia de boteco
@@ -24,7 +23,7 @@ O determinismo do matemático, astrônomo e físico francês Pierre Simon Marqui
 Evidentemente, trata-se de uma metáfora. As metáforas tem limites e nem sempre transmitem as ideias planejadas por aqueles que as utilizam. Ressalto que não é meu objetivo aqui afirmar que ele disse ou quis dizer isso ou aquilo, mas apenas interpretar o referido trecho. Pois bem, o Demônio de Laplace procura ilustrar:
 
 1. **um princípio cumulativo**, quanto mais dados, melhor será a predição;
-	
+    
 2. **uma metafísica**, uma visão de mundo que leva o princípio ao limite e o extrapola para relações de necessidade entre todos os eventos, sem afirmar e nem negar se tal mundo pode ser conhecido por humanos.
 
 Será conveniente considerar que "mais dados" tanto significa a) maior volume de dados quanto b) melhores métodos de análise desses dados.

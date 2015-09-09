@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: Jekyll pagination on Github Pages without plugins
 tags: ['web design']
 excerpt: with minor manual work

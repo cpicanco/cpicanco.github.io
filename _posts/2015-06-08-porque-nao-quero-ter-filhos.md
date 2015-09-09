@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: Por que não quero ter filhos?
 excerpt: sobre a minha decisão de não querer conceber mais uma vida
 tags: ['pergunta', 'familia', 'vida']
@@ -31,19 +30,19 @@ Sim, por pura sorte. Eu começei a pensar seriamente e friamente no assunto ao a
    - **Pró**: Não ter filhos não exige o engajamento em tais tarefas.
 
 1. **A Eminência do Desgosto**
-	- `Contra`: Após me engajar em uma vida diligente e dedicada a uma criança, sangue do meu sangue, eu detestaria vê-la se tornar alguém completamente avessa aos meus padrões morais e éticos. Por exemplo, se ao invés de criar uma pessoa sem tantos preconceitos e que contribua ativamente para resolver problemas na sociedade, eu criasse um Paulo Maluf, ou pior, um Feliciano da vida.
+    - `Contra`: Após me engajar em uma vida diligente e dedicada a uma criança, sangue do meu sangue, eu detestaria vê-la se tornar alguém completamente avessa aos meus padrões morais e éticos. Por exemplo, se ao invés de criar uma pessoa sem tantos preconceitos e que contribua ativamente para resolver problemas na sociedade, eu criasse um Paulo Maluf, ou pior, um Feliciano da vida.
 
-	- **Pró**: Não ter filhos não tratá desgosto dessa ordem.
+    - **Pró**: Não ter filhos não tratá desgosto dessa ordem.
 
 1. **O mundo não precisa de mais uma criança**
-	- `Contra`: Mais uma pessoa, e seus descendentes talvez, num mundo extremamente populoso.
+    - `Contra`: Mais uma pessoa, e seus descendentes talvez, num mundo extremamente populoso.
 
-	- **Pró**: Menos uma pessoa, e seus descendentes também, num mundo extremamente populoso.
+    - **Pró**: Menos uma pessoa, e seus descendentes também, num mundo extremamente populoso.
 
 1. **Há a possibilidade de adotar uma criança, futuramente**
-	- `Contra`: Eu não transmitirei minha informação genética adiante.
+    - `Contra`: Eu não transmitirei minha informação genética adiante.
 
-	- **Pró**: Eu estaria, com sorte, ajudando uma pessoa que realmente precisa.
+    - **Pró**: Eu estaria, com sorte, ajudando uma pessoa que realmente precisa.
 
 
 ## A decisão

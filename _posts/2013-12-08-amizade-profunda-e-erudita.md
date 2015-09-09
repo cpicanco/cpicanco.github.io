@@ -1,5 +1,4 @@
 ---
-layout: "Post"
 title: O lado profundo e erudito de uma amizade.
 excerpt: machismo e Lulu app
 tags: ['diálogo', 'machismo', 'cotidiano']

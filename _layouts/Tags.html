@@ -8,16 +8,16 @@ http://stackoverflow.com/questions/20945944/jekyll-liquid-output-category-list-w
 Christian Specht
 http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetically
 
--->	
+-->    
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 
 {% if page.language == 'en' then %}
-	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
-	{% include blog_head.html share-image=SHARE_IMAGE %}
+    {% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
+    {% include blog_head.html share-image=SHARE_IMAGE %}
 {% elsif page.language == 'pt-BR' %}
-	{% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
-	{% include blog_head.html share-image=SHARE_IMAGE %}
+    {% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
+    {% include blog_head.html share-image=SHARE_IMAGE %}
 {% endif %}
 
 {% if page.language == 'en' then %}
@@ -25,143 +25,143 @@ http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetic
 {% elsif page.language == 'pt-BR' %}
     {% assign PAGE_PATH = "/blog/pt-br/" %}
 {% endif %}
-	<body>
-		{% include blog_nav.html home-path=PAGE_PATH %}
+    <body>
+        {% include blog_nav.html home-path=PAGE_PATH %}
 
-		<header class="intro-header" style="background-color:#153038;">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-						<div class="tags-heading">
-							<h1>{{ page.title }}</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
+        <header class="intro-header" style="background-color:#153038;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="tags-heading">
+                            <h1>{{ page.title }}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-		<!-- Tag Ordering -->
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-xs-6 col-sm-3 col-sm-offset-1">
-					A .. Z
-					<hr>
-		{% capture site_tags %}
-			{% for tag in site.tags %}|{{ tag | first }}#{{ tag | last | size }}{% endfor %}
-		{% endcapture %}
+        <!-- Tag Ordering -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-xs-6 col-sm-3 col-sm-offset-1">
+                    A .. Z
+                    <hr>
+        {% capture site_tags %}
+            {% for tag in site.tags %}|{{ tag | first }}#{{ tag | last | size }}{% endfor %}
+        {% endcapture %}
 
-		{% assign sorted_tags = site_tags | split: '|' | sort %}
-		{% for tag in sorted_tags %}
-			{% if tag != sorted_tags[0] %}
-			    {% assign tag_items = tag | split: '#' %}
-					<ul class="list-inline"><li><a href="#{{ tag_items[0] }}">
-						<span class="badge">{{ tag_items[0] }}</span>
-						<span class="badge badge-n">{{ tag_items[1] }}</span>
-					</a></li></ul>
-			{% endif %}
-		{% endfor %}
+        {% assign sorted_tags = site_tags | split: '|' | sort %}
+        {% for tag in sorted_tags %}
+            {% if tag != sorted_tags[0] %}
+                {% assign tag_items = tag | split: '#' %}
+                    <ul class="list-inline"><li><a href="#{{ tag_items[0] }}">
+                        <span class="badge">{{ tag_items[0] }}</span>
+                        <span class="badge badge-n">{{ tag_items[1] }}</span>
+                    </a></li></ul>
+            {% endif %}
+        {% endfor %}
 
-					<hr>
-				</div>
+                    <hr>
+                </div>
 
 
-				<div class="col-lg-2 col-lg-offset-3 col-md-2 col-md-offset-3 col-xs-6 col-sm-3 col-sm-offset-3">
-					>
- 					<hr>
+                <div class="col-lg-2 col-lg-offset-3 col-md-2 col-md-offset-3 col-xs-6 col-sm-3 col-sm-offset-3">
+                    >
+                     <hr>
 
-		{% capture site_tags %}
-			{% for tag in site.tags %}|{{ tag | last | size }}#{{ tag | first }}{% endfor %}
-		{% endcapture %}
+        {% capture site_tags %}
+            {% for tag in site.tags %}|{{ tag | last | size }}#{{ tag | first }}{% endfor %}
+        {% endcapture %}
 
-		{% assign sorted_tags_frequency = site_tags | split: '|' | sort %}
-		{% for tag in sorted_tags_frequency reversed %}
-			{% if tag != sorted_tags_frequency[0] %}
-			    {% assign tag_items = tag | split: '#' %}
-			
-					<ul class="list-inline"><li><a class="no-deco" href="#{{ tag_items[1] }}">
-						<span class="badge badge-n">{{ tag_items[0] }}</span>
-						<span class="badge">{{ tag_items[1] }}</span>
-					</a></li></ul>
-			{% endif %}
-		{% endfor %}
-					<hr>
-				</div>
-			</div>
+        {% assign sorted_tags_frequency = site_tags | split: '|' | sort %}
+        {% for tag in sorted_tags_frequency reversed %}
+            {% if tag != sorted_tags_frequency[0] %}
+                {% assign tag_items = tag | split: '#' %}
+            
+                    <ul class="list-inline"><li><a class="no-deco" href="#{{ tag_items[1] }}">
+                        <span class="badge badge-n">{{ tag_items[0] }}</span>
+                        <span class="badge">{{ tag_items[1] }}</span>
+                    </a></li></ul>
+            {% endif %}
+        {% endfor %}
+                    <hr>
+                </div>
+            </div>
 
-		<!-- Main Content -->
-		<div class="container" style="padding-top: 4.0em;">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <!-- Main Content -->
+        <div class="container" style="padding-top: 4.0em;">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
 {% for tag in sorted_tags %}
-	{% if tag != sorted_tags[0] %}
-		{% assign tag_items = tag | split: '#' %}
-		<div id="{{ tag_items[0] }}" style="padding-top: 3.0em;">
-			<ul class="list-inline"><li>
-				<span class="badge ">{{ tag_items[0] }}</span>
-				<span class="badge badge-n">{{ tag_items[1] }}</span>
-			</li></ul>
+    {% if tag != sorted_tags[0] %}
+        {% assign tag_items = tag | split: '#' %}
+        <div id="{{ tag_items[0] }}" style="padding-top: 3.0em;">
+            <ul class="list-inline"><li>
+                <span class="badge ">{{ tag_items[0] }}</span>
+                <span class="badge badge-n">{{ tag_items[1] }}</span>
+            </li></ul>
 
-			{% capture some_tag %}{{ tag_items[0] }}{% endcapture %}
-			{% assign pages_list = site.tags[some_tag] %}
-			<ul class="post-preview" style="padding-bottom: 4.0em; padding-top: 1.0em;">
-			{% for post in pages_list %}
-					<a href="{{ post.url }}">
-						<h2 class="post-title">
-							{{ post.title }}
-						</h2>
-						<h3 class="post-subtitle">
-							{{ post.excerpt }}
-						</h3>
-					</a>
-				{% if page.language == 'en' then %}
-					<p class="post-meta">Posted by&#32;<a>{{ page.author }}</a>&#32;on&#32;{{ post.date | date: "%B %-d, %Y" }}.</p>
-				{% elsif page.language == 'pt-BR' %}
-					<p class="post-meta">Postado por&#32;<a>{{ page.author }}</a>,&#32;em&#32;{{ post.date | date: "%-d" }}
-	                &#32;de&#32;
-	                {% assign m = post.date | date: "%-m" %}
-	                {% case m %}
-	                    {% when '1' %}Janeiro
-	                    {% when '2' %}Fevereiro
-	                    {% when '3' %}Março
-	                    {% when '4' %}Abril
-	                    {% when '5' %}Maio
-	                    {% when '6' %}Junho
-	                    {% when '7' %}Julho
-	                    {% when '8' %}Agosto
-	                    {% when '9' %}Setembro
-	                    {% when '10' %}Outubro
-	                    {% when '11' %}Novembro
-	                    {% when '12' %}Dezembro
-	                {% endcase %}
-	                &#32;de&#32;
-	                {{ post.date | date: "%Y" }}.
-					</p>
-				{% endif %}
-				<ul class="list-inline">
-						<li><span class="badge">{{ post.language }}</span></li>
-				</ul>
-				<hr>
-			{% endfor %}
-			{% assign pages_list = nil %}
-			{% assign group = nil %}
-			</ul>
-			<hr>
-		</div>		
-	{% endif %}
+            {% capture some_tag %}{{ tag_items[0] }}{% endcapture %}
+            {% assign pages_list = site.tags[some_tag] %}
+            <ul class="post-preview" style="padding-bottom: 4.0em; padding-top: 1.0em;">
+            {% for post in pages_list %}
+                    <a href="{{ post.url }}">
+                        <h2 class="post-title">
+                            {{ post.title }}
+                        </h2>
+                        <h3 class="post-subtitle">
+                            {{ post.excerpt }}
+                        </h3>
+                    </a>
+                {% if page.language == 'en' then %}
+                    <p class="post-meta">Posted by&#32;<a>{{ page.author }}</a>&#32;on&#32;{{ post.date | date: "%B %-d, %Y" }}.</p>
+                {% elsif page.language == 'pt-BR' %}
+                    <p class="post-meta">Postado por&#32;<a>{{ page.author }}</a>,&#32;em&#32;{{ post.date | date: "%-d" }}
+                    &#32;de&#32;
+                    {% assign m = post.date | date: "%-m" %}
+                    {% case m %}
+                        {% when '1' %}Janeiro
+                        {% when '2' %}Fevereiro
+                        {% when '3' %}Março
+                        {% when '4' %}Abril
+                        {% when '5' %}Maio
+                        {% when '6' %}Junho
+                        {% when '7' %}Julho
+                        {% when '8' %}Agosto
+                        {% when '9' %}Setembro
+                        {% when '10' %}Outubro
+                        {% when '11' %}Novembro
+                        {% when '12' %}Dezembro
+                    {% endcase %}
+                    &#32;de&#32;
+                    {{ post.date | date: "%Y" }}.
+                    </p>
+                {% endif %}
+                <ul class="list-inline">
+                        <li><span class="badge">{{ post.language }}</span></li>
+                </ul>
+                <hr>
+            {% endfor %}
+            {% assign pages_list = nil %}
+            {% assign group = nil %}
+            </ul>
+            <hr>
+        </div>        
+    {% endif %}
 {% endfor %}
 
-				</div>
-			</div>
-		</div>
+                </div>
+            </div>
+        </div>
 
-		<hr>
+        <hr>
 
-		{% include blog_footer.html %}
-		
-		{% include global_scripts.html %}
-		
-		<!-- Custom Theme JavaScript -->
-		<script src="/js/clean-blog.min.js"></script> 
-	</body>
+        {% include blog_footer.html %}
+        
+        {% include global_scripts.html %}
+        
+        <!-- Custom Theme JavaScript -->
+        <script src="/js/clean-blog.min.js"></script> 
+    </body>
 </html>

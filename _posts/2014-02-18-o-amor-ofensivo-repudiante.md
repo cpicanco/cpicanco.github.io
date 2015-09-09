@@ -1,5 +1,4 @@
 ---
-layout: "Post"
 title: O amor.
 excerpt: 'ofensivo, repudiante'
 tags: ['poema', 'escatologia', 'repudiante']

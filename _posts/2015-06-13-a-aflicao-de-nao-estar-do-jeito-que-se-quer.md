@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: Todo errado
 excerpt: a aflição de não estar do jeito que se quer
 tags: ['poema', 'escatologia', 'heptassílabo']

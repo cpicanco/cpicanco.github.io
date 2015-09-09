@@ -1,5 +1,4 @@
 ---
-layout: "Post"
 title: Olá mundo. 
 excerpt: exemplo da escrita em markdown
 tags: ['web design', 'markdown']
@@ -104,22 +103,22 @@ ___
 **Destaque de código cercado**
 
 ```
-	``` python
-	# python
-	def some_method(var='exemple'):
-	   if var:
-	      pass
-	   else:
-	      result
-	```
+    ``` python
+    # python
+    def some_method(var='exemple'):
+       if var:
+          pass
+       else:
+          result
+    ```
 
-	``` delphi
-	// pascal
-	procedure some_procedure( Value : string = 'text');
-	begin
-	   ShowMessage(text);
-	end;
-	```
+    ``` delphi
+    // pascal
+    procedure some_procedure( Value : string = 'text');
+    begin
+       ShowMessage(text);
+    end;
+    ```
 ```
 
 ``` python

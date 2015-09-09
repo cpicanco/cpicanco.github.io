@@ -1,5 +1,4 @@
 ---
-layout: Post
 title: É possível uma subjetividade que não se preste ao conhecimento?
 excerpt: "subjetividade, conhecimento e segredos"
 tags: ['ensaio', 'subjetividade', 'amor']
