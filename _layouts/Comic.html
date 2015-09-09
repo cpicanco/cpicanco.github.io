@@ -1,0 +1,189 @@
+<!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+
+{% capture IMAGE %}{{ site.url }}/media/blog/{{ page.comic }}{% endcapture %}    
+{% include blog_head.html share-image=IMAGE %}
+
+{% if page.language == 'en' then %}
+  {% assign PAGE_PATH = "/blog/en/" %}
+  {% assign disqus_language = page.language %}
+{% elsif page.language == 'pt-BR' %}
+  {% assign PAGE_PATH = "/blog/pt-br/" %}
+  {% assign disqus_language = 'pt' %}
+{% endif %}
+  <body>
+   {% include blog_nav.html home-path=PAGE_PATH %}   
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+  {% if page.image != null then %}
+    <header class="intro-header" style="background-image: url('/media/blog/{{ page.image }}')">
+  {% else %}
+    <header class="intro-header" style="background-color:#153038;">
+  {% endif %}
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>{{ page.title }}</h1>
+              <h2 class="subheading">{{ page.excerpt }}</h2>                                
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Post Content -->
+    <div id="infinite-container" class="infinite-container">
+      <article id="{{ page.id }}" class="infinite-item">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <ul class="list-inline">
+            {% for tag in page.tags %}
+                <li>
+                  <a href="/blog/{{ page.language | downcase }}/tags/#{{ tag }}"><span class="badge">{{ tag }}</span></a>
+                </li>
+            {% endfor %}
+              </ul>   
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              {{ content | markdownify }}
+              <p><img class="img-responsive center-block" src="/media/blog/{{ page.comic }}" alt="{{ page.title }}"  height="80%" width="80%" /></p>
+              <p>_</p>
+            {% if page.language == 'en' then %}
+              <span class="meta margin-top"><a>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+            {% elsif page.language == 'pt-BR' %}
+              <span class="meta margin-top">&#32;<a>{{ page.author }}</a>,&#32;
+              {{ page.date | date: "%-d" }}
+              &#32;de&#32;
+              {% assign m = page.date | date: "%-m" %}
+              {% case m %}
+                {% when '1' %}Janeiro
+                {% when '2' %}Fevereiro
+                {% when '3' %}Março
+                {% when '4' %}Abril
+                {% when '5' %}Maio
+                {% when '6' %}Junho
+                {% when '7' %}Julho
+                {% when '8' %}Agosto
+                {% when '9' %}Setembro
+                {% when '10' %}Outubro
+                {% when '11' %}Novembro
+                {% when '12' %}Dezembro
+              {% endcase %}
+              &#32;de&#32;
+              {{ page.date | date: "%Y" }}.
+              </span>
+            {% endif %}
+              <hr>
+              {% include social_buttons.html %}
+              <hr>
+  {% assign comic_posts = site.posts | where: "layout", "Comic" %}
+  {% assign posts_count = comic_posts | size %}
+  {% for post in comic_posts %}
+    {% if post.title == page.title then %}
+      {% if forloop.last == True %}
+      {% else %}
+        {% assign i = forloop.index %}
+        {{ comic_posts[i].title }}
+      {% endif %}
+    {% endif%}
+  {% endfor %}
+              <div class="text-center">         
+              {% if page.language == 'en' then %}
+                <button id="{{ page.id }}-btn" class="btn btn-default btn-block" onclick="" >Click here to leave a commentary!</button>
+              {% elsif page.language == 'pt-BR' %}
+                <button id="{{ page.id }}-btn" class="btn btn-default btn-block" onclick="updateDisqus('{{ page.id }}', '{{ site.url }}{{ page.url }}', '{{ page.title }}', '{{ disqus_language }}', this.id)" >Clique aqui e deixe seu comentário!</button>
+              {% endif %}
+              </div>
+              <div id="disqus_thread"></div>    
+            </div>
+          </div>        
+      </article>   
+    </div>  
+
+  <!-- Next post -->
+  {% if posts_count == i then %}
+  {% else %}
+  <a class="infinite-more-link" href="{{ comic_posts[i].url }}"> {{ posts_count }}:{{ i }}</a>
+  {% endif %}
+
+    {% include blog_footer.html %}
+
+    {% include global_scripts.html %}
+    {% include highlight_scripts.html %}
+    {% include infinite_scripts.html %}
+    {% include social_scripts.html %}
+    {% include social_disqus_scripts.html %}
+
+  <!-- Twitter, Facebook, Disqus, jQuery documentation
+  https://dev.twitter.com/web/javascript/initialization
+  https://developers.facebook.com/docs/reference/javascript/FB.XFBML.parse
+  https://help.disqus.com/customer/portal/articles/472107-using-disqus-on-ajax-sites
+  http://api.jquery.com/ajaxcomplete/
+
+   -->
+    <!-- Custom Theme JavaScript -->
+    <script src="/js/clean-blog.min.js"></script>
+
+    <script type="text/javascript">
+      var disabled_message = "Deixe seu comentário!";
+      var enabled_message = "Clique aqui e deixe seu comentário!";
+      var last_button = document.getElementById("{{ page.id }}-btn");
+
+      last_button.disabled = true;
+      last_button.firstChild.data = disabled_message;
+
+      function updateDisqus(newIdentifier, newUrl, newTitle, newLanguage, btnId) {
+        var disqus_thread = document.getElementById("disqus_thread");
+
+        // enables last_button before reassignment 
+        last_button.disabled = false;
+        last_button.firstChild.data = enabled_message;
+
+        // reassigns and disables the current button
+        last_button = document.getElementById(btnId);
+        last_button.disabled = true;
+        last_button.firstChild.data = disabled_message;
+
+        // remove old disqus_thread element
+        disqus_thread.parentElement.removeChild(disqus_thread);
+
+        // a new disqus_thread element should be created
+        var disqus_thread = document.createElement('DIV');
+        disqus_thread.setAttribute("id", "disqus_thread");
+
+        // for this specific template, lets appending it to the button's grand parent
+        last_button.parentElement.parentElement.appendChild(disqus_thread);
+
+        // update the disqus_thread, see the disqus docs for details
+        resetDisqus(newIdentifier, newUrl, newTitle, newLanguage);
+        last_button.firstChild.data = last_button.firstChild.data;
+        
+      };
+
+      // callback for each ajax call
+      $(document).ajaxComplete(function(){
+          try{
+            var lastInfiniteChild = document.getElementById("infinite-container").lastElementChild;
+            var disqus_tag = '<div id="disqus_thread"></div>';
+
+            // we don't want elements with the same 'disqus_thread' id, so remove them
+            lastInfiniteChild.innerHTML = lastInfiniteChild.innerHTML.replace(disqus_tag, "");
+
+            // update twitter
+            twttr.widgets.load(lastInfiniteChild);
+
+            // update facebook
+            FB.XFBML.parse(lastInfiniteChild);
+
+            // update gplus
+            //gapi.plusone.go();
+          }catch(ex){}
+        });
+    </script> 
+  </body>
+</html>
