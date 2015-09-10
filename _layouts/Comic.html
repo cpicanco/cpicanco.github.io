@@ -14,28 +14,29 @@
 {% endif %}
   <body>
    {% include blog_nav.html home-path=PAGE_PATH %}   
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-  {% if page.image != null then %}
-    <header class="intro-header" style="background-image: url('/media/blog/{{ page.image }}')">
-  {% else %}
-    <header class="intro-header" style="background-color:#153038;">
-  {% endif %}
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="post-heading">
-              <h1>{{ page.title }}</h1>
-              <h2 class="subheading">{{ page.excerpt }}</h2>                                
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
 
     <!-- Post Content -->
-    <div id="infinite-container" class="infinite-container">
-      <article id="{{ page.id }}" class="infinite-item">
+    <div id="infinite-container" class="infinite-container" style="padding: 0; margin: 0;">
+      <article class="infinite-item">
+          <!-- Page Header -->
+          <!-- Set your background image for this header on the line below. -->
+        {% if page.image != null then %}
+          <header class="intro-header" style="background-image: url('/media/blog/{{ page.image }}')">
+        {% else %}
+          <header class="intro-header" style="background-color:#153038;">
+        {% endif %}
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                  <div class="post-heading">
+                    <h1>{{ page.title }}</h1>
+                    <h2 class="subheading">{{ page.excerpt }}</h2>                                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        <div class="container">
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <ul class="list-inline">
@@ -88,7 +89,6 @@
       {% if forloop.last == True %}
       {% else %}
         {% assign i = forloop.index %}
-        {{ comic_posts[i].title }}
       {% endif %}
     {% endif%}
   {% endfor %}
@@ -101,14 +101,15 @@
               </div>
               <div id="disqus_thread"></div>    
             </div>
-          </div>        
+          </div>
+        </div>        
       </article>   
     </div>  
 
   <!-- Next post -->
   {% if posts_count == i then %}
   {% else %}
-  <a class="infinite-more-link" href="{{ comic_posts[i].url }}"> {{ posts_count }}:{{ i }}</a>
+  <a class="infinite-more-link" href="{{ comic_posts[i].url }}"></a>
   {% endif %}
 
     {% include blog_footer.html %}
@@ -160,9 +161,7 @@
         last_button.parentElement.parentElement.appendChild(disqus_thread);
 
         // update the disqus_thread, see the disqus docs for details
-        resetDisqus(newIdentifier, newUrl, newTitle, newLanguage);
-        last_button.firstChild.data = last_button.firstChild.data;
-        
+        resetDisqus(newIdentifier, newUrl, newTitle, newLanguage);       
       };
 
       // callback for each ajax call
@@ -171,7 +170,7 @@
             var lastInfiniteChild = document.getElementById("infinite-container").lastElementChild;
             var disqus_tag = '<div id="disqus_thread"></div>';
 
-            // we don't want elements with the same 'disqus_thread' id, so remove them
+            // we don't want elements with the same 'disqus_thread' id all over the place, so remove them
             lastInfiniteChild.innerHTML = lastInfiniteChild.innerHTML.replace(disqus_tag, "");
 
             // update twitter
