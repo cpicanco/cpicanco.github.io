@@ -1,0 +1,61 @@
+<!-- Twitter, Facebook, Disqus, jQuery documentation
+    .    https://dev.twitter.com/web/javascript/initialization
+    .    https://developers.facebook.com/docs/reference/javascript/FB.XFBML.parse
+    .    https://help.disqus.com/customer/portal/articles/472107-using-disqus-on-ajax-sites
+    .    http://api.jquery.com/ajaxcomplete/
+  -->
+    <script type="text/javascript">
+      var disabled_message = "{{ disabled_message }}";
+      var enabled_message = "{{ enabled_message }}";    
+      var last_button = document.getElementById("{{ page.id }}-btn");
+
+      last_button.disabled = true;
+      last_button.innerHTML = disabled_message;
+
+      function updateDisqus(newIdentifier, newUrl, newTitle, newLanguage, btnId) {
+        var disqus_thread = document.getElementById("disqus_thread");
+
+        // enables last_button before reassignment 
+        last_button.innerHTML = enabled_message;
+        last_button.disabled = false;
+        
+        // reassigns and disables the current button
+        last_button = document.getElementById(btnId);
+        last_button.innerHTML = disabled_message;
+        last_button.disabled = true;
+        
+        // remove old disqus_thread element
+        disqus_thread.parentElement.removeChild(disqus_thread);
+        last_button.scrollIntoView(true);
+
+        // a new disqus_thread element should be created
+        var disqus_thread = document.createElement('DIV');
+        disqus_thread.setAttribute("id", "disqus_thread");
+
+        // for this specific template, lets appending it to the button's grand parent
+        last_button.parentElement.parentElement.appendChild(disqus_thread);
+
+        // update the disqus_thread, see the disqus docs for details
+        resetDisqus(newIdentifier, newUrl, newTitle, newLanguage);      
+      };
+
+      // callback for each ajax call
+      $(document).ajaxComplete(function(){
+          try{
+            var lastInfiniteChild = document.getElementById("infinite-container").lastElementChild;
+            var disqus_tag = '<div id="disqus_thread"></div>';
+
+            // we don't want elements with the same 'disqus_thread' id all over the place, so remove them
+            lastInfiniteChild.innerHTML = lastInfiniteChild.innerHTML.replace(disqus_tag, "");
+
+            // update twitter
+            twttr.widgets.load(lastInfiniteChild);
+
+            // update facebook
+            FB.XFBML.parse(lastInfiniteChild);
+
+            // update gplus
+            //gapi.plusone.go();
+          }catch(ex){}
+        });
+    </script> 
