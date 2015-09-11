@@ -31,6 +31,7 @@ Also some work was done with:
  - Twitter Card from image and description preview on Twitter;
  - [Google OSE](https://www.google.com/webmasters/);
  - [Grunt Task Runner](http://gruntjs.com/);
+ - for now, using [compressor.io](https://compressor.io/) manually for images;
 
 Finally, [AchievementGen](http://achievementgen.com/360/) was used to generate achievements images, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
