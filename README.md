@@ -35,7 +35,7 @@ Also some work was done with:
 Finally, [AchievementGen](http://achievementgen.com/360/) was used to generate achievements images, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
 Next steps are:
- - lag work for a completelly auto Pagination system :P
+ - lag work for a completely auto Pagination system :P
  - Load next post by clicking "read more" button; 
  - implement 'About' blog section;
  - explore grunt tasks;
