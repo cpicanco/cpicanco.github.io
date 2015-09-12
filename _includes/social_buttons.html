@@ -2,19 +2,41 @@
             <ul class="list-inline">
             {% if page.language == 'en' then %}
               <li>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}, from {{ page.author }}'s blog" data-counturl="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                <a id="tw-root" href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}, from {{ page.author }}'s blog" data-counturl="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="crpicanco" title="Tweet">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
               </li>
 
               <li id="fb-root">
-                <a class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-share="true" data-text="{{ page.title }}, from {{ page.author }}'s blog" data-counturl="{{ site.url }}{{ page.url }}">Facebook</a>
+                <a id="fb-fa" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}', 'facebook-share','width=580,height=296');return false;" title="Share on Facebook" >
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                <a class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-share="true" data-text="{{ page.title }}, from {{ page.author }}'s blog" data-counturl="{{ site.url }}{{ page.url }}"></a>
               </li>
             {% elsif page.language == 'pt-BR' %}
               <li>
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}, do blog do {{ page.author }}" data-counturl="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="crpicanco">Tweet</a>
+                <a id="tw-root" href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.url }}" data-text="{{ page.title }}, blog do {{ page.author }}" data-counturl="{{ site.url }}{{ page.url }}" data-count="horizontal" data-via="crpicanco" title="Tweetar">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
               </li>
 
               <li id="fb-root">
-                <a class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-share="true" data-text="{{ page.title }}, do blog do {{ page.author }}" data-counturl="{{ site.url }}{{ page.url }}">Facebook</a>
+                <a id="fb-fa" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}', 'facebook-share','width=580,height=296');return false;" title="Compartilhe no Facebook" >
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+                <a class="fb-like" data-href="{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-share="true" data-text="{{ page.title }}, blog do {{ page.author }}" data-counturl="{{ site.url }}{{ page.url }}"></a>
               </li>
             {% endif %}
             </ul>
