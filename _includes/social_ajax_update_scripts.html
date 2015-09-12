@@ -39,23 +39,33 @@
         resetDisqus(newIdentifier, newUrl, newTitle, newLanguage);      
       };
 
-      // callback for each ajax call
-      $(document).ajaxComplete(function(){
-          try{
+      // jQuery callback for each ajax call
+      $(document).ajaxComplete(function(event, xhr, settings){
+        // for(var key in settings) {
+        //   alert(key + ' : ' + xhr[key]);
+        // };
+        try{
+          if (settings.crossDomain) {
+            // avoid External ajax calls
+            //console.log("ajax:"+settings.url)
+          } else {
+            // get the last item appended by the infite scroll ajax 
             var lastInfiniteChild = document.getElementById("infinite-container").lastElementChild;
-            var disqus_tag = '<div id="disqus_thread"></div>';
-
+            
             // we don't want elements with the same 'disqus_thread' id all over the place, so remove them
-            lastInfiniteChild.innerHTML = lastInfiniteChild.innerHTML.replace(disqus_tag, "");
+            $(lastInfiniteChild).find("#disqus_thread").remove();
 
             // update twitter
-            twttr.widgets.load(lastInfiniteChild);
-
+            tweetHover($(lastInfiniteChild).find("#tw-root")[0]);
+            
             // update facebook
-            FB.XFBML.parse(lastInfiniteChild);
-
+            facebookHover($(lastInfiniteChild).find("#fb-root")[0]);
+            
             // update gplus
             //gapi.plusone.go();
-          }catch(ex){}
-        });
+          }
+        }catch(ex){
+          //do nothing
+        }
+      });
     </script> 
