@@ -6,14 +6,11 @@ grunt uglify:dynamic
 // changes in css/src were made
 grunt cssmin:dynamic
 
-// css concatenate
-grunt concat
-
-// all
+// both
 grunt
 
+
 // new task
-cd <package.json folder>
 npm install <task-name> --save-dev
 
 // serve github page
