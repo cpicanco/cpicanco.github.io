@@ -9,5 +9,9 @@ grunt cssmin:dynamic
 // both
 grunt
 
+
+// new task
+npm install <task-name> --save-dev
+
 // serve github page
 bundle exec jekyll serve
