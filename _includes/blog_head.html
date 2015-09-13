@@ -41,18 +41,27 @@
     
     <title>{{ page.title }}</title>
 
-    <link rel="image_src" href="{{ include.share-image }}" >
+    <link rel="image_src" href="{{ include.share-image }}">
     <link rel="canonical" href="{{ LINK | remove:'index.html' }}">
     <link rel="icon" href="/media/favicon.ico">
     <!-- Bootstrap core CSS -->
     <!-- Custom CSS -->
-    <!-- Highlight.js --> 
-    <link href="/css/blog-styles.concat.css" rel="stylesheet">
-    <!-- Custom Fonts -->   
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
+    <!-- Highlight.js -->
+    <!-- Css authoring -->
+    <script src="/js/loadCSS.min.js"></script>
+    <script>
+      loadCSS('http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+      loadCSS('http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic');
+      loadCSS('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+      loadCSS('/css/blog-styles.concat.css');
+    </script>
+    <noscript>
+      <link href="/css/blog-styles.concat.css" rel="stylesheet">
+      <!-- Custom Fonts -->   
+      <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    </noscript>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
