@@ -6,20 +6,26 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     concat: {
+      csscover: {
+        src: ['css/min/bootstrap.min.css',
+              'css/min/cover.min.css'
+              ],
+        dest: 'css/cover-styles.concat.css',
+      },    
       cssport: {
-        src: ['css/bootstrap.min.css',
-              'css/starter-template.min.css',
-              'css/sticky-footer.min.css',
-              'css/academicons.min.css',
-              'css/self.min.css'
+        src: ['css/min/bootstrap.min.css',
+              'css/min/starter-template.min.css',
+              'css/min/sticky-footer.min.css',
+              'css/min/academicons.min.css',
+              'css/min/self.min.css'
               ],
         dest: 'css/portfolio-styles.concat.css',
       },
 
       cssblog: {
-        src: ['css/bootstrap.min.css',
-              'css/clean-blog.min.css',
-              'css/monokai_sublime.min.css'
+        src: ['css/min/bootstrap.min.css',
+              'css/min/clean-blog.min.css',
+              'css/min/monokai_sublime.min.css'
               ],
         dest: 'css/blog-styles.concat.css',
       } 
@@ -62,6 +68,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  grunt.registerTask('default', [ 'cssmin:dynamic','uglify:dynamic', 'concat:cssblog', 'concat:cssport' ]);
+  grunt.registerTask('default', [ 'cssmin:dynamic','uglify:dynamic', 'concat' ]);
 
 };
