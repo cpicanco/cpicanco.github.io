@@ -2,11 +2,14 @@
 layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {% for page in site.pages %}
 {% if page.sitemap != false %}  
   <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
+    <loc>{{ site.url }}{{ page.url | remove:'index.html' }}</loc>
   {% if page.lastmod != null %}
     <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
   {% else %}
@@ -17,6 +20,22 @@ layout: null
     <priority>{{ page.priority }}</priority>
   {% else %}
     <priority>0.8</priority>
+  {% endif %}
+  {% if page.pt != null %}
+    <xhtml:link rel="alternate"
+                hreflang="pt-BR"
+                href="{{ site.url }}{{ page.pt }}" />
+    <xhtml:link rel="alternate"
+                hreflang="{{ page.language }}"
+                href="{{ site.url }}{{ page.url | remove:'index.html' }}" />
+  {% endif %}
+  {% if page.en != null %}
+    <xhtml:link rel="alternate"
+                hreflang="en"
+                href="{{ site.url }}{{ page.en }}" />
+    <xhtml:link rel="alternate"
+                hreflang="{{ page.language }}"
+                href="{{ site.url }}{{ page.url | remove:'index.html' }}" />
   {% endif %}
   </url>
 {% endif %}
@@ -32,6 +51,21 @@ layout: null
   {% endif %}
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  {% if page.pt != null %}
+    <xhtml:link rel="alternate"
+                hreflang="pt-BR"
+                href="{{ site.url }}{{ page.pt }}" />
+    <xhtml:link rel="alternate"
+                hreflang="{{ page.language }}"
+                href="{{ site.url }}{{ page.url | remove:'index.html' }}" />
+  {% endif %}
+  {% if page.en != null %}
+    <xhtml:link rel="alternate"
+                hreflang="en"
+                href="{{ site.url }}{{ page.en }}" />
+    <xhtml:link rel="alternate"
+                hreflang="{{ page.language }}"
+                href="{{ site.url }}{{ page.url | remove:'index.html' }}" />
+  {% endif %}
   </url>
 {% endfor %}
-</urlset>
