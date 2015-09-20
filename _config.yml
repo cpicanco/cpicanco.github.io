@@ -11,6 +11,7 @@ exclude: ['.gitignore',
           'README.md',
           'package.json',
           'css/src/',
+          'css/min/',
           'js/src/',
           'node_modules/'
           ]
