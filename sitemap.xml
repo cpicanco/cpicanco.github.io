@@ -52,21 +52,21 @@ layout: null
   {% endif %}
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  {% if page.pt != null %}
+  {% if post.pt != null %}
     <xhtml:link rel="alternate"
                 hreflang="pt-BR"
-                href="{{ site.url }}{{ page.pt }}" />
+                href="{{ site.url }}{{ post.pt }}" />
     <xhtml:link rel="alternate"
-                hreflang="{{ page.language }}"
-                href="{{ site.url }}{{ page.url | remove:'index.html' }}" />
+                hreflang="{{ post.language }}"
+                href="{{ site.url }}{{ post.url | remove:'index.html' }}" />
   {% endif %}
-  {% if page.en != null %}
+  {% if post.en != null %}
     <xhtml:link rel="alternate"
                 hreflang="en"
-                href="{{ site.url }}{{ page.en }}" />
+                href="{{ site.url }}{{ post.en }}" />
     <xhtml:link rel="alternate"
-                hreflang="{{ page.language }}"
-                href="{{ site.url }}{{ page.url | remove:'index.html' }}" />
+                hreflang="{{ post.language }}"
+                href="{{ site.url }}{{ post.url | remove:'index.html' }}" />
   {% endif %}
   </url>
 {% endfor %}
