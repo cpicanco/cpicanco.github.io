@@ -8,18 +8,12 @@
   {% if page.language == 'en' then %} 
     {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}    
     {% include blog_head.html share-image=IMAGE %}
-    {% assign facebook_id = "//connect.facebook.net/en_US/sdk.js" %}
+    {% assign PAGE_PATH = "/blog/en/" %}
   {% elsif page.language == 'pt-BR' %}
     {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
     {% include blog_head.html share-image=IMAGE %}
-    {% assign facebook_id = "//connect.facebook.net/pt_BR/sdk.js" %}
+      {% assign PAGE_PATH = "/blog/pt-br/" %}
   {% endif %}
-{% endif %}
-
-{% if page.language == 'en' then %}
-  {% assign PAGE_PATH = "/blog/en/" %}
-{% elsif page.language == 'pt-BR' %}
-  {% assign PAGE_PATH = "/blog/pt-br/" %}
 {% endif %}
   <body>
    {% include blog_nav.html home-path=PAGE_PATH %}   

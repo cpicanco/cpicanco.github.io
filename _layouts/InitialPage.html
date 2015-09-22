@@ -5,11 +5,9 @@
 {% if page.language == 'en' then %}
     {% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
     {% include blog_head.html share-image=SHARE_IMAGE %}
-    {% assign facebook_id = "//connect.facebook.net/en_US/sdk.js" %}
 {% elsif page.language == 'pt-BR' %}
     {% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
     {% include blog_head.html share-image=SHARE_IMAGE %}
-    {% assign facebook_id = "//connect.facebook.net/pt_BR/sdk.js" %}
 {% endif %}
     <body>
         {% include blog_nav.html home-path="#" %}

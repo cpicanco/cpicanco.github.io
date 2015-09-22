@@ -10,13 +10,11 @@
   {% assign disqus_language = page.language %}
   {% assign disabled_message = 'Leave your commentary!' %}
   {% assign enabled_message = 'Click here and leave your commentary!' %}
-  {% assign facebook_id = "//connect.facebook.net/en_US/sdk.js" %}
 {% elsif page.language == 'pt-BR' %}
   {% assign PAGE_PATH = "/blog/pt-br/" %}
   {% assign disqus_language = 'pt' %}
   {% assign disabled_message = 'Deixe seu comentário!' %}
   {% assign enabled_message = 'Clique aqui e deixe seu comentário!' %}
-  {% assign facebook_id = "//connect.facebook.net/pt_BR/sdk.js" %}
 {% endif %}
   <body>
    {% include blog_nav.html home-path=PAGE_PATH %}   

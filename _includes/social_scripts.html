@@ -32,6 +32,10 @@
         https://developers.facebook.com/docs/javascript/howto/jquery/v2.4
         -->
         <script type="text/javascript">
+          var facebook_sdk = '//connect.facebook.net/en_US/sdk.js';
+          if (document.documentElement.lang = 'pt-BR') {
+            facebook_sdk = '//connect.facebook.net/pt_BR/sdk.js';
+          };
           
           var facebookHover = function(e){
             $(e).hover(
@@ -44,12 +48,10 @@
                     $(this).addClass("share-enabled");
                     $(this).find("#fb-fa").remove();
                   } else { // will load all #fb-root, and it sucks too
-                    $.getScript('{{ facebook_id }}', function(){
+                    $.getScript(facebook_sdk, function(){
                       FB.init({
                         appId   : '179917338701622',
                         xfbml   : true,
-                        status  : true,
-                        cookie  : true,
                         version : 'v2.4'
                       });
                     });
