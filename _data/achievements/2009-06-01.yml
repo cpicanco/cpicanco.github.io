@@ -1,0 +1,58 @@
+en:
+  title: 'Psychodelic drumming.'
+  subtitle: 'Terminer Le Matin des Magiciens.'
+  header: "Malachai, 'O Despertar dos Mágicos'."
+  date-string: 'released in 2009 via Ná Figueredo.'
+  icon: 'ac-fa ac-fa-heart'
+  description: |
+      This album was feed from music produced during the 60s and 70s,
+      specially those made in Brazil, in the US and in England.
+      Kind of mixing Os Mutantes with The Band and The Who.
+      Thou shall not die without listen to the album.
+      
+      By the way, 'Le Matin des Magiciens' is the book, in french,
+      written by Louis Pauwels and Jacques Bergier in 1960,
+      that inspired the title of the album.
+      There is an english translation 'The Morning of the Magicians'.
+
+  widget: |
+    <div class="dropdown">
+      <button id="dLabel" class='btn btn-primary btn-sm dropdown-toggle' type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-music"> Listen to the album!</i> 
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li><a class="fa fa-soundcloud" href="https://soundcloud.com/malachai"> Soundcloud</a></li>
+          <li class="divider"></li>
+          <li><iframe width="200" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/54962736&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></li>
+      </ul>
+    </div>
+
+pt-BR:
+  title: 'Percussão psicódélica.'
+  subtitle: 'Terminer Le Matin des Magiciens.'
+  header: "Álbum 'O Despertar dos Mágicos'."
+  date-string: 'lançado em 2009 via Ná Figueredo.'
+  icon: 'ac-fa ac-fa-heart'
+  description: >
+      Malachai se alimenta da música produzida durante as décadas de 60 e 70,
+      especialmente aquela feita no Brasil, nos Estados Unidos e na Inglaterra.
+      Algo como misturar Os Mutantes com The Band e The Who.
+      Vós não deveis morrerdes antes de ouvirdes o album.
+      
+      Por sinal, 'Le Matin des Magiciens' é o livro, em francês,
+      escrito por Louis Pauwels e Jacques Bergier em 1960,
+      que inspirou o título do álbum. Há um tradução homônima para o português.
+
+  widget: |
+    <div class="dropdown">
+      <button id="dLabel" class='btn btn-primary btn-sm dropdown-toggle' type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-music"> Ouça o album!</i> 
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li><a class="fa fa-soundcloud" href="https://soundcloud.com/malachai"> Soundcloud</a></li>
+          <li class="divider"></li>
+          <li><iframe width="200" height="300" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/54962736&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></li>
+      </ul>
+    </div>

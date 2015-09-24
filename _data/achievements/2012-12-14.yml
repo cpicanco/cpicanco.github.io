@@ -1,0 +1,51 @@
+en:
+  title: 'Game over?'
+  subtitle: 'No! Just happy newlyweds!'
+  header: "Singing for my wife."
+  date-string: 'married since 14 Dec, 2012.'
+  icon: 'ac-fa ac-fa-heart'
+  description: >
+    I love you milady.
+    'A song for you' was written by Leon Russell.
+    I inspired myself by the Ray Charles and The Carpenters versions of the song.
+    
+    This song was produced, recorded, mixed and masterized at Estúdio Livre.
+
+  widget: |
+    <div class="dropdown">
+      <button id="dLabel" class='btn btn-primary btn-sm dropdown-toggle' type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-music"> Listen to the song!</i> 
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li><a class="fa fa-soundcloud" href="https://soundcloud.com/carlitusbatera/leon-russell-a-song-for-you-by"> Soundcloud</a></li>
+          <li class="divider"></li>
+          <li><iframe width="200" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/104171755&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></li>
+      </ul>
+    </div>
+
+pt-BR:
+  title: 'Fim de jogo?'
+  subtitle: 'Não! Apenas felizes recém casados!'
+  header: "Eu cantando para a minha esposa."
+  date-string: 'casados desde 14 de Dezembro, 2012.'
+  icon: 'ac-fa ac-fa-heart'
+  description: >
+    Eu te amo milady.
+    'A song for you' foi escrita por Leon Russell.
+    Eu me inspirei nas versões de Ray Charles e The Carpenters dessa música.
+    
+    Essa música foi produzida, gravada, mixada e masterizada no Estúdio Livre.
+
+  widget: |
+    <div class="dropdown">
+      <button id="dLabel" class='btn btn-primary btn-sm dropdown-toggle' type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-music"> Ouça a música!</i> 
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dLabel">
+          <li><a class="fa fa-soundcloud" href="https://soundcloud.com/carlitusbatera/leon-russell-a-song-for-you-by"> Soundcloud</a></li>
+          <li class="divider"></li>
+          <li><iframe width="200" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/104171755&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe></li>
+      </ul>
+    </div>
