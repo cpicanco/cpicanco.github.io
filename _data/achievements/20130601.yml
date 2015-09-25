@@ -2,7 +2,7 @@ en:
   title: "Rock N' Drum"
   subtitle: "Complete the drums of this full length album."
   header: "Album, 'Música Popular Roqueira'."
-  date-string: 'released in 2013 via Soundcloud.'
+  date-string: 'released in 2013 by Iza, via Soundcloud.'
   icon: 'ac-fa ac-fa-hand-peace-o'
   description: >
     Iza sings, plays the guitars and composes since she was 14 years old.
@@ -35,7 +35,7 @@ pt-BR:
   title: 'Rock & Tambor.'
   subtitle: 'Termine a bateria do album MPR.'
   header: "Álbum, Música Popular Roqueira."
-  date-string: 'lançado em 2013 via Soundcloud.'
+  date-string: 'lançado em 2013 by Iza, via Soundcloud.'
   icon: 'ac-fa ac-fa-hand-peace-o'
   description: >
     Iza canta, toca e compõe desde os 14 anos.
