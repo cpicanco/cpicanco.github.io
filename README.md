@@ -33,7 +33,7 @@ Also some work was done with:
  - [Grunt Task Runner](http://gruntjs.com/);
  - for now, using [compressor.io](https://compressor.io/) manually for images;
 
-Finally, [AchievementGen](http://achievementgen.com/360/) was used to generate achievements images, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
+Finally, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
 Next steps are:
  - lag work for a completely auto Pagination system :P
@@ -46,6 +46,7 @@ Next steps are:
 
 Following files, directories and their contents (including directories, subdirectories and files) are copyright Carlos Rafael Fernandes Picanço. You must not reuse anything therein without my explicit permission:
 
+* _data/
 * _posts/
 * _site/
 * media/
