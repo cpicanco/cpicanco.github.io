@@ -1,19 +1,22 @@
 en:
-  title: "Rock N' Drum."
-  subtitle: "Finish MPR's drum tracks."
-  header: "Iza's 1st album, titled 'Música Popular Roqueira' (MPR)."
+  title: "Rock N' Drum"
+  subtitle: "Complete the drums of this full length album."
+  header: "Album, 'Música Popular Roqueira'."
   date-string: 'released in 2013 via Soundcloud.'
-  icon: 'ac-fa ac-fa-heart'
+  icon: 'ac-fa ac-fa-hand-peace-o'
   description: >
-    The album title "Música Popular Roqueira" (which can be translated to "Rockland Popular Music")
-    makes an analogy with a brazilian music style known as "Música Popular Brasileira, MPB" ("Brazilian Popular Music").
-    We live, instead, in the Rockland nation.
-    
     Iza sings, plays the guitars and composes since she was 14 years old.
     Besides being a musician and lyricist in the project that receives her name,
     shes is a mother of two and a teacher of many.
     I have been her drummer and fan since 2012.
     A loyal squire, as she often says.
+    
+    The album's title "Música Popular Roqueira" can be translated to "Rocker Popular Music".
+    It makes an analogy with a brazilian music style known as "Música Popular Brasileira", or just "MPB",
+    ("Brazilian Popular Music"). The analogy is not funny in english,
+    because "Rocker" and "Brazilian" have different suffixes and will not rhyme.
+    Se, let me translate as "Rocklandian Popular Music".
+    Now we could say that we live in the Rockland nation.
 
   widget: |
     <div class="dropdown">
@@ -31,18 +34,18 @@ en:
 pt-BR:
   title: 'Rock & Tambor.'
   subtitle: 'Termine a bateria do album MPR.'
-  header: '1o album da Iza, entitulado Música Popular Roqueira.'
+  header: "Álbum, Música Popular Roqueira."
   date-string: 'lançado em 2013 via Soundcloud.'
-  icon: 'ac-fa ac-fa-heart'
+  icon: 'ac-fa ac-fa-hand-peace-o'
   description: >
-    O título do album faz uma analogia com o gênero conhecido por "Música Popular Brasileira".
-    Nós, ao contrário, vivemos na nação Roqueira.
-    
     Iza canta, toca e compõe desde os 14 anos.
     Além de musicista e letrista no projeto que recebe seu nome, é mãe e professora. 
     Iza trata os músicos que a acompanham por meio de um apelido carinhoso: Iza e os Agregados.
     Dentre os agregados, estou eu, o baterista, desde 2012.
     Um fiel escudeiro, como ela costuma dizer.
+    
+    O título do album faz uma analogia com o gênero conhecido por "Música Popular Brasileira".
+    Nós vivemos, de certa forma, na nação Roqueira.
 
   widget: |
     <div class="dropdown">

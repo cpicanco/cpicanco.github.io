@@ -6,10 +6,10 @@ en:
   icon: 'ac-fa ac-fa-heart'
   description: >
     I love you milady.
-    'A song for you' was written by Leon Russell.
-    I inspired myself by the Ray Charles and The Carpenters versions of the song.
     
-    This song was produced, recorded, mixed and masterized at Estúdio Livre.
+    'A song for you' was written by Leon Russell.
+    This present version was inspired by the Ray Charles and The Carpenters versions.
+    It was produced, recorded, mixed and masterized at Estúdio Livre.
 
   widget: |
     <div class="dropdown">
@@ -32,10 +32,10 @@ pt-BR:
   icon: 'ac-fa ac-fa-heart'
   description: >
     Eu te amo milady.
-    'A song for you' foi escrita por Leon Russell.
-    Eu me inspirei nas versões de Ray Charles e The Carpenters dessa música.
     
-    Essa música foi produzida, gravada, mixada e masterizada no Estúdio Livre.
+    'A song for you' foi escrita por Leon Russell.
+    A presente versão foi inspirada nas versões de Ray Charles e The Carpenters.
+    Ela foi produzida, gravada, mixada e masterizada no Estúdio Livre.
 
   widget: |
     <div class="dropdown">
