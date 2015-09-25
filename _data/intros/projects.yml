@@ -1,4 +1,5 @@
 en:
+  credential: Behavioral Scientist
   content: >
     I have a degree in Psychology (2010) and a master's degree in Theory and Behavioral Research (2013),
     both from the Universidade Federal do Pará (Brazil).
@@ -13,6 +14,7 @@ en:
     at the same university, and my research interests are computer vision,
     eye tracking and its intersections with basic learning processes.
 pt-BR:
+  credential: Cientista Comportamental
   content: >
     Possuo graduação em Psicologia (2010)
     e mestrado em Teoria e Pesquisa do Comportamento (2013),
