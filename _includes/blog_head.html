@@ -7,6 +7,23 @@
 
   {% capture LINK %}{{ site.url }}{{ page.url }}{% endcapture %}
 
+  {% case page.layout %}
+    {% when 'InitialPage' %}
+      {% if page.language == 'en' then %}
+        {% capture TITLE %}{{ page.title }} Blog. For {{ page.content }}.{% endcapture %}
+      {% elsif page.language == 'pt-BR' %}
+        {% capture TITLE %}{{ page.title }} Blog. Para as {{ page.content }}.{% endcapture %}
+      {% endif %}  
+    {% when 'Tags' %}
+      {% capture TITLE %}In Flagellis. | {{ page.title }}{% endcapture %}
+    {% when 'Post' %}
+      {% capture TITLE %}In Flagellis. | {{ page.title }}{% endcapture %}
+    {% when 'Comic' %}
+      {% capture TITLE %}In Flagellis. | {{ page.title }}{% endcapture %}
+    {% when 'Page' %}
+      {% capture TITLE %}{% endcapture %}
+  {% endcase %}
+
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +31,7 @@
     <meta name="description" content="{{ description }}">
   
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ TITLE }}">
     <meta property="og:type" content="article">
     <meta property="og:description" content="{{ description }}">
     <meta property="og:url" content="{{ LINK | remove:'index.html' }}">
@@ -32,14 +49,14 @@
 
     <!-- Twitter Card properties -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:title" content="{{ TITLE }}">
     <meta name="twitter:creator" content="@crpicanco">
     <meta name="twitter:description" content="{{ description }}">
     <meta name="twitter:image" content="{{ include.share-image }}">
     <meta name="twitter:image:width" content="613">
     <meta name="twitter:image:height" content="448">
     
-    <title>{{ page.title }}</title>
+    <title>{{ TITLE }}</title>
 
     <link rel="image_src" href="{{ include.share-image }}" >
     <link rel="canonical" href="{{ LINK | remove:'index.html' }}">
