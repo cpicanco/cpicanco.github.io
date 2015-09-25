@@ -2,7 +2,7 @@ en:
   title: 'Experimental School for Primates'
   date-string: 'from 2005 to 2013.'
   image: '/media/eep/logo.jpg'
-  style: 'section-eep'
+  style: 'section-end'
   description: >
     <a href="http://www.ufpa.br/eep/english/projeto.html">The Experimental School for Primates</a>
     lab is a branch of the
@@ -37,7 +37,7 @@ pt-BR:
   title: 'Escola Experimental de Primatas'
   date-string: 'de 2005 a 2013.'
   image: '/media/eep/logo.jpg'
-  style: 'section-eep'
+  style: 'section-end'
   description: >
     O laboratório da <a href="http://www.ufpa.br/eep/english/projeto.html">Escola Experimental de Primatas</a>
     é um braço do <a href="http://www.inctecce.com.br/en/">Instituto Nacional de Ciência e Tecnologia sobre

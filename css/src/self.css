@@ -34,21 +34,13 @@
 /*
 	Sections
 */
-.section-fpe {
-  height: 100%;
-  padding-top: 8em;
-  padding-bottom: 10em;
-}
-
-.section-sca {
+.section-top, .section-end {
   height: 100%;
   padding-top: 3.5em;
   padding-bottom: 10em;
 }
 
-.section-eep {
-  height: 100%;
-  padding-top: 2.5em;
+.section-end {
   padding-bottom: 3em;
 }
 

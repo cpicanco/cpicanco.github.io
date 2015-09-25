@@ -9,7 +9,6 @@ grunt cssmin:dynamic
 // both
 grunt
 
-
 // new task
 npm install <task-name> --save-dev
 

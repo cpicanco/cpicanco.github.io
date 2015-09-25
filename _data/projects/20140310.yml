@@ -2,7 +2,7 @@ en:
   title: 'Stimulus Control Software'
   date-string: 'since Mar 10, 2014.'
   image: '/media/scapp/stimulus_control.ico'
-  style: 'section-sca'
+  style: 'section-top'
   description: >
     The <a href="https://github.com/cpicanco/validation_project">tool</a> is a work in progress and can be extended
     to run a wide range of behavioral experiments. Currently, it can be used to design, present, archive and record
@@ -22,7 +22,7 @@ pt-BR:
   title: 'Software de Controle de Estímulos'
   date-string: 'desde 10 de Março, 2014.'
   image: '/media/scapp/stimulus_control.ico'
-  style: 'section-sca'
+  style: 'section-top'
   description: >
     A <a href="https://github.com/cpicanco/validation_project">ferramenta</a> é um trabalho em construção e pode ser
     extendida para executar um amplo espectro de experimentos comportamentais. Em seu estado atual, ela pode ser usada
