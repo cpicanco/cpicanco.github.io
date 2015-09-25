@@ -8,7 +8,8 @@
       <p style="margin-top: 20px; font-family: 'Lucida Console', Monaco, monospace; padding-top: 1am">{{ site.data.intros.achievements[page.language].content }}</p>
       <hr>
       <ul class='timeline'>
-  {% for ac in site.data.achievements %}
+  {% assign sorted_achievements = site.data.achievements | sort %}
+  {% for ac in sorted_achievements reversed %}
   {% assign achievement = ac[1][page.language] %}
         <li>
           <div class='achievement ac-size-2x {{ achievement.icon }}' >
