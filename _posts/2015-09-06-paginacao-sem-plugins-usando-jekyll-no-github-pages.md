@@ -115,8 +115,8 @@ Para percorrer os post na página inicial você pode fazer:
 Para percorrer as páginas subsequentes:
 
 ```
-/* Quantos postagens atendem ao critério de filtragem por idioma? */
-{{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
+/* Quantas postagens atendem ao critério de filtragem por idioma? */
+{% assign posts_count = site.posts | where: "language",page.language | size  %}
 
 /* Quantas páginas são necessárias para apresentar todas as postagens? */
 {{ "{% assign mod_pag = posts_count | modulo:site.mpaginate " }}%}
