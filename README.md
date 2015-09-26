@@ -13,6 +13,8 @@ This site uses [Bootstrap](http://getbootstrap.com/)!
  - posts, layouts and includes examples;
  - post with Github markdown;
  - boolean multilanguange support (en/pt-br);
+ - using `_data` for advanced Templating.
+ - sitemap Template with multilanguage support;
  - Templating for Tags. Tag system compatible with Github Pages.
  - Templating for Pagination. Easy to use static Pagination system with no plugin or gems, compatible with Github Pages. Just push pages on demand and voilà:
 
@@ -31,7 +33,7 @@ Also some work was done with:
  - Twitter Card from image and description preview on Twitter;
  - [Google OSE](https://www.google.com/webmasters/);
  - [Grunt Task Runner](http://gruntjs.com/);
- - for now, using [compressor.io](https://compressor.io/) manually for images;
+ - using [GIMP](http://www.gimp.org/) to compress images;
 
 Finally, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
 
