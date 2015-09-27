@@ -11,12 +11,12 @@ This site uses [Bootstrap](http://getbootstrap.com/)!
 ... And [Jekyll](http://jekyllrb.com/) too!
  - Emoji;
  - posts, layouts and includes examples;
- - post with Github markdown;
+ - post with GitHub markdown;
  - boolean multilanguange support (en/pt-br);
  - using `_data` for advanced Templating.
  - sitemap Template with multilanguage support;
- - Templating for Tags. Tag system compatible with Github Pages.
- - Templating for Pagination. Easy to use static Pagination system with no plugin or gems, compatible with Github Pages. Just push pages on demand and voilà:
+ - Templating for Tags. Tag system compatible with GitHub Pages.
+ - Templating for Pagination. Easy to use static Pagination system with no plugin or gems, compatible with GitHub Pages. Just push pages on demand and voilà:
 
 
 ```

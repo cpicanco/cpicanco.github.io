@@ -8,7 +8,7 @@ image: hello.jpg
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 ---
 
-Post Writing is using Github Flavored Markdown and Emoji.
+Post Writing is using GitHub Flavored Markdown and Emoji.
 
 :smile:
 

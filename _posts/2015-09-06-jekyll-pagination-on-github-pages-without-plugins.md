@@ -1,5 +1,5 @@
 ---
-title: Jekyll pagination on Github Pages without plugins
+title: Jekyll pagination on GitHub Pages without plugins
 tags: ['web design']
 excerpt: with minor manual work
 language: en
@@ -7,7 +7,7 @@ pt: /2015/09/06/paginacao-sem-plugins-usando-jekyll-no-github-pages.html
 copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
 ---
 
-By the time of this wrinting, paginate to multiple paths is not possible if you want to use Github Pages with Jekyll turned on. Github Pages does not allow custom Jekyll plugins, because Jekyll is executed with the `--safe` flag. An alternative is to use Templates and do some manual work. It does allow you to paginate to multiple paths and did not requires any plugin. I am using it to generate pages "on demand" to feed a [Waypoints - Infinite scroll shortcut](http://imakewebthings.com/waypoints/shortcuts/infinite-scroll/).
+By the time of this wrinting, paginate to multiple paths is not possible if you want to use GitHub Pages with Jekyll turned on. GitHub Pages does not allow custom Jekyll plugins, because Jekyll is executed with the `--safe` flag. An alternative is to use Templates and do some manual work. It does allow you to paginate to multiple paths and did not requires any plugin. I am using it to generate pages "on demand" to feed a [Waypoints - Infinite scroll shortcut](http://imakewebthings.com/waypoints/shortcuts/infinite-scroll/).
 
 The present blog is a live example, source is here: [cpicanco.github.io](https://github.com/cpicanco/cpicanco.github.io).
 

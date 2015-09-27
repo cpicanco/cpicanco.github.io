@@ -9,7 +9,7 @@ copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 ---
 
 
-A escrita dos artigos nesse blog estão usando Github Flavored Markdown e o Emoji.
+A escrita dos artigos nesse blog estão usando GitHub Flavored Markdown e o Emoji.
 
 :smile:
 
