@@ -116,7 +116,7 @@ Para percorrer as páginas subsequentes:
 
 ```
 /* Quantas postagens atendem ao critério de filtragem por idioma? */
-{% assign posts_count = site.posts | where: "language",page.language | size  %}
+{{ '{% assign posts_count = site.posts | where: "language",page.language | size ' }}%}
 
 /* Quantas páginas são necessárias para apresentar todas as postagens? */
 {{ "{% assign mod_pag = posts_count | modulo:site.mpaginate " }}%}
