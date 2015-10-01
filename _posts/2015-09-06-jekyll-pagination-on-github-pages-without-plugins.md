@@ -116,7 +116,8 @@ To walk through the subsequent pages:
 
 ```
 /* How many post fits the language? */
-{{ "{% assign posts_count = site.posts | where: "language",page.language | size " }}%}
+
+{{ '{% assign posts_count = site.posts | where: "language",page.language | size ' }}%}
 
 /* How many pages we need? */
 {{ "{% assign mod_pag = posts_count | modulo:site.mpaginate " }}%}
