@@ -1,7 +1,7 @@
 # install
 
   # ruby
-  # https://github.com/postmodern/ruby-install#readme
+  # https://github.com/postmodern/ruby-install#readmes
   # https://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.3.tar.gz
   ruby-install ruby 2.2.3
 
@@ -13,6 +13,9 @@
   
   # libZotero
   sudo pip install libZotero
+
+  # citeproc-py
+  sudo pip install citeproc-py
 
   # the repository
   git clone https://github.com/cpicanco/cpicanco.github.io.git
