@@ -8,11 +8,11 @@
     "author": [
         {
             "family": "Pican&ccedil;o", 
-            "given": "Carlos R. F."
+            "given": "Carlos Rafael Fernandes"
         }, 
         {
             "family": "Barros", 
-            "given": "Romariz S."
+            "given": "Romariz da Silva"
         }
     ], 
     "container-title": "The Psychological Record", 
@@ -21,9 +21,7 @@
     "issued": {
         "date-parts": [
             [
-                "2015", 
-                "03", 
-                "01"
+                "2015"
             ]
         ], 
         "raw": "2015-03-01"

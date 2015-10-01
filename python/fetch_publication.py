@@ -1,5 +1,14 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+"""
+  author: Rafael Picanço.
+  Import publications (zotero api) as csljson.
+  Hack to save them as html and translated by available locales (citeproc).
+  Do not recommended for production. Need better handling of unicode strings.
+
+  citeproc:
+    UserWarning: The following arguments for Reference are unsupported: journalAbbreviation 
+"""
 from __future__ import (absolute_import, division, print_function,unicode_literals)
 
 import os
@@ -13,6 +22,21 @@ from citeproc import Citation, CitationItem
 from citeproc import formatter
 from citeproc.source.json import CiteProcJSON
 
+def warn(citation_item):
+    return "{}' not found.".format(citation_item.key)
+
+def apa_html_utf8(json_data, alocale='en-US'):
+  # CiteProcJSON receives a [{}] not a {}
+  bib_source = CiteProcJSON([json_data])
+  apa = CitationStylesStyle('apa', locale=alocale, validate=False)
+  bibliography = CitationStylesBibliography(apa, bib_source, formatter.html)
+  citation = Citation([CitationItem(json_data['id'])])
+  bibliography.register(citation)
+
+  # handle python weird string type
+  return str(''.join(bibliography.bibliography()[0]).encode('utf-8'))
+
+# weird chars hack
 latin_chars = [('&iexcl;','¡'),('&cent;','¢'),('&pound;','£'),('&curren;','¤'),
   ('&yen;','¥'),('&brvbar;','¦'),('&sect;','§'),('&uml;','¨'),('&copy;','©'),
   ('&ordf;','ª'),('&laquo;','«'),('&not;','¬'),('&reg;','®'),('&macr;','¯'),
@@ -31,58 +55,62 @@ latin_chars = [('&iexcl;','¡'),('&cent;','¢'),('&pound;','£'),('&curren;','¤
   ('&igrave;','ì'),('&iacute;','í'),('&icirc;','î'),('&iuml;','ï'),('&eth;','ð'),
   ('&ntilde;','ñ'),('&ograve;','ò'),('&oacute;','ó'),('&ocirc;','ô'),('&otilde;','õ'),
   ('&ouml;','ö'),('&oslash;','ø'),('&ugrave;','ù'),('&uacute;','ú'),('&ucirc;','û'),
-  ('&uuml;','ü'),('&yacute;','ý'),('&thorn;','þ'),('&yuml;','ÿ')]
+  ('&uuml;','ü'),('&yacute;','ý'),('&thorn;','þ'),('&yuml;','ÿ'),('&ndash;','–'),
+  ('&mdash;', '—'),('&hellip;', '…'),('&#8220;','“'),('&#8221;','”')]
 
-publications_path = os.path.join(os.sep, os.path.dirname(os.getcwd()), '_data', 'publications')
+publicati_path = os.path.join(os.sep, os.path.dirname(os.getcwd()), '_data', 'publications')
+csljson_path = os.path.join(os.sep, os.getcwd(), 'csljson')
 
 # credential
 with open('.credential.json') as credential:
   c = json.loads(credential.read())
   # libZotero/zotero config
   library = zotero.Library(c['libraryType'], c['libraryID'], c['librarySlug'], c['apiKey'])
-  items = library.fetchItems({  #'include':'data',
-                              'collectionKey':c['collectionID'],
-                              'content':'json',
-                              #'style':'apa',
-                              'sort':'date'
-                              })
+
+  # fetch some items
+  items = library.fetchItems({'collectionKey':c['collectionID'],'content':'json','sort':'date'})
 
 for item in items:
-  filename = os.path.join(os.sep, publications_path, item.get('date').replace('-', '')+'.json')
+  yamlname = os.path.join(os.sep, publicati_path, item.get('date').replace('-', ''))
+  jsonname = os.path.join(os.sep, csljson_path, item.get('date').replace('-', ''))
 
+  # csljson must be fetched individually it is parsed as xml
   itemFetched = library.fetchItem(item.itemKey,{'content':'csljson' })
-  xmle = ET.fromstring(itemFetched.content.encode('utf-8'))
 
+  # load json dictionary from xml
+  xmle = ET.fromstring(itemFetched.content.encode('utf-8'))
   csljson = xmle.find('{http://www.w3.org/2005/Atom}content').text
   for cs in latin_chars:
     csljson = csljson.replace(cs[1],cs[0])
-
   json_dict = json.loads(csljson)
 
-  y, m, d = json_dict['issued']['raw'].split('-')
+  # add 'date-parts' from 'raw'
+  y, _, _ = json_dict['issued']['raw'].split('-')
+  #json_dict['issued']['date-parts'] = [[y, m, d]]
+  json_dict['issued']['date-parts'] = [[y]]
 
-  json_dict['issued']['date-parts'] = [[y, m, d]]
-
-  with open(filename, 'w+') as f:
+  # debug
+  # print(json_dict['id'])
+  # print('#######')
+  
+  # save csljson
+  with open(jsonname+'.json', 'w+') as f:
     json.dump(json_dict, f, indent=4, sort_keys=True, ensure_ascii=False)
 
-  print('#######')
-  print(json_dict)
-  print('#######')
-  print(json_dict['id'])
-  # CiteProcJSON receives a [] not a {}
-  bib_source = CiteProcJSON([json_dict])
+  # translate and save a reference as html into our custom yml
+  with open(yamlname+'.yml', 'w+') as f:
+    f.write('pt-BR:\n  '.encode('utf-8'))
+    f.write('html: >\n    '.encode('utf-8'))
+    f.write(apa_html_utf8(json_dict, alocale='pt-BR'))
+    f.write('\n\nen:\n  '.encode('utf-8'))
+    f.write('html: >\n    '.encode('utf-8'))
+    f.write(apa_html_utf8(json_dict))
+    if 'DOI' in json_dict:
+      f.write('\n\ndoi: >\n  ')
+      f.write(json_dict['DOI'])
 
-  apaPTBR = CitationStylesStyle('apa', locale='pt-BR', validate=False)
-  
-  # it defaults to en-US
-  bibStyle_enUS = CitationStylesStyle('apa', validate=False)
+    if 'URL' in json_dict:
+      f.write('\n\nurl: >\n  ')
+      f.write(json_dict['URL'])
 
-  bibliography = CitationStylesBibliography(apaPTBR, bib_source, formatter.html)
-  bibliography.register(Citation([CitationItem(json_dict['id'])]))
-  print(bibliography.bibliography()[0])
-  # bibUS = CitationStylesBibliography(bibStyle_ptBr, bib_source, formatter.html)
-
-
-  
-  break
+    
