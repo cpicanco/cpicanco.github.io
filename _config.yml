@@ -14,7 +14,8 @@ exclude: ['.gitignore',
           'css/src/',
           'css/min/',
           'js/src/',
-          'node_modules/'
+          'node_modules/',
+          'python/',
           ]
 defaults:
   -
