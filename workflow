@@ -10,6 +10,7 @@
 
   # grunt
   sudo npm install -g grunt-cli
+  ln -s /usr/bin/nodejs /usr/bin/node #ubuntu
   
   # libZotero
   sudo pip install libZotero
@@ -44,6 +45,9 @@
 
     # blog
     grunt concat:cssblog
+
+  # fecth new publications when necessary
+    python fetch_publication.py #ctrl+b ;)
 
 # misc
   # new task

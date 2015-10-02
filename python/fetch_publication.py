@@ -7,7 +7,8 @@
   Do not recommended for production. Need better handling of unicode strings.
 
   citeproc:
-    UserWarning: The following arguments for Reference are unsupported: journalAbbreviation 
+    - UserWarning: The following arguments for Reference are unsupported: journalAbbreviation
+    - apa.csl is returns duplicates dots e.g.: '.. '
 """
 from __future__ import (absolute_import, division, print_function,unicode_literals)
 
@@ -113,4 +114,6 @@ for item in items:
       f.write('\n\nurl: >\n  ')
       f.write(json_dict['URL'])
 
-    
+    if 'type' in json_dict:
+      f.write('\n\ntype: ')
+      f.write(json_dict['type'])

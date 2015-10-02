@@ -12,7 +12,7 @@
         }, 
         {
             "family": "Barros", 
-            "given": "Romariz da Silva"
+            "given": "Romariz Silva"
         }
     ], 
     "container-title": "The Psychological Record", 
@@ -27,6 +27,7 @@
         "raw": "2015-03-01"
     }, 
     "language": "en", 
+    "note": "{\"data-set\":\"http://dx.doi.org/10.13140/2.1.4712.7367\"}", 
     "page": "131-139", 
     "title": "Symmetry Evaluation by Comparing Acquisition of Conditional Relations in Successive (Go/No-Go) Matching-to-Sample Training", 
     "type": "article-journal", 

@@ -11,8 +11,12 @@
 }
 
 .self-font {
-  font-family: serif;
-  font-size: 12px;
+  font-family: "Times New Roman", Times,serif;
+  font-size: 14px;
+  line-height: 2;
+  text-indent:-3em;
+  padding-left: 3em;
+
 }
 
 .self-margin-top{

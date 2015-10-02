@@ -5,127 +5,64 @@
   <body>
     {% include nav.html %}
       <div class="container">
-      {% if page.language == 'en' then %}
+  {% assign intro = site.data.intros.publications[page.language] %}
         <div class="Page-header">
-          <h3>Journal Articles</h3>
+          <h3>{{ intro.journal_article }}</h3>
+        </div>
+        <hr>
+  {% assign sorted_publications = site.data.publications | sort %}
+  {% for pub in sorted_publications reversed %}
+    {% assign publication = pub[1] %}
+    {% if publication.type == 'article-journal' %}
+        <blockquote>
+          <div class="self-font">
+            <div>{{ publication[page.language].html | replace: '..','.' | replace: '  ',' '}}</div>
+          </div>
+          <hr>
+          <ul class="list-inline">
+            <li><a href="{{ publication.url }}">{{ intro.url }}</a></li>
+      {% if publication.doi != null %}
+            <li><p>|</p></li>
+            <li><p>Altmetric:</p></li>
+            <li><div data-badge-popover="right" data-badge-type="bar" data-doi="{{ publication.doi }}" data-hide-no-mentions="true" class="altmetric-embed"></div></li>
+      {% endif %}
+          </ul>         
+        </blockquote> 
+    {% endif %}
+  {% endfor %}
+
+        <div class="Page-header">
+          <h3>{{ intro.ms_dissertation }}</h3>
         </div>
 
-        <hr>
-
-        <blockquote class="self-font">
-          Barros, R. D. S., Picanço, C. R. F., Costa, T. D., &amp; De Souza, C. B. A. (2013). Learning-set of simple discrimination reversals in a capuchin monkey.
-          <i>Interação Em Psicologia</i>,<i>&#32;16</i>(1),&#32;1-12.
-          <a href="http://ojs.c3sl.ufpr.br/ojs2/index.php/psicologia/article/view/25197">doi:10.5380/psi.v16i1.25197 (open access)</a>
-          <div data-badge-popover="right" data-badge-type="bar" data-doi="doi:10.5380/psi.v16i1.25197" data-hide-no-mentions="true" class="altmetric-embed"></div>
+<!-- I don't expect to change anything down here -->
+        <hr> 
+    {% assign publication = site.data.publications.20130916 %}
+        <blockquote>
+          <div class="self-font">
+            <div class="csl-entry">{{ publication.[page.language].html | replace: '..','.' | replace: '  ',' ' }}</div>
+          </div>
+          <hr>
+          <ul class="list-inline">
+            <li><a href="{{ publication.url }}">{{ intro.url }}</a></li>
+          </ul> 
         </blockquote> 
 
-
-        <blockquote class="self-font">
-          Brino, A. L. F., Galvão, O. F., Picanço, C. R. F., Barros, R. S., Souza, C. B. A., Goulart, P. R. K., &amp; McIlvane, W. J. (2014). Generalized identity matching-to-sample after multiple-exemplar training in capuchin monkeys.
-          <i>The Psychological Record</i>,<i>&#32;64</i>(4),&#32;693–702.
-          <a href="http://link.springer.com/article/10.1007%2Fs40732-014-0035-x">doi:10.1007/s40732-014-0035-x</a>
-          <div data-badge-popover="right" data-badge-type="bar" data-doi="10.1007/s40732-014-0035-x" data-hide-no-mentions="true" class="altmetric-embed"></div>
-        </blockquote>
-
-        <blockquote class="self-font">
-          Cruz, I. R. N., Picanço, C. R. F., &amp; Barros, R. S. (2012). Using the mask procedure to verify stimulus control relations in capuchin monkeys.
-          <i>Revista Brasileira de Análise do Comportamento</i>,<i>&#32;6</i>(1),&#32;55–66.
-          <a href="http://www.periodicos.ufpa.br/index.php/rebac/article/view/991">(open access)</a> 
-        </blockquote>  
-
-        <blockquote class="self-font">
-          Picanço, C. R. F., &amp; Barros, R. S. (2015). Symmetry evaluation by comparing acquisition of conditional relations in successive (go/no-go) matching-to-sample training. 
-          <i>The Psychological Record</i>,<i>&#32;65</i>(1),&#32;131–139.
-          <a href="http://link.springer.com/10.1007/s40732-014-0096-x">doi:10.1007/s40732-014-0096-x</a>
-          <div data-badge-popover="right" data-badge-type="bar" data-doi="10.1007/s40732-014-0096-x" data-hide-no-mentions="true" class="altmetric-embed"></div>
-        </blockquote>
-
         <div class="Page-header">
-          <h3>Master's Thesis</h3>
+          <h3>{{ intro.bachelor_thesis }}</h3>
         </div>
 
         <hr> 
-
-        <blockquote class="self-font">
-          Picanço, C. R. F. (2013).
-          <i>Symmetry evaluation by comparing successive go no go matching to sample training</i>
-          &#32;.(Dissertação de mestrado | Master's Thesis). Universidade Federal do Pará, Belém, PA, Brasil. Retrieved from:
-          <a href="https://www.academia.edu/9762324/SYMMETRY_EVALUATION_BY_COMPARING_SUCCESSIVE_GO_NO-GO_MATCHING_TO_SAMPLE_TRAINING">link</a> 
-        </blockquote>
-
-        <div class="Page-header">
-          <h3>Bachelor's Thesis</h3>
-        </div>
-
-        <hr> 
-
-        <blockquote class="self-font self-blockquote-last">
-          Picanço, C. R. F. (2010).
-          <i>Learning set of simple discrimination on combined reversals in a capuchin monkey: exploring procedures to foster classes </i>
-          &#32;.(Trabalho de conclusão de curso | Bachelor's Thesis). Universidade Federal do Pará, Belém, PA, Brasil. Retrieved from:
-          <a href="https://www.academia.edu/9762498/LEARNING_SET_DE_REVERS%C3%95ES_DE_DISCRIMINA%C3%87%C3%95ES_SIMPLES_COMBINADAS_COM_MACACO-PREGO_EXPLORANDO_PROCEDIMENTOS_PARA_A_FORMA%C3%87%C3%83O_DE_CLASSES">link</a> 
-        </blockquote>  
-
-      {% elsif page.language == 'pt-BR' %}
-        <div class="Page-header">
-          <h3>Periódicos indexados</h3>
-        </div>
-
-        <hr>
-
-        <blockquote class="self-font">
-          Barros, R. D. S., Picanço, C. R. F., Costa, T. D., &amp; De Souza, C. B. A. (2013). Learning-set de reversões de discriminações simples em macaco-prego.
-          <i>Interação Em Psicologia</i>&#32;(Qualis/CAPES: A2),<i>&#32;16</i>(1),&#32;1-12.
-          <a href="https://www.academia.edu/9761456/LEARNING-SET_OF_SIMPLE_DISCRIMINATION_REVERSALS_IN_A_CAPUCHIN_MONKEY">                        doi:10.5380/psi.v16i1.25197 (acesso aberto)</a>
-          <div data-badge-popover="right" data-badge-type="bar" data-doi="doi:10.5380/psi.v16i1.25197" data-hide-no-mentions="true" class="altmetric-embed"></div>
-        </blockquote> 
-
-        <blockquote class="self-font">
-          Brino, A. L. F., Galvão, O. F., Picanço, C. R. F., Barros, R. S., Souza, C. B. A., Goulart, P. R. K., &amp; McIlvane, W. J. (2014). Generalized Identity Matching-to-Sample After Multiple-Exemplar Training in Capuchin Monkeys.
-          <i>The Psychological Record</i>&#32;(Qualis/CAPES: A1),<i>&#32;64</i>(4),&#32;693–702.
-          <a href="http://link.springer.com/article/10.1007%2Fs40732-014-0035-x">doi:10.1007/s40732-014-0035-x</a>
-          <div data-badge-popover="right" data-badge-type="bar" data-doi="10.1007/s40732-014-0035-x" data-hide-no-mentions="true" class="altmetric-embed"></div>
-        </blockquote>
-
-        <blockquote class="self-font">
-          Cruz, I. R. N., Picanço, C. R. F., &amp; Barros, R. S. (2012). Uso do procedimento de máscara para verificar relações de controle de estímulos em macacos-prego.
-          <i>Revista Brasileira de Análise do Comportamento</i>&#32;(Qualis/CAPES: B2),<i>&#32;6</i>(1),&#32;55–66.
-          <a href="http://www.periodicos.ufpa.br/index.php/rebac/article/view/991">(acesso aberto)</a> 
-        </blockquote>  
-
-        <blockquote class="self-font .self-blockquote-last">
-          Picanço, C. R. F., &amp; Barros, R. S. (2015). Symmetry Evaluation by Comparing Acquisition of Conditional Relations in Successive (Go/No-Go) Matching-to-Sample Training. 
-          <i>The Psychological Record</i>&#32;(Qualis/CAPES: A1),<i>&#32;65</i>(1),&#32;131–139.
-          <a href="http://link.springer.com/10.1007/s40732-014-0096-x">doi:10.1007/s40732-014-0096-x</a>
-          <div data-badge-popover="right" data-badge-type="bar" data-doi="10.1007/s40732-014-0096-x" data-hide-no-mentions="true" class="altmetric-embed"></div>
-        </blockquote>
-
-        <div class="Page-header">
-          <h3>Dissertação de Mestrado</h3>
-        </div>
-
-        <hr> 
-
-        <blockquote class="self-font">
-          Picanço, C. R. F. (2013).
-          <i>Avaliação de simetria por comparação de treinos de emparelhamento ao modelo sucessivo (go/no-go)</i>
-          &#32;.(Dissertação de mestrado). Universidade Federal do Pará, Belém, PA, Brasil. Recuperado de:
-          <a href="https://www.academia.edu/9762324/SYMMETRY_EVALUATION_BY_COMPARING_SUCCESSIVE_GO_NO-GO_MATCHING_TO_SAMPLE_TRAINING">link</a> 
-        </blockquote>
-
-        <div class="Page-header">
-          <h3>Trabalho de Conclusão de Curso</h3>
-        </div>
-
-        <hr> 
-
-        <blockquote class="self-font">
-          Picanço, C. R. F. (2010).
-          <i>Learning Set de Reversões de Discriminações Simples Combinadas com Macaco-prego: Explorando Procedimentos para a Formação de Classes </i>
-          &#32;.(Trabalho de conclusão de curso). Universidade Federal do Pará, Belém, PA, Brasil. Recuperado de:
-          <a href="https://www.academia.edu/9762498/LEARNING_SET_DE_REVERS%C3%95ES_DE_DISCRIMINA%C3%87%C3%95ES_SIMPLES_COMBINADAS_COM_MACACO-PREGO_EXPLORANDO_PROCEDIMENTOS_PARA_A_FORMA%C3%87%C3%83O_DE_CLASSES">link</a> 
-        </blockquote>
-      {% endif %} 
+    {% assign publication = site.data.publications.20100601 %}
+        <blockquote>
+          <div class="self-font">
+            <div class="csl-entry">{{ publication[page.language].html | replace: '..','.' | replace: '  ',' '}}</div>
+          </div>
+          <hr>
+          <ul class="list-inline">
+            <li><a href="{{ publication.url }}">{{ intro.url }}</a></li>
+          </ul> 
+        </blockquote>   
       </div><!-- /.container -->
 
     {% include footer.html %}
