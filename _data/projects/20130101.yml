@@ -27,10 +27,13 @@ en:
 
   extras: |
     <p>For a more detailed description of the scope of this research topic:</p>
-    <blockquote class="self-font">
-      McIlvane, W. J., Dube, W. V., Serna, R. W., Lionello-DeNolf, K. M., Barros, R. S., &amp; Galvão, O. F. (2011). Some Current Dimensions of Translational Behavior Analysis: From Laboratory Research to Intervention for Persons with Autism Spectrum Disorders. In E. A. Mayville &amp; J. A. Mulick (Eds.)  
-      <i>Behavioral foundations of effective autism treatment</i>, (pp. 155–181). Cornwall-on-Hudson, NY: Sloan Publishing.&#32;
-      <a href="http://www.sloanpublishing.com/mayville">(book)</a> 
+    <blockquote>
+      <div class="self-font">McIlvane, W. J., Dube, W. V., Serna, R. W., Lionello-DeNolf, K. M., Barros, R. S., &amp; Galvão, O. F. (2011). Some Current Dimensions of Translational Behavior Analysis: From Laboratory Research to Intervention for Persons with Autism Spectrum Disorders. In E. A. Mayville &amp; J. A. Mulick (Eds.)  
+      <i>Behavioral foundations of effective autism treatment</i>, (pp. 155–181). Cornwall-on-Hudson, NY: Sloan Publishing.&#32;</div>
+      <hr>
+      <ul class="list-inline">
+        <li><a href="http://www.sloanpublishing.com/mayville">Book</a></li>
+      </ul>
     </blockquote> 
 
 pt-BR:
@@ -63,8 +66,11 @@ pt-BR:
   
   extras: |
     <p>Para uma descrição mais detalhada do escopo desse tópico de pesquisa:</p>
-    <blockquote class="self-font">
-      McIlvane, W. J., Dube, W. V., Serna, R. W., Lionello-DeNolf, K. M., Barros, R. S., &amp; Galvão, O. F. (2011). Some Current Dimensions of Translational Behavior Analysis: From Laboratory Research to Intervention for Persons with Autism Spectrum Disorders. In E. A. Mayville &amp; J. A. Mulick (Eds.)
-      <i>Behavioral foundations of effective autism treatment</i>, (pp. 155–181). Cornwall-on-Hudson, NY: Sloan Publishing.&#32;
-      <a href="http://www.sloanpublishing.com/mayville">(book)</a> 
-    </blockquote>
+    <blockquote>
+      <div class="self-font">McIlvane, W. J., Dube, W. V., Serna, R. W., Lionello-DeNolf, K. M., Barros, R. S., &amp; Galvão, O. F. (2011). Some Current Dimensions of Translational Behavior Analysis: From Laboratory Research to Intervention for Persons with Autism Spectrum Disorders. In E. A. Mayville &amp; J. A. Mulick (Eds.)  
+      <i>Behavioral foundations of effective autism treatment</i>, (pp. 155–181). Cornwall-on-Hudson, NY: Sloan Publishing.&#32;</div>
+      <hr>
+      <ul class="list-inline">
+        <li><a href="http://www.sloanpublishing.com/mayville">Livro</a></li>
+      </ul> 
+    </blockquote> 
