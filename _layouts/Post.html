@@ -5,16 +5,10 @@
   {% capture IMAGE  %}{{ site.url}}/media/blog/{{ page.image }}{% endcapture %}
   {% include blog_head.html share-image=IMAGE %}
 {% else %}
-  {% if page.language == 'en' then %} 
-    {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}    
-    {% include blog_head.html share-image=IMAGE %}
-    {% assign PAGE_PATH = "/blog/en/" %}
-  {% elsif page.language == 'pt-BR' %}
-    {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
-    {% include blog_head.html share-image=IMAGE %}
-      {% assign PAGE_PATH = "/blog/pt-br/" %}
-  {% endif %}
+  {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-{{ page.language }}.png{% endcapture %}
+  {% include blog_head.html share-image=IMAGE %}
 {% endif %}
+{% capture PAGE_PATH %}/blog/{{ page.language | downcase }}/{% endcapture %}
   <body>
    {% include blog_nav.html home-path=PAGE_PATH %}   
     <!-- Page Header -->
@@ -55,10 +49,15 @@
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             {{ content | markdownify }}
             <p>_</p>
+          {% if page.author == site.author %}
+            {% capture hrf %}/portfolio/{{ page.language | downcase }}/projects.html{% endcapture %}
+          {% else %}
+            {% capture hrf %}/blog/{{ page.language | downcase }}/{% endcapture %}
+          {% endif %}
           {% if page.language == 'en' then %}
-            <span class="meta margin-top"><a>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+            <span class="meta margin-top"><a href='{{ hrf }}'>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
           {% elsif page.language == 'pt-BR' %}
-            <span class="meta margin-top">&#32;<a>{{ page.author }}</a>,&#32;
+            <span class="meta margin-top">&#32;<a href='{{ hrf }}'>{{ page.author }}</a>,&#32;
             {{ page.date | date: "%-d" }}
             &#32;de&#32;
             {% assign m = page.date | date: "%-m" %}

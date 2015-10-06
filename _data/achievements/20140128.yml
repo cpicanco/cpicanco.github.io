@@ -24,7 +24,7 @@ en:
         <li><a href="https://github.com/pupil-labs/">Pupil Labs GitHub</a></li>
         <li><a href="https://groups.google.com/forum/#!forum/pupil-discuss">Pupil Labs Google Group</a></li>
         <li class="divider"></li>
-        <img width="200" height="relative" src="/media/achievements/wearing-pupil-dev.jpg"></img>
+        <img alt="wearing-pupil-dev" width="200" height="relative" src="/media/achievements/wearing-pupil-dev.jpg"></img>
       </ul>
     </div>
 
@@ -55,6 +55,6 @@ pt-BR:
         <li><a href="https://github.com/pupil-labs/">Pupil Labs - GitHub</a></li>
         <li><a href="https://groups.google.com/forum/#!forum/pupil-discuss">Pupil Labs - Google Group</a></li>
         <li class="divider"></li>
-        <img width="200" height="relative" src="/media/achievements/wearing-pupil-dev.jpg"></img>
+        <img alt="wearing-pupil-dev" width="200" height="relative" src="/media/achievements/wearing-pupil-dev.jpg"></img>
       </ul>
     </div>

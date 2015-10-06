@@ -58,10 +58,15 @@
               {{ content | markdownify }}
               <p><img class="img-responsive center-block" src="/media/blog/{{ page.comic }}" alt="{{ page.title }}"  height="80%" width="80%" /></p>
               <p>_</p>
+            {% if page.author == site.author %}
+              {% capture hrf %}/portfolio/{{ page.language | downcase }}/projects.html{% endcapture %}
+            {% else %}
+              {% capture hrf %}/blog/{{ page.language | downcase }}/{% endcapture %}
+            {% endif %}
             {% if page.language == 'en' then %}
-              <span class="meta margin-top"><a>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
+              <span class="meta margin-top"><a href="{{ hrf }}">{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
             {% elsif page.language == 'pt-BR' %}
-              <span class="meta margin-top">&#32;<a>{{ page.author }}</a>,&#32;
+              <span class="meta margin-top">&#32;<a href="{{ hrf }}">{{ page.author }}</a>,&#32;
               {{ page.date | date: "%-d" }}
               &#32;de&#32;
               {% assign m = page.date | date: "%-m" %}
