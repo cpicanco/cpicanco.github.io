@@ -1,5 +1,6 @@
 mpaginate: 3
 year: 2015
+author: 'Rafael Picanço'
 url: http://www.rafael.picanco.nom.br
 exclude: ['.gitignore',
           'CNAME',
@@ -16,6 +17,7 @@ exclude: ['.gitignore',
           'js/src/',
           'node_modules/',
           'python/',
+          'vendor'
           ]
 defaults:
   -

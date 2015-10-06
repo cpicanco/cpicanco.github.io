@@ -1,5 +1,7 @@
 ## www.rafael.picanco.nom.br
 
+[![Build Status](https://travis-ci.org/cpicanco/cpicanco.github.io.svg?branch=master)](https://travis-ci.org/cpicanco/cpicanco.github.io)
+
 This site uses [Bootstrap](http://getbootstrap.com/)!
  - it is awesome!
  - Blog is a modified version of the [Clean Blog Template](http://startbootstrap.com/template-overviews/clean-blog/) 
