@@ -44,7 +44,7 @@ Next steps are:
  - Load next post by clicking "read more" button; 
  - implement 'About' blog section;
  - explore grunt tasks;
- - improve Portfolio templates;
+ - move from Google Analytics to Piwik;
     
 # License and copyright
 
