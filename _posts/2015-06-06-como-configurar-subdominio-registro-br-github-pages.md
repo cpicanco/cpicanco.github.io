@@ -8,7 +8,7 @@ copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
 
 ### GitHub Pages
 
-O [GitHub](http://github.com) é um excelente serviço de gestão e lançamento de *softwares*. Além disso ele pode servir para gerir e publicar uma infinidade de outros produtos que envolvam texto. Por exemplo, algumas pessoas inclusive tem usando o serviço para gerir receitas e tarefas do lar. O GitHub Pages, por outro lado, tem o objetivo formal de hospedar *sites* ou *blogs* de documentação de *softwares*. Se você for daqueles afeito ao Open Science, ou simplesmente gosta de compartilhar os produtos de sua atividade profissional, o GitHub Pages hospeda sua página gratuitamente. Há também a opção de comprar reservatórios privados, caso você assim prefira.
+O [GitHub](http://github.com) é um excelente serviço de gestão e lançamento de *softwares*. Além disso ele pode servir para gerir e publicar uma infinidade de outros produtos que envolvam texto. Por exemplo, algumas pessoas inclusive tem usado o serviço para gerir receitas e tarefas do lar. O GitHub Pages, por outro lado, tem o objetivo formal de hospedar *sites* ou *blogs* de documentação de *softwares*. Se você for daqueles afeito ao Open Science, ou simplesmente gosta de compartilhar os produtos de sua atividade profissional, o GitHub Pages hospeda sua página gratuitamente. Há também a opção de comprar reservatórios privados, caso você assim prefira.
 
 ### Registro.br
 
@@ -53,7 +53,7 @@ Adicione os seguintes registros:
 
 - o seu `dominío.exemplo.br` deve receber dois registros `A` (apex) com os ip's dos servidores do GitHub Pages (`192.30.252.153` e `192.30.252.154`);
 
-- o seu `sub.dominío.exemplo.br` deve receber um registro `CNAME` com o nome do `suapágina.github.io` no GitHub Pages.
+- o seu `sub.dominío.exemplo.br` deve receber um registro `CNAME` com o nome da `suapágina.github.io` no GitHub Pages.
 
 As minhas configurações ficaram assim:
 <p><img class="img-responsive center-block" src="../../../media/blog/registro-br-dominios-edicao-de-zona.png" alt="Registro.br > Domínios - Edição de Zona" /></p>
