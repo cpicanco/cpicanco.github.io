@@ -46,5 +46,12 @@ Em [nota](http://www5.iqsc.usp.br/esclarecimentos-a-sociedade/) não assinada, n
 
 > A Universidade de São Paulo, ademais, não possui o acesso aos elementos técnico-científicos necessários para a produção da substância, cujo conhecimento é restrito ao docente aposentado e à sua equipe e é protegido por patentes (PI 0800463-3 e PI 0800460-9).
 
+**28 de outubro de 2015**
+O deputado Weliton Prado (PT/MG) apresenta [projeto de lei](http://www2.camara.leg.br/proposicoesWeb/fichadetramitacao?idProposicao=2025544) que dispõe sobre a fabricação, produção e distribuição da Fosfoetanolamina Sintética aos pacientes com câncer.
+
 **29 de outubro de 2015**
 O senado promove [debate](https://youtu.be/jLX0_bT8Gh0?t=37m31s) sobre o tema do uso da fosfoetanolamina para tratamentos oncológicos. O ministério da saúde firma compromisso de fomentar a condução dos testes clínicos necessários.
+
+**29 de outubro de 2015**
+O senado promove [debate](https://youtu.be/jLX0_bT8Gh0?t=37m31s) sobre o tema do uso da fosfoetanolamina para tratamentos oncológicos. O ministério da saúde firma compromisso de fomentar a condução dos testes clínicos necessários.
+
