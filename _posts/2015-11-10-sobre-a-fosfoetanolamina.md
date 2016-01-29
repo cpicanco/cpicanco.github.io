@@ -53,3 +53,6 @@ O senado promove [debate](https://youtu.be/jLX0_bT8Gh0?t=37m31s) sobre o tema do
 **29 de outubro de 2015**
 O senado promove [debate](https://youtu.be/jLX0_bT8Gh0?t=37m31s) sobre o tema do uso da fosfoetanolamina para tratamentos oncológicos. O ministério da saúde firma compromisso de fomentar a condução dos testes clínicos necessários.
 
+**20 de novembro de 2015**
+[Criticismo](http://posgraduando.com/fosfoetanolamina-cura-cancer-imprudencia-divulgacao-cientifica/) em relação aos valores investidos e resultados esperados.
+
