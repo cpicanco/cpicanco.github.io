@@ -8,17 +8,17 @@ image: grand_canyon_sunrise_dark.jpg
 ---
 **Ela**
 
-Cativou num só sorriso,
-desalmado pode ver.
-Sofre agora do clichê
-de querer e não poder.
+Cativou num só sorriso,  
+desalmado pode ver.  
+Sofre agora do clichê  
+de querer e não poder.  
 
-E adora querer, adorando
-na varanda a dor anda
-falando sem dizer 
+E adora querer, adorando  
+na varanda a dor anda  
+falando sem dizer  
 
-ai ai ai... sem dizer
+ai ai ai... sem dizer  
 
-Como um grito
-ante o abismo
-entre nós.
+Como um grito  
+ante o abismo  
+entre nós.  
