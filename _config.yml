@@ -1,5 +1,5 @@
 mpaginate: 3
-year: 2015
+year: 2016
 author: 'Rafael Picanço'
 url: http://www.rafael.picanco.nom.br
 exclude: ['.gitignore',
@@ -68,10 +68,6 @@ defaults:
     values:
       layout: Page
       sitemap: false
-
-kramdown:
-  auto_ids: true
-  input: GFM
 
 gems:
   - jemoji
