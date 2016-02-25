@@ -25,7 +25,7 @@ The present blog is a live example, source is here: [cpicanco.github.io](https:/
 
 ### Structure/File Tree
 
-``` nohighlight
+<pre><code class="nohighlight">
     - root
     .   /_posts
     .      /2052-01-01-all-posts.md
@@ -59,44 +59,38 @@ The present blog is a live example, source is here: [cpicanco.github.io](https:/
     .         /index.html
     . 
     .  index.html
-```
+</code></pre>
 
 The page/x/index.html should have at least the following frontmatter variable:
 
-```
----
-index: x // where x is equal to the corresponding page
----
-```
+
+    ---
+    index: x // where x is equal to the corresponding page
+    ---
+
 
 ### Configuration
 
-Some variables are required in the `_config.yml` configuration file.
+Some variables are required in the `_config.yml` configuration file. This one controls how many post per page.
+    mpaginate: 3
 
-This one controls how many post per page.
-
-```
-mpaginate: 3
-```
 
 Scope/Values defaults were used to determine the destination path. Of course, you could use the `/page/x/index.html`  front matter as well:
+    defaults:
+      -
+        scope:
+          path: "en/page"
+        values:
+          layout: Page
+          language: en
 
-```
-defaults:
-  -
-    scope:
-      path: "en/page"
-    values:
-      layout: Page
-      language: en
+      -
+        scope:
+          path: "man/page"
+        values:
+          layout: Page
+          language: man
 
-  -
-    scope:
-      path: "man/page"
-    values:
-      layout: Page
-      language: man
-```
 
 ### Templates
 
@@ -104,69 +98,66 @@ As noted in the file tree, I am using two `_layout/` templates, one for the init
 
 To walk through the posts in the initial page:
 
-```
-{{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
+    {{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
 
-{{ "{% for post in filtered_posts limit:site.mpaginate " }}%}
-   post.dowhatyouwantbutdontdoitaroundme
-{{ "{% endfor " }}%}
-```
+    {{ "{% for post in filtered_posts limit:site.mpaginate " }}%}
+       post.dowhatyouwantbutdontdoitaroundme
+    {{ "{% endfor " }}%}
+
 
 To walk through the subsequent pages:
 
-```
-/* How many post fits the language? */
 
-{{ '{% assign posts_count = site.posts | where: "language",page.language | size ' }}%}
+    /* How many post fits the language? */
+    {{ '{% assign posts_count = site.posts | where: "language",page.language | size ' }}%}
 
-/* How many pages we need? */
-{{ "{% assign mod_pag = posts_count | modulo:site.mpaginate " }}%}
-{{ "{% assign pages_count = posts_count | divided_by:site.mpaginate | plus:mod_pag " }}%}
+    /* How many pages we need? */
+    {{ "{% assign mod_pag = posts_count | modulo:site.mpaginate " }}%}
+    {{ "{% assign pages_count = posts_count | divided_by:site.mpaginate | plus:mod_pag " }}%}
 
-/* What should be the next page? */
-{{ "{% assign next_pag = page.index | plus:1 " }}%}
+    /* What should be the next page? */
+    {{ "{% assign next_pag = page.index | plus:1 " }}%}
 
-/* Lets calculate an offset to the posts of the current page. */
-{{ "{% assign OFFSET = site.mpaginate | times:page.index " }}%}
+    /* Lets calculate an offset to the posts of the current page. */
+    {{ "{% assign OFFSET = site.mpaginate | times:page.index " }}%}
 
-/* Now, what should be the last page? */
-{{ "{% if site.mpaginate < pages_count " }}%}
-   {{ "{% assign last_pag = pages_count | minus:1 " }}%}
-{{ "{% else " }}%}
-   {{ "{% assign last_pag = pages_count " }}%}
-{{ "{% endif " }}%}
+    /* Now, what should be the last page? */
+    {{ "{% if site.mpaginate < pages_count " }}%}
+       {{ "{% assign last_pag = pages_count | minus:1 " }}%}
+    {{ "{% else " }}%}
+       {{ "{% assign last_pag = pages_count " }}%}
+    {{ "{% endif " }}%}
 
-{{ "{% if OFFSET >= posts_count then " }}%}
-   {{ "{% assign last_pag = page.index " }}%}
-{{ "{% endif " }}%}
+    {{ "{% if OFFSET >= posts_count then " }}%}
+       {{ "{% assign last_pag = page.index " }}%}
+    {{ "{% endif " }}%}
 
-{{ "{% if page.index == last_pag then " }}%}
-      {{ "{% assign next_pag = 'none' " }}%}
-{{ "{% endif " }}%}
+    {{ "{% if page.index == last_pag then " }}%}
+          {{ "{% assign next_pag = 'none' " }}%}
+    {{ "{% endif " }}%}
 
-/* Feedback
-Language={{ "{{ page.language " }}}}
-PostsCount={{ "{{ posts_count " }}}}
-OFFSET={{ "{{ OFFSET " }}}}
-PagesCount={{ "{{ pages_count " }}}}
-NextPage={{ "{{ next_pag " }}}}
-LastPage={{ "{{ last_pag " }}}}
-*/
+    /* Feedback
+    Language={{ "{{ page.language " }}}}
+    PostsCount={{ "{{ posts_count " }}}}
+    OFFSET={{ "{{ OFFSET " }}}}
+    PagesCount={{ "{{ pages_count " }}}}
+    NextPage={{ "{{ next_pag " }}}}
+    LastPage={{ "{{ last_pag " }}}}
+    */
 
-/* Assign the posts to walk through */
-{{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
+    /* Assign the posts to walk through */
+    {{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
 
-/* The walk through */
-{{ "{% for post in filtered_posts limit:site.mpaginate offset:OFFSET " }}%}
-   post.dowhatyouwantbutdontdoitaroundme
-{{ "{% endfor " }}%}
+    /* The walk through */
+    {{ "{% for post in filtered_posts limit:site.mpaginate offset:OFFSET " }}%}
+       post.dowhatyouwantbutdontdoitaroundme
+    {{ "{% endfor " }}%}
 
-/* You might want to differentiate the last page */
-{{ "{% if page.index == last_pag then " }}%}
-   /* I am the last page */
-{{ "{% else " }}%}
-<a class="next-page" href="{{ "{{ page.language | downcase " }}}}/page/{{ "{{ next_pag " }}}}/"></a>
-{{ "{% endif " }}%}
-```
+    /* You might want to differentiate the last page */
+    {{ "{% if page.index == last_pag then " }}%}
+       /* I am the last page */
+    {{ "{% else " }}%}
+        <a class="next-page" href="{{ "{{ page.language | downcase " }}}}/page/{{ "{{ next_pag " }}}}/"></a>
+    {{ "{% endif " }}%}
 
 The `"language",page.language` in the `where:` filter is what populate the array of posts. You can think of it as what controls the type of the page in each path. You can change it to fit your requirements.

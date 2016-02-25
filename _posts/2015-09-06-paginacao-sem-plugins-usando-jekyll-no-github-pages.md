@@ -25,7 +25,7 @@ Este blog é um exemplo vivo dessa solução, o código fonte está aqui: [cpica
 
 ### Árvore de arquivos
 
-``` nohighlight
+<pre><code class="nohighlight">
     - root
     .   /_posts
     .      /2052-01-01-all-posts.md
@@ -59,113 +59,96 @@ Este blog é um exemplo vivo dessa solução, o código fonte está aqui: [cpica
     .         /index.html
     . 
     .  index.html
-```
+</code></pre>
 
 O arquivo "page/x/index.html" deve ter no mínimo a seguinte variável:
+    ---
+    index: x // onde x corresponde ao número da respectiva página
+    ---
 
-```
----
-index: x // onde x corresponde ao número da respectiva página
----
-```
 
 ### Configuração
 
-É necessário adicionar algumas variáveis no arquivo de configuração `_config.yml`:
+É necessário adicionar algumas variáveis no arquivo de configuração `_config.yml`. Esta variável controla o número de posts por página:
+    mpaginate: 3
 
-Esta variável controla o número de posts por página:
-
-```
-mpaginate: 3
-```
 
 Padrões do tipo Scope/Values foram usandos para determinar o caminho de destinho. Também seria possível usar o front matter do arquivos `/page/x/index.html`, como você preferir:
+    defaults:
+      -
+        scope:
+          path: "en/page"
+        values:
+          layout: Page
+          language: en
 
-```
-defaults:
-  -
-    scope:
-      path: "en/page"
-    values:
-      layout: Page
-      language: en
-
-  -
-    scope:
-      path: "man/page"
-    values:
-      layout: Page
-      language: man
-```
+      -
+        scope:
+          path: "man/page"
+        values:
+          layout: Page
+          language: man
 
 ### Templates
 
-Como apresentado na árvore de arquivos do site, estou usando dois templates no caminho `_layout/`, um para a página inicial e outro para as páginas subsequentes:
+Como apresentado na árvore de arquivos do site, estou usando dois templates no caminho `_layout/`, um para a página inicial e outro para as páginas subsequentes. Para percorrer os post na página inicial você pode fazer:
+    {{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
 
-Para percorrer os post na página inicial você pode fazer:
-
-```
-{{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
-
-{{ "{% for post in filtered_posts limit:site.mpaginate " }}%}
-   post.dowhatyouwantbutdontdoitaroundme
-{{ "{% endfor " }}%}
-```
+    {{ "{% for post in filtered_posts limit:site.mpaginate " }}%}
+       post.dowhatyouwantbutdontdoitaroundme
+    {{ "{% endfor " }}%}
 
 Para percorrer as páginas subsequentes:
+    /* Quantas postagens atendem ao critério de filtragem por idioma? */
+    {{ '{% assign posts_count = site.posts | where: "language",page.language | size ' }}%}
 
-```
-/* Quantas postagens atendem ao critério de filtragem por idioma? */
-{{ '{% assign posts_count = site.posts | where: "language",page.language | size ' }}%}
+    /* Quantas páginas são necessárias para apresentar todas as postagens? */
+    {{ "{% assign mod_pag = posts_count | modulo:site.mpaginate " }}%}
+    {{ "{% assign pages_count = posts_count | divided_by:site.mpaginate | plus:mod_pag " }}%}
 
-/* Quantas páginas são necessárias para apresentar todas as postagens? */
-{{ "{% assign mod_pag = posts_count | modulo:site.mpaginate " }}%}
-{{ "{% assign pages_count = posts_count | divided_by:site.mpaginate | plus:mod_pag " }}%}
+    /* Qual deve ser a página seguinte? */
+    {{ "{% assign next_pag = page.index | plus:1 " }}%}
 
-/* Qual deve ser a página seguinte? */
-{{ "{% assign next_pag = page.index | plus:1 " }}%}
+    /* É necessário calcular um deslocamento/desvio em relação às postagens de páginas anteriores. */
+    {{ "{% assign OFFSET = site.mpaginate | times:page.index " }}%}
 
-/* É necessário calcular um deslocamento/desvio em relação às postagens de páginas anteriores. */
-{{ "{% assign OFFSET = site.mpaginate | times:page.index " }}%}
+    /* Qual deve ser a última página? */
+    {{ "{% if site.mpaginate < pages_count " }}%}
+       {{ "{% assign last_pag = pages_count | minus:1 " }}%}
+    {{ "{% else " }}%}
+       {{ "{% assign last_pag = pages_count " }}%}
+    {{ "{% endif " }}%}
 
-/* Qual deve ser a última página? */
-{{ "{% if site.mpaginate < pages_count " }}%}
-   {{ "{% assign last_pag = pages_count | minus:1 " }}%}
-{{ "{% else " }}%}
-   {{ "{% assign last_pag = pages_count " }}%}
-{{ "{% endif " }}%}
+    {{ "{% if OFFSET >= posts_count then " }}%}
+       {{ "{% assign last_pag = page.index " }}%}
+    {{ "{% endif " }}%}
 
-{{ "{% if OFFSET >= posts_count then " }}%}
-   {{ "{% assign last_pag = page.index " }}%}
-{{ "{% endif " }}%}
+    {{ "{% if page.index == last_pag then " }}%}
+          {{ "{% assign next_pag = 'none' " }}%}
+    {{ "{% endif " }}%}
 
-{{ "{% if page.index == last_pag then " }}%}
-      {{ "{% assign next_pag = 'none' " }}%}
-{{ "{% endif " }}%}
+    /* Mostrar os valores das variáveis
+    Language={{ "{{ page.language " }}}}
+    PostsCount={{ "{{ posts_count " }}}}
+    OFFSET={{ "{{ OFFSET " }}}}
+    PagesCount={{ "{{ pages_count " }}}}
+    NextPage={{ "{{ next_pag " }}}}
+    LastPage={{ "{{ last_pag " }}}}
+    */
 
-/* Mostrar os valores das variáveis
-Language={{ "{{ page.language " }}}}
-PostsCount={{ "{{ posts_count " }}}}
-OFFSET={{ "{{ OFFSET " }}}}
-PagesCount={{ "{{ pages_count " }}}}
-NextPage={{ "{{ next_pag " }}}}
-LastPage={{ "{{ last_pag " }}}}
-*/
+    /* Quais posts atendem ao critério de filtragem por idioma? */
+    {{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
 
-/* Quais posts atendem ao critério de filtragem por idioma? */
-{{ "{% assign filtered_posts = site.posts | where: 'language',page.language " }}%}
+    /* Percorrendo os posts */
+    {{ "{% for post in filtered_posts limit:site.mpaginate offset:OFFSET " }}%}
+       post.dowhatyouwantbutdontdoitaroundme
+    {{ "{% endfor " }}%}
 
-/* Percorrendo os posts */
-{{ "{% for post in filtered_posts limit:site.mpaginate offset:OFFSET " }}%}
-   post.dowhatyouwantbutdontdoitaroundme
-{{ "{% endfor " }}%}
-
-/* Você pode, se preferir, diferenciar a última página */
-{{ "{% if page.index == last_pag then " }}%}
-   /* I am the last page */
-{{ "{% else " }}%}
-<a class="next-page" href="{{ "{{ page.language | downcase " }}}}/page/{{ "{{ next_pag " }}}}/"></a>
-{{ "{% endif " }}%}
-```
+    /* Você pode, se preferir, diferenciar a última página */
+    {{ "{% if page.index == last_pag then " }}%}
+       /* I am the last page */
+    {{ "{% else " }}%}
+    <a class="next-page" href="{{ "{{ page.language | downcase " }}}}/page/{{ "{{ next_pag " }}}}/"></a>
+    {{ "{% endif " }}%}
 
 O critério `"language",page.language` no filtro `where:` popula o vetor de postagens `filtered_posts`. Você pode entender esse critério como aquilo que define quais postagens devem ser incluidas nos destinos configurados. Altere esse critério como preferir. 

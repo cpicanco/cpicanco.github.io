@@ -19,19 +19,18 @@ ___
 
 **Cabeçalhos**
 
-```
-# Cabeçalho 1
 
-## Cabeçalho 2
+    # Cabeçalho 1
 
-### Cabeçalho 3
+    ## Cabeçalho 2
 
-#### Cabeçalho 4
+    ### Cabeçalho 3
 
-##### Cabeçalho 5
+    #### Cabeçalho 4
 
-###### Cabeçalho 6
-```
+    ##### Cabeçalho 5
+
+    ###### Cabeçalho 6
 
 # Cabeçalho 1
 
@@ -51,9 +50,9 @@ ___
 
 **Negrito** *Itálico*
 
-```
-**Negrito** *Itálico*
-```
+
+    **Negrito** *Itálico*
+
 
 ___
 ___
@@ -61,15 +60,15 @@ ___
 
 **Listas**
 
-```
-- 1
-   - 1.1
-     - 1.1.1
-       - 1.1.1.1
-- Item 2
-- Item 3
-- Item 4
-```
+
+    - 1
+       - 1.1
+         - 1.1.1
+           - 1.1.1.1
+    - Item 2
+    - Item 3
+    - Item 4
+
 - 1
    - 1.1
      - 1.1.1
@@ -89,9 +88,9 @@ ___
 
 **Bloco de referências**
 
-```
-> blockquote
-```
+
+    > blockquote
+
 
 > blockquote
 
@@ -102,49 +101,50 @@ ___
 
 **Destaque de código cercado**
 
-```
-    ``` python
+
+<pre><code class="python">
     # python
     def some_method(var='exemple'):
        if var:
           pass
        else:
           result
-    ```
+</code></pre>
+    
 
-    ``` delphi
+<pre><code class="pascal">
     // pascal
     procedure some_procedure( Value : string = 'text');
     begin
        ShowMessage(text);
     end;
-    ```
-```
+</code></pre>
 
-``` python
-# python
-def some_method(var='exemple'):
-   if var:
-      pass
-   else:
-      result
-```
 
-``` delphi
-// pascal
-procedure some_procedure( Value : string = 'text');
-begin
-   ShowMessage(text);
-end;
-```
+<pre><code class="nohighlight">
+    # python
+    def some_method(var='exemple'):
+       if var:
+          pass
+       else:
+          result
+
+
+
+    // pascal
+    procedure some_procedure( Value : string = 'text');
+    begin
+       ShowMessage(text);
+    end;
+</code></pre>
 ___
 ___
 
 **Destacar na mesma linha**
 
-```
-Isto está `destacado`. 
-```
+
+    Isto está `destacado`. 
+
 
 Isto está `destacado`. 
 
@@ -154,11 +154,11 @@ ___
 
 **Tabelas**
 
-```
-| Table | Table |
-| ----- | ----- |
-| cell  | cell  |
-```
+
+    | Table | Table |
+    | ----- | ----- |
+    | cell  | cell  |
+
 
 | Table | Table |
 | ----- | ----- |
@@ -171,18 +171,18 @@ ___
 
 **Links**
 
-```
-[www.google.com](www.google.com)
-```
+
+    [www.google.com](www.google.com)
+
 
 [www.google.com](http://www.google.com)
 
 
 Html está sendo usado para images responsivas (respondem ao tamanho da tela redimensionando-se automaticamente):
 
-```
-<p><img class="img-responsive center-block" src="/media/fpe/fpe.jpeg" alt="Image" /></p>
-```
+
+    <p><img class="img-responsive center-block" src="/media/fpe/fpe.jpeg" alt="Image" /></p>
+
 <p><img class="img-responsive center-block" src="/media/fpe/fpe.jpeg" alt="Image" /></p>
 
 Você pode usar algo como `![alt](link)` para *linkar* imagens (não responsivas) também.
@@ -193,11 +193,10 @@ ___
 
 **Linha separadora**
 
-```
-___
-___
 
-```
+    ___
+    ___
+
 ___
 ___
 
@@ -206,10 +205,10 @@ ___
 
 {% assign b = 5 %}
 
-```
-{{ "{% assign b = 5 " }}%}
-{{ "{{ site.url " }}}}
-{{ "{{ b " }}}}
-```
+
+    {{ "{% assign b = 5 " }}%}
+    {{ "{{ site.url " }}}}
+    {{ "{{ b " }}}}
+
 {{ site.url }}
 {{ b }}
