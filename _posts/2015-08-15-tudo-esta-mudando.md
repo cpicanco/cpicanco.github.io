@@ -3,7 +3,7 @@ title: Tudo está mudando
 tags: ['ciência']
 excerpt: filosofia de boteco e o devir nas ciências
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 
 **`Texto em construção.`**

@@ -5,7 +5,7 @@ tags: ['quadrinho', 'ciência']
 excerpt: o aleatório interferindo dia-a-dia
 comic: in-flagellis-tirinha-memes-regressao-a-media.jpg
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 date: 2015-09-08 03:04:50
 ---
 

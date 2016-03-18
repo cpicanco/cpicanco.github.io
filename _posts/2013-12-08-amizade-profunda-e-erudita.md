@@ -3,7 +3,7 @@ title: O lado profundo e erudito de uma amizade.
 excerpt: machismo e Lulu app
 tags: ['diálogo', 'machismo', 'cotidiano']
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 ---
 > "E ai viado?"
 

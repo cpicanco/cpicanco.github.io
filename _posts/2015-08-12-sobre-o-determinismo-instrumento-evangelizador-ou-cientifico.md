@@ -3,7 +3,7 @@ title: 'Sobre o determinismo: instrumento evangelizador ou científico?'
 tags: ['ciência', 'determinismo', 'diálogo']
 excerpt: filosofia de boteco
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 
 Um instrumento evangelizador não resiste a um escrutínio filosófico feito com zelo. Isso significa que tal instrumento, embora possa estar sendo habilmente utilizado no sentido do convencimento, ou retórica de menor grandeza, se mostrará inconsistente, incoerente, ilógico, isto é, se mostrará inadequado em algum nível de análise filosófica: conceitual, lógico, histórico, estético, epistemológico, ontológico, e assim por diante. Um instrumento científico, entretanto, deve ser capaz de suportar tal escrutínio ao ponto de manter-se coerente no nível de interesse do filósofo (da ciência). 

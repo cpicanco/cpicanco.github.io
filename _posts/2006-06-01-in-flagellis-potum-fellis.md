@@ -3,7 +3,7 @@ title: In flagellis potum fellis
 excerpt: santa ignorância
 tags: ['poema', 'tradução', 'música']
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 ---
 
 <iframe src="https://player.vimeo.com/video/13838839" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

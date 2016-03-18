@@ -3,7 +3,7 @@ title: O amor.
 excerpt: 'ofensivo, repudiante'
 tags: ['poema', 'escatologia', 'repudiante']
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 ---
 **O amor**
 

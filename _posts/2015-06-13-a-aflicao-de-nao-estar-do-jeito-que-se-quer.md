@@ -3,7 +3,7 @@ title: Todo errado
 excerpt: a aflição de não estar do jeito que se quer
 tags: ['poema', 'escatologia', 'heptassílabo']
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 image: jupiter-gas.jpg
 ---
 **Todo errado**

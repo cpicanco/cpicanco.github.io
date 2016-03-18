@@ -4,7 +4,7 @@ excerpt: um protótipo para o ensino de esquemas de reforçamento
 tags: ['ciência', 'software', 'programação']
 language: pt-BR
 en: /2015/06/12/interacting-with-schedules-of-reinforcement.html
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 image: rat-press-bar-skinner-box.jpg
 ---
 

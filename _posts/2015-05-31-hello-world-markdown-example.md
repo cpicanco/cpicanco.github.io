@@ -5,7 +5,7 @@ tags: ['web design', 'markdown']
 language: en
 pt: /2015/05/31/ola-mundo-exemplo-markdown.html
 image: hello.jpg
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 ---
 
 Post Writing is using GitHub Flavored Markdown and Emoji.

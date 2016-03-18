@@ -3,7 +3,7 @@ title: deus existe e Deus também
 tags: ['fé']
 excerpt: filosofia de boteco e o todo poderoso
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 
 De acordo com a minha experiência ao longo de conversas informais sobre ontologia (sobre o ser), recordo de pessoas que não delimitavam o contexto quando falavam sobre o ser. Por exemplo, geralmente apresentavam um falso dilema do tipo:

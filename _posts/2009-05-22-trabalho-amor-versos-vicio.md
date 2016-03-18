@@ -4,7 +4,7 @@ title: Trabalho
 tags: ['prosa', 'amor']
 excerpt: amor versos vício
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 Trabalho
 

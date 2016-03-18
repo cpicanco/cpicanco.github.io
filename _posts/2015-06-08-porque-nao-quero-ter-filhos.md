@@ -4,7 +4,7 @@ excerpt: sobre a minha decisão de não querer conceber mais uma vida
 tags: ['pergunta', 'familia', 'vida']
 image: visibleearth_nasa_gov_eartg_lights.jpg
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 
 ## Eu já quis ter filhos

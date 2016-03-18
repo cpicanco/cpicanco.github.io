@@ -4,7 +4,7 @@ excerpt: "subjetividade, conhecimento e segredos"
 tags: ['ensaio', 'subjetividade', 'amor']
 image: locker-old-rusty.jpg
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 Trata-se de uma versão atualizada, não revisada por pares, de um ensaio apresentado como parte dos requisitos de avaliação da disciplina Subjetividade e Comportamento ministrada pelo Prof. Dr. Emmanuel Zagury Tourinho, em 2008, ainda na época da minha graduação em Psicologia. Boa leitura!
 

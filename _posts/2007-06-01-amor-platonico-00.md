@@ -3,7 +3,7 @@ title: Ela
 excerpt: amor platônico
 tags: ['poema', 'amor']
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 image: grand_canyon_sunrise_dark.jpg
 ---
 **Ela**

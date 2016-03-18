@@ -3,7 +3,7 @@ title: A ciência como um sistema competitivo contra o fim da humanidade
 tags: ['ciência']
 excerpt: 'competição destrutiva vs. competição saudável'
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 date: 2015-09-06 20:03:13
 ---
 

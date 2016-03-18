@@ -4,7 +4,7 @@ title: O escritor
 tags: ['poema', 'amor', 'heptassílabo']
 excerpt: coisas de amor
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 No papel escrivinhou  
 um futuro para si.  

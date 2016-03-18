@@ -4,7 +4,7 @@ excerpt: a prototype for teaching schedules of reinforcement
 tags: ['science', 'software', 'programming']
 language: en
 pt: /2015/06/12/interagindo-com-esquemas-de-reforcamento.html
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 image: rat-press-bar-skinner-box.jpg
 ---
 

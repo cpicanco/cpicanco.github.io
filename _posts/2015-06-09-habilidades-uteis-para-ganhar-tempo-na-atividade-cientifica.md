@@ -4,7 +4,7 @@ excerpt: habilidades úteis para ganhar tempo na atividade científica
 tags: ['ciência', 'programação', 'tecnologia']
 image: schedules_of_reinforcement_class_pascal.jpg
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 
 O aprendizado de certas habilidades e o uso da tecnologia tem melhorado a minha qualidade de vida como pesquisador e melhorado a atividade científica que tenho exercido. O que faço a seguir é elencar algumas dessas habilidades e tecnologias, na forma de recomendações bem gerais. Espero que seja útil para você, e para mais detalhes sobre algo pergunte nos comentários. Boa leitura!

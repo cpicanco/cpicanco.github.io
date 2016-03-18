@@ -5,7 +5,7 @@ tags: ['web design', 'markdown']
 language: pt-BR
 en: /2015/05/31/hello-world-markdown-example.html
 image: hello.jpg
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanço.-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 ---
 
 

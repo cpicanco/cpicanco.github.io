@@ -4,7 +4,7 @@ title: Sobre a fosfoetanolamina
 tags: ['ciência']
 excerpt: investigações oncológicas derivadas das pesquisas do grupo Chierice
 language: pt-BR
-copyright: <!--Copyright (c) 2015 Carlos Rafael Fernandes Picanco-->
+copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço-->
 ---
 ### Sobre a Fosfoetanolamina
 

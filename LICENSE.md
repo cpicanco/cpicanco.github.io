@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2015 Carlos Rafael Fernandes Picanço.
+Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.
 
 My contact: cpicanco@ufpa.br
 
