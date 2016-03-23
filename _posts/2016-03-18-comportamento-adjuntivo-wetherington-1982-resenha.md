@@ -31,7 +31,7 @@ Com base em uma definição exaustiva, na qual todo comportamento é operante at
 
 **Comportamento Adjuntivo é sensível às consequências?**
 
-Revisa estudos nos quais o consumo de água era seguido de atrasos na comida contingentes ao comportamento de consumo (lamber água), apresentação de comida extra contingente ao comportamento de consumo e comida extra contingente ao comportamento de não consumir. Conclui que os efeitos de tais contingências sobre o comportamento de consumo excessivo foi fraco. Entretanto, conclui que estudos com choques contingentes ao comportamento de consumo suprimiram acentuadamente o consumo excessivo, embora em alguns com choques muito leves houve um favorecimento do consumo excessivo, algo incompatível com contingências operantes utilizando estímulos aversivos. 
+Revisa estudos nos quais o consumo de água era seguido de atrasos na comida contingentes ao comportamento de consumo (lamber água), apresentação de comida extra contingente ao comportamento de consumo e comida extra contingente ao comportamento de não consumir. Conclui que os efeitos de tais contingências sobre o comportamento de consumo excessivo foi fraco. Entretanto, conclui que estudos com choques contingentes ao comportamento de consumo suprimiram acentuadamente o consumo excessivo, embora com choques muito leves tenha havido um favorecimento do consumo excessivo, algo incompatível com contingências operantes utilizando estímulos aversivos. 
 
 **Controle de Comportamento Adjuntivo por variáveis afetando Comportamento Operante**
 
@@ -45,17 +45,45 @@ Conclui que o comportamento adjuntivo, embora semelhante ao operante, não pode 
 
 **Descrições motivacionais de comportamento adjuntivo**
 
-Mas se não é superticiosamente, o que seria então? Com base em um conceito de "*drive*", um estado do organismo que regula a força de classes ou conjuntos de comportamento, e naquela definição exaustiva de operante (tudo é operante até que prove eliciador), sugere que o consumo excessivo é auto-reforçado, isto é, que a consequência mantenedora surge da própria execução do comportamento. Sugere que a propriedade auto-reforçadora do comportamento adjuntivo depende do estado de fome do organismo, pois o consumo excessivo tem demonstrado variar de acordo com a apresentação de comida. 
+Mas se não é superticiosamente, o que poderia ser então? Com base em um conceito de "*drive*", um estado do organismo que regula a força de classes ou conjuntos de comportamento, e naquela definição exaustiva de operante (tudo é operante até que se prove eliciador), sugere que o consumo excessivo é auto-reforçado, isto é, que a consequência mantenedora surge da própria execução do comportamento. Sugere que a propriedade auto-reforçadora do comportamento adjuntivo depende do estado de fome do organismo (no caso do SIP), pois o consumo excessivo tem demonstrado variar de acordo com a apresentação de comida. 
 
 ### Comportamento adjuntivo como comportamento respondente (incompleto)
 
-Comportamentos adjuntivos poderiam ser respondentes: 1) pois ocorrem de maneira estável e 2) imediatamente após o comportamento de consumo de comida. Entretanto há evidências de comportamentos adjuntivos antecedendo o comportamento de consumo.
+Considera se o comportamento adjuntivo pode ser considerado um reflexo condicional ou um reflexo incondicional. Comportamentos adjuntivos poderiam ser respondentes: 1) pois ocorrem de maneira estável e 2) imediatamente após o comportamento de consumo de comida. Entretanto há evidências de comportamentos adjuntivos antecedendo o comportamento de consumo.
+
+Refuta a noção de respondentes apresentada por Falk (1971) na qual: 1) UR eliciadas por um US ocorrem prontamente (a SIP demora muitas sessões); 2) respostas eliciadas são relativamente invariáveis, não sendo tão afetas por condições ambientais (a SIP seria) e; 3) respostas eliciadas ocorrem imediatamente após um estímulo eliciador (o comportamento de consumo excessivo pode ocorrer depois).
 
 **Objeções aos adjuntivos como respondentes**
 
-Revisa estudos de sensitização e habituação com o objetivo de refutar a noção de que respondentes são "fixos". Indica fartas evidências nas quais respondentes mudam ao longo do tempo (condicionamento temporal), inclusive com mudanças na UR e geração de novas UR's após repetidas apresentações do US.
+Refuta a noção de que a apresentação repetida do US implica em uma UR invariável; não faz sentido, portanto, usar tal noção como base para desqualificar adjuntivos como respondentes.
 
-Sugere que o comportamento adjuntivo pode estar ocorrendo por meio de pareamento temporal.
+  - Apresenta estudos sobre sensitização e habituação demonstrando que a apresentação repetida do US produz mudanças na UR.
+
+  - Apresenta dois critérios de condicionamento temporal: 1) quando a CR tende a ocorrer pouco antes da apresentação do US e 2) se omitido o US ou alterado o intervalo entre US's, a CR tende a ocorrer durante ou pouco após o tempo no qual o US deveria ter sido apresentado. Especula que o comportamento adjuntivo pode estar ocorrendo por meio de pareamento temporal (pois há casos de SIP pré-comida), mas geralmente falha de acordo com o primeiro critério. Não se pronuncia sobre o segundo critério, pois não apresenta estudos sobre comportamento adjuntivo com tal procedimento de omissão.
+
+  - Apresenta fartas evidências nas quais há mudanças topográficas na UR e inclusive geração de novas UR's ao longo de repetidas apresentações do US.
+
+  - Apresenta a somação temporal de subliminares (summation) e sugere que tal fenômeno pode cumprir um papel na ocorrência de comportamentos adjuntivos tendo como base o desenvolvimento gradual da UR e a apresentação repetida do US.
+
+Refuta a noção de que respondentes não são afetados pelo contexto ambiental; novamente, não faz sentido usar tal noção como base para desqualificar adjuntivos como respondentes.
+
+  - Uma propriedade de reflexos como piscar, sobresalto do joelho, salivação e flexão da perna é que eles não são reflexos orientados a nenhum objeto. Entretanto muitos reflexos são orientados como o de mastigação, de lançamento de língua do sapo, o agarrar de acasalamento do sapo macho, a orientação de cabeça e sucção de humanos neonatais.
+
+  - A UR de reflexos orientados tem demonstrado variar de acordo com o contexto diante de um mesmo US. Por exemplo, com ratos, choques podem eliciar retração muscular se sozinhos ou interação agonística típica de defesa se na presença de outro rato. 
+
+  - A presença de estimulação difusa (estados internos ou externos), tais como iluminação, sons de fundo e ambiente, interfere na forma da UR e podem determinar, dentre um número de opções alternativas, qual UR será eliciada. Por exemplo, ao ser estimulado na perna, um sapo pula se estiver em cima de um pedra, mas nada rapidamente se estiver na água. Se um bebê está faminto, o *threshold* de uma resposta de orientação da cabeça é reduzido (permitindo resposta mais fortes com estimulação mais fraca); mas se o bebê está defecando, urinando, dormindo ou bocejando o *threshold* é elevado.
+
+  - A estimulação discreta pode mudar a UR, por exemplo, com humanos neonatais, eliciar um forte reflexo de flexão das pernar encurtava a UR de orientação da cabeça.
+
+  - Sugere que o comportamento de consumo excessível pode decorrer de potenciação de outros reflexos; o *threshold* de eliciação do objeto alvo de consumo excessível seria reduzido por meio da apresentação intermitente de comida.
+
+Refuta a noção na qual um UR sempre ocorre imediatamente após um US; novamente, não faz sentido usar tal noção como base para desqualificar adjuntivos como respondentes.
+
+  - SIP pode ocorrer mesmo restringindo a disponibilidade da água a janelas temporais dentro do esquema. Esses resultados tem sido explicados por meio de teorias motivacionais semelhantes ao *drive* (Parte 2), mas tal explicação pode ser reformulada em termos de potenciação (como previamente apresentado).
+
+**Comportamento adjuntivo funciona como um respondente?**
+
+`**Em construção**`
 
 **Categorias comportamentais X Procedimentos comportamentais**
 
