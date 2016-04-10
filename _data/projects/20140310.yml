@@ -12,11 +12,11 @@ en:
     <a href="https://wiki.videolan.org/LibVLC/">libvlc</a> library) and images (jpg, bmp) as stimuli
     (antecedents, consequences). It supports a wide range of response requisities, or technically
     "schedules of reinforcements" (FR, FI, VR, VI, FT, FI, DRH, DRL, DRO, multi components, etc).
-    There are implemented classes to present trials as Text Messages/Instructions, Simple Discriminations
+    There are Object Oriented Classes implemented to present trials as Text Messages/Instructions, Simple Discriminations
     and Conditional Dicriminations. Stimuli can be presented either successively or simultaneously.
     Mouse (or touch) tracking is implemented in these two last classes. "Discrete Trials" or "Free Operant"
-    designs are possible too. It was design to be cross plataform (currently tested under Windows 8, Crunchbang 11,
-    Ubuntu 13.10). It is an open source (GPL3) application writen in Object Free Pascal (Lazarus 1.2.6, FPC 2.6.4).
+    designs are possible too. It was designed to be cross plataform; currently tested under Windows (7, 8 and 10), Crunchbang 11,
+    Ubuntu (13.10 and 14.04) and Debian 8. It is an open source (GPL3) application writen in Object Free Pascal (Lazarus 1.6.0, FPC 3.0.0).
     
 pt-BR:
   title: 'Software de Controle de Estímulos'
@@ -37,5 +37,6 @@ pt-BR:
     Discriminações condicionais como tentativas. Os estímulos podem ser apresentados tanto sucessivamente quanto
     simultaneamente. Rastreamento de clicks no mouse (ou toques sobre telas sensíveis) foi implementado nessas duas
     últimas classes. Planejamentos do tipo "Tentativa discreta" ou "Operante livre" também são possíveis. A ferramenta
-    tem sido desenvolvida para ser multi plataforma, e foi compilada no Windows 8, no Crunchbang 11, e no Ubuntu 13.10).
-    Trata-se de uma ferramenta livre e gratuita (GPL3) escrita em Object Free Pascal (Lazarus 1.2.6, FPC 2.6.4).
+    tem sido desenvolvida para ser multi plataforma; ela foi compilada no Windows (7, 8 e 10), no Crunchbang 11,
+    no Ubuntu (13.10 e 14.10) e no Debian 8. Trata-se de uma ferramenta livre e gratuita (GPL3) escrita
+    em Object Free Pascal (Lazarus 1.6.0, FPC 3.0.0).
