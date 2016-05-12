@@ -73,9 +73,9 @@ Refuta a noção de que respondentes não são afetados pelo contexto ambiental;
 
   - A presença de estimulação difusa (estados internos ou externos), tais como iluminação, sons de fundo e ambiente, interfere na forma da UR e podem determinar, dentre um número de opções alternativas, qual UR será eliciada. Por exemplo, ao ser estimulado na perna, um sapo pula se estiver em cima de um pedra, mas nada rapidamente se estiver na água. Se um bebê está faminto, o *threshold* de uma resposta de orientação da cabeça é reduzido (permitindo resposta mais fortes com estimulação mais fraca); mas se o bebê está defecando, urinando, dormindo ou bocejando o *threshold* é elevado.
 
-  - A estimulação discreta pode mudar a UR, por exemplo, com humanos neonatais, eliciar um forte reflexo de flexão das pernar encurtava a UR de orientação da cabeça.
+  - A estimulação discreta pode mudar a UR, por exemplo, com humanos neonatais, eliciar um forte reflexo de flexão das pernas encurtava a UR de orientação da cabeça.
 
-  - Sugere que o comportamento de consumo excessível pode decorrer de potenciação de outros reflexos; o *threshold* de eliciação do objeto alvo de consumo excessível seria reduzido por meio da apresentação intermitente de comida.
+  - Sugere que o comportamento de consumo excessível pode decorrer de potenciação de outros reflexos; considerando o objeto alvo de consumo excessível como US, o *threshold* de eliciação seria reduzido e a força do US aumentada por meio da apresentação intermitente de comida.
 
 Refuta a noção na qual um UR sempre ocorre imediatamente após um US; novamente, não faz sentido usar tal noção como base para desqualificar adjuntivos como respondentes.
 
@@ -83,7 +83,9 @@ Refuta a noção na qual um UR sempre ocorre imediatamente após um US; novament
 
 **Comportamento adjuntivo funciona como um respondente?**
 
-`**Em construção**`
+Descreve estudos com evidências de que o comportamento adjuntivo pode ser condicionado classicamente. Argumenta que a existência de respostas que podem ser categorizadas como respondentes por outros critérios, mas não são condicionáveis classicamente, indica que mesmo a impossibilidade de tal condicionamento não excluiria necessariamente comportamentos adjuntivos da categoria dos respondentes.
+
+Variações no US produzem variações previsíveis na UR. Dessa forma, deveriam produzir variações pre
 
 **Categorias comportamentais X Procedimentos comportamentais**
 
