@@ -22,8 +22,12 @@ article p {
   text-align: justify;
 }
 
-article p a {
+article p a, article ul li a {
   color: #0085a1;
+}
+
+article p a:hover, li a:hover,article ul li a:hover {
+  text-decoration: underline;
 }
 
 pre {
@@ -47,6 +51,13 @@ pre code {
   white-space: pre-wrap;
   background-color: transparent;
   border-radius: 0;
+}
+
+code.highlighter-rouge {
+  color:#000000;
+  background-color: rgba(0,0,0,0.04);
+  font-family: monospace;
+  font-size: 75%;
 }
 
 h1,
@@ -99,9 +110,6 @@ hr.small {
   border-color: white;
 }
 
-li a:hover  {
-  text-decoration:none;
-}
 
 .navbar-custom {
   position: absolute;
