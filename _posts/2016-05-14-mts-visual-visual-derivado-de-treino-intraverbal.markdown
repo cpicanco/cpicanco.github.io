@@ -49,6 +49,8 @@ Objetiva replicar sistematicamente o procedimento de `nomeação intraverbal` e 
 
 - Classes esperadas: `A1 - B1 - A'1 - B'1` e `A2 - B2 - A'2 - B'2` e `A3 - B3 - A'3 - B'3`.
 
+- Relações testadas: visuais.
+
 **Treino**:
 
 1. Pré-treino com estímulos familiares:
@@ -72,14 +74,18 @@ Objetiva replicar sistematicamente o procedimento de `nomeação intraverbal` e 
 
 ## Resultados
 
-Critério: 5/6 nas 6 relações.
+**Critério**: 5/6 nas 6 relações.
 
-Positivo: 5 sucessos no MTS tipo 2 e mantendo a linha de base intraverbal; 4 falharam no intraverbal reverso; 5 tatos; 5 ouvintes.
+**Positivo**: 5 sucessos no MTS tipo 2 e mantendo a linha de base intraverbal; 4 falharam no intraverbal reverso; 5 tatos; 5 ouvintes.
 
-Negativo: 5 falharam no MTS; 5 falharam nos dois intraverbais; 3 tatos; 5 ouvintes.
+**Negativo**: 5 falharam no MTS; 5 falharam nos dois intraverbais; 3 tatos; 5 ouvintes.
 
 > [...] we found no evidence that the verbal relations that gave rise to the emergent visual–visual discriminations also mediated these discriminations by enabling participants to guide themselves verbally through the task. (pp. 15-16).  
 
+Sobre a hipótese de nomeação (Horne & Lowe, 1996), afirma que os dados corroboram a primeira parte da predição (intraverbais gerariam ouvintes), mas refutam a segunda predição (bidirecionalidade). Entretanto, não explica porque ocorreram 5 ouvintes sem intraverbais (Negativo).
+
 ___
+
+**Referências**
 
 Horne, P. J., & Lowe, C. F. (1996). On the origins of naming and other symbolic behavior. Journal of the Experimental Analysis of Behavior, 65, 185–241. 
