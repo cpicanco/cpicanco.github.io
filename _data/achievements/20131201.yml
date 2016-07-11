@@ -1,15 +1,12 @@
 en:
-  title: 'Game over?'
-  subtitle: 'No! Just happy newlyweds!'
-  header: "Singing for my wife."
-  date-string: 'married since 14 Dec, 2012.'
+  title: 'Music by heart'
+  subtitle: 'Sing an inspiring song.'
+  header: '"A song for you" (Leon Russell).'
+  date-string: 'Dec, 2013.'
   icon: 'ac-fa ac-fa-heart'
   description: >
-    I love you milady.
-    
-    'A song for you' was written by Leon Russell.
-    This version was inspired by the Ray Charles and The Carpenters versions.
-    It was produced, recorded, mixed and masterized at Estúdio Livre.
+    Inspired by the Ray Charles and The Carpenters records.   
+    Produced, recorded, mixed and masterized at Estúdio Livre.
 
   widget: |
     <div class="dropdown">
@@ -25,16 +22,13 @@ en:
     </div>
 
 pt-BR:
-  title: 'Fim de jogo?'
-  subtitle: 'Não! Apenas felizes recém casados!'
-  header: "Eu cantando para a minha esposa."
-  date-string: 'casados desde 14 de Dezembro, 2012.'
+  title: 'Música de cór'
+  subtitle: 'Cante uma música inspiradora.'
+  header: '"A song for you" (Leon Russell).'
+  date-string: 'Dezembro, 2013.'
   icon: 'ac-fa ac-fa-heart'
   description: >
-    Eu te amo milady.
-    
-    'A song for you' foi escrita por Leon Russell.
-    A presente versão foi inspirada nas versões de Ray Charles e The Carpenters.
+    A presente versão foi inspirada nas versões de Ray Charles e The Carpenters.   
     Ela foi produzida, gravada, mixada e masterizada no Estúdio Livre.
 
   widget: |
