@@ -4,7 +4,7 @@ en:
   image: '/media/scapp/stimulus_control.ico'
   style: 'section-top'
   description: >
-    The <a href="https://github.com/cpicanco/validation_project">tool</a> is a work in progress and can be extended
+    The <a href="https://github.com/cpicanco/stimulus_control">tool</a> is a work in progress and can be extended
     to run a wide range of behavioral experiments. Currently, it can be used to design, present, archive and record
     some complex feature-positive experiments and simple eye orientation experiments. It aims to allow, with a few
     clicks and basic background, fast experiment design. It supports sounds (using the
@@ -24,7 +24,7 @@ pt-BR:
   image: '/media/scapp/stimulus_control.ico'
   style: 'section-top'
   description: >
-    A <a href="https://github.com/cpicanco/validation_project">ferramenta</a> é um trabalho em construção e pode ser
+    A <a href="https://github.com/cpicanco/stimulus_control">ferramenta</a> é um trabalho em construção e pode ser
     extendida para executar um amplo espectro de experimentos comportamentais. Em seu estado atual, ela pode ser usada
     para o planejamento, apresentação, arquivamento e registro de experimentos complexos sobre o efeito de aspecto
     positivo e experimentos simples de orientação visual. A ferramenta tem como objetivo permitir a programação

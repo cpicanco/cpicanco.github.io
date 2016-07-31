@@ -10,9 +10,9 @@ image: rat-press-bar-skinner-box.jpg
 
 Some time ago I wrote a simple software called *Schedules of Reinforcement* for testing the implementation of some schedules. This software draws a cumulative record of the user's responses in real time. The *operandum* is a panel that receives clicks. Some people suggested to me this software could be used to teach schedules of reinforcement in an interactive fashion. Then, I am releasing it to you as a prototype. You can download the program with the following links:
 
-- [Windows](https://github.com/cpicanco/validation_project/releases/download/v0.0.2.2/schedules_test_win.exe)
-- [Debian](https://github.com/cpicanco/validation_project/releases/download/v0.0.2.2/schedules_test_deb)
-- [Source (GPL 3)](https://github.com/cpicanco/validation_project/tree/master/tests/schedules)
+- [Windows](https://github.com/cpicanco/stimulus_control/releases/download/v0.0.2.2/schedules_test_win.exe)
+- [Debian](https://github.com/cpicanco/stimulus_control/releases/download/v0.0.2.2/schedules_test_deb)
+- [Source (GPL 3)](https://github.com/cpicanco/stimulus_control/tree/master/tests/schedules)
 
 No installation is required. Fell free to leave suggestions in the commentaries!
 

@@ -10,9 +10,9 @@ image: rat-press-bar-skinner-box.jpg
 
 Já faz um bom tempo que escrevi um programa chamado *Schedules of Reinforcement*. Como o nome sugere, deve ter alguma coisa haver com `Esquemas de Reforçamento`. O programa permite você interagir com alguns esquemas. A medida que você emite respostas sobre um `Operando`, um gráfico de frequência acumulada vai sendo construído. Considero-o como um protótipo de um programa para o ensino de Esquemas de Reforço de maneira interativa. Você pode baixar o programa clicando por meio dos links abaixo:
 
-- [Windows](https://github.com/cpicanco/validation_project/releases/download/v0.0.2.2/schedules_test_win.exe)
-- [Debian](https://github.com/cpicanco/validation_project/releases/download/v0.0.2.2/schedules_test_deb)
-- [Source (GPL 3)](https://github.com/cpicanco/validation_project/tree/master/tests/schedules)
+- [Windows](https://github.com/cpicanco/stimulus_control/releases/download/v0.0.2.2/schedules_test_win.exe)
+- [Debian](https://github.com/cpicanco/stimulus_control/releases/download/v0.0.2.2/schedules_test_deb)
+- [Source (GPL 3)](https://github.com/cpicanco/stimulus_control/tree/master/tests/schedules)
 
 Não é necessário instalação, basta executar o arquivo. Sinta-se encorajado a deixar comentários!
 
