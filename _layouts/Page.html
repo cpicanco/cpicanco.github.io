@@ -1,7 +1,7 @@
 <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
-{% if page.language == 'en' then %}
+{% if page.language == 'en' %}
   {% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
 {% elsif page.language == 'pt-BR' %}
   {% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-pt-br.png{% endcapture %}
@@ -12,7 +12,7 @@
     <div class="container">
       <div class="row">
         <div class="infinite-container col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-      {% assign posts_count = site.posts | where: "language",page.language | size  %}
+      {% assign posts_count = site.posts | where: "language",page.language | size %}
       {% assign OFFSET = site.mpaginate | times:page.index %}
       {% assign next_pag = page.index | plus:1 %}
       {% assign mod_pag = posts_count | modulo:site.mpaginate %}
@@ -21,9 +21,9 @@
       {% if site.mpaginate < pages_count %}{% assign last_pag = pages_count | minus:1 %}
       {% else %}{% assign last_pag = pages_count %}{% endif%}
 
-      {% if OFFSET >= posts_count then %}{% assign last_pag = page.index %}{% endif %}
+      {% if OFFSET >= posts_count %}{% assign last_pag = page.index %}{% endif %}
       
-      {% if page.index == last_pag then %}{% assign next_pag = 'none' %}{% endif %}    
+      {% if page.index == last_pag %}{% assign next_pag = 'none' %}{% endif %}    
       
 
       Language={{ page.language }}, PostsCount={{ posts_count }}, OFFSET={{ OFFSET }}
@@ -46,7 +46,7 @@
             {% else %}
               {% capture hrf %}/blog/{{ page.language | downcase }}/{% endcapture %}
             {% endif %}
-            {% if page.language == 'en' then %}
+            {% if page.language == 'en' %}
               <p class="post-meta">Posted by&#32;<a href="{{ hrf }}">{{ page.author }}</a>&#32;on&#32;{{ post.date | date: "%B %-d, %Y" }}.</p>
             {% elsif page.language == 'pt-BR' %}
               <p class="post-meta">Postado por&#32;<a href="{{ hrf }}">{{ page.author }}</a>,&#32;em&#32;{{ post.date | date: "%-d" }}
@@ -87,7 +87,7 @@
       {% endfor %}
         </div>
         <!-- Infinite More Link -->        
-      {% if page.index == last_pag then %}
+      {% if page.index == last_pag %}
       {% else %}
         <a class="infinite-more-link" href="/blog/{{ page.language | downcase }}/page/{{ next_pag }}/"></a>
       {% endif %}    

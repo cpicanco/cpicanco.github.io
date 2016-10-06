@@ -40,7 +40,7 @@
     {% assign publication = site.data.publications.20130916 %}
         <blockquote>
           <div class="self-font">
-            <div class="csl-entry">{{ publication.[page.language].html | replace: '..','.' | replace: '  ',' ' }}</div>
+            <div class="csl-entry">{{ publication[page.language].html | replace: '..','.' | replace: '  ',' ' }}</div>
           </div>
           <hr>
           <ul class="list-inline">

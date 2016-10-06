@@ -4,7 +4,7 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            {% if page.language == 'en' then %}
+            {% if page.language == 'en' %}
               <span class="sr-only">Toggle navigation</span>
             {% elsif page.language == 'pt-BR' %}
               <span class="sr-only">Alternar navegação</span>
@@ -13,7 +13,7 @@
             <span class="icon-bar"></span>
 
           </button>
-          {% if page.language == 'en' then %}
+          {% if page.language == 'en' %}
             <a class="navbar-brand" href="/portfolio/en/projects.html">&middot;&#32;Portfolio</a>
           {% elsif page.language == 'pt-BR' %}
             <a class="navbar-brand" href="/portfolio/pt-br/projects.html">&middot;&#32;Portfólio</a>
@@ -23,15 +23,15 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            {% if page.language == 'en' then %}
-              {% if page.layout == 'Post' then %}
+            {% if page.language == 'en' %}
+              {% if page.layout == 'Post' %}
                 {% if page.pt != null %}
                   <li><a href="{{ page.pt }}">Português</a></li> 
                 {% endif %}
-              {% elsif page.layout == 'InitialPage' then %}
+              {% elsif page.layout == 'InitialPage' %}
                 <li><a href="/blog/pt-br/">Português</a></li>
 
-              {% elsif page.layout == 'Tags' then %}
+              {% elsif page.layout == 'Tags' %}
                 <li><a href="#">See All Categories</a></li>
                 <li><a href="/blog/pt-br/tags/">Português</a></li>
 
@@ -41,14 +41,14 @@
               <li><a href="#about">About</a></li>
 
             {% elsif page.language == 'pt-BR' %}
-              {% if page.layout == 'Post' then %}
+              {% if page.layout == 'Post' %}
                 {% if page.en != null %}
                   <li><a href="{{ page.en }}">English</a></li> 
                 {% endif %}
-              {% elsif page.layout == 'InitialPage' then %}
+              {% elsif page.layout == 'InitialPage' %}
                 <li><a href="/blog/en/">English</a></li>
 
-              {% elsif page.layout == 'Tags' then %}
+              {% elsif page.layout == 'Tags' %}
                 <li><a href="#">Ver Todas as Categorias</a></li>
                 <li><a href="/blog/en/tags/">English</a></li>
 

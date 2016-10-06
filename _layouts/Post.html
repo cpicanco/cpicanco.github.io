@@ -1,8 +1,8 @@
 <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
-{% if page.image != null then %}
-  {% capture IMAGE  %}{{ site.url}}/media/blog/{{ page.image }}{% endcapture %}
+{% if page.image != null %}
+  {% capture IMAGE %}{{ site.url}}/media/blog/{{ page.image }}{% endcapture %}
   {% include blog_head.html share-image=IMAGE %}
 {% else %}
   {% capture IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-{{ page.language }}.png{% endcapture %}
@@ -13,7 +13,7 @@
    {% include blog_nav.html home-path=PAGE_PATH %}   
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-  {% if page.image != null then %}
+  {% if page.image != null %}
     <header class="intro-header" style="background-image: url('/media/blog/{{ page.image }}')">
   {% else %}
     <header class="intro-header" style="background-color:#153038;">
@@ -54,7 +54,7 @@
           {% else %}
             {% capture hrf %}/blog/{{ page.language | downcase }}/{% endcapture %}
           {% endif %}
-          {% if page.language == 'en' then %}
+          {% if page.language == 'en' %}
             <span class="meta margin-top"><a href='{{ hrf }}'>{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
           {% elsif page.language == 'pt-BR' %}
             <span class="meta margin-top">&#32;<a href='{{ hrf }}'>{{ page.author }}</a>,&#32;
@@ -83,7 +83,7 @@
             {% include social_buttons.html %}
             <hr>
             <div class="text-center">         
-            {% if page.language == 'en' then %}
+            {% if page.language == 'en' %}
               <a class="btn btn-default btn-block" href="{{ PAGE_PATH }}">HOME</a>
             {% elsif page.language == 'pt-BR' %}
               <a class="btn btn-default btn-block" href="{{ PAGE_PATH }}">LEIA MAIS</a>

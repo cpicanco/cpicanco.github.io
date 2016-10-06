@@ -12,7 +12,7 @@ http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetic
 <!DOCTYPE html>
 <html lang="{{ page.language }}">
 
-{% if page.language == 'en' then %}
+{% if page.language == 'en' %}
   {% capture SHARE_IMAGE %}{{ site.url }}/media/blog/in-flagellis-clean-en.png{% endcapture %}
   {% include blog_head.html share-image=SHARE_IMAGE %}
 {% elsif page.language == 'pt-BR' %}
@@ -20,7 +20,7 @@ http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetic
   {% include blog_head.html share-image=SHARE_IMAGE %}
 {% endif %}
 
-{% if page.language == 'en' then %}
+{% if page.language == 'en' %}
   {% assign PAGE_PATH = "/blog/en/" %}
 {% elsif page.language == 'pt-BR' %}
   {% assign PAGE_PATH = "/blog/pt-br/" %}
@@ -110,7 +110,7 @@ http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetic
       <ul class="post-preview" style="padding-bottom: 4.0em; padding-top: 1.0em;">
       {% for post in pages_list %}
           <a href="{{ post.url }}"><h2 class="post-title">{{ post.title }}</h2><h3 class="post-subtitle">{{ post.excerpt }}</h3></a>
-        {% if page.language == 'en' then %}
+        {% if page.language == 'en' %}
           <p class="post-meta">Posted by&#32;<a href="{{ hrf }}">{{ page.author }}</a>&#32;on&#32;{{ post.date | date: "%B %-d, %Y" }}.</p>
         {% elsif page.language == 'pt-BR' %}
           <p class="post-meta">Postado por&#32;<a href="{{ hrf }}">{{ page.author }}</a>,&#32;em&#32;{{ post.date | date: "%-d" }}

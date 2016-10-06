@@ -33,7 +33,7 @@
         </script>
 
         <!-- Google Knowledge Graph -->
-    {% if page.layout == 'Post' then %}
+    {% if page.layout == 'Post' %}
     {% capture post_tags %}{% for tag in page.tags %}{{ tag }}, {% endfor %}{% endcapture %}
         <script type="application/ld+json">
         {
@@ -44,7 +44,7 @@
           "articleSection": "{{ post_tags | append:'-' | remove_first: ', -' }}",
           "datePublished": "{{ page.date | date:'%Y-%m-%d' }}",
           "headline": "{{ page.excerpt }}",
-          {% if page.image == null then %}
+          {% if page.image == null %}
           "image": "{{ site.url }}/media/blog/in-flagellis-clean.png"
           {% else %}
           "image": "{{ site.url }}/media/blog/{{ page.image }}"

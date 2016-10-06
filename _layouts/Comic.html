@@ -5,7 +5,7 @@
 {% capture IMAGE %}{{ site.url }}/media/blog/{{ page.comic }}{% endcapture %}    
 {% include blog_head.html share-image=IMAGE %}
 
-{% if page.language == 'en' then %}
+{% if page.language == 'en' %}
   {% assign PAGE_PATH = "/blog/en/" %}
   {% assign disqus_language = page.language %}
   {% assign disabled_message = 'Leave your commentary!' %}
@@ -24,7 +24,7 @@
       <article class="infinite-item">
           <!-- Page Header -->
           <!-- Set your background image for this header on the line below. -->
-        {% if page.image != null then %}
+        {% if page.image != null %}
           <header class="intro-header" style="background-image: url('/media/blog/{{ page.image }}')">
         {% else %}
           <header class="intro-header" style="background-color:#153038;">
@@ -63,7 +63,7 @@
             {% else %}
               {% capture hrf %}/blog/{{ page.language | downcase }}/{% endcapture %}
             {% endif %}
-            {% if page.language == 'en' then %}
+            {% if page.language == 'en' %}
               <span class="meta margin-top"><a href="{{ hrf }}">{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
             {% elsif page.language == 'pt-BR' %}
               <span class="meta margin-top">&#32;<a href="{{ hrf }}">{{ page.author }}</a>,&#32;
@@ -94,7 +94,7 @@
   {% assign comic_posts = site.posts | where: "layout", "Comic" %}
   {% assign posts_count = comic_posts | size %}
   {% for post in comic_posts %}
-    {% if post.title == page.title then %}
+    {% if post.title == page.title %}
       {% if forloop.last == True %}
       {% else %}
         {% assign i = forloop.index %}
@@ -102,7 +102,7 @@
     {% endif%}
   {% endfor %}
               <div class="text-center">         
-              {% if page.language == 'en' then %}
+              {% if page.language == 'en' %}
                 <button style="margin-bottom: 1.5em" id="{{ page.id }}-btn" class="btn btn-info btn-block" onclick="updateDisqus('{{ page.id }}', '{{ site.url }}{{ page.url }}', '{{ page.title }}', '{{ disqus_language }}', this.id)" >{{ enabled_message }}</button>
               {% elsif page.language == 'pt-BR' %}
                 <button style="margin-bottom: 1.5em" id="{{ page.id }}-btn" class="btn btn-info btn-block" onclick="updateDisqus('{{ page.id }}', '{{ site.url }}{{ page.url }}', '{{ page.title }}', '{{ disqus_language }}', this.id)" >{{ enabled_message }}</button>
@@ -116,7 +116,7 @@
     </div>  
 
   <!-- Next post -->
-  {% if posts_count == i then %}
+  {% if posts_count == i %}
   {% else %}
   <a class="infinite-more-link" href="{{ comic_posts[i].url }}"></a>
   {% endif %}
