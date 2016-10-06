@@ -46,18 +46,21 @@ http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetic
         <div class="col-lg-2 col-lg-offset-2 col-md-2 col-md-offset-2 col-xs-6 col-sm-3 col-sm-offset-1">
           A .. Z
           <hr>
-    {% capture site_tags %}
-      {% for tag in site.tags %}|{{ tag | first }}#{{ tag | last | size }}{% endfor %}
-    {% endcapture %}
+    {% assign site_tags = site.yarray %}
 
-    {% assign sorted_tags = site_tags | split: '|' | sort %}
-    {% for tag in sorted_tags %}
-      {% if tag != sorted_tags[0] %}
-        {% assign tag_items = tag | split: '#' %}
+    {% for tag in site.tags %}
+      {% assign atag = site.yarray %} <!-- atag = [] -->
+      {% assign atag = atag | push:tag[0] %} <!-- atag.append(name) -->
+      {% assign atag = atag | push:tag[1].size %} <!-- atag.append(size) -->
+      {% assign site_tags = site_tags | push:atag  %}
+    {% endfor %}
+
+    {% assign site_tags = site_tags | sort %}
+
+    {% for tag in site_tags %} 
           <ul class="list-inline">
-            <li><a href="#{{ tag_items[0] }}"><span class="badge">{{ tag_items[0] }}</span><span class="badge badge-n">{{ tag_items[1] }}</span></a></li>
+            <li><a href="#{{ tag_items[0] }}"><span class="badge">{{ tag[0] }}</span><span class="badge badge-n">{{ tag[1] }}</span></a></li>
           </ul>
-      {% endif %}
     {% endfor %}
 
           <hr>
@@ -68,19 +71,21 @@ http://stackoverflow.com/questions/8991995/using-liquid-to-sort-posts-alphabetic
           >
            <hr>
 
-    {% capture site_tags %}
-      {% for tag in site.tags %}|{{ tag | last | size }}#{{ tag | first }}{% endfor %}
-    {% endcapture %}
+    {% assign site_tags = site.yarray %}
 
-    {% assign sorted_tags_frequency = site_tags | split: '|' | sort %}
-    {% for tag in sorted_tags_frequency reversed %}
-      {% if tag != sorted_tags_frequency[0] %}
-        {% assign tag_items = tag | split: '#' %}
-      
+    {% for tag in site.tags %}
+      {% assign atag = site.yarray %} <!-- atag = [] -->
+      {% assign atag = atag | push:tag[1].size %} <!-- atag.append(size) -->
+      {% assign atag = atag | push:tag[0] %} <!-- atag.append(name) -->
+      {% assign site_tags = site_tags | push:atag  %}
+    {% endfor %}
+
+    {% assign site_tags = site_tags | sort %}
+
+    {% for tag in site_tags reversed %}  
           <ul class="list-inline">
-            <li><a class="no-deco" href="#{{ tag_items[1] }}"><span class="badge badge-n">{{ tag_items[0] }}</span><span class="badge">{{ tag_items[1] }}</span></a></li>
+            <li><a class="no-deco" href="#{{ tag_items[1] }}"><span class="badge badge-n">{{ tag[0] }}</span><span class="badge">{{ tag[1] }}</span></a></li>
           </ul>
-      {% endif %}
     {% endfor %}
           <hr>
         </div>
