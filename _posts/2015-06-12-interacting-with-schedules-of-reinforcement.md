@@ -39,11 +39,11 @@ Until now, the following schedules were implemented:
 - **`VR r d`**, variable ratio
     - present a consequence for each `x` responses, where:
       `x = r +- d`.
-    - `t` is the expected mean response.
+    - `r` is the expected mean response.
     - `d` is deviation from the mean.
 
-- **`FI x`**, fixed interval
-    - present a consequence to the first response after a time interval `x`.
+- **`FI t`**, fixed interval
+    - present a consequence to the first response after a time interval `t`.
 
 - **`VI t d`**, variable interval
     - present a consequence to the first response after a time interval `x`, where:
