@@ -19,7 +19,7 @@ en:
     Ubuntu (13.10 and 14.04) and Debian 8. It is an open source (GPL3) application writen in Object Free Pascal (Lazarus 1.6.0, FPC 3.0.0).
     
 pt-BR:
-  title: 'Software de Controle de Estímulos'
+  title: 'Software Stimulus Control'
   date-string: 'desde 10 de Março, 2014.'
   image: '/media/scapp/stimulus_control.ico'
   style: 'section-top'
