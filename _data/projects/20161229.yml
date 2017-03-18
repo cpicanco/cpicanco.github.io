@@ -7,23 +7,22 @@ en:
     <a href="https://github.com/lacs-ufpa/free-mtrix">Free-mtrix</a> is a couple of softwares written
     for the Laboratory of Social Behavior and Cultural Selection at Universidade Federal do Pará, Brazil.
     The software allows designing and presentation of social experiments based on tasks similar to the ones reported by
-    Vichi, Andery and Glenn (2009). In an experiment, each participant can choose visual elements
-    of a matrix and the scientist determines which individual and social consequences to present to them.
+    Vichi, Andery and Glenn (2009). In such tasks, each participant can choose visual elements
+    of a matrix and then the software determines which individual and social consequences will be presented.
 
     <br><br>
-    <b>Designer</b> is the software used to design social experiments.
-    To design your experiment, all you need to do is to fill a short form (~ 10min).
-    The form uses a behavior analytic terminology, making it intuitive for researches of the field.
-    Filling is saved automatically during the process.
+    <b>Designer</b> is the software used to design social experiments and laboratory micro-cultures.
+    To design your experiment, all you need to do is to fill in a short form (~ 10min).
+    The form uses a behavior analytic terminology, making it intuitive for researches of this field.
     At the end, a configuration file containing the experiment becomes available and ready for use,
-    arquiving or further editing, as you wish. 
+    arquiving or further editing, as needed. 
 
     <br><br>
     <b>Runner</b> is the software used to run configuration files.
-    The program will read the file, present and record the experimental task.
+    The program will read the file and then manage, present and record the experimental task.
     The program has a built-in chat allowing distant participants to interact.
     Choices, other experimental data and chatting are recorded automaticly in real time.
-    By means of the excellent ZMQ library, the program can be executed in a single machine,
+    The ZMQ library allows the program to be executed in a single machine,
     for tests for example, or in machines of a local network.
 
     <br><br>
@@ -32,7 +31,7 @@ en:
 
     <br><br>
     Technically speaking, the program was designed to study macro and metacontingencies, as well as
-    to study concorrency between individual and social contingencies.
+    to study concurrency between individual and social contingencies.
   extras: |
     <p>For details about the macro and metacontingencies, please see:<p>
     <blockquote>
