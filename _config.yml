@@ -71,5 +71,5 @@ defaults:
       layout: Page
       sitemap: false
 
-gems:
+plugins:
   - jemoji
