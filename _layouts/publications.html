@@ -29,40 +29,21 @@
           </ul>         
         </blockquote> 
     {% endif %}
+
+    {% if publication.type == 'bachelor-thesis' %}
+      {% assign bachelor_thesis = publication %}
+    {% endif %}
+
+    {% if publication.type == 'master-thesis' %}
+      {% assign master_thesis = publication %}
+    {% endif %}
   {% endfor %}
 
-        <div class="Page-header">
-          <h3>{{ intro.ms_dissertation }}</h3>
-        </div>
+    {% include thesis.html intro=intro.bachelor_thesis entry=bachelor_thesis urlname=intro.url %}
 
-<!-- I don't expect to change anything down here -->
-        <hr> 
-    {% assign publication = site.data.publications.20130916 %}
-        <blockquote>
-          <div class="self-font">
-            <div class="csl-entry">{{ publication[page.language].html | replace: '..','.' | replace: '  ',' ' }}</div>
-          </div>
-          <hr>
-          <ul class="list-inline">
-            <li><a href="{{ publication.url }}">{{ intro.url }}</a></li>
-          </ul> 
-        </blockquote> 
+    {% include thesis.html intro=intro.master_thesis entry=master_thesis urlname=intro.url %}
 
-        <div class="Page-header">
-          <h3>{{ intro.bachelor_thesis }}</h3>
-        </div>
 
-        <hr> 
-    {% assign publication = site.data.publications.20100601 %}
-        <blockquote>
-          <div class="self-font">
-            <div class="csl-entry">{{ publication[page.language].html | replace: '..','.' | replace: '  ',' '}}</div>
-          </div>
-          <hr>
-          <ul class="list-inline">
-            <li><a href="{{ publication.url }}">{{ intro.url }}</a></li>
-          </ul> 
-        </blockquote>   
       </div><!-- /.container -->
 
     {% include footer.html %}
