@@ -146,7 +146,7 @@ Este guia fará referência aos nomes dos controles da interface Lazarus tal com
 <p>
 <img class="img-responsive center-block"
        src="/media/blog/laz_fp_ac_intro/Figure1.jpg"
-       alt="Janelas Utilizadas neste guia" />
+       alt="Janelas Utilizadas neste guia." />
 </p>
 
 Figura 1. Janelas utilizadas neste guia. Legenda: 1, menu superior do lazarus; 2, inspetor de objetos; 3, editor de código; 4, janela principal da aplicação; 5, mensagens; 6, console.
