@@ -145,7 +145,7 @@ Este guia fará referência aos nomes dos controles da interface Lazarus tal com
 
 <p>
 <img class="img-responsive center-block"
-       src="/media/blog/laz_fp_ac_intro/Figure1.jpg"
+       src="/media/blog/laz_fpc_ac_intro/Figure1.jpg"
        alt="Janelas Utilizadas neste guia." />
 </p>
 
