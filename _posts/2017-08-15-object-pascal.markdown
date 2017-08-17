@@ -2,7 +2,7 @@
 layout: Post
 title: 'Object Pascal e Análise do Comportamento'
 tags: ['ciência', 'programação']
-excerpt: 'Introdução ao Lazarus e ao Free Pascal para analistas do comportamento'
+excerpt: 'Introdução ao desenvolvimento de interfaces gráficas com Lazarus e Free Pascal'
 language: pt-BR
 copyright: <!--Copyright (c) 2017 Carlos Rafael Fernandes Picanço.-->
 ---
@@ -35,7 +35,7 @@ Conhecimento básico sobre o sistema operacional de escolha: como executar um pr
 Conhecimento básico sobre interfaces gráficas comuns será necessário, por exemplo,
 busca por controles visuais: o que são janelas, o que é um menu superior, etc. 
 
-### Pascal - Primórdios
+### Pascal - Breve histórico
 
 A linguagem de programação Pascal,
 como originalmente arquitetada pelo professor Niklaus Wirth entre 1968 e 1971 (Jensen and Wirth, 1973)
@@ -99,17 +99,17 @@ Windows e baseados no kernel Linux (Debian, Ubuntu)
 e agrega uma grande comunidade de desenvolvedores independentes.
 Os principais meios de informação e comunicação nesse ecossistema são:
 
- - A wiki: [http://wiki.freepascal.org/]
- - O fórum: [http://forum.lazarus.freepascal.org/]
+ - [A wiki][http://wiki.freepascal.org/]
+ - [O fórum][http://forum.lazarus.freepascal.org/]
  - As listas de emails:
-   - Lazarus: [http://forum.lazarus.freepascal.org/index.php/page,Mail_list_information.html]
-   - Free Pascal: [https://www.freepascal.org/maillist.var]
+   - [Lazarus][http://forum.lazarus.freepascal.org/index.php/page,Mail_list_information.html]
+   - [Free Pascal][https://www.freepascal.org/maillist.var]
  - Os sites oficiais:
-   - Pacotes: [http://packages.lazarus-ide.org/]
-   - Fundação: [https://foundation.freepascal.org/]
-   - Lazarus: [http://lazarus-ide.org/]
-   - Free Pascal: [https://www.freepascal.org/]
- - O rastreador de bugs: [http://bugs.freepascal.org/]
+   - [Pacotes][http://packages.lazarus-ide.org/]
+   - [Fundação][https://foundation.freepascal.org/]
+   - [Lazarus][http://lazarus-ide.org/]
+   - [Free Pascal][https://www.freepascal.org/]
+ - [O rastreador de bugs][http://bugs.freepascal.org/]
 
 Diversas coleções de unidades, componentes e pacotes reunidos nas chamadas "bibliotecas" já vem pré-instalados. Eles permitem a execução de tarefas gerais de programação:  
    - Free Pascal Runtime Library (RTL).
@@ -131,11 +131,11 @@ juntamente com os termos específicos de seu interesse.
 
 Baixe os arquivos de instalação correspondentes para o seu sistema no sítio de hospedagem oficial:
 
-- GNU/Linux 64 bits: [https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.0RC4/]
-- GNU/Linux 32 bits: [https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20i386%20DEB/Lazarus%201.8.0RC4/]
-- Mac OS X 32bits: [https://sourceforge.net/projects/lazarus/files/Lazarus%20Mac%20OS%20X%20i386/Lazarus%201.8.0RC4/]
-- Windows 64 bits: [https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2064%20bits/Lazarus%201.8RC4/]
-- Windows 32 bits: [https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2032%20bits/Lazarus%201.8RC4/]
+- [GNU/Linux 64 bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.0RC4/]
+- [GNU/Linux 32 bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20i386%20DEB/Lazarus%201.8.0RC4/]
+- [Mac OS X 32bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Mac%20OS%20X%20i386/Lazarus%201.8.0RC4/]
+- [Windows 64 bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2064%20bits/Lazarus%201.8RC4/]
+- [Windows 32 bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2032%20bits/Lazarus%201.8RC4/]
 
 Em seguida execute o instalador (ou instaladores, se Linux e OSX). Caso seja solicitado, forneça os privilégios de administrador do sistema operacional ao instalador. O processo de instalação e configuração mínima é automático.
 
@@ -160,7 +160,7 @@ Um depurador (debugger) é um programa que auxilia na detecção e correção de
 - Observação em tempo real do conteúdo de variáveis por meio do menu Exibir->Janelas de depuração->Observadores;
 - Adição de ponto de parada (Break Point) em linhas de código permite execução linha a linha por meio dos controles "Passar dentro" (F7) e "Passar sobre" (F8);
 
-Para os objetivos deste guia, estratégias básicas de depuração serão apresentadas na sessão de exemplos por meio da janela "Console". Para exibi-la, pressione CRTL+ALT+O. Ao executar uma aplicação por meio do Lazarus, essa janela é a saída padrão do texto escrito por meio dos construtos básicos apresentar nas sessões seguintes. 
+Para os objetivos deste guia, estratégias básicas de depuração serão apresentadas na sessão de exemplos por meio da janela "Console". Para exibi-la, pressione CRTL+ALT+O. Ao executar uma aplicação por meio do Lazarus, essa janela é a saída padrão do texto escrito por meio do construto básico da saída (WriteLn) apresentado nas sessões seguintes. 
 
 ### Free Pascal - Sintaxe básica
 
@@ -186,40 +186,30 @@ Este não, { este sim } este não.
 
 #### Programa, Blocos, Inicio, Fim
 
-Um programa pascal é um conjunto de blocos. Ele deve conter no mínimo um bloco de declaração de seu título e um bloco de comandos:
+Um programa pascal é um conjunto de blocos. Ele deve conter no mínimo um bloco de declaração de seu título e um bloco de comandos. Note que o ponto final demarca o final de um módulo. Outros comandos, blocos de comandos e declarações dentro de um módulo devem ser finalizados com ponto e vírgula: 
 
 
 ```
-program ProjetoPiloto  // declara o identificador, o título do programa
-;                      // finaliza o bloco de declaração do nome 
-begin                  // inicia o bloco de comandos central
-end.                   // finaliza o bloco de comandos central e o módulo
-```
-
-O ponto final demarca o final de um módulo. Outros comandos, blocos de comandos e declarações dentro de um módulo devem ser finalizados com ponto e vírgula: 
-```
-begin                 // inicia um bloco de comandos
-  Command1;           // comando 1
-  Command2;           // comando 2
-end;                  // finaliza o último bloco de comandos
+program ProjetoPiloto    // declara o identificador, o título do programa
+;                        // finaliza o bloco de declaração do nome 
+begin                    // inicia o bloco de comandos central
+  WriteLn('Olá Mundo!'); // imprime o texto 'Olá Mundo!' no console
+end.                     // finaliza o bloco de comandos central e o módulo
 ```
 
 A linguagem não diferencia maiúsculas de minúsculas, portanto o seguinte programa é idêntico ao anterior:
-
 ```
 PROGRAM projetopiloto;
 BEGIN                   
-               
+  writeln('Olá Mundo!');               
 END.                    
 ```
 
 A linguagem não é sensível à identação (recuos, paragráfos, espaçamentos, etc.) por meio de caracteres não imprimíveis como o tab, espaço ou final de linha.
-O seguinte programa também é idêntico ao anterior:
-
+Isto significa que o seguinte programa também é idêntico ao anterior:
 ```
-program projetopiloto;begin end.                    
+program projetopiloto;begin WriteLn('Olá Mundo!');end.                    
 ```
-
 Embora idêntico, diferentes convenções de identação existem com o objetivo de melhorar a legibilidade do código. A linguagem permite que você crie sua própria convenção.
 
 #### Diretivas de compilação
@@ -246,7 +236,7 @@ Uma unidade é um módulo que permite o controle de sua visibilidade a outros m�
 Ela possui, necessariamente, um bloco público, visível a outros módulos, e um bloco privado, invisível a outros módulos.
 
 ```
-unit Unit1;          // form.main.pas
+unit Unit1;          // unit1.pas
 
 interface            // início do bloco público da unidade                
 
@@ -273,7 +263,7 @@ Toda variável possui um tipo e precisa estar declarada em um bloco antes de ser
 ```
 var                       // bloco de declaração
   b : boolean = true;     // declara b como boleano inicializando-o como true
-  i : integer = -1;       // declara i como número inteiro inicializando-o com0 -1
+  i : integer = -1;       // declara i como número inteiro inicializando-o como -1
   s : string  = 'Texto';  // declara s como texto inicializando-o como "Texto" 
 begin
   WriteLn(b);             // converte o valor para texto e o mostra no console
@@ -350,35 +340,35 @@ begin
   // a primeira permite testes boleanos e a bifurcação entre resultados verdadeiros e falsos 
   if True then
     begin 
-      i := 1;
+      i := 1; // este comando será executado
     end
   else
     begin
-      i := 0;
+      i := 0; // mas este não
     end;
 
   // a segunda permite testes sobre valores e texto e a bifurcação entre diversos resultados
   case i of
-    0..1 : i := 0;
-    2..4 : i := 1;
-    5    : i := 2
+    0..1 : i := 0; // este comando será executado
+    2..4 : i := 1; // este não
+    5    : i := 2; // este não
   else
-    i := -1;
+    i := -1;       // este seria se nenhum dos valores especificados fosse encontrado
   end;
 
   case s of
-    'a'    : i := 0;
-    'b'    : i := 1;
-    'casa' : i := 2;
+    'a'    : i := 0; // este comando será executado
+    'b'    : i := 1; // mas este não
+    'casa' : i := 2; // este também não
   else
-    i := -1;
+    i := -1;         // e este não
   end;
 end.
 ```
 
 #### Laços de repetição
 
-Existem três tipos de laços de repetição. Dois deles permitem repetir um bloco de comandos até que ou enquanto uma condição for verdadeira. O outro permite repetir um bloco de acordo com um intervalo de valores:
+Existem três tipos de laços de repetição. Dois deles permitem repetir um bloco de comandos "até que" ou "enquanto" uma condição for verdadeira. O outro permite repetir um bloco de acordo com um intervalo de valores:
 ```
 var
   i : integer;
@@ -388,7 +378,7 @@ begin
   i := 100;
                    // este bloco será executado uma vez, 
   repeat           // pois a condição de saída é executada por último
-    i := i + 1;    
+    i := i + 1;    // <- bloco
   until i < 100;   // condição de saída
 
 
@@ -396,7 +386,7 @@ begin
   i := 100;
   while i < 100 do // a condição de saída é executada primeiro
     begin          // portanto este bloco não será executado
-      i := i + 1;  
+      i := i + 1;  // <- bloco
     end;
   
   i := 100;
@@ -413,7 +403,7 @@ begin
       if i > 4 then   // se i maior do que 4 (condição de saída) 
         Break;        // saia do laço
     end;
-  // i = 0, 1, 2, 3, 5
+  // WriteLn produz -> 0, 1, 2, 3, 4
 
   // também é possível pular blocos de comando dentro do bloco de repetições
   i := 0;
@@ -430,7 +420,7 @@ begin
       WriteLn(i);
       Break;        // procedimento de saída do laço
     end;
-  // i = 0, 1, 2, 3, 5 
+  // WriteLn produz, o número quatro foi pulado -> 0, 1, 2, 3, 5 
 
 
   // repetir de acordo com um intervalo, do menor para o maior:
@@ -450,21 +440,29 @@ end.
 
 #### Vetores e Listas
 
-Um vetor (array) é uma série de itens indexados. Cada item possui um índice (e um tipo). Por padrão o primeiro item de um vetor possui índice 0. Toda lista necessita ser inicializada antes de ser usada:
+Um vetor (array) é uma série de itens indexados. Cada item possui um índice (e um tipo). Por padrão o primeiro item de um vetor possui índice 0. Todo vetor necessita ser inicializado antes de ser usado:
 
 ```
 const
   space = #32;
 var
-  names : array [0..4] of string = ('joao', 'maria', 'rafael', 'thais', 'laura'); // declara e inicializa um vetor estático
-  index : integer;
+  // declara e inicializa um vetor estático
+  names : array [0..4] of string = ('joao', 'maria', 'rafael', 'thais', 'laura'); 
+  
+  // declara uma variável de tipo igual ao do vetor
   name : string;
+
+  // apenas inteiros podem servir como índice de vetores
+  index : integer;
 begin
-  // É possível percorrer os items um vetor por meio de uma variável enumerável de mesmo tipo: 
+  // existem tipos enumeráveis e tipos não enumeráveis
+
+  // percorra os items de um vetor de tipo enumerável
+  // com uma variável de mesmo tipo: 
   for name in names do
     WriteLn(name);
 
-  // É possível percorrer os items de qualquer vetor por meio de seus índices:
+  // percorra os items de qualquer vetor por meio de seus índices:
   for index:= Low(names) to High(names) do
     begin
       WriteLn(index, space, names[index]);
@@ -473,20 +471,27 @@ end.
 
 
 ```
-Entretanto, não é recomendado usar um array de texto para tarefas gerais, mas sim uma lista de texto: 
+Entretanto, em geral, não é recomendado usar um array de texto, mas sim uma lista de texto: 
 
 ```
-var
-  names : TStringList;
-  name : string;
-begin
-  names := TStringList.Create;                              // inicializa a lista
-  names.DelimitedText := 'thais maria clara bárbara joana'; // atribui um texto delimitado à lista
-  names.Append('name');                                     // adiciona um item ao final da lista
-  for name in names do WriteLn(name);                       // percorre a lista
-  names.Free;                                               // libera a lista  
-end.
+// classes serão apresentadas com mais detalhes nas sessões seguintes
+// mas frequentemente existem tipos de classes que são enumeráveis
+// e se "comportam" como vetores
+uses Classes; // torna o tipo TStringList, enumerável, visível
 
+var
+  names : TStringList; // declara um objeto de classe TStringList
+  name : string;      
+begin
+  // pontos são utilizados para acessar o conteúdo dos objetos
+  names := TStringList.Create;         // inicializa a lista
+  
+  // atribui um texto delimitado à lista
+  names.DelimitedText := 'thais maria clara bárbara joana'; 
+  names.Append('name');                // adiciona um item ao final da lista
+  for name in names do WriteLn(name);  // percorre a lista
+  names.Free;                          // libera a lista 
+end.
 
 ```
 Vetores podem ser declarados como dinâmicos, isto significa que o tamanho deles pode variar:
@@ -519,7 +524,7 @@ end.
 Procedimentos e funções são estruturas que permitem a reutilização de blocos de comandos.
 Todo procedimento ou função possui um identificador e uma assinatura com ou sem argumentos.
 Procedimentos podem ser declarados de diferentes maneiras no contexto de uma unidade,
-mas só é possível chamá-los de acordo com as regras de contexto e após sua declaração:
+mas só é possível chamá-los de acordo com as regras de visibilidade da unidade:
 
 ```
 {
@@ -729,10 +734,14 @@ end;
 
 #### Classes, Propriedades e Eventos
 
-Variáveis, procedimentos e funções também permitem a construção de eventos, propriedades e classes de objetos.
-Eventos devem ser entendidos como mensagens que um objeto pode enviar ou receber de outros objetos.
-O planejamento da arquitetura de eventos, propriedades e classes está fora do escopo do presente guia. 
-Por hora, o objetivo é de compreender sua sintaxe e como fazer uso de propriedades e eventos de classes existentes.
+Variáveis, procedimentos e funções também permitem a construção de eventos,
+propriedades e classes de objetos.
+Eventos devem ser entendidos como um tipo de mensagem que
+um objeto pode enviar ou receber de outros objetos.
+O planejamento da arquitetura de eventos, propriedades e classes
+está fora do escopo do presente guia. 
+Por hora, o objetivo é de compreender sua sintaxe
+e como fazer uso de propriedades e eventos de classes existentes.
 
 Sintaticamente, um evento é um tipo que contém a assinatura de um método. 
 
@@ -740,22 +749,39 @@ Sintaticamente, um evento é um tipo que contém a assinatura de um método.
 // um evento de um objeto com um argumento
 type TNotifyEvent = procedure(Sender : TObject) of object;
 
-// "Sender" é o objeto enviou o evento
+// "Sender" é o objeto que enviou a mensagem
 ```
-Eventos podem ser declarados como variáveis de uma classe e acessados por meio de propriedades. No pascal orientado a objetos, todas as classes possuem os métodos da classe TObject. Em um jargão técnico, todas as classes herdam os métodos de um ancestral comum. A seguir a classe TMyForm é declarada tendo como ancestral a classe TForm. A classe TForm possui métodos que implementam as funcionalidades básicas de uma janela: 
+Eventos podem ser declarados como variáveis de uma classe e acessados diretamente ou por meio de propriedades. No pascal orientado a objetos, todas as classes possuem os métodos da classe TObject. Em um jargão técnico, todas as classes herdam os métodos de um ancestral comum. A seguir a classe TMyForm é declarada tendo como ancestral a classe TForm. A classe TForm possui métodos que implementam as funcionalidades básicas de uma janela: 
 
 ```
 type
 
-  TNotifyEvent = procedure(Sender : TObject) of object;
-
-  TMyForm = class(TForm)
+  TMyForm = class(TForm)  
   private
     FNotifyEvent : TNotifyEvent;
     procedure SetSomeEvent(ANotifyEvent : FNotifyEvent);
+    procedure EventNotification(Sender : TObject);
   public
     property NotifyEvent : TNotifyEvent read FNotifyEvent write SetNotifyEvent;
   end;
+```
+
+Existem dois operadores específicos para classes:
+```
+implementation
+
+{...}
+
+procedure TMyForm.EventNotification(Sender : TObject):
+var
+ Form : TMyForm;
+begin
+  // testa se Sender herda de TMyForm
+  if Sender is TMyForm then      // se sim
+    Form := Sender as TMyForm;   // o endereço de Sender como
+                                 // TMyForm é atribuido ao Form
+end.
+
 ```
 
 ### A aplicação padrão do Lazarus
@@ -786,10 +812,10 @@ end.                                     // final do bloco de execução central
 
 ```
 
-Em seguida abra o arquivo Form.Main.pas:
+Para os objetivos do presente guia, o arquivo de projeto será gerenciado automaticamente pelo Lazarus. Em seguida abra o arquivo Forms.Main.pas, pois esse é o arquivo que será editado:
 
 ```
-unit Form.Main;                   // título da unidade
+unit Forms.Main;                   // título da unidade
 
 {$mode objfpc}{$H+}               // diretivas de compilação
 
@@ -821,51 +847,228 @@ implementation                    // campo privado da unidade
 
 end.                              // final da unidade
 ```
-A tarefas agora é customizar a classe TForm1.
+Como customizar a classe TForm1 e adaptá-las às nossas necessidades? Os exemplos a seguir ilustram como resolver tarefas básicas relacionadas ao registro do comportamento e apresentação de eventos ambientais. Para isso, procedimentos e eventos simples serão implementados com o auxílio de recursos visuais da interface.
 
-TODO:
+### Registro tabulado de frequência e tempo
 
-#### Customizando o evento de criação da janela principal da aplicação
+Alguns computadores pessoais permitem registrar eventos na escala de nanosegundos. Mas a escala de tempo do comportamento ao olho nú é bem mais lenta, e registros muito bem detalhados podem ser obtidos com granularidade máxima na escala de milisegudos. A granularidade do sistema de registro é sua frequência de amostragem. A amostragem deve, também, ocorrer de forma monotônica, isto é, não devem haver saltos irregulares de tempo entre cada unidade de tempo registrada. 
 
-- Selecione a janela Editor de Código
-- Selecione o arquivo Form.Main.pas 
+Para obter um registro em milisegundos, implemente a unidade "Timestamps". Crie uma nova unidade por meio do menu superior Arquivo->Nova Unidade:
+
+```
+unit Timestamps;
+
+{$mode objfpc}{$H+}
+
+interface
+
+// essa função pode ser chamada muitas vezes
+// por isso a directiva "inline" é declarada ao final
+function Miliseconds(FirstTickCount : Cardinal) : string; inline; 
+
+implementation
+
+uses SysUtils; 
+
+// um registro cumulativo de tempo deve tomar 
+// o primeiro registro como referência (FirstTickCount)
+
+// o tipo cardinal só admite valores
+// inteiros maiores ou iguais a zero 
+function Miliseconds(FirstTickCount : Cardinal) : string;
+begin
+  // a função GeTickCount64 retorna um tempo monotônico em milisegundos
+  // a função IntToStr converte o valor para texto
+  Result := IntToStr(GetTickCount64 - FirstTickCount);  
+end; 
+
+end.
+```
+
+Registros de texto tabulados além de permitirem a inspeção visual por meio de editores de texto simples, também permitem a automação da leitura dos dados para posterior tratamento e análise. Registros tabulados também são simples de serem implementados com o free pascal:
+
+```
+unit TabDelimitedReport;
+
+{$mode objfpc}{$H+}
+
+interface
+
+type
+
+  { TTabDelimitedReport }
+
+  TTabDelimitedReport = class
+  private
+    FFilename : string;
+    FTextFile : TextFile;
+    procedure SetFilename(AFilename: string);
+  public
+    procedure CloseFile;
+    procedure NextFile;
+    procedure WriteRow(Cols : array of string);
+    property Filename : string read FFilename write SetFilename;
+  end;
+
+var
+  Report : TTabDelimitedReport;       // variável pública
+
+implementation
+
+uses SysUtils, LazFileUtils; // torna visível funções para o manuseio de arquivos
+
+procedure TTabDelimitedReport.WriteRow(Cols: array of string);
+const
+  TAB = #9;
+var
+  i : Integer;
+  LastColumn : Integer;
+begin
+  LastColumn := High(Cols);
+  for i := 0 to LastColumn do          // percorre todos os itens
+    if i < LastColumn then             // se antes do último item
+      Write(FTextFile, Cols[i]+TAB)    // escreve item e TAB        
+    else               // se último escreve item e final de linha
+      WriteLn(FTextFile, Cols[i]);  
+  Flush(FTextFile);                    // salva as mudanças no disco rígido 
+end;
+
+procedure TTabDelimitedReport.SetFilename(AFilename: string);
+var
+  LFilePath, LExtension, LBasename: string;
+  i : Integer;
+begin
+                     // retorna o caminho raiz do nome de arquivo
+  LFilePath := ExtractFilePath(AFilename);
+
+                     // retorna apenas o nome base do arquivo
+                     // sem extenção e sem caminho
+  LBasename := ExtractFileNameOnly(AFilename);
+
+                     // retorna a extenção do nome do arquivo
+  LExtension := ExtractFileExt(AFilename);
+
+                     // caso a extenção seja vazia ou .exe
+                     // a extenção torna-se '.txt' 
+  case LExtension of
+  '', '.exe' : LExtension:='.txt';
+  end;
+
+                      // nunca subscreva um arquivo já existente
+                      // se o arquivo existir, incremente seu nome
+  i := 0;
+  while FileExists(AFilename) do
+    begin
+      Inc(i);
+      AFilename := LFilePath+LBasename+'_data_'+Format('%.3d', [i])+LExtension;
+    end;
+
+                         // atribui um nome ao arquivo de texto
+  AssignFile(FTextFile, AFilename);
+  Rewrite(FTextFile);    // abre o arquivo de texto para escrita
+  FFilename:=AFilename;  // salva o nome do arquivo para uso posterior
+end;
+
+procedure TTabDelimitedReport.NextFile;
+begin
+  SetFilename(FFilename);             // abre um novo arquivo
+end;
+
+procedure TTabDelimitedReport.CloseFile;
+begin
+  System.Close(FTextFile);            // fecha o arquivo de texto
+end;
+
+initialization // antes de executar o programa, crie (a memória do) objeto
+  Report := TTabDelimitedReport.Create;
+
+finalization   // após finalizar o programa, libere (a memória do) objeto
+  Report.Free;
+
+end.
+
+```
+
+Em seguida, selecione o arquivo Forms.Main.pas (correspondente a janela principal) e use as unidades Timestamps e TabDelimitedReport na cláusula uses privada:
+
+```
+implementation                    // campo privado da unidade
+
+{$R *.lfm}                        
+
+// torna visível a variável do relatório (Report)
+// e a função Miliseconds
+uses TabDelimitedReport, Timestamps; 
+
+end.   
+
+```
+
+Para criar um arquivo de texto e o cabeçalho ("Tempo Categoria Evento"), utilize o evento de criação da janela principal:
+
+- Selecione o arquivo Forms.Mains.pas
 - Selecione a janela principal (Aperte F12)
 - Clique duas vezes sobre o fundo da janela principal
 - O procedimento padrão OnCreate será declarado automaticamente
+- implemente o procedimento:
 
-#### Criando objetos em tempo de execução
+```
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  // use a variável pública da unidade TabDelimitedReport
+  // a propriedade Filename permite criar e inicializar
+  // o arquivo de texto do relatório
+  Report.Filename := Application.ExeName;
 
-- Object := TObject.Create;
+  // Application refere-se à variável
+  // da unidadde Forms. A propriedade ExeName
+  // retorna o caminho completo do arquivo executável da aplicação
+   
+  // escreve o cabeçalho do programa
+  Report.WriteRow(['Tempo', 'Categoria', 'Evento']);
+end; 
 
-#### Adicionar componente não visual na janela principal 
+```
+Ao final do programa, é necessário fechar o arquivo de texto.
+Para isso usaremos o evento de finalização da aplicação:
 
-- Selecionar TTimer na Aba System
-- Clicar sobre o fundo da jenela principal
+- Selecione Forms.Main.pas
+- Alterne para a janela principal (Aperte F12)
+- Clique sobre o fundo da janela principal 
+- Selecione a janela Inspetor de Objetos (Aperte F11)
+- Selecione a aba Eventos
+- Clique duas vezes sobre o campo em branco do evento OnDestroy:
+- O procedimento será declarado automaticamente:
 
-#### Adicionar componente visual na janela principal
+```
+procedure TForm1.FormDestroy(Sender: TObject);
+begin
+  // fecha o arquivo de texto
+  Report.CloseFile;
 
-- Selecionar TShape na aba Additional
-- Clicar sobre o fundo da janela principal
+  // para relembrar como o procedimento é implementado
+  // segure a tecla CTRL e clique com o botão esquerdo sobre CloseFile
+end;
+```
 
-#### Configurar propriedades de componentes
+Por meio de diversas chamadas ao procedimento WriteRow do objeto Report, um "relatório" em formato de texto simples como a seguinte estrutura é esperado:
+```txt
+Tempo&9;Categoria&9;Evento
+0000&9;antecedente&9;S1
+2000&9;resposta&9;R1
+2500&9;consequente&9;C1
+5050&9;antecedente&9;S1
+5500&9;resposta&9;R2
+6000&9;resposta&9;R2
+6100&9;resposta&9;R2
+7000&9;resposta&9;R2
+9000&9;resposta&9;R1
+9500&9;consequente&9;C1
+```
+Um relatório deve conter todas as informações de interesse. Nesse caso, duas respostas (R1 e R2) e dois estímulos (S1 e C1) devem ser registrados pelo programa. O programa está pronto para rastreá-los. Mas como detectar a ocorrência desses eventos?
 
-- Selecionar componente na janela principal
-- Selecionar janela Inspetor de Objetos (Aperte F11)
-- Selecionar propriedade
-- Alterar valor da propriedade
+### Rastreamento de estímulos e respostas
 
-### Registrando a frequência e o tempo de eventos
+Ao interagir com uma interface gráfica, dois tipos de eventos são de especial interesse: respostas ao teclado e respostas ao mouse. 
 
-- Início := GetTickCount64;
-- Evento := Início - GetTickCount64;
-- cabeçalho, rodapé, tabulação -> WriteLn
-
-#### Controlando a visibilidade de componentes visuais
-
-- Show
-- Hide
-
-#### Construindo a lógica de apresentação dos eventos
-
-- operante livre
-- S - R - C
+TODO->
