@@ -9,20 +9,20 @@ copyright: <!--Copyright (c) 2017 Carlos Rafael Fernandes Picanço.-->
 
 O objetivo deste capítulo é de:
 
-1. informar o leitor ou leitora sobre a existência de diferentes dialetos derivados do Pascal
-1. situar o leitor ou leitora sobre o dialeto utilizado neste guia
-1. apresentar um recorte da comunidade de desenvolvedores Pascal
-1. apresentar um recorte básico do dialeto Free Pascal
-1. introduzir aspectos básicos do ambiente de programação Lazarus e Free Pascal
-1. introduzir o desenvolvimento de aplicações visuais nesse ambiente por meio de exemplos
+- Informar o leitor ou leitora sobre a existência de diferentes dialetos derivados do Pascal.
+- Situar o leitor ou leitora sobre o dialeto utilizado neste guia.
+- Apresentar um recorte da comunidade de desenvolvedores Pascal.
+- Apresentar um recorte básico do dialeto Free Pascal.
+- Introduzir aspectos básicos do ambiente de programação Lazarus e Free Pascal.
+- Introduzir o desenvolvimento de aplicações visuais nesse ambiente por meio de exemplos.
 
 Os exemplos foram pensados para uma audiência de analistas do comportamento,
 especialmente aqueles lidando com participantes de pesquisa que devem interagir com uma interface gráfica.
 Por meio desses exemplos, o leitor ou leitora será guiado à resolução de problemas recorrentes:
 
-- como apresentar estímulos (antecedentes e consequentes)?
-- como esperar por respostas?
-- como rastrear e registrar tempo e frequência de estímulos e respostas?
+- Como apresentar estímulos (antecedentes e consequentes)?
+- Como esperar por respostas?
+- Como rastrear e registrar tempo e frequência de estímulos e respostas?
 
 ## Pré-requisitos
 
@@ -37,7 +37,8 @@ busca por controles visuais: o que são janelas, o que é um menu superior, etc.
 A linguagem de programação Pascal,
 como originalmente arquitetada pelo professor Niklaus Wirth
 entre 1968 e 1971 (Jensen & Wirth, 1973)
-tinha como objetivo servir ao ensino introdutório de programação estruturada em suas aulas. Assim inicia a entrevista de Severance (2012) a Wirth.
+tinha como objetivo servir ao ensino introdutório de programação estruturada em suas aulas.
+Assim inicia a entrevista de Severance (2012) a Wirth.
 Embora Wirth também tenha ajudado a montar o sistema
 em grandes computadores de outras universidades, ele relata que
 a popularização de dialetos originados do Pascal só viria na década de 80 com o advento do microcomputador,
