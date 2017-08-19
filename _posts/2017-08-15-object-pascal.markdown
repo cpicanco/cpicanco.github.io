@@ -9,8 +9,8 @@ copyright: <!--Copyright (c) 2017 Carlos Rafael Fernandes Picanço.-->
 
 O objetivo deste capítulo é de:
 
-1. informar o leitor sobre a existência de diferentes dialetos derivados do Pascal
-1. situar o leitor sobre o dialeto utilizado neste guia
+1. informar o leitor ou leitora sobre a existência de diferentes dialetos derivados do Pascal
+1. situar o leitor ou leitora sobre o dialeto utilizado neste guia
 1. apresentar um recorte da comunidade de desenvolvedores Pascal
 1. apresentar um recorte básico do dialeto Free Pascal
 1. introduzir aspectos básicos do ambiente de programação Lazarus e Free Pascal
@@ -18,49 +18,53 @@ O objetivo deste capítulo é de:
 
 Os exemplos foram pensados para uma audiência de analistas do comportamento,
 especialmente aqueles lidando com participantes de pesquisa que devem interagir com uma interface gráfica.
-Por meio desses exemplos, o leitor será guiado à resolução de problemas recorrentes:
+Por meio desses exemplos, o leitor ou leitora será guiado à resolução de problemas recorrentes:
 
 - como apresentar estímulos (antecedentes e consequentes)?
 - como esperar por respostas?
 - como rastrear e registrar tempo e frequência de estímulos e respostas?
 
-### Pré-requisitos
+## Pré-requisitos
 
-Inglês: leitura e escrita instrumental.
-
-Conhecimento básico de informática: teclado e mouse.
-
-Conhecimento básico sobre o sistema operacional de escolha: como executar um programa?
-
-Conhecimento básico sobre interfaces gráficas comuns será necessário, por exemplo,
+- Inglês: leitura e escrita instrumental.
+- Conhecimento básico de informática: teclado e mouse.
+- Conhecimento básico sobre o sistema operacional de escolha: como executar um programa?
+- Conhecimento básico sobre interfaces gráficas comuns será necessário, por exemplo,
 busca por controles visuais: o que são janelas, o que é um menu superior, etc. 
 
-### Pascal - Breve histórico
+## Pascal - Breve histórico
 
 A linguagem de programação Pascal,
-como originalmente arquitetada pelo professor Niklaus Wirth entre 1968 e 1971 (Jensen and Wirth, 1973)
-tinha como objetivo servir ao ensino introdutório de programação estruturada em suas aulas.
-Embora Wirth também tenha ajudado a montar o sistema em grandes computadores de outras universidades,
+como originalmente arquitetada pelo professor Niklaus Wirth
+entre 1968 e 1971 (Jensen & Wirth, 1973)
+tinha como objetivo servir ao ensino introdutório de programação estruturada em suas aulas. Assim inicia a entrevista de Severance (2012) a Wirth.
+Embora Wirth também tenha ajudado a montar o sistema
+em grandes computadores de outras universidades, ele relata que
 a popularização de dialetos originados do Pascal só viria na década de 80 com o advento do microcomputador,
 de sistemas integrados de desenvolvimento e da redução de custo dos compiladores.
 
 Quando comparado com linguagens como BASIC, Assembly, ALGOL e FORTRAN,
-o Pascal de Wirth possuia um melhor balanço entre boa legibilidade, modularidade e flexibilidade.
-Ainda assim, Wirth foi reconhecendo demandas não contempladas pelo Pascal,
+o Pascal de Wirth possuia um melhor balanço entre boa legibilidade,
+modularidade e flexibilidade. Severance (2012), considera que a linguagem,
+por ser estruturada, era muito mais adequada para
+a construção de programas com qualidade de produção. 
+Ainda assim, dando continuidade à entrevista, Wirth foi reconhecendo
+demandas não contempladas pelo Pascal,
 o que o levou a extendê-lo e reformulá-lo, criando outros dialetos derivados.
-Mas aquela popularização ocorreria por meio de outros dialetos independentes,
-com suas próprias extensões e melhorias. Esses outros dialetos, em alguns casos,
-inclusive sendo adotados como dialeto padrão em cursos de introdução à programação.
-Como consequência, algumas gerações naquele periodo (70-80) aprenderam
-a pensar computacionalmente por meio de um dialeto derivado ou original.
-É rasoável considerar, portanto, que algumas gerações entraram no mercado de trabalho
-tendo um ou outro como primeira liguagem de programação.
 
-### Pascal - Padronização e Diversificação comercial
+Mas aquela popularização ocorreria por meio de ainda outros dialetos, independentes,
+com suas próprias extensões e melhorias. Esses outros dialetos, em alguns casos,
+inclusive sendo adotados como dialeto padrão em cursos de introdução à programação.  
+Como consequência, algumas gerações naquele período (70-80) aprenderam
+a pensar computacionalmente por meio de um dialeto derivado ou original.
+É razoável considerar, portanto, que algumas gerações entraram no mercado de trabalho
+tendo um ou outro como primeira liguagem de programação. 
+
+## Pascal - Padronização e Diversificação comercial
 
 Não por acaso, com tal mão de obra disponível,
 bases de código milionárias foram escritas em dialetos do Pascal;
-por exemplo, como os primeiros sistemas operacionais da Apple Computers.
+por exemplo, como os primeiros sistemas operacionais da Apple Computers Inc. (1985).
 Por conta do crescente uso comercial de dialetos derivados do Pascal,
 o dialeto original foi padronizado (ISO 7185:1983), revisado (ISO 7185:1990) e expandido (ISO 10206:1990)
 com o objetivo de corrigir ambiguidades e assegurar a sua portabilidade.
@@ -74,24 +78,24 @@ tais padronizações não figuram entre os dialetos mais populares derivados do 
 Outros dialetos (como o Delphi Pascal, Apple Pascal e Free Pascal)
 tornaram-se os "padrões de fato" no mercado.
 
-### Object Pascal - Um dialeto extendido
+## Object Pascal - Um dialeto extendido
 
 Ao longo das décadas de 70 e 80 houve uma popularização da chamada "programação orientada a objetos".
 Surgia a necessidade de se extender a sintaxe do Pascal estruturado tornando-o mais permissivo ao novo estilo;
 originava-se então o Object Pascal.
 A orientação ao objeto tornava-se um modelo de referência para o planejamento e a programação de interfaces gráficas.
-Foi nesse contexto que interfaces de desenvovimento integrado como o Turbo Pascal (Borland, 1983-1989) e sucessores,
-como o Delphi (Borland, 1995) e o Lazarus (2001) surgiram.   
+Foi nesse contexto que interfaces de desenvovimento integrado como o Turbo Pascal (Borland International Inc, 1984/1983 e sucessores, como o Delphi) e o Lazarus (lançado em 2001, ver [https://en.wikipedia.org/wiki/Lazarus_(IDE)](https://en.wikipedia.org/wiki/Lazarus_%28IDE%29)) surgiram.   
 
-### Free Pascal e Lazarus - um ambiente de desenvolvimento integrado
+## Free Pascal e Lazarus - um ambiente de desenvolvimento integrado
 
-Os exemplos neste guia foram escritos por meio do ambiente integrado de desenvolvimento Lazarus (versão 1.8RC4)
-e do compilador Free Pascal (versão 3.0.4).
+Os exemplos neste guia foram escritos por meio do ambiente integrado de desenvolvimento Lazarus (versão 1.8RC4; Lazarus IDE, 2017)
+e do compilador Free Pascal (Versão 3.0.4; Klämpfl et al, 2017).
 O ambiente contém recursos que reduzem a barreira de entrada na complexa cadeia que é o desenvolvimento de aplicações compiladas.
 Um compilador é um programa que traduz a sintaxe de alto nível (mais portável),
 para uma linguagem de baixo nível (específica de uma máquina alvo).
 O produto final é um arquivo nativamente executável e que não demanda instalação.
-Compilador e interface são distribuidos por meio de licenças livres (GPL).
+
+Compilador (Free Pascal) e interface (Lazarus) são distribuídos por meio de licenças livres (GPL).
 Parte do ambiente também é licenciado (LGPL)
 de maneira a permitir a distribuição de aplicações comerciais com código fonte privado.
 O ambiente está disponível para sistemas operacionais como o OSX,
@@ -99,27 +103,30 @@ Windows e baseados no kernel Linux (Debian, Ubuntu)
 e agrega uma grande comunidade de desenvolvedores independentes.
 Os principais meios de informação e comunicação nesse ecossistema são:
 
- - [A wiki][http://wiki.freepascal.org/]
- - [O fórum][http://forum.lazarus.freepascal.org/]
- - As listas de emails:
-   - [Lazarus][http://forum.lazarus.freepascal.org/index.php/page,Mail_list_information.html]
-   - [Free Pascal][https://www.freepascal.org/maillist.var]
- - Os sites oficiais:
-   - [Pacotes][http://packages.lazarus-ide.org/]
-   - [Fundação][https://foundation.freepascal.org/]
-   - [Lazarus][http://lazarus-ide.org/]
-   - [Free Pascal][https://www.freepascal.org/]
- - [O rastreador de bugs][http://bugs.freepascal.org/]
+- [A wiki](http://wiki.freepascal.org/): http://wiki.freepascal.org/
+- [O fórum](http://forum.lazarus.freepascal.org/): http://forum.lazarus.freepascal.org/
+- As listas de emails: 
+  - [Lazarus](http://lists.lazarus.freepascal.org/mailman/listinfo/lazarus)
+  - [Free Pascal](https://www.freepascal.org/maillist.var)
+- Os sites oficiais:
+  - [Pacotes](http://packages.lazarus-ide.org/): http://packages.lazarus-ide.org/
+  - [Fundação](https://foundation.freepascal.org/): https://foundation.freepascal.org/
+  - [Lazarus](http://lazarus-ide.org/): http://lazarus-ide.org/
+  - [Free Pascal](https://www.freepascal.org/): https://www.freepascal.org/
+- [O rastreador de bugs](http://bugs.freepascal.org/): http://bugs.freepascal.org/
 
 Diversas coleções de unidades, componentes e pacotes reunidos nas chamadas "bibliotecas" já vem pré-instalados. Eles permitem a execução de tarefas gerais de programação:  
-   - Free Pascal Runtime Library (RTL).
-   - Free Pascal Component Library (FCL).
-   - Lazarus Component Library (LCL).
+- Free Pascal Runtime Library (RTL).
+- Free Pascal Component Library (FCL).
+- Lazarus Component Library (LCL).
 
-O pacote "Gerenciador Online de Pacotes" reúne outras coleções de unidades,
-componentes e pacotes mais frequentemente utilizados.
-O pacote é distribuido juntamente com o Lazarus e pode ser instalado por meio do menu "Pacotes",
-opção "Instalar pacotes", item "OnlinePackageManager" na lista à direita.
+Outras coleções de terceiros também frequentemente utilizadas
+estão reunidas por meio do pacote
+"Gerenciador Online de Pacotes".
+O pacote é distribuído juntamente com o Lazarus e
+pode ser instalado por meio do menu "Pacotes",
+opção "Instalar pacotes", item "OnlinePackageManager"
+na lista à direita.
 
 Ao explorar o ecossitema por meio de buscadores online,
 seja em busca de ajuda, seja em busca de contribuições de terceiros,
@@ -127,21 +134,21 @@ utilize palavras-chave como "free pascal guide", "lazarus forum",
 "component", "package", "componente", "pacote"
 juntamente com os termos específicos de seu interesse.
 
-### Free Pascal e Lazarus - Instalação e configuração do ambiente de desenvolvimento.
+## Free Pascal e Lazarus - Instalação e configuração do ambiente de desenvolvimento.
 
-Baixe os arquivos de instalação correspondentes para o seu sistema no sítio de hospedagem oficial:
+Baixe os arquivos de instalação correspondentes para o seu sistema no sítio de hospedagem oficial (https://sourceforge.net/projects/lazarus/files/):
 
-- [GNU/Linux 64 bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.0RC4/]
-- [GNU/Linux 32 bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20i386%20DEB/Lazarus%201.8.0RC4/]
-- [Mac OS X 32bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Mac%20OS%20X%20i386/Lazarus%201.8.0RC4/]
-- [Windows 64 bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2064%20bits/Lazarus%201.8RC4/]
-- [Windows 32 bits][https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2032%20bits/Lazarus%201.8RC4/]
+- [GNU/Linux 64 bits](https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20amd64%20DEB/Lazarus%201.8.0RC4/)
+- [GNU/Linux 32 bits](https://sourceforge.net/projects/lazarus/files/Lazarus%20Linux%20i386%20DEB/Lazarus%201.8.0RC4/)
+- [Mac OS X 32bits](https://sourceforge.net/projects/lazarus/files/Lazarus%20Mac%20OS%20X%20i386/Lazarus%201.8.0RC4/)
+- [Windows 64 bits](https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2064%20bits/Lazarus%201.8RC4/)
+- [Windows 32 bits](https://sourceforge.net/projects/lazarus/files/Lazarus%20Windows%2032%20bits/Lazarus%201.8RC4/)
 
 Em seguida execute o instalador (ou instaladores, se Linux e OSX). Caso seja solicitado, forneça os privilégios de administrador do sistema operacional ao instalador. O processo de instalação e configuração mínima é automático.
 
 Este guia fará referência aos nomes dos controles da interface Lazarus tal como traduzidos para o português brasileiro, portanto recomenda-se a escolha deste idioma ao longo da instalação. Opcionalmente, após a instalação, altere o idioma no menu superior Ferramentas->Opções da IDE->Ambiente->Geral->Idioma.
 
-### Lazarus - criando e executando uma aplicação
+## Lazarus - criando e executando uma aplicação
 
 <p>
 <img class="img-responsive center-block"
@@ -153,28 +160,28 @@ Figura 1. Janelas utilizadas neste guia. Legenda: 1, menu superior do lazarus; 2
 
 Ao executar o Lazarus pela primeira vez (por meio do comando "startlazarus" em sistemas Linux), uma aplicação (programa com uma interface gráfica) é criada automaticamente. Execute a aplicação pressionando F9 (Executar). Essa aplicação padrão é uma janela (um formulário) flutuante com funcionalidades básicas como fechar, minimizar, maximizar, restaurar, mover, redimensionar, entre outras. Essa janela também já vem preparada para receber eventos como aqueles produzidos por mouse e teclado.
 
-### Lazarus - encerrando uma aplicação
+## Lazarus - encerrando uma aplicação
 
 Para fechar a aplicação normalmente, utilize o comando correspondente na barra superior da janela. Para forçar o fechamento, selecione uma janela do Lazarus, por exemplo clicando sobre a janela "Editor de Código", e pressione CRTL+F2 (Parar). O primeiro método permite avaliar a ocorrência de erros na cadeia de eventos de encerramento da aplicação. O segundo não produz a cadeia normal de eventos de encerramento e permite a interrupção da aplicação (travada), especialmente quando erros lógicos produzem espera infinita.
 
-### Lazarus - salvando o projeto de uma aplicação
+## Lazarus - salvando o projeto de uma aplicação
 
 Após fechar a aplicação, pressione CRTL+S e salve o projeto. Recomenda-se sempre renomear os nomes padrões para nomes que resumem a função do arquivo. O código fonte da aplicação padrão é composto por três arquivos principais. Dois arquivos (unit1.pas e unit1.lfm) compõe um "formulário" ou "janela" e o outro arquivo (project1.lpr) compõe um "projeto" ou "programa". Adicionalmente, um arquivo de configuração do projeto (project1.lpi) e arquivos de recursos auxiliares também serão automaticamente criados ao salvar. Apenas o arquivo "unit1.pas" será editado diretamente. Renomeie esse arquivo para "Forms.Main.pas". Renomeie o arquivo de configuração do projeto para "ProjetoPiloto.lpi" (o arquivo *.lpr será renomeado automaticamente). Como muitos arquivos estão envolvidos, recomenda-se reservar uma pasta para cada projeto.
 
-### Lazarus - depurando uma aplicação
+## Lazarus - depurando uma aplicação
 
-Um depurador (debugger) é um programa que auxilia na detecção e correção de erros. Ao executar a aplicação padrão por meio do lazarus (F9) informações que permitem melhor depuração são adicionadas ao executável. O depurador padrão utilizado é o GNU Debugger (GDB). Uma descrição detalhada de estratégias de depuração está fora do escopo do presente guia. Entretanto, recomenda-se explorar duas delas:
+Um depurador (debugger) é um programa que auxilia na detecção e correção de erros. Ao executar a aplicação padrão por meio do lazarus (pressionando F9, por exemplo) informações que permitem melhor depuração são adicionadas ao executável. O depurador padrão utilizado é o GNU Debugger (GDB). Uma descrição detalhada de estratégias de depuração está fora do escopo do presente guia. Entretanto, recomenda-se explorar duas delas:
 
 - Observação em tempo real do conteúdo de variáveis por meio do menu Exibir->Janelas de depuração->Observadores;
 - Adição de ponto de parada (Break Point) em linhas de código permite execução linha a linha por meio dos controles "Passar dentro" (F7) e "Passar sobre" (F8);
 
 Para os objetivos deste guia, estratégias básicas de depuração serão apresentadas na sessão de exemplos por meio da janela "Console". Para exibi-la, pressione CRTL+ALT+O. Ao executar uma aplicação por meio do Lazarus, essa janela é a saída padrão do texto escrito por meio do construto básico da saída (WriteLn) apresentado nas sessões seguintes. 
 
-### Free Pascal - Sintaxe básica
+## Free Pascal - Sintaxe básica
 
 Nos tópicos seguintes, sempre que possível, os elementos da linguagem Free Pascal serão apresentados de maneira auto-explicativa nos campos de código. Esta sessão foi planejada para ser um recurso de consulta e permitir a leitura corrida.
 
-#### Comentários
+### Comentários
 
 Textos comentados são ignorados pelo compilador e permitem a documentação do funcionamento e significado de trechos do código:
 
@@ -192,7 +199,7 @@ Este não, { este sim } este não.
 
 ```
 
-#### Programa, Blocos, Inicio, Fim
+### Programa, Blocos, Início, Fim
 
 Um programa pascal é um conjunto de blocos. Ele deve conter no mínimo um bloco de declaração de seu título e um bloco de comandos. Note que o ponto final demarca o final de um módulo. Outros comandos, blocos de comandos e declarações dentro de um módulo devem ser finalizados com ponto e vírgula: 
 
@@ -220,7 +227,7 @@ program projetopiloto;begin WriteLn('Olá Mundo!');end.
 ```
 Embora idêntico, diferentes convenções de identação existem com o objetivo de melhorar a legibilidade do código. A linguagem permite que você crie sua própria convenção.
 
-#### Diretivas de compilação
+### Diretivas de compilação
 
 Diretivas de compilação são instruções ao compilador (ao Free Pascal), não instruções do programa (neste contexto, o projeto piloto).
 Elas podem incluir elementos, assim como mudar o significado de elementos sintáticos de um dialeto.
@@ -238,7 +245,7 @@ Ele corresponde ao dialeto da aplicação padrão do Lazarus (a interface gráfi
 {$INLINE ON}     // habilita a declaração de procedimentos inline
 ```
 
-#### Unidades 
+### Unidades 
 
 Uma unidade é um módulo que permite o controle de sua visibilidade a outros módulos.
 Ela possui, necessariamente, um bloco público, visível a outros módulos, e um bloco privado, invisível a outros módulos.
@@ -264,7 +271,7 @@ end.                 // final da unidade
 Um módulo (programa ou unidade) pode ver a interface, mas não a implementação, de unidades em um bloco de uso.
 Se duas unidades diferentes declaram interfaces iguais, a interface da última unidade na lista é usada.
 
-#### Atribuição, Variáveis, Constantes e Tipos
+### Atribuição, Variáveis, Constantes e Tipos
 
 Uma variável é um identificador associado a um espaço reservado na memória do computador.
 Toda variável possui um tipo e precisa estar declarada em um bloco antes de ser usada. 
@@ -299,7 +306,7 @@ begin
 end. 
 ```
 
-#### Operadores
+### Operadores
 
 Operadores são símbolos reservados para operações comuns sobre variáveis (de tipos conhecidos).
 Consulte o guia de referência da linguagem para informações detalhadas sobre todos os operadores suportados ( https://www.freepascal.org/docs-html/ref/refse84.html ):
@@ -335,7 +342,7 @@ begin
   s := 'texto'+'texto'+'texto';     // concatenar texto  
 end.
 ```
-#### Condições
+### Condições
 
 Programas frequentemente realizam operações condicionalmente. Condições podem ser declaradas por meio de dois tipos de estruturas:
 
@@ -374,7 +381,7 @@ begin
 end.
 ```
 
-#### Laços de repetição
+### Laços de repetição
 
 Existem três tipos de laços de repetição. Dois deles permitem repetir um bloco de comandos "até que" ou "enquanto" uma condição for verdadeira. O outro permite repetir um bloco de acordo com um intervalo de valores:
 ```
@@ -446,7 +453,7 @@ end.
 
 ```
 
-#### Vetores e Listas
+### Vetores e Listas
 
 Um vetor (array) é uma série de itens indexados. Cada item possui um índice (e um tipo). Por padrão o primeiro item de um vetor possui índice 0. Todo vetor necessita ser inicializado antes de ser usado:
 
@@ -527,7 +534,7 @@ end.
 
 ```
 
-#### Procedimentos, Funções, Argumentos
+### Procedimentos, Funções, Argumentos
 
 Procedimentos e funções são estruturas que permitem a reutilização de blocos de comandos.
 Todo procedimento ou função possui um identificador e uma assinatura com ou sem argumentos.
@@ -740,14 +747,14 @@ begin
 end;
 ```
 
-#### Classes, Propriedades e Eventos
+### Classes, Propriedades e Eventos
 
 Variáveis, procedimentos e funções também permitem a construção de eventos,
 propriedades e classes de objetos.
 Eventos devem ser entendidos como um tipo de mensagem que
 um objeto pode enviar ou receber de outros objetos.
 O planejamento da arquitetura de eventos, propriedades e classes
-está fora do escopo do presente guia. 
+está fora do escopo do presente guia. Para informações detalhadas sobre a arquitetura, procure por padrões de planejamento (*Design Patterns*) nas ferramentas de busca, eles são, frequentemente, independentes de linguagens.
 Por hora, o objetivo é de compreender sua sintaxe
 e como fazer uso de propriedades e eventos de classes existentes.
 
@@ -792,9 +799,9 @@ end.
 
 ```
 
-### A aplicação padrão do Lazarus
+## A aplicação padrão do Lazarus
 
-#### O formato dos arquivos
+### O formato dos arquivos
 
 Diversos elementos da sintaxe básica podem ser identificados na aplicação padrão do Lazarus. Para abrir o arquivo de projeto da aplicação; clique sobre a janela Editor de Código, pressione CTRL+O e selecione o arquivo projetopiloto.lpr. Esse arquivo possui a seguinte estrutura:
 
@@ -855,9 +862,14 @@ implementation                    // campo privado da unidade
 
 end.                              // final da unidade
 ```
-Como customizar a classe TForm1 e adaptá-las às nossas necessidades? Os exemplos a seguir ilustram como resolver tarefas básicas relacionadas ao registro do comportamento e apresentação de eventos ambientais. Para isso, procedimentos e eventos simples serão implementados com o auxílio de recursos visuais da interface.
 
-### Registro tabulado de frequência e tempo
+Como customizar a classe TForm1 e adaptá-las às nossas necessidades?
+
+## Exemplos
+
+Os exemplos a seguir ilustram como resolver tarefas básicas relacionadas ao registro do comportamento e apresentação de eventos ambientais. Para isso, procedimentos e eventos simples serão implementados com o auxílio de recursos visuais da interface.
+
+### Exemplo 1. Registro tabulado de frequência e tempo
 
 Alguns computadores pessoais permitem registrar eventos na escala de nanosegundos. Mas a escala de tempo do comportamento ao olho nú é bem mais lenta, e registros muito bem detalhados podem ser obtidos com granularidade máxima na escala de milisegudos. A granularidade do sistema de registro é sua frequência de amostragem. A amostragem deve, também, ocorrer de forma monotônica, isto é, não devem haver saltos irregulares de tempo entre cada unidade de tempo registrada. 
 
@@ -997,7 +1009,7 @@ end.
 
 ```
 
-Em seguida, selecione o arquivo Forms.Main.pas (correspondente a janela principal) e use as unidades Timestamps e TabDelimitedReport na cláusula uses privada:
+Em seguida, selecione o arquivo Forms.Main.pas (correspondente a janela principal) e use as unidades Timestamps e TabDelimitedReport na cláusula privada de uso de unidades:
 
 ```
 implementation                    // campo privado da unidade
@@ -1059,24 +1071,360 @@ begin
 end;
 ```
 
-Por meio de diversas chamadas ao procedimento WriteRow do objeto Report, um "relatório" em formato de texto simples como a seguinte estrutura é esperado:
+Por meio de diversas chamadas ao procedimento WriteRow do objeto Report, um relatório em formato de texto simples com a seguinte estrutura é esperado:
 ```txt
-Tempo&9;Categoria&9;Evento
-0000&9;antecedente&9;S1
-2000&9;resposta&9;R1
-2500&9;consequente&9;C1
-5050&9;antecedente&9;S1
-5500&9;resposta&9;R2
-6000&9;resposta&9;R2
-6100&9;resposta&9;R2
-7000&9;resposta&9;R2
-9000&9;resposta&9;R1
-9500&9;consequente&9;C1
+Tempo Categoria Evento
+ 0000  estimulo     S1
+ 2000  resposta     R1
+ 2500  estimulo     C1
+ 5050  estimulo     S1
+ 5500  resposta     R2
+ 6000  resposta     R2
+ 6100  resposta     R2
+ 7000  resposta     R2
+ 9000  resposta     R1
+ 9500  estimulo     C1
 ```
 Um relatório deve conter todas as informações de interesse. Nesse caso, duas respostas (R1 e R2) e dois estímulos (S1 e C1) devem ser registrados pelo programa. O programa está pronto para rastreá-los. Mas como detectar a ocorrência desses eventos?
 
-### Rastreamento de estímulos e respostas
+### Exemplo 2. Rastreamento de estímulos e respostas
 
-Ao interagir com uma interface gráfica, dois tipos de eventos são de especial interesse: respostas ao teclado e respostas ao mouse. 
+Rastreadores de função e forma
+são requisitos para análises comportamentais que almejam alto poder preditivo.
+Por ser multideterminado, o comportamento demanda a análise conjunta de múltiplas fontes de dados. Na presente ocasião, por questões didáticas, a ênfase será na forma. Ao interagir com uma interface gráfica, dois tipos de eventos serão de especial interesse: respostas ao teclado e respostas ao mouse. Adicionalmente, estímulos, como mudanças na visibilidade de componentes da interface, serão rastreados por meio um evento customizado. Crie uma nova unidade e implemente o evento da seguinte maneira:
 
-TODO->
+```
+unit Behavior.Events;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes;   // torna visível a classe TObject
+
+type         // bloco de declaração de tipo
+  // o procedimento recebe o nome de uma categoria, um evento
+  // e o objeto que enviou a mensagem
+  TBehavioralEvent = procedure(Sender: TObject; const Category: string; const Event:string) of object;
+
+  // define as possíveis categorias como constantes simples
+const
+  BehavioralEvent = 'resposta';
+  EnviromentEvent = 'estimulo';
+  SystemEvent = 'virtual';
+
+implementation
+
+  // toda unidade precisa de um bloco de implementação
+  // ainda que vazia
+
+end.
+
+```
+
+A unidade com o evento comportamental deve ser usada em duas outras unidades. Primeiramente, a classe de estímulos TStimulus deve criada a partir da classe TImage. A classe TImage possui eventos de mouse e métodos para a apresentação de figuras. Crie uma nova unidade e implemente a classe TStimulus da seguinte maneira:
+
+```
+unit ExtCtrls.Stimulus;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  ExtCtrls,        // torna visível a unidade TImage
+  Behavior.Events; // torna visível o evento TBehavioralEvent
+
+type
+
+  { TStimulus }
+
+  TStimulus = class(TImage) // cria a classe TStimulus a partir da casse TImage
+  private
+    FOnVisibilityChange: TBehavioralEvent;
+    procedure SetOnVisibilityChange(AValue: TBehavioralEvent);
+  protected
+    // a directiva override
+    // permite customizar o procedimento
+    // SetVisible da classe TImage
+    // este procedimento é usado
+    // para detectar a mudança de visibilidade
+    // dos estímulos
+    procedure SetVisible(Value: Boolean); override;
+  public
+    // para declarar o evento comportamental
+    // escreva:
+    // property OnVisibilityChange : TBehavioralEvent;
+    // e em seguida aperte CTRL+SHIFT+C
+    // a propriedade será declarada automaticamente
+    property OnVisibilityChange : TBehavioralEvent read FOnVisibilityChange write SetOnVisibilityChange;
+  end;
+
+
+implementation
+
+
+{ TStimulus }
+
+
+procedure TStimulus.SetOnVisibilityChange(AValue: TBehavioralEvent);
+begin
+  if FOnVisibilityChange=AValue then Exit;
+  FOnVisibilityChange:=AValue;
+end;
+
+// implementação de eventos de estímulo 
+procedure TStimulus.SetVisible(Value: Boolean);
+begin
+  // primeiramente é necessário 
+  // chamar o procedimento SetVisible de TImage
+  // isso é possível por meio do prefixo inherited
+  inherited SetVisible(Value);
+  // se um valor foi atribuido à propriedade então
+  if Assigned(OnVisibilityChange) then   
+    if Value then // se visível
+      // dispara o evento da propriedade como "Show"
+      OnVisibilityChange(Self, EnviromentEvent, 'Show') 
+    else          // se invisível
+      // dispara o evento da propriedade como "Hide"
+      OnVisibilityChange(Self, EnviromentEvent, 'Hide');
+end;
+
+end.
+
+```
+
+Em seguida os estímulos devem ser criados, configurados e apresentados na janela principal da aplicação. Os eventos associados à janela também devem ser implementados e configuradoes. Implemente-os da seguinte maneira:
+
+```
+unit Forms.Main;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, StdCtrls,
+  ExtCtrls.Stimulus; // torna visível a classe TStimulus
+
+type
+
+  { TForm1 }
+
+  TForm1 = class(TForm)
+    // declara um estímulo antecedente
+    StimulusAntecedent : TStimulus;
+
+    // declara um estímulo consequente 
+    StimulusConsequent : TStimulus; 
+
+    // declara o procedimento dos eventos de clique da janela
+    procedure ComponentClick(Sender: TObject);  
+
+    // declara o procedimento dos eventos de teclado da janela
+    procedure ComponentKeyPress(Sender: TObject; var Key: char);
+
+    // declara o procedimento de criação da janela
+    procedure FormCreate(Sender: TObject);
+
+    // declara o procedimento de destruição da janela
+    procedure FormDestroy(Sender: TObject);
+
+    // declara o procedimento de registro de respostas e estímulos
+    procedure RecordBehavior(Sender: TObject; const Category:string;
+      const EventSufix: string); inline;
+  private
+    // declara uma variável privada para o valor de início do registro
+    FFirstTickcount : Cardinal;
+
+    // declara um método de ajuda para a criação e configuração dos
+    // estímulos
+    procedure CreateStimulus(out AStimulus : TStimulus; AColor : TColor;
+      ASize : integer = 300; ALeft : integer = 0; ATop: integer = 0);
+  public
+
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+// unidades usadas apenas na implementação
+uses TabDelimitedReport, Timestamps, Behavior.Events; 
+
+{$R *.lfm}
+
+{ TForm1 }
+
+
+procedure TForm1.FormCreate(Sender: TObject);
+begin
+  // cria o estímulo antecedente com cor preta
+  CreateStimulus(StimulusAntecedent, clBlack,150,0,0);
+
+  // cria o estímulo consequente com cor azul
+  CreateStimulus(StimulusConsequent, clBlue,100,200,0);
+  
+  // os estímulos são rastreados pelos seus
+  // respectivos nomes
+  StimulusAntecedent.Name:='Preto';
+  StimulusConsequent.Name:='Azul';
+
+  // cabeçalho do relatório
+  Report.Filename := Application.ExeName;
+  Report.WriteRow(['Tempo', 'Categoria', 'Evento']);
+
+  // valor de início do registro independente da hora local
+  FFirstTickcount := GetTickCount64;
+
+  // início de acordo com a data e hora local
+  RecordBehavior(Sender, SystemEvent, 'inicio:'+DateTimeToStr(Now));
+
+  // mostra o estímulo antecedente
+  StimulusAntecedent.Show;
+end;
+
+procedure TForm1.FormDestroy(Sender: TObject);
+begin
+  // registra o final de acordo com a hora local
+  RecordBehavior(Sender, SystemEvent, 'final:'+DateTimeToStr(Now));
+
+  // finaliza o relatório
+  Report.CloseFile;
+end;
+
+procedure TForm1.RecordBehavior(Sender: TObject; const Category: string;
+  const EventSufix: string);
+var
+  SenderName: string;
+begin
+  // o rastreamento ocorre por meio
+  // do nome dos objetos
+  if Sender is TComponent then
+    SenderName := TComponent(Sender).Name
+  else
+    SenderName := Sender.ClassName;
+  
+  // registra uma linha no relatório
+  Report.WriteRow([
+    Miliseconds(FFirstTickcount),
+    Category,
+    SenderName+#32+EventSufix
+  ]);
+end;
+
+procedure TForm1.CreateStimulus(out AStimulus: TStimulus; AColor: TColor;
+  ASize: integer; ALeft: integer; ATop: integer);
+begin
+  // note que AStimulus é um argumento de saída (out)
+
+  // cria o estímulo na janela principal (self) 
+  AStimulus := TStimulus.Create(Self);
+
+  // define o tamanho do estímulo
+  // Left e Top possuem origem no canto superior esquerdo do monitor:
+  // Left pixel horizontal
+  // Top pixel vertical
+  AStimulus.SetBounds(ALeft, ATop, ASize, ASize);
+
+  // define o tamanho da figura do estímulo
+  AStimulus.Picture.Bitmap.SetSize(ASize, ASize);
+
+  // define a cor da figura do estímulo
+  AStimulus.Picture.Bitmap.Canvas.Brush.Color := AColor;
+
+  // desenha um retângulo preenchido na figura com a cor definida
+  AStimulus.Picture.Bitmap.Canvas.Rectangle(0,0, ASize, ASize);
+
+  {****************** MUITO IMPORTANTE ********************}
+
+  // não esqueça de definir aonde o estímulo será desenhado
+  // isto é possível por meio da propriedade Parent
+  // aqui definimos a janela principal (Self) como o
+  // responsável por desenhar o estímulo
+
+
+                  AStimulus.Parent := Self;
+
+
+  {********************************************************}
+
+  // define a visibilidade inicial do estímulo
+  AStimulus.Hide;
+
+  // atribui um valor às propriedades dos estímulos
+  // o operador @ deve ser usado na frente do
+  // procedimento correspondente ao evento
+  // da propriedade
+  // para relembrar a assinatura do evento
+  // segure CTRL e clique com o botão esquerdo na
+  // propriedade
+  AStimulus.OnVisibilityChange:=@RecordBehavior;
+  AStimulus.OnClick:=@ComponentClick;
+
+  // também seria possível carregar uma figura 
+  // por meio do nome do arquivo da figura
+  // AStimulus.Picture.LoadFromFile(AFilename);
+  // AStimulus.Stretch := True;
+end;
+
+// o que acontece quando um componente é clicado?
+procedure TForm1.ComponentClick(Sender: TObject);
+begin
+  // registra o comportamento de clique
+  RecordBehavior(Sender, BehavioralEvent, 'Click');
+  
+  // altera a visibilidade dos estímulos
+  // de acordo com os estímulos clicados
+  if Sender = StimulusAntecedent then
+    begin
+      StimulusAntecedent.Hide;
+      StimulusConsequent.Show;
+    end;
+  if Sender = StimulusConsequent then
+    begin
+      StimulusConsequent.Hide;
+      StimulusAntecedent.Show;
+    end;
+end;
+
+// o que acontece quando uma tecla é pressionada
+// tendo um componente em foco?
+procedure TForm1.ComponentKeyPress(Sender: TObject; var Key: char);
+const
+  SpaceKey = #32;
+  DeleteKey = #127;
+var
+  Event : string = '';
+begin
+  case Key of
+    SpaceKey : Event := '<32>';
+    DeleteKey: Event := '<127>';
+    #0..#31  : Event := '<NA>';
+  end;
+  RecordBehavior(Sender, BehavioralEvent, Event);
+end;
+
+
+end.
+``` 
+
+Por fim, configure os eventos de clique (OnClick como ComponentClick) e teclado (OnKeyPress como ComponentKeyPress) da janela principal, execute a aplicação e confira os resultados. O código fonte dos exemplos apresentados e de outros exemplos podem ser conferidos no repositório:
+
+- [https://github.com/cpicanco/free-pascal-prototypes](https://github.com/cpicanco/free-pascal-prototypes)
+
+### Referências
+
+{% assign sorted_references = site.data.references | sort %}
+  {% for ref in sorted_references %}
+    {% assign reference = ref[1] %}
+    {% if reference.type == 'chapter' %}
+
+<div class="self-font" style="text-indent: -4em;padding-left: 4em;padding-top: 1em;">
+  <div class="csl-entry">{{ reference[page.language].html | replace: '..','.' | replace: '  ',' ' }}</div>
+</div>
+      
+    {% endif %}
+  {% endfor %} 
