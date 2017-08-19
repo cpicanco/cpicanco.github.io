@@ -55,7 +55,7 @@ o que o levou a extendê-lo e reformulá-lo, criando outros dialetos derivados.
 
 Mas aquela popularização ocorreria por meio de ainda outros dialetos, independentes,
 com suas próprias extensões e melhorias. Esses outros dialetos, em alguns casos,
-inclusive sendo adotados como dialeto padrão em cursos de introdução à programação.  
+inclusive sendo adotados como dialeto padrão em cursos de introdução à programação.
 Como consequência, algumas gerações naquele período (70-80) aprenderam
 a pensar computacionalmente por meio de um dialeto derivado ou original.
 É razoável considerar, portanto, que algumas gerações entraram no mercado de trabalho
@@ -864,7 +864,7 @@ implementation                    // campo privado da unidade
 end.                              // final da unidade
 ```
 
-Como customizar a classe TForm1 e adaptá-las às nossas necessidades?
+Como customizar a classe TForm1 e adaptá-la às nossas necessidades?
 
 ## Exemplos
 
@@ -1196,7 +1196,7 @@ end.
 
 ```
 
-Em seguida os estímulos devem ser criados, configurados e apresentados na janela principal da aplicação. Os eventos associados à janela também devem ser implementados e configuradoes. Implemente-os da seguinte maneira:
+Em seguida os estímulos devem ser criados, configurados e apresentados na janela principal da aplicação. Os eventos associados à janela também devem ser implementados e configurados. Implemente-os da seguinte maneira:
 
 ```
 unit Forms.Main;
