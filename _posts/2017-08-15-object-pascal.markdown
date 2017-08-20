@@ -1418,14 +1418,4 @@ Por fim, configure os eventos de clique (OnClick como ComponentClick) e teclado 
 
 ### Referências
 
-{% assign sorted_references = site.data.references | sort %}
-  {% for ref in sorted_references %}
-    {% assign reference = ref[1] %}
-    {% if reference.type == 'chapter' %}
-
-<div class="self-font" style="text-indent: -4em;padding-left: 4em;padding-top: 1em;">
-  <div class="csl-entry">{{ reference[page.language].html | replace: '..','.' | replace: '  ',' ' }}</div>
-</div>
-      
-    {% endif %}
-  {% endfor %} 
+{% include references.html %}

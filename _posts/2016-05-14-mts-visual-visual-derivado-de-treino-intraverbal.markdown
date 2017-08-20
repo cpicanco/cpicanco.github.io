@@ -6,9 +6,7 @@ excerpt: 'Petursdottir, Peterson & Lepper (2015)'
 language: pt-BR
 copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 ---
-
 Petursdottir, A. I., Carp, C. L., Peterson, S. P., & Lepper, T. L. (2015). Emergence of visual–visual conditional discriminations following intraverbal training. Journal of the Experimental Analysis of Behavior, 103, 332–348.
-
 ___
 
 Afirma que ora a literatura tem sugerido que:
@@ -35,7 +33,7 @@ Relata estudos nos quais a `nomeação intraverbal` ocorre como tratamento remed
 
 Objetiva replicar sistematicamente o procedimento de `nomeação intraverbal` e avaliar a ocorrência de MTS `A -> B`, `B -> A` sem ser antecedido por qualquer treino relacional. Visual-visual derivado de treino de intraverbais e tatos. 
 
-# Método
+### Método
 
 **Participantes**. 10 Crianças, 4 a 5 anos. A preferência por reforçadores,  a habilidade de leitura e o estágio de desenvolvimento das crianças não foram reportados.
 
@@ -72,7 +70,7 @@ Objetiva replicar sistematicamente o procedimento de `nomeação intraverbal` e 
    - Intraverbal Reverso `B' -> A'`; manutenção `A' -> B'` (auditivo -> ditado).
    - Ouvinte `B' -> A` e `A' -> B`(auditivo -> visual); manutenção de tatos.
 
-## Resultados
+### Resultados
 
 **Critério**: 5/6 nas 6 relações.
 
@@ -84,8 +82,6 @@ Objetiva replicar sistematicamente o procedimento de `nomeação intraverbal` e 
 
 Sobre a hipótese de nomeação (Horne & Lowe, 1996), afirma que os dados corroboram a primeira parte da predição (intraverbais gerariam ouvintes), mas refutam a segunda predição (bidirecionalidade). Entretanto, não explica porque ocorreram 5 ouvintes sem intraverbais (Negativo).
 
-___
-
-**Referências**
+### Referências
 
 Horne, P. J., & Lowe, C. F. (1996). On the origins of naming and other symbolic behavior. Journal of the Experimental Analysis of Behavior, 65, 185–241. 

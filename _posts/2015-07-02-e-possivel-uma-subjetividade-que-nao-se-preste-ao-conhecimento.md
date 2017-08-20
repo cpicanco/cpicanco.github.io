@@ -43,23 +43,21 @@ Com certeza, conhecer *sobre* o sentir não é necessário e nem suficiente para
 De fato, o conteúdo de obras literárias, como aquelas citadas no excerto anterior, parece indicar que sim, pode haver uma cultura do segredo fazendo parte do cotidiano de cada um. E que tipos de problemas emergem a partir dessa noção para os profissionais que lidam com esse tipo de comportamento? Finaliza-se enumerando algumas possíveis questões:
 
 1. Visto que analisar comportamento é descrevê-lo em termos funcionais, e isso constitui um conhecimento *sobre* o comportamento, como exercer a ética quando da atuação profissional com o público pautada em análises desse tipo?
-
 1. Cognições e Emoções podem receber a mesma problematização?
-
 1. A maneira como a ciência era tratada, descrita em termos do método, e as mudanças realizadas pelo modelo de ciência proposto por Skinner (ver Dittrich, 2004), podem ser tomadas como indicativos de uma preocupação com as implicações de uma cultura de segredos na atividade científica?
 
 ### Referências
 
-###### Cyber blue (2008, 18 de junho). *Sobre a paixão*. Acesso em 27 de junho de 2008, em http://blogdahannah.blogspot.com/2008/06/sobre-paixo.html
+Cyber blue (2008, 18 de junho). *Sobre a paixão*. Acesso em 27 de junho de 2008, em http://blogdahannah.blogspot.com/2008/06/sobre-paixo.html
 
-###### Dittrich, A. (2004). Behaviorismo Radical, ética e política: aspectos teóricos do compromisso social. *Tese de doutorado*. Universidade Federal de São Carlos. São Carlos, São Paulo.
+Dittrich, A. (2004). Behaviorismo Radical, ética e política: aspectos teóricos do compromisso social. *Tese de doutorado*. Universidade Federal de São Carlos. São Carlos, São Paulo.
 
-###### Houaiss, A. (2002) *Dicionário Eletrônico Houaiss da língua portuguesa 1.0.5*. (CD-ROM). Acesso em 27 de junho de 2008. O conteúdo do programa corresponde à edição integral do Dicionário Houaiss da língua portuguesa. Objetiva Ltda.
+Houaiss, A. (2002) *Dicionário Eletrônico Houaiss da língua portuguesa 1.0.5*. (CD-ROM). Acesso em 27 de junho de 2008. O conteúdo do programa corresponde à edição integral do Dicionário Houaiss da língua portuguesa. Objetiva Ltda.
 
-###### Skinner (1974). *Sobre o behaviorismo*. São Paulo: Cultrix
+Skinner (1974). *Sobre o behaviorismo*. São Paulo: Cultrix
 
-###### Tourinho, E. Z. (1994). A noção pragmatista de conhecimento e a noção skinneriana de conhecimento. *Acta Comportamentalia*, *2*, 219-232
+Tourinho, E. Z. (1994). A noção pragmatista de conhecimento e a noção skinneriana de conhecimento. *Acta Comportamentalia*, *2*, 219-232
 
-###### Tourinho, E. Z. (2003). A produção de conhecimento em psicologia. *Psicologia Ciência e Profissão*, *23* (2), 30-41 
+Tourinho, E. Z. (2003). A produção de conhecimento em psicologia. *Psicologia Ciência e Profissão*, *23* (2), 30-41 
 
-###### Tourinho, E. Z. (2006). Subjetividade e Relações Comportamentais. *Tese de doutorado*. Departamento de Psicologia Experimental, Universidade Federal do Pará. Belém, Pará.
+Tourinho, E. Z. (2006). Subjetividade e Relações Comportamentais. *Tese de doutorado*. Departamento de Psicologia Experimental, Universidade Federal do Pará. Belém, Pará.

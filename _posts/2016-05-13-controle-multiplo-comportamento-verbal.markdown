@@ -8,6 +8,7 @@ copyright: <!--Copyright (c) 2015-2016 Carlos Rafael Fernandes Picanço.-->
 ---
 
 Michael, J., Palmer, D. C., & Sundberg, M. L. (2011). The multiple control of verbal behavior. The Analysis of Verbal Behavior, 27, 3–22.
+__
 
 > Readers sometimes fail to recognize that pure forms of the respective verbal operants are rare outside the laboratory or instructional contexts, and a common preoccupation of students is to try to classify utterances as one or another verbal operant on the assumption that the example must be exclusively one type. Perhaps more importantly, if one fails to consider multiple control, one’s interpretations of verbal behavior are likely to be conspicuously inadequate. (p. 4)
 
