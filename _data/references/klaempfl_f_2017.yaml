@@ -5,4 +5,7 @@ pt-BR:
 en:
   html: >
     Klämpfl, F., Codère, C. E., Mantione, D., Maebe, J., Van Canneyt, M., Vreman, P., … van de Voort, M. (2017). Free Pascal Compiler (Version v3.0.4rc1) [Cross-platform]. Retrivied from http://www.freepascal.org/
-type: chapter
+
+uses: [
+      '/2017/08/15/object-pascal' 
+      ] 

@@ -58,36 +58,7 @@
               {{ content | markdownify }}
               <p><img class="img-responsive center-block" src="/media/blog/{{ page.comic }}" alt="{{ page.title }}"  height="80%" width="80%" /></p>
               <p>_</p>
-            {% if page.author == site.author %}
-              {% capture hrf %}/portfolio/{{ page.language | downcase }}/projects.html{% endcapture %}
-            {% else %}
-              {% capture hrf %}/blog/{{ page.language | downcase }}/{% endcapture %}
-            {% endif %}
-            {% if page.language == 'en' %}
-              <span class="meta margin-top"><a href="{{ hrf }}">{{ page.author }}</a>&#32;,&#32;{{ page.date | date: "%B %-d, %Y" }}.</span>
-            {% elsif page.language == 'pt-BR' %}
-              <span class="meta margin-top">&#32;<a href="{{ hrf }}">{{ page.author }}</a>,&#32;
-              {{ page.date | date: "%-d" }}
-              &#32;de&#32;
-              {% assign m = page.date | date: "%-m" %}
-              {% case m %}
-                {% when '1' %}Janeiro
-                {% when '2' %}Fevereiro
-                {% when '3' %}Março
-                {% when '4' %}Abril
-                {% when '5' %}Maio
-                {% when '6' %}Junho
-                {% when '7' %}Julho
-                {% when '8' %}Agosto
-                {% when '9' %}Setembro
-                {% when '10' %}Outubro
-                {% when '11' %}Novembro
-                {% when '12' %}Dezembro
-              {% endcase %}
-              &#32;de&#32;
-              {{ page.date | date: "%Y" }}.
-              </span>
-            {% endif %}
+              {% include author_date.html %} 
               <hr>
               {% include social_buttons.html %}
               <hr>

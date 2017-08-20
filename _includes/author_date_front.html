@@ -1,0 +1,29 @@
+            {% if page.author == site.author %}
+              {% capture hrf %}/portfolio/{{ page.language | downcase }}/projects.html{% endcapture %}
+            {% else %}
+              {% capture hrf %}/blog/{{ page.language | downcase }}/{% endcapture %}
+            {% endif %}
+            {% if page.language == 'en' %}
+              <p class="post-meta">Posted by&#32;<a href="{{ hrf }}">{{ page.author }}</a>&#32;on&#32;{{ post.date | date: "%B %-d, %Y" }}.</p>
+            {% elsif page.language == 'pt-BR' %}
+              <p class="post-meta">Postado por&#32;<a href="{{ hrf }}">{{ page.author }}</a>,&#32;em&#32;{{ post.date | date: "%-d" }}
+              &#32;de&#32;
+              {% assign m = post.date | date: "%-m" %}
+              {% case m %}
+                {% when '1' %}Janeiro
+                {% when '2' %}Fevereiro
+                {% when '3' %}Março
+                {% when '4' %}Abril
+                {% when '5' %}Maio
+                {% when '6' %}Junho
+                {% when '7' %}Julho
+                {% when '8' %}Agosto
+                {% when '9' %}Setembro
+                {% when '10' %}Outubro
+                {% when '11' %}Novembro
+                {% when '12' %}Dezembro
+              {% endcase %}
+              &#32;de&#32;
+              {{ post.date | date: "%Y" }}.
+              </p>
+            {% endif %}

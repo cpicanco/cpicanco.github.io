@@ -6,4 +6,6 @@ en:
   html: >
     Severance, C. (2012). The Art of Teaching Computer Science: Niklaus Wirth. <i>IEEE Computer Society</i>, <i>45</i>(7), 8–10.
 
-type: chapter
+uses: [
+      '/2017/08/15/object-pascal' 
+      ] 

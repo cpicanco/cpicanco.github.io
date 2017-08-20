@@ -6,4 +6,6 @@ en:
   html: >
     Jensen, K., &amp; Wirth, N. (1974). <i>PASCAL User Manual and Report</i> (Vol. 18). Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-21554-8
 
-type: chapter
+uses: [
+      '/2017/08/15/object-pascal' 
+      ] 
