@@ -33,7 +33,13 @@
   # grunt
   sudo npm install -g grunt-cli
   ln -s /usr/bin/nodejs /usr/bin/node #ubuntu
-  
+
+  # update node if necessary
+  # sudo npm cache clean -f
+  # sudo npm install -g n
+  # sudo n stable
+  # sudo n 0.8.21
+
   # libZotero
   sudo pip install libZotero
 
@@ -52,27 +58,12 @@
 
 # tasks
   # minify when necessary
-    # changes in js/src were made
-    grunt uglify:dynamic
-
     # changes in css/src were made
     grunt cssmin:dynamic
 
   # concat when necessary
     # covers
     grunt concat:csscover
-
-    # portfolio
-    grunt concat:cssport
-
-    # portfolio/achievements
-    grunt concat:cssac
-
-    # blog
-    grunt concat:cssblog
-
-  # fecth new publications when necessary
-    python fetch_publication.py #ctrl+b ;)
 
 # misc
 

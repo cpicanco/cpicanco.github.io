@@ -2,50 +2,20 @@
 
 [![Build Status](https://travis-ci.org/cpicanco/cpicanco.github.io.svg?branch=master)](https://travis-ci.org/cpicanco/cpicanco.github.io)
 
-This site uses [Bootstrap](http://getbootstrap.com/)!
- - it is awesome!
- - Blog is a modified version of the [Clean Blog Template](http://startbootstrap.com/template-overviews/clean-blog/) 
- - Portfolio is a modified version of the [Scrolling Nav Template](http://startbootstrap.com/template-overviews/scrolling-nav/) and the following [examples](http://getbootstrap.com/getting-started/#examples):
-     - Cover;
-     - Starter Template;
-     - Sticky footer;
+This site uses [Bootstrap](http://getbootstrap.com/) and [Jekyll](http://jekyllrb.com/) and [Github Pages](https://pages.github.com/)!
 
-... And [Jekyll](http://jekyllrb.com/) too!
- - Emoji;
- - posts, layouts and includes examples;
- - post with GitHub markdown;
- - boolean multilanguange support (en/pt-br);
- - using `_data` for advanced Templating.
- - sitemap Template with multilanguage support;
- - Templating for Tags. Tag system compatible with GitHub Pages.
- - Templating for Pagination. Easy to use static Pagination system with no plugin or gems, compatible with GitHub Pages. Just push pages on demand and voilà:
+It is a simple Cover modified from [Bootstrap examples](http://getbootstrap.com/getting-started/#examples):
 
+This simple page redirect to the following specific projects by mean of subdomains:
 
-```
-# blog/language/page/1/index.html
----
-index: 1
----
-```
+- blog.rafael.picanco.nom.br
 
-Also some work was done with:
- - Infinite scroll with [Waypoints](http://imakewebthings.com/waypoints/shortcuts/infinite-scroll/);
- - leave comments with [Disqus](https://disqus.com/);
- - Open Graph for image and description preview on Facebook;
- - Twitter Card from image and description preview on Twitter;
- - [Google OSE](https://www.google.com/webmasters/);
- - [Grunt Task Runner](http://gruntjs.com/);
- - using [GIMP](http://www.gimp.org/) to compress images;
+![Blog](http://blog.rafael.picanco.nom.br)
 
-Finally, some [Academicons](http://jpswalsh.github.io/academicons/) were used and some [highlight.js](https://highlightjs.org/) as well. 
+- portfolio.rafael.picanco.nom.br
 
-Next steps are:
- - lag work for a completely auto Pagination system :P
- - Load next post by clicking "read more" button; 
- - implement 'About' blog section;
- - explore grunt tasks;
- - move from Google Analytics to Piwik;
-    
+![Portfolio](http://portfolio.rafael.picanco.nom.br)
+
 # License and copyright
 
 Following files, directories and their contents (including directories, subdirectories and files) are copyright Carlos Rafael Fernandes Picanço. You must not reuse anything therein without my explicit permission:

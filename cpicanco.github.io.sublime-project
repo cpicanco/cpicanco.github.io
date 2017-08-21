@@ -1,44 +1,41 @@
 {
-    "folders":
-    [
-        {
-            "follow_symlinks": true,
-            "path": "/home/rafael/git/cpicanco.github.io"
-        }
-    ],
-
-    "settings":
-    {
-        "Jekyll":
-        {
-            "default_post_categories":
-            [
-            ],
-            "default_post_extras":
-            {
-            },
-            "default_post_layout": "Post",
-            "default_post_published": false,
-            "default_post_tags":[],
-            "jekyll_auto_find_paths": false,
-            "jekyll_date_format": "%Y-%m-%d",
-            "jekyll_datetime_format": "%Y-%m-%d %H:%M:%S",
-            "jekyll_default_markup": "Markdown",
-            "jekyll_drafts_path": "/home/rafael/git/cpicanco.github.io/_drafts",
-            "jekyll_posts_path": "/home/rafael/git/cpicanco.github.io/_posts"
-        }
-    },
-
-    "build_systems":
-    [
-        // This will build your Jekyll site, and print a trace to the console
-        {
-            "name": "Jekyll",
-            // Change this directory to match your top-level Jekyll project folder
-            "working_dir": "/home/rafael/git/cpicanco.github.io/",
-            "cmd": "bundle exec jekyll serve",
-            "shell": true,
-            "encoding": "UTF-8"
-        }
-    ]    
+	"build_systems":
+	[
+		{
+			"cmd": "bundle exec jekyll serve",
+			"encoding": "UTF-8",
+			"name": "Jekyll",
+			"shell": true,
+			"working_dir": "/home/rafael/git/cpicanco.github.io/"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	],
+	"settings":
+	{
+		"Jekyll":
+		{
+			"default_post_categories":
+			[
+			],
+			"default_post_extras":
+			{
+			},
+			"default_post_layout": "Post",
+			"default_post_published": false,
+			"default_post_tags":
+			[
+			],
+			"jekyll_auto_find_paths": false,
+			"jekyll_date_format": "%Y-%m-%d",
+			"jekyll_datetime_format": "%Y-%m-%d %H:%M:%S",
+			"jekyll_default_markup": "Markdown",
+			"jekyll_drafts_path": "/home/rafael/git/cpicanco.github.io/_drafts",
+			"jekyll_posts_path": "/home/rafael/git/cpicanco.github.io/_posts"
+		}
+	}
 }

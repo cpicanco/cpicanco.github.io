@@ -1,5 +1,3 @@
-yarray: []
-mpaginate: 3
 year: 2017
 author: 'Rafael Picanço'
 url: http://www.rafael.picanco.nom.br
@@ -15,7 +13,6 @@ exclude: ['.gitignore',
           'package.json',
           'css/src/',
           'css/min/',
-          'js/src/',
           'node_modules/',
           'python/',
           'vendor',
@@ -27,49 +24,3 @@ defaults:
       path: ""
     values:
       author: 'Rafael Picanço'
-
-  -
-    scope:
-      path: ""
-      type: posts
-    values:
-      layout: "Post"
-  -
-    scope:
-      path: 'blog/pt-br'
-    values:
-      language: pt-BR
-
-  -
-    scope:
-      path: 'portfolio/pt-br'
-    values:
-      language: pt-BR
-  -
-    scope:
-      path: 'blog/en'
-    values:
-      language: en
-
-  -
-    scope:
-      path: 'portfolio/en'
-    values:
-      language: en
-
-  -
-    scope:
-      path: 'blog/en/page'
-    values:
-      layout: Page
-      sitemap: false
-
-  -
-    scope:
-      path: 'blog/pt-br/page'
-    values:
-      layout: Page
-      sitemap: false
-
-plugins:
-  - jemoji
