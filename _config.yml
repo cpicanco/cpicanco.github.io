@@ -1,6 +1,6 @@
 year: 2017
 author: 'Rafael Picanço'
-url: http://www.rafael.picanco.nom.br
+url: https://www.rafael.picanco.nom.br
 exclude: ['.gitignore',
           'CNAME',
           'cpicanco.github.io.sublime-project',
