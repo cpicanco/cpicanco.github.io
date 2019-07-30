@@ -30,7 +30,7 @@
     {% capture post_tags %}{% for tag in page.tags %}{{ tag }}, {% endfor %}{% endcapture %}
         <script type="application/ld+json">
         {
-          "@context": "http://schema.org",
+          "@context": "https://schema.org",
           "@type": "Article",
           "author": "{{ page.author }}",
           "name": "{{ page.title }}",
@@ -47,7 +47,7 @@
     {% else %}
         <script type="application/ld+json">
         {
-          "@context" : "http://schema.org",
+          "@context" : "https://schema.org",
           "@type" : "Person",
           "name" : "{{ page.author }}",
           "jobTitle": "Doctoral student",
@@ -63,7 +63,7 @@
             "https://geape-ufpa.academia.edu/CarlosRafael", 
             "https://www.researchgate.net/profile/Carlos_Picanco",
             "https://www.zotero.org/cpicanco/",
-            "http://codereview.stackexchange.com/users/62263/cpicanco"
+            "https://codereview.stackexchange.com/users/62263/cpicanco"
           ]
         }
         </script>
