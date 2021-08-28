@@ -2,18 +2,17 @@
 
   # ruby
   # https://github.com/postmodern/ruby-install#readmes
-  # https://cache.ruby-lang.org/pub/ruby/2.2/ruby-2.2.3.tar.gz
-  ruby-install ruby 2.2.3
+  ruby-install ruby
 
   # ~/.bashrc
-  # export PATH="/home/rafael/.rubies/ruby-2.2.3/bin:$PATH"
+  # export PATH="/home/rafael/.rubies/ruby-x.x.x/bin:$PATH"
 
   # install ruby gems
   cd ~
   cd Downloads/
-  wget https://rubygems.org/rubygems/rubygems-2.6.7.tgz
-  tar xvf rubygems-2.6.7.tgz
-  cd rubygems-2.6.7
+  wget https://rubygems.org/rubygems/rubygems-x.x.x.tgz
+  tar xvf rubygems-x.x.x.tgz
+  cd rubygems-x.x.x
   sudo ruby setup.rb
 
   # install bundler gem
@@ -22,8 +21,8 @@
   # install github pages/jekyll
   # https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
   cd ~
-  cd git/
-  git clone https://github.com/cpicanco/cpicanco.github.io.git
+  cd code/git/
+  git clone git@github.com:cpicanco/cpicanco.github.io.git
   cd cpicanco.github.io  
   bundle install
 
