@@ -1,6 +1,6 @@
 ## www.rafael.picanco.nom.br
 
-[![Build Status](https://travis-ci.org/cpicanco/cpicanco.github.io.svg?branch=master)](https://travis-ci.org/cpicanco/cpicanco.github.io)
+![GitHub Actions](https://github.com/cpicanco/cpicanco.github.io/actions/workflows/jekyll.yml/badge.svg)
 
 This site uses [Bootstrap](http://getbootstrap.com/) and [Jekyll](http://jekyllrb.com/) and [Github Pages](https://pages.github.com/)!
 
