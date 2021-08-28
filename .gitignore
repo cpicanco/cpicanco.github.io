@@ -5,3 +5,5 @@ node_modules/
 tests.html
 css/min/*
 nodejs
+*.swp
+.jekyll-cache/*
