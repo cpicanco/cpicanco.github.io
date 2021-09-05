@@ -1,0 +1,70 @@
+$background-color-base: #153038
+
+$box-shadow-base: inset 0 0 300px rgba(0,0,0,.5)
+
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 50px, $color: rgba(1,0,0,.5))
+  text-shadow: $x $y $blur $color
+
+@mixin base-structure
+  height: 100%
+  background-color: $background-color-base
+
+html
+  @include base-structure
+
+body
+  @include base-structure
+  @include text-shadow
+  text-align: center
+
+.site-wrapper
+  @include base-structure
+  display: table
+  width: 100%
+  min-height: 100%
+  -webkit-box-shadow: $box-shadow-base
+  box-shadow: $box-shadow-base
+
+.site-wrapper-inner
+  display: table-cell
+  vertical-align: middle
+
+canvas
+  display: block
+  vertical-align: inherit
+  z-index: 0
+
+#particles-js-top
+  position: absolute
+  top: 0px
+  left: 0px
+  background-color: transparent
+  background-repeat: no-repeat
+  height: 50%
+  width: 100%
+  z-index: 0
+
+#particles-js-bottom
+  position: fixed
+  top: 50%
+  left: 0px
+  background-color: transparent
+  background-repeat: no-repeat
+  height: 100%
+  width: 100%
+  z-index: 0
+
+.particles-panel
+  // background-color: rgba(255, 0, 0, 0.5)
+  display: block
+  position: absolute
+  z-index: 100
+  top: 50%
+  left: 50%
+  width: 300px
+  height: auto
+  margin-top: -120px
+  margin-left: -150px
+
+.fixed-font
+  font-size: 40px

@@ -1,22 +1,13 @@
-year: 2017
 author: 'Rafael Picanço'
-url: https://www.rafael.picanco.nom.br
+url: https://rafael.picanco.nom.br
 exclude: ['.gitignore',
           'CNAME',
-          'cpicanco.github.io.sublime-project',
-          'cpicanco.github.io.sublime-workspace',
           'Gemfile',
           'Gemfile.lock',
-          'Gruntfile.js',
           'LICENSE.md',
           'README.md',
-          'package.json',
           'css/src/',
           'css/min/',
-          'node_modules/',
-          'python/',
-          'vendor',
-          'tests.html',
           'workflow'
           ]
 defaults:
@@ -25,3 +16,8 @@ defaults:
       path: ""
     values:
       author: 'Rafael Picanço'
+
+sass:
+    sass_dir: _sass
+    style: compressed
+    sourcemap: never

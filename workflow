@@ -18,33 +18,11 @@
   # install bundler gem
   gem install bundler
 
-  # install github pages/jekyll
-  # https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
   cd ~
   cd code/git/
   git clone git@github.com:cpicanco/cpicanco.github.io.git
-  cd cpicanco.github.io  
+  cd cpicanco.github.io
   bundle install
-
-  # install npm
-  sudo apt-get install npm
-
-  # grunt
-  sudo npm install -g grunt-cli
-  ln -s /usr/bin/nodejs /usr/bin/node #ubuntu
-
-  # update node if necessary
-  # sudo npm cache clean -f
-  # sudo npm install -g n
-  # sudo n stable
-  # sudo n 0.8.21
-
-  # libZotero
-  sudo pip install libZotero
-
-  # citeproc-py
-  sudo apt-get install python-lxml python3-lxml
-  sudo pip install citeproc-py
 
   # the repository
   git clone https://github.com/cpicanco/cpicanco.github.io.git
@@ -52,25 +30,10 @@
   # grunt dependencies
   cd cpicanco.github.io
 
-  # grunt dependencies
-  npm install
-
-# tasks
-  # minify when necessary
-    # changes in css/src were made
-    grunt cssmin:dynamic
-
-  # concat when necessary
-    # covers
-    grunt concat:csscover
-
 # misc
 
   # update github-pages dependencies
   bundle update
-  
-  # new task
-  npm install <task-name> --save-dev
 
   # serve github page
   bundle exec jekyll serve
