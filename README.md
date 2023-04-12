@@ -6,15 +6,11 @@ This site uses [Bootstrap](http://getbootstrap.com/) and [Jekyll](http://jekyllr
 
 It is a simple Cover modified from [Bootstrap examples](http://getbootstrap.com/getting-started/#examples):
 
-This simple page redirect to the following specific projects by mean of subdomains:
+This simple page redirects to the following subdomains:
 
-- blog.rafael.picanco.nom.br
+- [blog.rafael.picanco.nom.br](http://blog.rafael.picanco.nom.br)   
 
-![Blog](http://blog.rafael.picanco.nom.br)
-
-- portfolio.rafael.picanco.nom.br
-
-![Portfolio](http://portfolio.rafael.picanco.nom.br)
+- [portfolio.rafael.picanco.nom.br](http://portfolio.rafael.picanco.nom.br)   
 
 # License and copyright
 
